@@ -1,0 +1,186 @@
+{
+  "matchId": "gesta-edn56",
+  "date": "2026-09-27",
+  "score": [
+    2,
+    4
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "gesta",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Gijs van Gurp",
+        "captain": true
+      },
+      {
+        "nr": 3,
+        "name": "Lars Verheijen",
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": "Timo Voeten"
+      },
+      {
+        "nr": 7,
+        "name": "Boaz den Ouden"
+      },
+      {
+        "nr": 8,
+        "name": "Jens de Jong",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Roy van Alphen",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Tom Verschueren",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Stijn Gooijers"
+      },
+      {
+        "nr": 14,
+        "name": "Brent Verheijen"
+      },
+      {
+        "nr": 17,
+        "name": "Noah van der Velden"
+      },
+      {
+        "nr": 21,
+        "name": "Jorg Feskens"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 6,
+        "name": "Siem Dieleman",
+        "in": true
+      },
+      {
+        "nr": 9,
+        "name": "Jens Gooijers",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Wesley Heestermans",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Rick Foesenek",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "edn56",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Floris de Bas"
+      },
+      {
+        "nr": 4,
+        "name": "Rutger Wiltvank",
+        "captain": true
+      },
+      {
+        "nr": 7,
+        "name": "Kevin Paulissen",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Luuk van Doormaal"
+      },
+      {
+        "nr": 9,
+        "name": "Greg van Gils"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Rob Hesselmans"
+      },
+      {
+        "nr": 13,
+        "name": "Teun Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Teun Reijrink"
+      },
+      {
+        "nr": 15,
+        "name": "Sven van Gils"
+      },
+      {
+        "nr": 17,
+        "name": "Robin van den Broek"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Finn van Gils"
+      },
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 5,
+        "name": "Joost van Hest",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true,
+        "in": true
+      }
+    ],
+    "trainer": "Coen Vos"
+  }
+}

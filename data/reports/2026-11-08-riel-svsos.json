@@ -1,0 +1,21 @@
+{
+  "matchId": "riel-svsos",
+  "date": "2026-11-08",
+  "home": "riel",
+  "away": "svsos",
+  "result": {
+    "home": 0,
+    "away": 0
+  },
+  "ht": null,
+  "goals": [],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

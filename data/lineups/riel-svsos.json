@@ -1,0 +1,189 @@
+{
+  "matchId": "riel-svsos",
+  "date": "2026-11-08",
+  "score": [
+    0,
+    0
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "riel",
+    "starters": [
+      {
+        "nr": 1,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 2,
+        "name": "Kirill van Autreve"
+      },
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 4,
+        "name": "Jochem van der Heijden"
+      },
+      {
+        "nr": 5,
+        "name": "Koen Schellekens"
+      },
+      {
+        "nr": 6,
+        "name": "Joris van der Bruggen"
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 9,
+        "name": "Joshua Paymans",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Jesse van den Corput",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Joshua Janssen",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Joni Paymans",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 8,
+        "name": "Lars Bokma"
+      },
+      {
+        "nr": 12,
+        "name": "Brent de Roos",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Sjors de Beer"
+      },
+      {
+        "nr": 14,
+        "name": "Lucas van der Bruggen"
+      },
+      {
+        "nr": 15,
+        "name": "Valentijn de Klerk",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Tom van Hoof",
+        "in": true
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  },
+  "away": {
+    "team": "svsos",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Lars Jonkers"
+      },
+      {
+        "nr": 2,
+        "name": "Matthijs van Oort"
+      },
+      {
+        "nr": 3,
+        "name": "Bram Vingerhoets"
+      },
+      {
+        "nr": 4,
+        "name": "Jasper van Waes",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Guus Abrahams"
+      },
+      {
+        "nr": 7,
+        "name": "Dorus Boers",
+        "captain": true
+      },
+      {
+        "nr": 9,
+        "name": "Gijs van Oort",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Ruud van Dijck",
+        "yellow": 1
+      },
+      {
+        "nr": 11,
+        "name": "Jesper Priems",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Giel Jansma"
+      },
+      {
+        "nr": 14,
+        "name": "Lars Priems",
+        "yellow": 1
+      }
+    ],
+    "subs": [
+      {
+        "nr": 5,
+        "name": "Daan Vingerhoets",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 8,
+        "name": "Jeroen Brekelmans",
+        "pos": "Verdediger",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      }
+    ],
+    "trainer": "Albert de Laat"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "matchId": "chaam-sab",
+  "date": "2026-11-15",
+  "score": [
+    2,
+    2
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "chaam",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Kevin Aarts"
+      },
+      {
+        "nr": 2,
+        "name": "Luc Goos"
+      },
+      {
+        "nr": 4,
+        "name": "Gerard Verbiest",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Juul van Eil"
+      },
+      {
+        "nr": 7,
+        "name": "Bas Goos",
+        "captain": true
+      },
+      {
+        "nr": 9,
+        "name": "Wessel van Engelen",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Sebas van Engelen",
+        "yellow": 1
+      },
+      {
+        "nr": 12,
+        "name": "Owen Moelands"
+      },
+      {
+        "nr": 16,
+        "name": "Lars de Bie"
+      },
+      {
+        "nr": 17,
+        "name": "Brent Goosen"
+      },
+      {
+        "nr": 18,
+        "name": "Daan Jochems",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Henryc van Dongen"
+      },
+      {
+        "nr": 5,
+        "name": "Jan Michielsen",
+        "in": true
+      },
+      {
+        "nr": 8,
+        "name": "Teun van Gestel"
+      },
+      {
+        "nr": 10,
+        "name": "Marc van der Meeren"
+      },
+      {
+        "nr": 14,
+        "name": "Ibrahim Rahmanli",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Wout van Wassenhove",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Wessel Braat"
+      },
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen"
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Diego Jansen",
+        "captain": true
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers"
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere"
+      },
+      {
+        "nr": 17,
+        "name": "Vladyslav Tkachenko",
+        "yellow": 1
+      },
+      {
+        "nr": 20,
+        "name": "Ward Tahir"
+      },
+      {
+        "nr": 33,
+        "name": "Sep Luiijf"
+      },
+      {
+        "nr": 43,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Mohamed Dramé"
+      },
+      {
+        "nr": 7,
+        "name": "Laurens Jonkers"
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek",
+        "in": true
+      },
+      {
+        "nr": 22,
+        "name": "Tonie Snoeren"
+      }
+    ],
+    "trainer": null
+  }
+}

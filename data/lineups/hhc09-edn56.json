@@ -1,0 +1,194 @@
+{
+  "matchId": "hhc09-edn56",
+  "date": "2026-10-11",
+  "score": [
+    0,
+    2
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "hhc09",
+    "starters": [
+      {
+        "nr": 4,
+        "name": "Jan Hooijmans",
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Tom van der Linden",
+        "pos": "Verdediger",
+        "yellow": 1
+      },
+      {
+        "nr": 7,
+        "name": "Tom de Ruiter",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 8,
+        "name": "Mees de Fijter"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Tim de Fijter",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 15,
+        "name": "Joey de Fijter",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Koen Blikman",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 70,
+        "name": "Jeffrey van der Loo",
+        "pos": "Keeper",
+        "captain": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Samuel Sebastian Szurman"
+      },
+      {
+        "nr": 2,
+        "name": "Patryk Gomulski",
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Schalk",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 9,
+        "name": "Timo Willemsen",
+        "pos": "Aanvaller",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Jeffrey Fitters",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Jarno Kuijpers",
+        "in": true
+      }
+    ],
+    "trainer": "Gilbert de Fijter"
+  },
+  "away": {
+    "team": "edn56",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Floris de Bas"
+      },
+      {
+        "nr": 2,
+        "name": "Jens van Dorst"
+      },
+      {
+        "nr": 7,
+        "name": "Kevin Paulissen",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Luuk van Doormaal",
+        "yellow": 1
+      },
+      {
+        "nr": 9,
+        "name": "Greg van Gils"
+      },
+      {
+        "nr": 10,
+        "name": "Hein de Bresser"
+      },
+      {
+        "nr": 12,
+        "name": "Rob Hesselmans",
+        "captain": true
+      },
+      {
+        "nr": 13,
+        "name": "Teun Verhoeven"
+      },
+      {
+        "nr": 14,
+        "name": "Teun Reijrink",
+        "out": true
+      },
+      {
+        "nr": 15,
+        "name": "Sven van Gils"
+      },
+      {
+        "nr": 17,
+        "name": "Robin van den Broek"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 4,
+        "name": "Stijn van de Wiel",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 5,
+        "name": "Joost van Hest"
+      },
+      {
+        "nr": 11,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      }
+    ],
+    "trainer": "Coen Vos"
+  }
+}

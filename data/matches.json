@@ -897,14 +897,6 @@
     ]
   },
   {
-    "id": "elshout-svg",
-    "home": "elshout",
-    "away": "svg",
-    "date": "2026-11-15",
-    "status": "scheduled",
-    "evidence": []
-  },
-  {
     "id": "svsos-raamsdonk",
     "home": "svsos",
     "away": "raamsdonk",
@@ -1052,15 +1044,6 @@
     ]
   },
   {
-    "id": "hz75-svsos",
-    "home": "hz75",
-    "away": "svsos",
-    "date": "2026-11-22",
-    "time": "14:30",
-    "status": "scheduled",
-    "evidence": []
-  },
-  {
     "id": "edn56-sab",
     "home": "edn56",
     "away": "sab",
@@ -1113,6 +1096,24 @@
     "time": "14:30",
     "status": "scheduled",
     "evidence": []
+  },
+  {
+    "id": "elshout-svg",
+    "home": "elshout",
+    "away": "svg",
+    "date": "2026-12-03",
+    "status": "scheduled",
+    "evidence": [],
+    "note": "Gestaakt op 15 november; het restant wordt gespeeld op donderdag 3 december."
+  },
+  {
+    "id": "hz75-svsos",
+    "home": "hz75",
+    "away": "svsos",
+    "date": "2026-12-03",
+    "status": "scheduled",
+    "evidence": [],
+    "note": "Afgelast op 22 november; wordt ingehaald op donderdag 3 december."
   },
   {
     "id": "chaam-hz75",

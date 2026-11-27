@@ -3,6 +3,7 @@
     "2026-09-20-elshout-hhc09.json",
     "2026-09-27-hhc09-chaam.json",
     "2026-10-04-dussense-boys-riel.json",
+    "2026-10-04-edn56-svsos.json",
     "2026-10-04-elshout-chaam.json",
     "2026-10-04-raamsdonk-gesta.json",
     "2026-10-04-sab-hz75.json",
@@ -10,6 +11,7 @@
     "2026-10-11-gesta-sab.json",
     "2026-10-11-hhc09-edn56.json",
     "2026-10-11-hz75-svg.json",
+    "2026-10-11-riel-raamsdonk.json",
     "2026-10-11-svsos-elshout.json",
     "2026-10-25-dussense-boys-gesta.json",
     "2026-10-25-raamsdonk-hhc09.json",
@@ -22,10 +24,16 @@
     "2026-11-01-gesta-riel.json",
     "2026-11-01-hhc09-sab.json",
     "2026-11-01-hz75-raamsdonk.json",
+    "2026-11-01-svsos-svg.json",
     "2026-11-08-gesta-hhc09.json",
+    "2026-11-08-raamsdonk-chaam.json",
+    "2026-11-08-riel-svsos.json",
+    "2026-11-08-sab-elshout.json",
+    "2026-11-15-edn56-dussense-boys.json",
     "2026-11-15-hhc09-riel.json",
     "2026-11-15-svsos-raamsdonk.json",
     "2026-11-22-hhc09-dussense-boys.json",
-    "2026-11-22-raamsdonk-edn56.json"
+    "2026-11-22-raamsdonk-edn56.json",
+    "2026-11-22-riel-elshout.json"
   ]
 }

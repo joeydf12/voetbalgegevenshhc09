@@ -1,0 +1,179 @@
+{
+  "matchId": "gesta-sab",
+  "date": "2026-10-11",
+  "score": [
+    1,
+    6
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "gesta",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Gijs van Gurp",
+        "captain": true
+      },
+      {
+        "nr": 4,
+        "name": "Timo Voeten"
+      },
+      {
+        "nr": 7,
+        "name": "Boaz den Ouden"
+      },
+      {
+        "nr": 8,
+        "name": "Jens de Jong",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Siem Dieleman"
+      },
+      {
+        "nr": 10,
+        "name": "Roy van Alphen",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Stijn Gooijers",
+        "yellow": 1
+      },
+      {
+        "nr": 14,
+        "name": "Brent Verheijen"
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 17,
+        "name": "Noah van der Velden",
+        "out": true
+      },
+      {
+        "nr": 21,
+        "name": "Jorg Feskens"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Lars Verheijen"
+      },
+      {
+        "nr": 5,
+        "name": "Jens Gooijers",
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": "Jari Heestermans",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Tom Verschueren",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Wessel Braat",
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen"
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes"
+      },
+      {
+        "nr": 9,
+        "name": "Diego Jansen",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers"
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven"
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere",
+        "out": true
+      },
+      {
+        "nr": 20,
+        "name": "Ward Tahir"
+      },
+      {
+        "nr": 33,
+        "name": "Sep Luiijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Mohamed Dramé",
+        "in": true
+      },
+      {
+        "nr": 7,
+        "name": "Laurens Jonkers"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Matheus do Prado Karl",
+        "in": true
+      },
+      {
+        "nr": 22,
+        "name": "Tonie Snoeren"
+      },
+      {
+        "nr": 29,
+        "name": "Swen Voesenek",
+        "in": true
+      }
+    ],
+    "trainer": "Tonie Snoeren"
+  }
+}

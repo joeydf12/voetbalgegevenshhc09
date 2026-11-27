@@ -262,7 +262,7 @@ export const validReportDate = (s) => !s || isDate(s);
  *   12 Jan Jansen (e.d.) 1-0      (eigen doelpunt)
  * Lege regels en regels die met # beginnen worden overgeslagen. Rust wordt niet gegokt (ht = null).
  */
-const TL_HEADER = /^\s*(?<home>\S.*?)\s-\s(?<away>\S.*?)\s(?<h>\d{1,2})-(?<a>\d{1,2})\s*$/;
+const TL_HEADER = /^\s*(?<home>\S.*?)\s-\s(?<away>\S.*?)\s(?<h>\d{1,2})-(?<a>\d{1,2})(?:\s+\(rust\s(?<hh>\d{1,2})-(?<ha>\d{1,2})\))?\s*$/;
 const TL_GOAL = /^\s*(?<min>\?|\d{1,3})(?:\+(?<extra>\d{1,2}))?'?\s+(?<name>.+?)\s+(?<sh>\d{1,2})-(?<sa>\d{1,2})\s*$/;
 export function parseTimeline(text) {
   const lines = normalizeText(text).split(/\r?\n/).map((l, i) => [i + 1, l.trim()]).filter(([, l]) => l && !l.startsWith('#'));
@@ -273,6 +273,7 @@ export function parseTimeline(text) {
   out.homeName = h.groups.home.trim();
   out.awayName = h.groups.away.trim();
   out.score = [Number(h.groups.h), Number(h.groups.a)];
+  if (h.groups.hh != null) out.ht = [Number(h.groups.hh), Number(h.groups.ha)];
   for (const [no, l] of lines.slice(1)) {
     const g = TL_GOAL.exec(l);
     if (!g) { out.errors.push(`Regel ${no} niet herkend: "${l}". Verwacht: minuut naam tussenstand.`); continue; }

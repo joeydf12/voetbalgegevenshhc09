@@ -1,0 +1,61 @@
+{
+  "matchId": "svsos-svg",
+  "date": "2026-11-01",
+  "home": "svsos",
+  "away": "svg",
+  "result": {
+    "home": 1,
+    "away": 2
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 40,
+      "extra": 0,
+      "player": "Shuburney Rosaria",
+      "team": "svg",
+      "playerTeam": "svg",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 44,
+      "extra": 0,
+      "player": "Dorus Boers",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Nassreddine el Haddadi",
+      "team": "svg",
+      "playerTeam": "svg",
+      "score": [
+        1,
+        2
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Voetbal.nl (opstelling) en opgave teamlid",
+    "key": "opgave",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

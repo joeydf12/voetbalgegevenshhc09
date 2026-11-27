@@ -1,0 +1,195 @@
+{
+  "matchId": "hz75-raamsdonk",
+  "date": "2026-11-01",
+  "score": [
+    1,
+    7
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "hz75",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Stijn Groen"
+      },
+      {
+        "nr": 4,
+        "name": "Ard Buijs",
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Wouter Zevenbergen",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": "Finn Hoevenaar"
+      },
+      {
+        "nr": 9,
+        "name": "Kursat Bucakli"
+      },
+      {
+        "nr": 10,
+        "name": "Bram Gosens",
+        "pos": "Middenvelder",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Noah Brejaart"
+      },
+      {
+        "nr": 13,
+        "name": "Timo Vervelde",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 14,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Oskar Siwik",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 21,
+        "name": "Luuk Vissers",
+        "pos": "Keeper"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 6,
+        "name": "Steffen Becht",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Teun Stevens",
+        "pos": "Verdediger",
+        "in": true,
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": "Rubin van Loon",
+        "in": true
+      },
+      {
+        "nr": 20,
+        "name": "Tom van Ermingen"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "raamsdonk",
+    "incomplete": true,
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Tijs Rutters"
+      },
+      {
+        "nr": 2,
+        "name": "Daan Schipperen"
+      },
+      {
+        "nr": 3,
+        "name": "Jordi van de Korput"
+      },
+      {
+        "nr": 4,
+        "name": "Lars van Strien",
+        "captain": true
+      },
+      {
+        "nr": 5,
+        "name": "Bas de Nijs",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Joep Leijten",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Kevin Meijnhardt",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 11,
+        "name": "Jayden van Seeters",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Coen van Avendonk"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 8,
+        "name": "Justin van Strien",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Tygo Geuzendam",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Owen Kramer",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Thomas Boons",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

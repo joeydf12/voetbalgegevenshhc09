@@ -1,0 +1,186 @@
+{
+  "matchId": "sab-svg",
+  "date": "2026-11-22",
+  "score": [
+    2,
+    2
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Wessel Braat",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Diego Jansen",
+        "pos": "Aanvaller",
+        "out": true,
+        "captain": true
+      },
+      {
+        "nr": 13,
+        "name": "Matheus do Prado Karl",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere",
+        "pos": "Verdediger",
+        "yellow": 1
+      },
+      {
+        "nr": 17,
+        "name": "Vladyslav Tkachenko",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 20,
+        "name": "Ward Tahir",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 33,
+        "name": "Sep Luiijf",
+        "pos": "Keeper"
+      },
+      {
+        "nr": 50,
+        "name": "Max van der Made"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Mohamed Dramé",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven",
+        "in": true
+      },
+      {
+        "nr": 22,
+        "name": "Tonie Snoeren"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "svg",
+    "starters": [
+      {
+        "nr": 3,
+        "name": "Brian Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 5,
+        "name": "Pieter Koot"
+      },
+      {
+        "nr": 7,
+        "name": "Mike Verhagen"
+      },
+      {
+        "nr": 8,
+        "name": "Nick Verduijn"
+      },
+      {
+        "nr": 9,
+        "name": "Shuburney Rosaria"
+      },
+      {
+        "nr": 10,
+        "name": "Nassreddine el Haddadi"
+      },
+      {
+        "nr": 11,
+        "name": "Tyren van Embricqs",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Joep Melis",
+        "captain": true
+      },
+      {
+        "nr": 21,
+        "name": "Bas Melis"
+      },
+      {
+        "nr": 34,
+        "name": "Bilal Chahid",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 6,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Younes Aknin",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Soufiane Farid"
+      },
+      {
+        "nr": 18,
+        "name": "Abdellah Aknin",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

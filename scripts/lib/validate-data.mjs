@@ -121,9 +121,8 @@ export function validateData(data, { today }) {
       if (res.state !== 'ok') err(`${tag}: verslag uit "${r.source.name}" bij een wedstrijd zonder vaststaande uitslag`);
       else if (res.home !== r.result.home || res.away !== r.result.away) err(`${tag}: uitslag in verslag (${r.result.home}-${r.result.away}) wijkt af van de uitslag (${res.home}-${res.away})`);
     }
-    // Voetbal.nl-tijdlijn (add-goals) heeft geen link of samenvatting; een krantverslag vervangt dit.
-    if (r.source.key !== 'voetbalnl' && !r.source.url) warn(`${tag}: nog geen link naar de bron`);
-    if (r.source.key !== 'voetbalnl' && !r.summary) warn(`${tag}: nog geen samenvatting`);
+    // Links zijn niet nodig (afspraak 27-11). Samenvatting alleen bij krant/pers, niet bij Voetbal.nl of opgave.
+    if (!['voetbalnl', 'opgave'].includes(r.source.key) && !r.summary) warn(`${tag}: nog geen samenvatting`);
   }
   const listed = new Set(data.reportIndex?.files || []);
   for (const r of reports) if (!listed.has(r.file)) err(`reports/index.json mist ${r.file} (draai node scripts/add-report.mjs of rebuild)`);
@@ -145,16 +144,17 @@ export function validateData(data, { today }) {
         if (s.starters.length || s.subs.length) err(`${tag} (${side}): staat als ontbrekend maar heeft spelers`);
         continue;
       }
-      if (s.starters.length !== 11) warn(`${tag} (${side}): ${s.starters.length} basisspelers in plaats van 11`);
+      if (s.incomplete) { if (!s.starters.length && !s.subs.length) err(`${tag} (${side}): onvolledig maar leeg; gebruik missing`); }
+      else if (s.starters.length !== 11) warn(`${tag} (${side}): ${s.starters.length} basisspelers in plaats van 11`);
       const outs = [...s.starters, ...s.subs].filter((p) => p.out).length;
       const ins = s.subs.filter((p) => p.in).length;
-      if (outs !== ins) warn(`${tag} (${side}): ${outs} gewisseld uit maar ${ins} ingevallen`);
+      if (outs !== ins && !s.incomplete) warn(`${tag} (${side}): ${outs} gewisseld uit maar ${ins} ingevallen`);
       const nrs = new Set();
       for (const p of [...s.starters, ...s.subs]) {
         if (!isInt(p.nr)) err(`${tag} (${side}): speler zonder rugnummer`);
         if (nrs.has(p.nr)) err(`${tag} (${side}): rugnummer ${p.nr} komt dubbel voor`);
         nrs.add(p.nr);
-        if (p.name === null && !p.hidden) err(`${tag} (${side}): speler #${p.nr} zonder naam maar niet als afgeschermd gemarkeerd`);
+        if (p.name === null && !p.hidden && !p.unknown) err(`${tag} (${side}): speler #${p.nr} zonder naam maar niet als afgeschermd gemarkeerd`);
         if (p.in && p.out) warn(`${tag} (${side}): #${p.nr} staat zowel als ingevallen als gewisseld`);
       }
     }

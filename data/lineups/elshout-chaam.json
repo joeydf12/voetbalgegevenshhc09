@@ -1,0 +1,185 @@
+{
+  "matchId": "elshout-chaam",
+  "date": "2026-10-04",
+  "score": [
+    2,
+    0
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "elshout",
+    "starters": [
+      {
+        "nr": 3,
+        "name": "Stan Muskens",
+        "pos": "Verdediger",
+        "captain": true
+      },
+      {
+        "nr": 4,
+        "name": "Willem Sangers",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Dankers"
+      },
+      {
+        "nr": 7,
+        "name": "Gijs de Kort"
+      },
+      {
+        "nr": 8,
+        "name": "Remco v.d. Hooven"
+      },
+      {
+        "nr": 9,
+        "name": "Teun Hendriks",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Edgar Brok",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Luc v.d. Aker"
+      },
+      {
+        "nr": 13,
+        "name": "Thijs Lommers",
+        "out": true
+      },
+      {
+        "nr": 15,
+        "name": "Marc Verschure",
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": "Rens de Kruijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Tijn Damen"
+      },
+      {
+        "nr": 2,
+        "name": "Stan de Jong",
+        "in": true
+      },
+      {
+        "nr": 5,
+        "name": "Bas van den Besselaar",
+        "pos": "Verdediger",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Niels van Iersel",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Sam van Bokhoven",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Thijs van den Bijgaart"
+      },
+      {
+        "nr": 17,
+        "name": "Thieleman van Aerle",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "chaam",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Pieter van Gestel"
+      },
+      {
+        "nr": 2,
+        "name": "Luc Goos"
+      },
+      {
+        "nr": 4,
+        "name": "Gerard Verbiest",
+        "yellow": 1
+      },
+      {
+        "nr": 6,
+        "name": "Juul van Eil"
+      },
+      {
+        "nr": 7,
+        "name": "Bas Goos",
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Teun van Gestel"
+      },
+      {
+        "nr": 9,
+        "name": "Wessel van Engelen",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Sebas van Engelen",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Ibrahim Rahmanli",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Lars de Bie"
+      },
+      {
+        "nr": 17,
+        "name": "Brent Goosen"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 10,
+        "name": "Xander Geerts",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Owen Moelands",
+        "in": true
+      },
+      {
+        "nr": 19,
+        "name": "Marc van der Meeren"
+      }
+    ],
+    "trainer": null
+  }
+}

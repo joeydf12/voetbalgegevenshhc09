@@ -1,0 +1,203 @@
+{
+  "matchId": "svg-hhc09",
+  "date": "2026-10-04",
+  "score": [
+    2,
+    3
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "svg",
+    "starters": [
+      {
+        "nr": 3,
+        "name": "Brian Verhoeven",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 5,
+        "name": "Pieter Koot",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 7,
+        "name": "Mike Verhagen",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 8,
+        "name": "Nick Verduijn",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 9,
+        "name": "Shuburney Rosaria",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 12,
+        "name": "Younes Aknin",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 15,
+        "name": "Tyren van Embricqs",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 21,
+        "name": "Bas Melis",
+        "pos": "Keeper"
+      },
+      {
+        "nr": 23,
+        "name": "Nassreddine el Haddadi",
+        "pos": "Verdediger",
+        "captain": true
+      },
+      {
+        "nr": 34,
+        "name": "Faouzi Chahid",
+        "pos": "Verdediger",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 6,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 11,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true,
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Soufiane Farid",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": "Xander van Spaendonk",
+        "in": true
+      },
+      {
+        "nr": 18,
+        "name": "Abdellah Aknin",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "hhc09",
+    "starters": [
+      {
+        "nr": 4,
+        "name": "Jan Hooijmans"
+      },
+      {
+        "nr": 5,
+        "name": "Tom van der Linden",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 7,
+        "name": "Tom de Ruiter",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 8,
+        "name": "Mees de Fijter",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Timo Willemsen",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Tim de Fijter",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 15,
+        "name": "Joey de Fijter",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 17,
+        "name": "Koen Blikman",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller",
+        "yellow": 1
+      },
+      {
+        "nr": 70,
+        "name": "Jeffrey van der Loo",
+        "pos": "Keeper"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Samuel Sebastian Szurman"
+      },
+      {
+        "nr": 2,
+        "name": "Patryk Gomulski"
+      },
+      {
+        "nr": 6,
+        "name": "Koen Kops",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Jarno Kuijpers"
+      },
+      {
+        "nr": 18,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      }
+    ],
+    "trainer": "Gilbert de Fijter"
+  }
+}

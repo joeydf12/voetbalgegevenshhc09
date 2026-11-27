@@ -1,0 +1,185 @@
+{
+  "matchId": "hhc09-chaam",
+  "date": "2026-09-27",
+  "score": [
+    2,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "hhc09",
+    "starters": [
+      {
+        "nr": 4,
+        "name": "Jan Hooijmans"
+      },
+      {
+        "nr": 5,
+        "name": "Tom van der Linden",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Schalk",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": "Tom de Ruiter",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 8,
+        "name": "Mees de Fijter"
+      },
+      {
+        "nr": 9,
+        "name": "Timo Willemsen",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller",
+        "yellow": 1
+      },
+      {
+        "nr": 11,
+        "name": "Tim de Fijter",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 12,
+        "name": "Jeffrey Fitters"
+      },
+      {
+        "nr": 17,
+        "name": "Koen Blikman",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 70,
+        "name": "Jeffrey van der Loo",
+        "pos": "Keeper",
+        "captain": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Patryk Gomulski",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Joey de Fijter",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 16,
+        "name": "Jarno Kuijpers",
+        "in": true
+      },
+      {
+        "nr": 20,
+        "name": "Duncan van Drunen"
+      },
+      {
+        "nr": 22,
+        "name": "Udey Halo Ajouri"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "chaam",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Kevin Aarts"
+      },
+      {
+        "nr": 2,
+        "name": "Luc Goos"
+      },
+      {
+        "nr": 4,
+        "name": "Gerard Verbiest"
+      },
+      {
+        "nr": 6,
+        "name": "Juul van Eil",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": "Bas Goos",
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Teun van Gestel",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Wessel van Engelen",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Wout van Wassenhove",
+        "out": true
+      },
+      {
+        "nr": 15,
+        "name": "Brent Goosen"
+      },
+      {
+        "nr": 16,
+        "name": "Lars de Bie"
+      },
+      {
+        "nr": 18,
+        "name": "Xander Geerts"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 5,
+        "name": "Sem Brinkers",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Sebas van Engelen",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Owen Moelands",
+        "in": true,
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Ibrahim Rahmanli",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": "Pieter van den Broek",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

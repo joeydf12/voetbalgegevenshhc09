@@ -1,0 +1,182 @@
+{
+  "matchId": "sab-svsos",
+  "date": "2026-10-25",
+  "score": [
+    2,
+    3
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Diego Jansen",
+        "out": true,
+        "captain": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers"
+      },
+      {
+        "nr": 13,
+        "name": "Matheus do Prado Karl"
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere"
+      },
+      {
+        "nr": 17,
+        "name": "Vladyslav Tkachenko"
+      },
+      {
+        "nr": 20,
+        "name": "Ward Tahir"
+      },
+      {
+        "nr": 33,
+        "name": "Sep Luiijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Tony Koevoets"
+      },
+      {
+        "nr": 2,
+        "name": "Wessel Braat",
+        "in": true
+      },
+      {
+        "nr": 3,
+        "name": "Mohamed Dramé",
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven",
+        "in": true
+      },
+      {
+        "nr": 22,
+        "name": "Tonie Snoeren"
+      },
+      {
+        "nr": 29,
+        "name": "Swen Voesenek"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "svsos",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Lars Jonkers"
+      },
+      {
+        "nr": 3,
+        "name": "Dirk Vingerhoets"
+      },
+      {
+        "nr": 4,
+        "name": "Jasper van Waes",
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Daan Vingerhoets",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Guus Abrahams"
+      },
+      {
+        "nr": 7,
+        "name": "Dorus Boers",
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Jeroen Brekelmans",
+        "yellow": 1
+      },
+      {
+        "nr": 9,
+        "name": "Gijs van Oort"
+      },
+      {
+        "nr": 10,
+        "name": "Ruud van Dijck"
+      },
+      {
+        "nr": 11,
+        "name": "Jesper Priems",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Lars Priems"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Matthijs van Oort",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Giel Jansma",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1,
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

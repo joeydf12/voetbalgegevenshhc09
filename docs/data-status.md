@@ -1,0 +1,1 @@
+Startdata (2026-11-26): drie Hollandse Velden-clubpagina's (HHC '09, Dussense Boys, VV HZ '75) via webtool-samenvatting herbouwd tot fixtures in `tests/fixtures/hv-seed/`. Hollandse Velden toonde toen uitslagen t/m 11 okt 2026. Ontbrekend: 72 wedstrijden tussen de overige 9 ploegen en posities 1-2 in de stand.

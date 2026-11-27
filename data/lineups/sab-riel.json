@@ -1,0 +1,192 @@
+{
+  "matchId": "sab-riel",
+  "date": "2026-09-20",
+  "score": [
+    3,
+    2
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen"
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers"
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere"
+      },
+      {
+        "nr": 17,
+        "name": "Vladyslav Tkachenko"
+      },
+      {
+        "nr": 20,
+        "name": "Ward Tahir",
+        "captain": true
+      },
+      {
+        "nr": 33,
+        "name": "Sep Luiijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Wessel Braat",
+        "in": true
+      },
+      {
+        "nr": 3,
+        "name": "Mohamed Dramé",
+        "in": true
+      },
+      {
+        "nr": 7,
+        "name": "Laurens Jonkers"
+      },
+      {
+        "nr": 19,
+        "name": "Jasper Jonkers",
+        "in": true
+      },
+      {
+        "nr": 22,
+        "name": "Tonie Snoeren",
+        "in": true
+      },
+      {
+        "nr": 29,
+        "name": "Swen Voesenek",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "riel",
+    "starters": [
+      {
+        "nr": 1,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 2,
+        "name": "Joris Wesdorp",
+        "out": true
+      },
+      {
+        "nr": 3,
+        "name": "Bram Schellekens"
+      },
+      {
+        "nr": 4,
+        "name": "Jochem van der Heijden",
+        "captain": true
+      },
+      {
+        "nr": 5,
+        "name": "Koen Schellekens"
+      },
+      {
+        "nr": 6,
+        "name": "Joris van der Bruggen"
+      },
+      {
+        "nr": 8,
+        "name": "Lars Bokma"
+      },
+      {
+        "nr": 9,
+        "name": "Joshua Paymans"
+      },
+      {
+        "nr": 10,
+        "name": "Kirill van Autreve"
+      },
+      {
+        "nr": 11,
+        "name": "Joshua Janssen",
+        "out": true
+      },
+      {
+        "nr": 15,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 12,
+        "name": "Tom van Hoof",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Bram Fonken",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Lucas van der Bruggen"
+      },
+      {
+        "nr": 16,
+        "name": "Sjors de Beer"
+      },
+      {
+        "nr": 17,
+        "name": "Joni Paymans",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "matchId": "chaam-svsos",
+  "date": "2026-09-20",
+  "score": [
+    2,
+    4
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "chaam",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Kevin Aarts"
+      },
+      {
+        "nr": 2,
+        "name": "Luc Goos"
+      },
+      {
+        "nr": 4,
+        "name": "Gerard Verbiest",
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Rick van Beckhoven",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Juul van Eil"
+      },
+      {
+        "nr": 7,
+        "name": "Bas Goos",
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Teun van Gestel",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Wessel van Engelen",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Sebas van Engelen",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Lars de Bie"
+      },
+      {
+        "nr": 17,
+        "name": "Brent Goosen"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Sven van Essen",
+        "in": true
+      },
+      {
+        "nr": 10,
+        "name": "Xander Geerts",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Wout van Wassenhove",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Ibrahim Rahmanli",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Alec van Bilsen",
+        "in": true
+      },
+      {
+        "nr": 18,
+        "name": "Owen Moelands"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  },
+  "away": {
+    "team": "svsos",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Lars Jonkers"
+      },
+      {
+        "nr": 3,
+        "name": "Dirk Vingerhoets"
+      },
+      {
+        "nr": 4,
+        "name": "Sep Hesselmans"
+      },
+      {
+        "nr": 5,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Guus Abrahams"
+      },
+      {
+        "nr": 7,
+        "name": "Dorus Boers",
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Jeroen Brekelmans"
+      },
+      {
+        "nr": 9,
+        "name": "Gijs van Oort",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Jesper Priems"
+      },
+      {
+        "nr": 13,
+        "name": "Ruud van Dijck"
+      },
+      {
+        "nr": 14,
+        "name": "Lars Priems"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Steef Van der Fluit",
+        "in": true
+      },
+      {
+        "nr": 10,
+        "name": "Loek Van der Bruggen"
+      },
+      {
+        "nr": 12,
+        "name": "Giel Jansma",
+        "pos": "Middenvelder",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

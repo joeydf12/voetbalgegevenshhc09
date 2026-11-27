@@ -1,0 +1,192 @@
+{
+  "matchId": "riel-svg",
+  "date": "2026-09-27",
+  "score": [
+    2,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "riel",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Bjorn Versteden"
+      },
+      {
+        "nr": 3,
+        "name": "Bram Schellekens"
+      },
+      {
+        "nr": 4,
+        "name": "Jochem van der Heijden",
+        "captain": true
+      },
+      {
+        "nr": 5,
+        "name": "Koen Schellekens"
+      },
+      {
+        "nr": 6,
+        "name": "Joris van der Bruggen"
+      },
+      {
+        "nr": 8,
+        "name": "Lars Bokma"
+      },
+      {
+        "nr": 9,
+        "name": "Joshua Paymans",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Kirill van Autreve",
+        "yellow": 1
+      },
+      {
+        "nr": 12,
+        "name": "Brent de Roos",
+        "out": true
+      },
+      {
+        "nr": 13,
+        "name": "Bram Fonken"
+      },
+      {
+        "nr": 17,
+        "name": "Joni Paymans",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Joris Wesdorp"
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Joshua Janssen",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Tom van Hoof",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Tijmen Denissen"
+      },
+      {
+        "nr": 18,
+        "name": "Sjors de Beer"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  },
+  "away": {
+    "team": "svg",
+    "starters": [
+      {
+        "nr": 4,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 5,
+        "name": "Joep Melis",
+        "red": 1,
+        "captain": true
+      },
+      {
+        "nr": 6,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": "Mike Verhagen"
+      },
+      {
+        "nr": 8,
+        "name": "Nick Verduijn",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Younes Aknin",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 16,
+        "name": "Tyren van Embricqs",
+        "pos": "Middenvelder",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Pieter Koot",
+        "yellow": 1
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 21,
+        "name": "Bas Melis",
+        "yellow": 1
+      },
+      {
+        "nr": 23,
+        "name": "Nassreddine el Haddadi"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 9,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Faouzi Chahid",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Soufiane Farid",
+        "in": true
+      },
+      {
+        "nr": 18,
+        "name": "Shuburney Rosaria"
+      }
+    ],
+    "trainer": null
+  }
+}

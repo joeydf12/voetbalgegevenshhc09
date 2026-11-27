@@ -145,6 +145,9 @@ Er staat maar één verslag per wedstrijd in: een nieuw stuk over een wedstrijd 
 - EDN '56 – Dussense Boys: wissels EDN na #11 · SVG – EDN '56: wissels EDN na #16 · SAB – Elshout: bovenkant basis Elshout
 - SVSOS – SVG: wissels beide ploegen · EDN '56 – Elshout: wissels Elshout · EDN '56 – SVSOS: wissels SVSOS na #16
 - Raamsdonk – EDN '56: bij Raamsdonk geen wisselpijlen zichtbaar
+- Riel – SVG: wissels Riel na #18 · Raamsdonk – SAB: wissels Raamsdonk na #21 · SVSOS – Dussense Boys: wissels SVSOS na #15
+- Chaam – SVSOS: nummer en wissel-pijl van Pieter van den Broek (Chaam) niet in beeld · Dussense Boys – Raamsdonk: nummer van Timo Fens (Raamsdonk) niet in beeld
+- Chaam – Dussense Boys (11 okt): nog geen opstelling ontvangen
 
 
 **D2. Nieuws over tegenstanders.** Zie B2.

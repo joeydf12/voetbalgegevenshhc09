@@ -631,6 +631,12 @@
       "nrSeen": "2026-10-25"
     },
     {
+      "name": "Sven van Essen",
+      "nr": 3,
+      "aliases": [],
+      "nrSeen": "2026-09-20"
+    },
+    {
       "name": "Gerard Verbiest",
       "nr": 4,
       "aliases": [],
@@ -641,6 +647,12 @@
       "nr": 5,
       "aliases": [],
       "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Rick van Beckhoven",
+      "nr": 5,
+      "aliases": [],
+      "nrSeen": "2026-09-20"
     },
     {
       "name": "Juul van Eil",
@@ -707,6 +719,12 @@
       "nr": 14,
       "aliases": [],
       "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Alec van Bilsen",
+      "nr": 15,
+      "aliases": [],
+      "nrSeen": "2026-09-20"
     },
     {
       "name": "Bailey Krijnen",
@@ -1313,6 +1331,12 @@
       "nrSeen": "2026-11-22"
     },
     {
+      "name": "Luca Vollebregt",
+      "nr": 26,
+      "aliases": [],
+      "nrSeen": "2026-09-27"
+    },
+    {
       "name": "Sjef Reijnaars",
       "nr": 33,
       "aliases": [],
@@ -1411,6 +1435,12 @@
       "nrSeen": "2026-11-22"
     },
     {
+      "name": "Rick Foesenek",
+      "nr": 15,
+      "aliases": [],
+      "nrSeen": "2026-09-27"
+    },
+    {
       "name": "Noah van der Velden",
       "nr": 17,
       "aliases": [],
@@ -1441,6 +1471,12 @@
       "nr": 2,
       "aliases": [],
       "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Steef Van der Fluit",
+      "nr": 2,
+      "aliases": [],
+      "nrSeen": "2026-09-20"
     },
     {
       "name": "Bram Vingerhoets",
@@ -1531,6 +1567,12 @@
       "nr": 14,
       "aliases": [],
       "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Luuk van de Wouw",
+      "nr": 15,
+      "aliases": [],
+      "nrSeen": "2026-09-27"
     },
     {
       "name": "Loek Van der Bruggen",

@@ -1,0 +1,207 @@
+{
+  "matchId": "raamsdonk-sab",
+  "date": "2026-09-27",
+  "score": [
+    1,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "raamsdonk",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Tijs Rutters"
+      },
+      {
+        "nr": 2,
+        "name": "Daan Schipperen",
+        "yellow": 1
+      },
+      {
+        "nr": 3,
+        "name": "Jordi van de Korput",
+        "yellow": 1
+      },
+      {
+        "nr": 4,
+        "name": "Lars van Strien",
+        "captain": true
+      },
+      {
+        "nr": 5,
+        "name": "Bas de Nijs",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Jari Meeuwissen",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 8,
+        "name": "Justin van Strien",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Faas Verschuren",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 11,
+        "name": "Jayden van Seeters"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 12,
+        "name": "Tygo Geuzendam",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Owen Kramer",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Joep Leijten"
+      },
+      {
+        "nr": 15,
+        "name": "Coen van Avendonk",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": "Kevin Meijnhardt"
+      },
+      {
+        "nr": 18,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 21,
+        "name": "Timo Fens"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  },
+  "away": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Wessel Braat",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen",
+        "yellow": 1
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek"
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Vladyslav Tkachenko"
+      },
+      {
+        "nr": 20,
+        "name": "Ward Tahir",
+        "captain": true
+      },
+      {
+        "nr": 33,
+        "name": "Sep Luiijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Mohamed Dramé",
+        "in": true
+      },
+      {
+        "nr": 7,
+        "name": "Laurens Jonkers"
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes",
+        "in": true
+      },
+      {
+        "nr": 9,
+        "name": "Diego Jansen",
+        "in": true
+      },
+      {
+        "nr": 19,
+        "name": "Jasper Jonkers",
+        "in": true
+      },
+      {
+        "nr": 22,
+        "name": "Tonie Snoeren",
+        "in": true
+      },
+      {
+        "nr": 29,
+        "name": "Swen Voesenek"
+      }
+    ],
+    "trainer": null
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "matchId": "sab-hz75",
+  "date": "2026-10-04",
+  "home": "sab",
+  "away": "hz75",
+  "result": {
+    "home": 2,
+    "away": 1
+  },
+  "ht": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 18,
+      "extra": 0,
+      "player": "Djarno van der Lek",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 57,
+      "extra": 0,
+      "player": "Oskar Siwik",
+      "team": "hz75",
+      "playerTeam": "hz75",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 64,
+      "extra": 0,
+      "player": "Djarno van der Lek",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-04"
+  },
+  "summary": "SAB won nipt van een HZ'75 met een zeer krappe bezetting. Bij SAB werd een speler met rood weggestuurd.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

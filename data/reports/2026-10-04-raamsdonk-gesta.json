@@ -1,0 +1,103 @@
+{
+  "matchId": "raamsdonk-gesta",
+  "date": "2026-10-04",
+  "home": "raamsdonk",
+  "away": "gesta",
+  "result": {
+    "home": 5,
+    "away": 1
+  },
+  "ht": {
+    "home": 4,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 5,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 9,
+      "extra": 0,
+      "player": "Noah van der Velden",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 12,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 17,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        3,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 36,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        4,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 83,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        5,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-04"
+  },
+  "summary": "Luuk Nieuwesteeg maakte alle vijf doelpunten van Raamsdonk.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

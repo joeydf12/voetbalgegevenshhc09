@@ -7,7 +7,10 @@
     "home": 0,
     "away": 2
   },
-  "ht": null,
+  "ht": {
+    "home": 0,
+    "away": 1
+  },
   "goals": [
     {
       "minute": 43,
@@ -23,9 +26,9 @@
       "note": null
     },
     {
-      "minute": 57,
+      "minute": 56,
       "extra": 0,
-      "player": "Robin van den Broek",
+      "player": "Robin van de Broek",
       "team": "edn56",
       "playerTeam": "edn56",
       "score": [
@@ -37,12 +40,12 @@
     }
   ],
   "source": {
-    "name": "Voetbal.nl",
-    "key": "voetbalnl",
+    "name": "Brabants Dagblad",
+    "key": "bd",
     "url": null,
-    "publishedAt": null
+    "publishedAt": "2026-10-11"
   },
-  "summary": null,
+  "summary": "EDN'56 won in Oudheusden met een doelpunt vlak voor rust en een tweede na de pauze. HHC werd na rust iets gevaarlijker, maar scoorde niet.",
   "incomplete": false,
   "addedOn": "2026-11-27"
 }

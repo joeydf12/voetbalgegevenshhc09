@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 // Verwerkt een geplakt BD/Regio Brabant-verslag tot een verslag per ploeg.
-// Gebruik: node scripts/add-report.mjs --file tekst.txt --url <link> [--published JJJJ-MM-DD] [--summary "eigen woorden"] [--apply]
+// Gebruik: node scripts/add-report.mjs --file tekst.txt --url <link> [--published JJJJ-MM-DD] [--summary "eigen woorden"]
+//          [--source-name "VoetbalBrabant.nl"] [--replace] [--apply]
+// Per wedstrijd maximaal één verslag: bestaat er al een, dan weigert het script (tenzij --replace).
 // Zonder --apply gebeurt er niets behalve controleren. De krantentekst zelf wordt NIET opgeslagen.
 import fs from 'node:fs';
 import { buildIndex } from '../js/lib/teams.js';
@@ -13,6 +15,8 @@ import { validateData } from './lib/validate-data.mjs';
 const args = parseArgs(process.argv.slice(2));
 if (!args.file) { console.error('Gebruik: node scripts/add-report.mjs --file tekst.txt --url <link> [--apply]'); process.exit(2); }
 if (!validReportDate(args.published)) { console.error('--published moet JJJJ-MM-DD zijn'); process.exit(2); }
+// Bron: standaard Brabants Dagblad. Ander medium (clubsite, VoetbalBrabant, ...): --source-name "Naam".
+const isBD = typeof args['source-name'] !== 'string' || /brabants dagblad|^bd$/i.test(args['source-name']);
 const today = todayNL();
 const data = loadAll();
 const index = buildIndex(data.teams);
@@ -33,6 +37,17 @@ for (const parsed of parsedList) {
   if (!res.canApply) ok = false;
   else prepared.push({ parsed, res });
 }
+// Geen dubbele verslagen: per wedstrijd één verslag. Vervangen alleen bewust met --replace.
+for (const { res } of prepared) {
+  const existing = data.reports.find((r) => r.matchId === res.match.id);
+  // Uitzondering: een Voetbal.nl-tijdlijn (scripts/add-goals.mjs) wordt altijd door een krantverslag vervangen.
+  if (existing && existing.source?.key === 'voetbalnl') {
+    console.log(`\nℹ Bestaand Voetbal.nl-verslag voor ${res.match.id} wordt vervangen door het krantverslag.`);
+  } else if (existing && !args.replace) {
+    console.error(`\n✗ Er staat al een verslag voor ${res.match.id} (bron: ${existing.source?.name ?? '?'}). Niets opgeslagen. Gebruik --replace alleen als het nieuwe verslag vollediger is.`);
+    ok = false;
+  }
+}
 if (!ok) { console.error('\nEr zijn fouten; er is niets opgeslagen. Los ze op of vraag het na.'); process.exit(1); }
 if (!args.apply) { console.log('\nAlles klopt. Voeg --apply toe om op te slaan.'); process.exit(0); }
 
@@ -42,10 +57,12 @@ for (const { parsed, res } of prepared) {
   const m = matches.find((x) => x.id === res.match.id);
   const report = buildReport({
     parsed, match: m, homeId: res.homeId, awayId: res.awayId, playerTeam: res.playerTeam,
-    source: { name: 'Brabants Dagblad', key: 'bd', url: args.url ?? null, publishedAt: args.published ?? null },
-    summary: typeof args.summary === 'string' ? args.summary : null, addedOn: today,
+    source: isBD ? { name: 'Brabants Dagblad', key: 'bd', url: args.url ?? null, publishedAt: args.published ?? null }
+      : { name: args['source-name'], key: 'pers', url: args.url ?? null, publishedAt: args.published ?? null },
+    summary: typeof args.summary === 'string' ? args.summary : null, addedOn: today, players: data.players,
   });
-  setEvidence(m, { source: 'bd', home: report.result.home, away: report.result.away, htHome: report.ht.home, htAway: report.ht.away, retrievedAt: today });
+  // Alleen het BD telt als aparte bron voor de uitslag; andere pers levert alleen doelpuntenmakers.
+  if (isBD) setEvidence(m, { source: 'bd', home: report.result.home, away: report.result.away, htHome: report.ht.home, htAway: report.ht.away, retrievedAt: today });
   added.push([`${m.date}-${m.home}-${m.away}.json`, report]);
 }
 const next = { ...data, matches, reports: [...data.reports.filter((r) => !added.some(([f]) => f === r.file)), ...added.map(([file, r]) => ({ file, ...r }))], reportIndex: { files: [...new Set([...data.reportIndex.files, ...added.map(([f]) => f)])].sort() } };

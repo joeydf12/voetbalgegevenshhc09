@@ -1,0 +1,642 @@
+[
+  {
+    "id": "edn56-hz75",
+    "home": "edn56",
+    "away": "hz75",
+    "date": "2026-09-20",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "elshout-hhc09",
+    "home": "elshout",
+    "away": "hhc09",
+    "date": "2026-09-20",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 0,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "dussense-boys-raamsdonk",
+    "home": "dussense-boys",
+    "away": "raamsdonk",
+    "date": "2026-09-20",
+    "time": "15:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 5,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "hhc09-chaam",
+    "home": "hhc09",
+    "away": "chaam",
+    "date": "2026-09-27",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "hz75-elshout",
+    "home": "hz75",
+    "away": "elshout",
+    "date": "2026-09-27",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 4,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "svsos-dussense-boys",
+    "home": "svsos",
+    "away": "dussense-boys",
+    "date": "2026-09-27",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 4,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "dussense-boys-riel",
+    "home": "dussense-boys",
+    "away": "riel",
+    "date": "2026-10-04",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 7,
+        "away": 0,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "sab-hz75",
+    "home": "sab",
+    "away": "hz75",
+    "date": "2026-10-04",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "svg-hhc09",
+    "home": "svg",
+    "away": "hhc09",
+    "date": "2026-10-04",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 3,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "hhc09-edn56",
+    "home": "hhc09",
+    "away": "edn56",
+    "date": "2026-10-11",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 2,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "chaam-dussense-boys",
+    "home": "chaam",
+    "away": "dussense-boys",
+    "date": "2026-10-11",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 3,
+        "away": 2,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "hz75-svg",
+    "home": "hz75",
+    "away": "svg",
+    "date": "2026-10-11",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 1,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "dussense-boys-gesta",
+    "home": "dussense-boys",
+    "away": "gesta",
+    "date": "2026-10-25",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "raamsdonk-hhc09",
+    "home": "raamsdonk",
+    "away": "hhc09",
+    "date": "2026-10-25",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "riel-hz75",
+    "home": "riel",
+    "away": "hz75",
+    "date": "2026-10-25",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "elshout-dussense-boys",
+    "home": "elshout",
+    "away": "dussense-boys",
+    "date": "2026-11-01",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-sab",
+    "home": "hhc09",
+    "away": "sab",
+    "date": "2026-11-01",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hz75-raamsdonk",
+    "home": "hz75",
+    "away": "raamsdonk",
+    "date": "2026-11-01",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "dussense-boys-hz75",
+    "home": "dussense-boys",
+    "away": "hz75",
+    "date": "2026-11-08",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "gesta-hhc09",
+    "home": "gesta",
+    "away": "hhc09",
+    "date": "2026-11-08",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "edn56-dussense-boys",
+    "home": "edn56",
+    "away": "dussense-boys",
+    "date": "2026-11-15",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-riel",
+    "home": "hhc09",
+    "away": "riel",
+    "date": "2026-11-15",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 4,
+        "away": 0,
+        "htHome": 2,
+        "htAway": 0,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "hz75-gesta",
+    "home": "hz75",
+    "away": "gesta",
+    "date": "2026-11-15",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-dussense-boys",
+    "home": "hhc09",
+    "away": "dussense-boys",
+    "date": "2026-11-22",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 0,
+        "retrievedAt": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "id": "hz75-svsos",
+    "home": "hz75",
+    "away": "svsos",
+    "date": "2026-11-22",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-hz75",
+    "home": "hhc09",
+    "away": "hz75",
+    "date": "2026-11-29",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svg-dussense-boys",
+    "home": "svg",
+    "away": "dussense-boys",
+    "date": "2026-11-29",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "chaam-hz75",
+    "home": "chaam",
+    "away": "hz75",
+    "date": "2026-12-06",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "dussense-boys-sab",
+    "home": "dussense-boys",
+    "away": "sab",
+    "date": "2026-12-06",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svsos-hhc09",
+    "home": "svsos",
+    "away": "hhc09",
+    "date": "2026-12-06",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-elshout",
+    "home": "hhc09",
+    "away": "elshout",
+    "date": "2027-01-31",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "raamsdonk-dussense-boys",
+    "home": "raamsdonk",
+    "away": "dussense-boys",
+    "date": "2027-01-31",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hz75-edn56",
+    "home": "hz75",
+    "away": "edn56",
+    "date": "2027-01-31",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "dussense-boys-svsos",
+    "home": "dussense-boys",
+    "away": "svsos",
+    "date": "2027-02-21",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "elshout-hz75",
+    "home": "elshout",
+    "away": "hz75",
+    "date": "2027-02-21",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "chaam-hhc09",
+    "home": "chaam",
+    "away": "hhc09",
+    "date": "2027-02-21",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "dussense-boys-chaam",
+    "home": "dussense-boys",
+    "away": "chaam",
+    "date": "2027-02-28",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "edn56-hhc09",
+    "home": "edn56",
+    "away": "hhc09",
+    "date": "2027-02-28",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svg-hz75",
+    "home": "svg",
+    "away": "hz75",
+    "date": "2027-02-28",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-svg",
+    "home": "hhc09",
+    "away": "svg",
+    "date": "2027-03-07",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hz75-sab",
+    "home": "hz75",
+    "away": "sab",
+    "date": "2027-03-07",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "riel-dussense-boys",
+    "home": "riel",
+    "away": "dussense-boys",
+    "date": "2027-03-07",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "dussense-boys-elshout",
+    "home": "dussense-boys",
+    "away": "elshout",
+    "date": "2027-03-14",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "sab-hhc09",
+    "home": "sab",
+    "away": "hhc09",
+    "date": "2027-03-14",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "raamsdonk-hz75",
+    "home": "raamsdonk",
+    "away": "hz75",
+    "date": "2027-03-14",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "gesta-dussense-boys",
+    "home": "gesta",
+    "away": "dussense-boys",
+    "date": "2027-03-21",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-raamsdonk",
+    "home": "hhc09",
+    "away": "raamsdonk",
+    "date": "2027-03-21",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hz75-riel",
+    "home": "hz75",
+    "away": "riel",
+    "date": "2027-03-21",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "dussense-boys-edn56",
+    "home": "dussense-boys",
+    "away": "edn56",
+    "date": "2027-04-04",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "gesta-hz75",
+    "home": "gesta",
+    "away": "hz75",
+    "date": "2027-04-04",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "riel-hhc09",
+    "home": "riel",
+    "away": "hhc09",
+    "date": "2027-04-04",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-gesta",
+    "home": "hhc09",
+    "away": "gesta",
+    "date": "2027-04-11",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hz75-dussense-boys",
+    "home": "hz75",
+    "away": "dussense-boys",
+    "date": "2027-04-11",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "dussense-boys-svg",
+    "home": "dussense-boys",
+    "away": "svg",
+    "date": "2027-04-18",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hz75-hhc09",
+    "home": "hz75",
+    "away": "hhc09",
+    "date": "2027-04-18",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hhc09-svsos",
+    "home": "hhc09",
+    "away": "svsos",
+    "date": "2027-05-09",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "sab-dussense-boys",
+    "home": "sab",
+    "away": "dussense-boys",
+    "date": "2027-05-09",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "hz75-chaam",
+    "home": "hz75",
+    "away": "chaam",
+    "date": "2027-05-09",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "dussense-boys-hhc09",
+    "home": "dussense-boys",
+    "away": "hhc09",
+    "date": "2027-05-17",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svsos-hz75",
+    "home": "svsos",
+    "away": "hz75",
+    "date": "2027-05-17",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  }
+]

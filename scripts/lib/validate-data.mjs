@@ -111,11 +111,19 @@ export function validateData(data, { today }) {
         if (!roster.some((p) => nm(p.name) === nm(g.player) || (p.aliases || []).some((a) => nm(a) === nm(g.player)))) err(`${tag}: ${g.player} staat niet in de selectie`);
       }
     });
-    const ev = (m.evidence || []).find((e) => e.source === r.source.key);
-    if (!ev) err(`${tag}: de wedstrijd mist de uitslag van bron "${r.source.key}"`);
-    else if (ev.home !== r.result.home || ev.away !== r.result.away) err(`${tag}: uitslag in verslag (${r.result.home}-${r.result.away}) wijkt af van bewijs (${ev.home}-${ev.away})`);
-    if (r.source.key === 'bd' && !r.source.url) warn(`${tag}: nog geen link naar de bron`);
-    if (r.source.key === 'bd' && !r.summary) warn(`${tag}: nog geen samenvatting`);
+    if (KNOWN_SOURCES.includes(r.source.key)) {
+      const ev = (m.evidence || []).find((e) => e.source === r.source.key);
+      if (!ev) err(`${tag}: de wedstrijd mist de uitslag van bron "${r.source.key}"`);
+      else if (ev.home !== r.result.home || ev.away !== r.result.away) err(`${tag}: uitslag in verslag (${r.result.home}-${r.result.away}) wijkt af van bewijs (${ev.home}-${ev.away})`);
+    } else {
+      // Overige pers (clubsite, VoetbalBrabant, ...): telt niet als bron, maar moet wel kloppen met de vastgestelde uitslag.
+      const res = resolveResult(m);
+      if (res.state !== 'ok') err(`${tag}: verslag uit "${r.source.name}" bij een wedstrijd zonder vaststaande uitslag`);
+      else if (res.home !== r.result.home || res.away !== r.result.away) err(`${tag}: uitslag in verslag (${r.result.home}-${r.result.away}) wijkt af van de uitslag (${res.home}-${res.away})`);
+    }
+    // Voetbal.nl-tijdlijn (add-goals) heeft geen link of samenvatting; een krantverslag vervangt dit.
+    if (r.source.key !== 'voetbalnl' && !r.source.url) warn(`${tag}: nog geen link naar de bron`);
+    if (r.source.key !== 'voetbalnl' && !r.summary) warn(`${tag}: nog geen samenvatting`);
   }
   const listed = new Set(data.reportIndex?.files || []);
   for (const r of reports) if (!listed.has(r.file)) err(`reports/index.json mist ${r.file} (draai node scripts/add-report.mjs of rebuild)`);

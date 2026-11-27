@@ -1,0 +1,108 @@
+{
+  "asOf": "2026-11-26",
+  "lastResultDate": "2026-10-11",
+  "source": "hollandsevelden",
+  "complete": false,
+  "rows": [
+    {
+      "team": "raamsdonk",
+      "pl": 4,
+      "w": 2,
+      "d": 1,
+      "l": 1,
+      "pts": 7,
+      "gf": 13,
+      "ga": 8
+    },
+    {
+      "team": "edn56",
+      "pl": 4,
+      "w": 2,
+      "d": 1,
+      "l": 1,
+      "pts": 7,
+      "gf": 7,
+      "ga": 4
+    },
+    {
+      "team": "dussense-boys",
+      "pl": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "pts": 6,
+      "gf": 15,
+      "ga": 8
+    },
+    {
+      "team": "hhc09",
+      "pl": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "pts": 6,
+      "gf": 5,
+      "ga": 6
+    },
+    {
+      "team": "svsos",
+      "pl": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "pts": 6,
+      "gf": 5,
+      "ga": 8
+    },
+    {
+      "team": "riel",
+      "pl": 4,
+      "w": 2,
+      "d": 0,
+      "l": 2,
+      "pts": 6,
+      "gf": 8,
+      "ga": 13
+    },
+    {
+      "team": "svg",
+      "pl": 4,
+      "w": 1,
+      "d": 1,
+      "l": 2,
+      "pts": 4,
+      "gf": 5,
+      "ga": 6
+    },
+    {
+      "team": "chaam",
+      "pl": 4,
+      "w": 1,
+      "d": 0,
+      "l": 3,
+      "pts": 3,
+      "gf": 6,
+      "ga": 10
+    },
+    {
+      "team": "hz75",
+      "pl": 4,
+      "w": 0,
+      "d": 1,
+      "l": 3,
+      "pts": 1,
+      "gf": 3,
+      "ga": 8
+    },
+    {
+      "team": "gesta",
+      "pl": 4,
+      "w": 0,
+      "d": 1,
+      "l": 3,
+      "pts": 1,
+      "gf": 5,
+      "ga": 16
+    }
+  ]
+}

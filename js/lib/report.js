@@ -221,7 +221,12 @@ export function crossCheck(parsed, ctx) {
 }
 
 /** Maakt het op te slaan verslagobject (zonder de krantentekst). */
-export function buildReport({ parsed, match, homeId, awayId, playerTeam, source, summary, addedOn }) {
+/** Schrijfwijze uit de selectie van die ploeg (naam of bijnaam), anders de naam zoals hij in de bron staat. */
+export function canonicalName(players, teamId, name) {
+  return findPlayer((players && players[teamId]) || [], name).player?.name ?? name;
+}
+
+export function buildReport({ parsed, match, homeId, awayId, playerTeam, source, summary, addedOn, players = null }) {
   return {
     matchId: match.id,
     date: match.date,
@@ -232,7 +237,7 @@ export function buildReport({ parsed, match, homeId, awayId, playerTeam, source,
     goals: parsed.goals.map((g) => ({
       minute: g.minute,
       extra: g.extra,
-      player: g.player,
+      player: canonicalName(players, playerTeam(g), g.player),
       team: g.side === 'home' ? homeId : awayId,
       playerTeam: playerTeam(g),
       score: g.score,

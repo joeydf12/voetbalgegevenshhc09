@@ -1,0 +1,129 @@
+{
+  "matchId": "hz75-raamsdonk",
+  "date": "2026-11-01",
+  "home": "hz75",
+  "away": "raamsdonk",
+  "result": {
+    "home": 1,
+    "away": 7
+  },
+  "ht": {
+    "home": 0,
+    "away": 2
+  },
+  "goals": [
+    {
+      "minute": 25,
+      "extra": 0,
+      "player": "Lars van Strien",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 30,
+      "extra": 0,
+      "player": "Kevin Meijnhardt",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 46,
+      "extra": 0,
+      "player": "Daan Schipperen",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        3
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 61,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        4
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 66,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        5
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 74,
+      "extra": 0,
+      "player": "Bram Gosens",
+      "team": "hz75",
+      "playerTeam": "hz75",
+      "score": [
+        1,
+        5
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 85,
+      "extra": 0,
+      "player": "Lars van Strien",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        1,
+        6
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 88,
+      "extra": 0,
+      "player": "Owen Kramer",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        1,
+        7
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-11-01"
+  },
+  "summary": "Na twee snelle doelpunten was de winst van Raamsdonk tegen een HZ'75 vol invallers niet meer in gevaar.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

@@ -47,7 +47,9 @@
     {
       "name": "Steijn van der Linden",
       "nr": 10,
-      "aliases": [],
+      "aliases": [
+        "Steijn van de Linden"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -121,6 +123,298 @@
       "nr": 70,
       "aliases": [],
       "nrSeen": "2026-11-22"
+    }
+  ],
+  "riel": [
+    {
+      "name": "Bram Fonken",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Bram Schellekens",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Brent de Roos",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Jelle van der Vloet",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Jesse van den Corput",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Jochem van der Heijden",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Joep van Noije",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Joni Paijmans",
+      "nr": null,
+      "aliases": [
+        "Joni Paymans"
+      ],
+      "nrSeen": null
+    },
+    {
+      "name": "Joris van de Bruggen",
+      "nr": null,
+      "aliases": [
+        "Joris van der Bruggen"
+      ],
+      "nrSeen": null
+    },
+    {
+      "name": "Joris Vromans",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Joris Wesdorp",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Joshua Janssen",
+      "nr": null,
+      "aliases": [
+        "Jozua Janssen"
+      ],
+      "nrSeen": null
+    },
+    {
+      "name": "Joshua Paijmans",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Kirill van Autreve",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Koen Schellekens",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Lars Bokma",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Lucas van de Bruggen",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Maarten Wesdorp",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Mats van Gestel",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Pepijn Peters",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Stan Vriens",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Thom van Iersel",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Tijmen Denissen",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Tom van Hoof",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Valentijn de Klerck",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Vincent Hamelers",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    }
+  ],
+  "raamsdonk": [
+    {
+      "name": "Bas de Nijs",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Coen van Avendonk",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Daan Schipperen",
+      "nr": null,
+      "aliases": [
+        "Daan van Schipperen"
+      ],
+      "nrSeen": null
+    },
+    {
+      "name": "Faas Verschuren",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Jari Meeuwissen",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Jayden van Seeters",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Joep Leijten",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Jordi van de Korput",
+      "nr": null,
+      "aliases": [
+        "Jordi v.d. Korput"
+      ],
+      "nrSeen": null
+    },
+    {
+      "name": "Justin van Strien",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Kevin Meijnhardt",
+      "nr": null,
+      "aliases": [
+        "Kevin Mijnhardt"
+      ],
+      "nrSeen": null
+    },
+    {
+      "name": "Lars Krabbendam",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Lars van Strien",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Luuk Nieuwesteeg",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Mischa Anssems",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Owen Kramer",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Teun de Waard",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Teun Rompa",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Thomas Boons",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Tijs Rutters",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Tygo Geuzendam",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
     }
   ]
 }

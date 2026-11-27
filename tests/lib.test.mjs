@@ -10,7 +10,7 @@ import { parseHvClubPage } from '../js/lib/hv.js';
 import { html, toStr } from '../js/lib/util.js';
 import { loadAll } from '../scripts/lib/io.mjs';
 
-const data = loadAll(fileURLToPath(new URL('../data', import.meta.url)));
+const data = loadAll(fileURLToPath(new URL('./fixtures/data-2026-11-26', import.meta.url))) // vaste momentopname: de handtellingen hieronder horen hierbij;
 const index = buildIndex(data.teams);
 const ctx = (extra = {}) => ({ index, matches: data.matches, today: '2026-11-26', ownTeam: 'hhc09', roster: data.players.hhc09, ...extra });
 const BD = 'HHC’09 - Riel 4-0 (2-0). 1. Timo Willemsen 1-0 45. Tom van der Linden 2-0 47. Jeffrey Fitters 3-0 84. Duncan van Drunen 4-0.';
@@ -59,10 +59,10 @@ test('evidence: zelfde uitslag = bevestigd, verschil = conflict, per bron vervan
   assert.equal(resolveResult(m).state, 'ok'); assert.equal(m.evidence.length, 2);
 });
 
-test('stand: tel de data na met de hand (HHC: 0-1 Elshout, 2-1 Chaam, 3-2 SVG, 0-2 EDN, 3-7 Raamsdonk, 7-0 SAB, 4-1 GESTA, 4-0 Riel, 1-0 Dussense)', () => {
+test('stand: tel de seed na met de hand (HHC: 2-1 Chaam, 3-2 SVG, 0-1 Elshout, 0-2 EDN, 4-0 Riel, 1-0 Dussense)', () => {
   const rows = computeStandings(data.matches, data.teams, '2026-11-26');
   const hhc = rows.find((r) => r.team === 'hhc09');
-  assert.deepEqual([hhc.pl, hhc.w, hhc.d, hhc.l, hhc.gf, hhc.ga, hhc.pts], [9, 6, 0, 3, 24, 14, 18]);
+  assert.deepEqual([hhc.pl, hhc.w, hhc.d, hhc.l, hhc.gf, hhc.ga, hhc.pts], [6, 4, 0, 2, 10, 6, 12]);
   assert.equal(rows.reduce((s, r) => s + r.gf, 0), rows.reduce((s, r) => s + r.ga, 0));
 });
 
@@ -81,9 +81,8 @@ test('HV-momentopname klopt met de uitslagen die we kennen (alleen HV-wedstrijde
 test('topscorers: eigen doelpunten tellen niet voor de speler', () => {
   const r = [{ matchId: 'm', goals: [{ player: 'A', playerTeam: 't', og: false }, { player: 'B', playerTeam: 't', og: true }, { player: 'A', playerTeam: 't', og: false }] }];
   assert.deepEqual(topScorers(r), [{ player: 'A', team: 't', goals: 2, matches: 1 }]);
-  assert.equal(topScorers(data.reports).find((s) => s.player === 'Timo Willemsen').goals, 4); // Riel (BD) 1, SAB 2, GESTA 1
-  assert.equal(topScorers(data.reports).find((s) => s.player === 'Rik van de Wiel').goals, 8); // SAB 4, GESTA 3, Dussense 1
-  assert.ok(!topScorers(data.reports).some((s) => s.player === null)); // onbekende maker telt niet
+  assert.equal(topScorers(data.reports).find((s) => s.player === 'Timo Willemsen').goals, 1);
+  assert.deepEqual(topScorers([{ matchId: 'x', goals: [{ player: null, playerTeam: 't', og: false }] }]), []); // onbekende maker telt niet
 });
 
 test('HV-parser: onbekende uitslagtekst wordt niet overgenomen', () => {

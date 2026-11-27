@@ -1,0 +1,38 @@
+{
+  "matchId": "hz75-svg",
+  "date": "2026-10-11",
+  "home": "hz75",
+  "away": "svg",
+  "result": {
+    "home": 0,
+    "away": 1
+  },
+  "ht": {
+    "home": 0,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 23,
+      "extra": 0,
+      "player": "Joep Melis",
+      "team": "svg",
+      "playerTeam": "svg",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-11"
+  },
+  "summary": "SVG pakte met één doelpunt de eerste zege van het seizoen en liet veel kansen liggen. HZ'75 speelde met een invallende doelman.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

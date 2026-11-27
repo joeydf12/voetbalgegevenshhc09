@@ -2,10 +2,11 @@
 
 Statische site, geen build. Antwoord in het Nederlands, kort. Lees `README.md` en `PLAN-PROMPT.md` voor context.
 **Verder werken? Lees eerst `docs/OVERDRACHT.md`** (wat af is, wat openstaat). Design: `docs/DESIGN-PROMPT.md`.
+**Open vragen staan in `VRAGEN.md`.** Vraagt de gebruiker om de antwoorden te verwerken: verwerk alleen wat ingevuld is (via de gewone scripts, eerst controle), haal beantwoorde vragen weg en voeg nieuwe onzekerheden daar toe in plaats van te raden.
 
 ## Supabase
 - Project HHCdatabase (`kvgymwsasbklkgmrykgv`) is gedeeld met andere HHC-apps. Alleen tabellen/functies met prefix `ts_` zijn van deze site; raak de rest nooit aan.
-- Toegang loopt via de ledenlijst `ts_members`, niet via "elke ingelogde gebruiker".
+- Inloggen met één teampincode (alleen als hash in `ts_settings`, nooit in de repo) en daarna je naam kiezen uit `ts_members`. Alle toegang loopt via `ts_`-functies met een sessietoken; de tabellen zijn van buitenaf dicht.
 - Database-wijzigingen (migraties, testgebruikers) altijd eerst aan mij voorleggen.
 
 ## Altijd

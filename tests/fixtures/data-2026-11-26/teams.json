@@ -1,0 +1,107 @@
+[
+  {
+    "id": "hhc09",
+    "name": "HHC '09",
+    "aliases": [
+      "HHC'09",
+      "HHC 09",
+      "HHC'09 1",
+      "HHC '09 1",
+      "HHC"
+    ],
+    "hvSlug": "h/hhc-09"
+  },
+  {
+    "id": "dussense-boys",
+    "name": "Dussense Boys",
+    "aliases": [
+      "Dussense Boys 1",
+      "Dussense"
+    ],
+    "hvSlug": "d/dussense-boys"
+  },
+  {
+    "id": "hz75",
+    "name": "VV HZ '75",
+    "aliases": [
+      "HZ'75",
+      "HZ 75",
+      "HZ'75 1",
+      "HZ75"
+    ],
+    "hvSlug": "h/hz-75"
+  },
+  {
+    "id": "edn56",
+    "name": "EDN '56",
+    "aliases": [
+      "EDN",
+      "EDN 56",
+      "EDN'56 1"
+    ],
+    "hvSlug": "e/edn-56"
+  },
+  {
+    "id": "raamsdonk",
+    "name": "VV Raamsdonk",
+    "aliases": [
+      "Raamsdonk",
+      "Raamsdonk 1"
+    ],
+    "hvSlug": "r/raamsdonk"
+  },
+  {
+    "id": "svsos",
+    "name": "SVSOS",
+    "aliases": [
+      "SVSOS 1"
+    ]
+  },
+  {
+    "id": "riel",
+    "name": "VV Riel",
+    "aliases": [
+      "Riel",
+      "Riel 1"
+    ]
+  },
+  {
+    "id": "gesta",
+    "name": "RKVV GESTA",
+    "aliases": [
+      "GESTA",
+      "GESTA 1"
+    ]
+  },
+  {
+    "id": "elshout",
+    "name": "SC Elshout",
+    "aliases": [
+      "Elshout",
+      "Elshout 1"
+    ]
+  },
+  {
+    "id": "chaam",
+    "name": "VV Chaam",
+    "aliases": [
+      "Chaam",
+      "Chaam 1"
+    ]
+  },
+  {
+    "id": "svg",
+    "name": "VV SVG",
+    "aliases": [
+      "SVG",
+      "SVG 1"
+    ]
+  },
+  {
+    "id": "sab",
+    "name": "SAB",
+    "aliases": [
+      "SAB 1"
+    ]
+  }
+]

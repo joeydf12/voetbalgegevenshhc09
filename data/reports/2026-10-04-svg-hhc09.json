@@ -7,10 +7,13 @@
     "home": 2,
     "away": 3
   },
-  "ht": null,
+  "ht": {
+    "home": 2,
+    "away": 2
+  },
   "goals": [
     {
-      "minute": 9,
+      "minute": 5,
       "extra": 0,
       "player": "Shuburney Rosaria",
       "team": "svg",
@@ -23,9 +26,9 @@
       "note": null
     },
     {
-      "minute": 23,
+      "minute": 18,
       "extra": 0,
-      "player": "Brahim Saoud",
+      "player": "Brahum Saoud",
       "team": "svg",
       "playerTeam": "svg",
       "score": [
@@ -36,7 +39,7 @@
       "note": null
     },
     {
-      "minute": 38,
+      "minute": 33,
       "extra": 0,
       "player": "Sjoerd Bruinsma",
       "team": "hhc09",
@@ -49,7 +52,7 @@
       "note": null
     },
     {
-      "minute": 42,
+      "minute": 37,
       "extra": 0,
       "player": "Steijn van der Linden",
       "team": "hhc09",
@@ -59,10 +62,10 @@
         2
       ],
       "og": false,
-      "note": null
+      "note": "pen."
     },
     {
-      "minute": 86,
+      "minute": 60,
       "extra": 0,
       "player": "Steijn van der Linden",
       "team": "hhc09",
@@ -76,12 +79,12 @@
     }
   ],
   "source": {
-    "name": "Voetbal.nl",
-    "key": "voetbalnl",
+    "name": "Brabants Dagblad",
+    "key": "bd",
     "url": null,
-    "publishedAt": null
+    "publishedAt": "2026-10-04"
   },
-  "summary": null,
+  "summary": "HHC kwam van 2-0 achter terug na twee vroege wissels van trainer Gilbert de Fijter. Steijn van der Linden scoorde twee keer en was de uitblinker.",
   "incomplete": false,
   "addedOn": "2026-11-27"
 }

@@ -1,0 +1,77 @@
+{
+  "matchId": "dussense-boys-gesta",
+  "date": "2026-10-25",
+  "home": "dussense-boys",
+  "away": "gesta",
+  "result": {
+    "home": 2,
+    "away": 2
+  },
+  "ht": {
+    "home": 1,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 10,
+      "extra": 0,
+      "player": "Jens de Jong",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": "pen."
+    },
+    {
+      "minute": 44,
+      "extra": 0,
+      "player": "Sem Heijmans",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 65,
+      "extra": 0,
+      "player": "Jens de Jong",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": [
+        1,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 78,
+      "extra": 0,
+      "player": "Luuk Rosendaal",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        2,
+        2
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-25"
+  },
+  "summary": "Dussense Boys had veel balbezit en raakte drie keer het houtwerk, maar kwam niet verder dan een gelijkspel.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

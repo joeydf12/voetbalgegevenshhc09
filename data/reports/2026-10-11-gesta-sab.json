@@ -1,0 +1,116 @@
+{
+  "matchId": "gesta-sab",
+  "date": "2026-10-11",
+  "home": "gesta",
+  "away": "sab",
+  "result": {
+    "home": 1,
+    "away": 6
+  },
+  "ht": {
+    "home": 0,
+    "away": 3
+  },
+  "goals": [
+    {
+      "minute": 35,
+      "extra": 0,
+      "player": "Dani Verhoeven",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 43,
+      "extra": 0,
+      "player": "Quinten Hermes",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        0,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 44,
+      "extra": 0,
+      "player": "Quinten Hermes",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        0,
+        3
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 55,
+      "extra": 0,
+      "player": "Djarno van der Lek",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        0,
+        4
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 75,
+      "extra": 0,
+      "player": "Jules van de Pol",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        0,
+        5
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 80,
+      "extra": 0,
+      "player": "Tom Verschuren",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": [
+        1,
+        5
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 83,
+      "extra": 0,
+      "player": "Djarno van der Lek",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        1,
+        6
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-11"
+  },
+  "summary": "Na een gelijkopgaand eerste halfuur zakte GESTA in na de 0-1 en liep SAB ruim uit.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

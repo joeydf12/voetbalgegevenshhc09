@@ -7,10 +7,13 @@
     "home": 7,
     "away": 3
   },
-  "ht": null,
+  "ht": {
+    "home": 4,
+    "away": 1
+  },
   "goals": [
     {
-      "minute": 17,
+      "minute": 11,
       "extra": 0,
       "player": "Tom van der Linden",
       "team": "hhc09",
@@ -23,7 +26,7 @@
       "note": null
     },
     {
-      "minute": 19,
+      "minute": 14,
       "extra": 0,
       "player": "Jayden van Seeters",
       "team": "raamsdonk",
@@ -36,7 +39,7 @@
       "note": null
     },
     {
-      "minute": 38,
+      "minute": 32,
       "extra": 0,
       "player": "Luuk Nieuwesteeg",
       "team": "raamsdonk",
@@ -49,9 +52,9 @@
       "note": null
     },
     {
-      "minute": 45,
+      "minute": 40,
       "extra": 0,
-      "player": "Lars van Strien",
+      "player": "Jordi van de Korput",
       "team": "raamsdonk",
       "playerTeam": "raamsdonk",
       "score": [
@@ -64,7 +67,7 @@
     {
       "minute": 45,
       "extra": 0,
-      "player": "Jordi van de Korput",
+      "player": "Lars van Strien",
       "team": "raamsdonk",
       "playerTeam": "raamsdonk",
       "score": [
@@ -75,7 +78,7 @@
       "note": null
     },
     {
-      "minute": 76,
+      "minute": 66,
       "extra": 0,
       "player": "Tim de Fijter",
       "team": "hhc09",
@@ -88,7 +91,7 @@
       "note": null
     },
     {
-      "minute": 86,
+      "minute": 73,
       "extra": 0,
       "player": "Luuk Nieuwesteeg",
       "team": "raamsdonk",
@@ -101,7 +104,7 @@
       "note": null
     },
     {
-      "minute": 86,
+      "minute": 74,
       "extra": 0,
       "player": "Justin van Strien",
       "team": "raamsdonk",
@@ -114,7 +117,7 @@
       "note": null
     },
     {
-      "minute": 86,
+      "minute": 76,
       "extra": 0,
       "player": "Tim de Fijter",
       "team": "hhc09",
@@ -127,7 +130,7 @@
       "note": null
     },
     {
-      "minute": 90,
+      "minute": 86,
       "extra": 0,
       "player": "Owen Kramer",
       "team": "raamsdonk",
@@ -141,12 +144,12 @@
     }
   ],
   "source": {
-    "name": "Voetbal.nl",
-    "key": "voetbalnl",
+    "name": "Brabants Dagblad",
+    "key": "bd",
     "url": null,
-    "publishedAt": null
+    "publishedAt": "2026-10-25"
   },
-  "summary": null,
+  "summary": "Raamsdonk was veel te sterk. HHC kwam vroeg op voorsprong maar stond bij rust al met 4-1 achter; Tim de Fijter scoorde twee keer.",
   "incomplete": false,
   "addedOn": "2026-11-27"
 }

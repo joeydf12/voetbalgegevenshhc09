@@ -7,10 +7,13 @@
     "home": 1,
     "away": 0
   },
-  "ht": null,
+  "ht": {
+    "home": 0,
+    "away": 0
+  },
   "goals": [
     {
-      "minute": null,
+      "minute": 78,
       "extra": 0,
       "player": "Rik van de Wiel",
       "team": "hhc09",
@@ -24,12 +27,12 @@
     }
   ],
   "source": {
-    "name": "Voetbal.nl",
-    "key": "voetbalnl",
+    "name": "VoetbalBrabant.nl",
+    "key": "pers",
     "url": null,
-    "publishedAt": null
+    "publishedAt": "2026-11-23"
   },
-  "summary": null,
+  "summary": "Dussense Boys was voor rust sterker en raakte de lat, maar na rust kreeg HHC meer grip. In de 78e minuut liep Rik van de Wiel na een verkeerd ingeschatte lange bal de doelman voorbij en scoorde de enige treffer.",
   "incomplete": false,
   "addedOn": "2026-11-27"
 }

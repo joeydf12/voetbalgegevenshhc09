@@ -7,10 +7,13 @@
     "home": 7,
     "away": 0
   },
-  "ht": null,
+  "ht": {
+    "home": 1,
+    "away": 0
+  },
   "goals": [
     {
-      "minute": 45,
+      "minute": 44,
       "extra": 0,
       "player": "Rik van de Wiel",
       "team": "hhc09",
@@ -23,7 +26,7 @@
       "note": null
     },
     {
-      "minute": 57,
+      "minute": 52,
       "extra": 0,
       "player": "Timo Willemsen",
       "team": "hhc09",
@@ -36,7 +39,7 @@
       "note": null
     },
     {
-      "minute": 68,
+      "minute": 64,
       "extra": 0,
       "player": "Timo Willemsen",
       "team": "hhc09",
@@ -49,7 +52,7 @@
       "note": null
     },
     {
-      "minute": 77,
+      "minute": 72,
       "extra": 0,
       "player": "Rik van de Wiel",
       "team": "hhc09",
@@ -62,7 +65,7 @@
       "note": null
     },
     {
-      "minute": 84,
+      "minute": 80,
       "extra": 0,
       "player": "Rik van de Wiel",
       "team": "hhc09",
@@ -75,7 +78,7 @@
       "note": null
     },
     {
-      "minute": 89,
+      "minute": 85,
       "extra": 0,
       "player": "Rik van de Wiel",
       "team": "hhc09",
@@ -88,7 +91,7 @@
       "note": null
     },
     {
-      "minute": 90,
+      "minute": 86,
       "extra": 0,
       "player": "Duncan van Drunen",
       "team": "hhc09",
@@ -102,12 +105,12 @@
     }
   ],
   "source": {
-    "name": "Voetbal.nl",
-    "key": "voetbalnl",
+    "name": "Brabants Dagblad",
+    "key": "bd",
     "url": null,
-    "publishedAt": null
+    "publishedAt": "2026-11-01"
   },
-  "summary": null,
+  "summary": "Met een nieuwe, aanvallende speelwijze (hoog druk zetten) won HHC ruim. Rik van de Wiel scoorde vier keer; Koen Blikman werd uitgeroepen tot man van de wedstrijd.",
   "incomplete": false,
   "addedOn": "2026-11-27"
 }

@@ -1,0 +1,77 @@
+{
+  "matchId": "hhc09-riel",
+  "date": "2026-11-15",
+  "home": "hhc09",
+  "away": "riel",
+  "result": {
+    "home": 4,
+    "away": 0
+  },
+  "ht": {
+    "home": 2,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 1,
+      "extra": 0,
+      "player": "Timo Willemsen",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 45,
+      "extra": 0,
+      "player": "Tom van der Linden",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 47,
+      "extra": 0,
+      "player": "Jeffrey Fitters",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        3,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 84,
+      "extra": 0,
+      "player": "Duncan van Drunen",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        4,
+        0
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": "Thuiszege voor HHC '09. Het eerste doelpunt viel binnen een halve minuut, vlak voor en na rust kwam er nog een bij. Riels keeper Hamelers viel geblesseerd uit na de derde treffer; een veldspeler (Joni Paijmans) ging in doel. HHC kwam in de drie wedstrijden ervoor tot veertien goals; de krant noemt HHC een mogelijke outsider voor de titel.",
+  "incomplete": false,
+  "addedOn": "2026-11-26"
+}

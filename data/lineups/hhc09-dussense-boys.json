@@ -41,8 +41,7 @@
       },
       {
         "nr": 10,
-        "name": null,
-        "hidden": true,
+        "name": "Steijn van der Linden",
         "pos": "Aanvaller"
       },
       {
@@ -61,8 +60,7 @@
       },
       {
         "nr": 18,
-        "name": null,
-        "hidden": true,
+        "name": "Rik van de Wiel",
         "pos": "Teamspeler",
         "out": true
       },
@@ -91,8 +89,7 @@
       },
       {
         "nr": 19,
-        "name": null,
-        "hidden": true,
+        "name": "Sjoerd Bruinsma",
         "pos": "Aanvaller",
         "in": true
       },

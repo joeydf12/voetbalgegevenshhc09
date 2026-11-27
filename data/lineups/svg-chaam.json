@@ -1,0 +1,191 @@
+{
+  "matchId": "svg-chaam",
+  "date": "2026-10-25",
+  "score": [
+    2,
+    0
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "svg",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Xander van Spaendonk"
+      },
+      {
+        "nr": 3,
+        "name": "Brian Verhoeven"
+      },
+      {
+        "nr": 5,
+        "name": "Joep Melis",
+        "captain": true
+      },
+      {
+        "nr": 7,
+        "name": "Mike Verhagen"
+      },
+      {
+        "nr": 8,
+        "name": "Nick Verduijn",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Shuburney Rosaria",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Pieter Koot"
+      },
+      {
+        "nr": 18,
+        "name": "Abdellah Aknin",
+        "out": true
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 23,
+        "name": "Nassreddine el Haddadi"
+      },
+      {
+        "nr": 34,
+        "name": "Bilal Chahid",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 4,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Tyren van Embricqs",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Younes Aknin",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Faouzi Chahid",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 21,
+        "name": "Bas Melis"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "chaam",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Kevin Aarts"
+      },
+      {
+        "nr": 2,
+        "name": "Luc Goos"
+      },
+      {
+        "nr": 4,
+        "name": "Gerard Verbiest"
+      },
+      {
+        "nr": 6,
+        "name": "Juul van Eil"
+      },
+      {
+        "nr": 7,
+        "name": "Bas Goos",
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Henryc van Dongen",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Owen Moelands"
+      },
+      {
+        "nr": 14,
+        "name": "Ibrahim Rahmanli",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Lars de Bie"
+      },
+      {
+        "nr": 17,
+        "name": "Brent Goosen",
+        "yellow": 1
+      },
+      {
+        "nr": 18,
+        "name": "Daan Jochems"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Sem Brinkers"
+      },
+      {
+        "nr": 5,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 10,
+        "name": "Marc van der Meeren"
+      },
+      {
+        "nr": 12,
+        "name": "Jan Michielsen",
+        "in": true
+      },
+      {
+        "nr": 19,
+        "name": "Pieter van den Broek",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

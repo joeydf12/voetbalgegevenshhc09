@@ -1,0 +1,202 @@
+{
+  "matchId": "hz75-elshout",
+  "date": "2026-09-27",
+  "score": [
+    1,
+    4
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "hz75",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Luuk Vissers",
+        "pos": "Keeper"
+      },
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": "Stan Stevens",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 5,
+        "name": "Wouter Zevenbergen",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": "Sven Pals",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Kursat Bucakli"
+      },
+      {
+        "nr": 10,
+        "name": "Bram Gosens",
+        "pos": "Middenvelder",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Noah Brejaart",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Finn Hoevenaar",
+        "out": true
+      },
+      {
+        "nr": 13,
+        "name": "Timo Vervelde",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 17,
+        "name": null,
+        "hidden": true,
+        "pos": "Verdediger"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 6,
+        "name": "Jowan Gosens",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 8,
+        "name": "Ard Buijs",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Oskar Siwik",
+        "pos": "Aanvaller",
+        "in": true
+      },
+      {
+        "nr": 18,
+        "name": "Stijn de Laat",
+        "pos": "Aanvaller",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 19,
+        "name": "Stijn Groen",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "elshout",
+    "starters": [
+      {
+        "nr": 3,
+        "name": "Stan Muskens",
+        "pos": "Verdediger",
+        "captain": true
+      },
+      {
+        "nr": 4,
+        "name": "Willem Sangers"
+      },
+      {
+        "nr": 5,
+        "name": "Bas van den Besselaar",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Dankers"
+      },
+      {
+        "nr": 7,
+        "name": "Gijs de Kort",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Remco v.d. Hooven",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Teun Hendriks"
+      },
+      {
+        "nr": 10,
+        "name": "Edgar Brok"
+      },
+      {
+        "nr": 11,
+        "name": "Luc v.d. Aker"
+      },
+      {
+        "nr": 15,
+        "name": "Marc Verschure",
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": "Rens de Kruijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Wout Brok"
+      },
+      {
+        "nr": 2,
+        "name": "Stan de Jong",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Niels van Iersel"
+      },
+      {
+        "nr": 13,
+        "name": "Thijs Lommers",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Sam van Bokhoven",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Thijs van den Bijgaart"
+      },
+      {
+        "nr": 17,
+        "name": "Thieleman van Aerle",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

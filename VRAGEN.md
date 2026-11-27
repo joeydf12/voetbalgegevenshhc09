@@ -121,8 +121,31 @@ Er staat maar één verslag per wedstrijd in: een nieuw stuk over een wedstrijd 
 - "Joshua Paijmans" = "Joshua Paymans" (#9 tegen HHC en HZ '75)? [ ] ja [ ] nee
 - "Lucas van de Bruggen" = "Lucas van der Bruggen" (#12 tegen HZ '75)? [ ] ja [ ] nee
 
-**D3. Spelling in krantverslagen.** Voetbal.nl schrijft "Brahim Saoud" (SVG) en "Robin van den Broek" (EDN '56); het BD-verslag "Brahum Saoud" en "Robin van de Broek". Welke klopt?
-- Antwoord:
+**D3. Spelling in krantverslagen tegenover Voetbal.nl.** Bij de doelpunten staat de spelling van de krant; in de opstellingen die van Voetbal.nl. Zijn dit dezelfde spelers? Dan koppel ik ze (een "ja" is genoeg; zet anders de juiste spelling erbij).
+| Ploeg | Krant | Voetbal.nl | Zelfde? |
+|---|---|---|---|
+| SVG | Brahum Saoud | Brahim Saoud | |
+| SVG | Nassr el Haddadi | Nassreddine el Haddadi | |
+| EDN '56 | Robin van de Broek | Robin van den Broek | |
+| Chaam | Hendryc van Dongen | Henryc van Dongen | |
+| Elshout | Remco van den Hooven | Remco v.d. Hooven | |
+| Elshout | Tieleman van Aerle | Thieleman van Aerle | |
+| Elshout | Stan van Bokhoven | Sam van Bokhoven | |
+| GESTA | Tom Verschuren | Tom Verschueren | |
+| SVSOS | Ruud van Dijk | Ruud van Dijck | |
+
+**D4. Twee keer Wesdorp bij Riel.** Maarten Wesdorp (#7 tegen Elshout) en Joris Wesdorp (#15 tegen Dussense Boys). Twee verschillende spelers?
+- [ ] ja, twee spelers  [ ] nee, dezelfde: ……
+
+**D5. Valentijn de Klerk (Voetbal.nl) = Valentijn de Klerck (selectie Riel)?** [ ] ja [ ] nee
+
+**D6. Ontbrekende stukken van de opstellingen.** Deze staan in de app als "onvolledig". Stuur gerust het ontbrekende scherm:
+- Chaam – SAB: wissels Chaam na #15 · Riel – SVSOS: laatste afgeschermde wissel Riel · Raamsdonk – Chaam: wissels Raamsdonk na #21
+- SVSOS – Raamsdonk: geen wissels/kaarten in beeld, naam van Raamsdonk #11, wissels SVSOS na #13
+- EDN '56 – Dussense Boys: wissels EDN na #11 · SVG – EDN '56: wissels EDN na #16 · SAB – Elshout: bovenkant basis Elshout
+- SVSOS – SVG: wissels beide ploegen · EDN '56 – Elshout: wissels Elshout · EDN '56 – SVSOS: wissels SVSOS na #16
+- Raamsdonk – EDN '56: bij Raamsdonk geen wisselpijlen zichtbaar
+
 
 **D2. Nieuws over tegenstanders.** Zie B2.
 

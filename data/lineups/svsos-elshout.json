@@ -1,0 +1,169 @@
+{
+  "matchId": "svsos-elshout",
+  "date": "2026-10-11",
+  "score": [
+    0,
+    2
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "svsos",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Rob Wilborts"
+      },
+      {
+        "nr": 4,
+        "name": "Sep Hesselmans"
+      },
+      {
+        "nr": 5,
+        "name": "Daan Vingerhoets",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Guus Abrahams"
+      },
+      {
+        "nr": 7,
+        "name": "Dorus Boers",
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Jeroen Brekelmans"
+      },
+      {
+        "nr": 9,
+        "name": "Gijs van Oort",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Ruud van Dijck"
+      },
+      {
+        "nr": 11,
+        "name": "Jesper Priems"
+      },
+      {
+        "nr": 14,
+        "name": "Lars Priems"
+      },
+      {
+        "nr": 15,
+        "name": "Jasper van Waes",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Matthijs van Oort",
+        "pos": "Verdediger",
+        "in": true
+      },
+      {
+        "nr": 3,
+        "name": "Bram Vingerhoets",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Wout Abrahams",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "elshout",
+    "starters": [
+      {
+        "nr": 4,
+        "name": "Willem Sangers",
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Bas van den Besselaar",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Dankers"
+      },
+      {
+        "nr": 7,
+        "name": "Gijs de Kort",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Remco v.d. Hooven"
+      },
+      {
+        "nr": 9,
+        "name": "Teun Hendriks",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Edgar Brok"
+      },
+      {
+        "nr": 11,
+        "name": "Luc v.d. Aker",
+        "captain": true
+      },
+      {
+        "nr": 13,
+        "name": "Thijs Lommers"
+      },
+      {
+        "nr": 15,
+        "name": "Marc Verschure",
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": "Rens de Kruijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Stan de Jong",
+        "in": true
+      },
+      {
+        "nr": 3,
+        "name": "Remco Dirks"
+      },
+      {
+        "nr": 12,
+        "name": "Niels van Iersel",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Sam van Bokhoven",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": "Thieleman van Aerle",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

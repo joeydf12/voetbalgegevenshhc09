@@ -1,0 +1,184 @@
+{
+  "matchId": "elshout-dussense-boys",
+  "date": "2026-11-01",
+  "score": [
+    3,
+    0
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "elshout",
+    "starters": [
+      {
+        "nr": 3,
+        "name": "Stan Muskens",
+        "pos": "Verdediger",
+        "captain": true
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Dankers"
+      },
+      {
+        "nr": 7,
+        "name": "Gijs de Kort"
+      },
+      {
+        "nr": 8,
+        "name": "Remco v.d. Hooven"
+      },
+      {
+        "nr": 9,
+        "name": "Teun Hendriks",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Edgar Brok",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Luc v.d. Aker"
+      },
+      {
+        "nr": 12,
+        "name": "Niels van Iersel"
+      },
+      {
+        "nr": 13,
+        "name": "Thijs Lommers"
+      },
+      {
+        "nr": 15,
+        "name": "Marc Verschure",
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": "Rens de Kruijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Wout Brok"
+      },
+      {
+        "nr": 2,
+        "name": "Stan de Jong",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Sam van Bokhoven",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Thijs van den Bijgaart",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": "Thieleman van Aerle",
+        "out": true,
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "dussense-boys",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Tigo van Hoorn",
+        "out": true
+      },
+      {
+        "nr": 3,
+        "name": "Lars Stevens"
+      },
+      {
+        "nr": 4,
+        "name": "Jacco de Graaf"
+      },
+      {
+        "nr": 5,
+        "name": "Luuk de Rooy",
+        "yellow": 1
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true,
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Sem van Tilborg",
+        "yellow": 1
+      },
+      {
+        "nr": 12,
+        "name": "Wessel de Been",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 13,
+        "name": "Joris de Kok"
+      },
+      {
+        "nr": 15,
+        "name": "Luuk Rosendaal",
+        "out": true
+      },
+      {
+        "nr": 62,
+        "name": "Yannick Lusse"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 6,
+        "name": "Kevin Lensvelt",
+        "in": true
+      },
+      {
+        "nr": 8,
+        "name": "Justin van den Oudenrijn",
+        "in": true
+      },
+      {
+        "nr": 9,
+        "name": "Luc Lensvelt",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Samuel van den Broek",
+        "in": true
+      },
+      {
+        "nr": 33,
+        "name": "Sjef Reijnaars"
+      }
+    ],
+    "trainer": null
+  }
+}

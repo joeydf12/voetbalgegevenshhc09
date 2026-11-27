@@ -1,0 +1,177 @@
+{
+  "matchId": "edn56-dussense-boys",
+  "date": "2026-11-15",
+  "score": [
+    3,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "edn56",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Floris de Bas"
+      },
+      {
+        "nr": 4,
+        "name": "Stijn van de Wiel"
+      },
+      {
+        "nr": 6,
+        "name": "Milan Paulissen"
+      },
+      {
+        "nr": 9,
+        "name": "Greg van Gils"
+      },
+      {
+        "nr": 10,
+        "name": "Hein de Bresser",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Rob Hesselmans",
+        "yellow": 1,
+        "captain": true
+      },
+      {
+        "nr": 13,
+        "name": "Teun Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Teun Reijrink"
+      },
+      {
+        "nr": 15,
+        "name": "Sven van Gils"
+      },
+      {
+        "nr": 16,
+        "name": "Sander van Dijck"
+      },
+      {
+        "nr": 17,
+        "name": "Robin van den Broek",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 7,
+        "name": "Kevin Paulissen",
+        "in": true
+      },
+      {
+        "nr": 8,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  },
+  "away": {
+    "team": "dussense-boys",
+    "starters": [
+      {
+        "nr": 3,
+        "name": "Lars Stevens",
+        "yellow": 1,
+        "captain": true
+      },
+      {
+        "nr": 4,
+        "name": "Jacco de Graaf",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Kevin Lensvelt"
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 8,
+        "name": "Justin van den Oudenrijn"
+      },
+      {
+        "nr": 9,
+        "name": "Luc Lensvelt"
+      },
+      {
+        "nr": 11,
+        "name": "Sem van Tilborg"
+      },
+      {
+        "nr": 12,
+        "name": "Wessel de Been"
+      },
+      {
+        "nr": 13,
+        "name": "Joris de Kok",
+        "out": true
+      },
+      {
+        "nr": 15,
+        "name": "Luuk Rosendaal"
+      },
+      {
+        "nr": 62,
+        "name": "Yannick Lusse"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Tigo van Hoorn",
+        "in": true
+      },
+      {
+        "nr": 5,
+        "name": "Tom Stembord"
+      },
+      {
+        "nr": 10,
+        "name": "Samuel van den Broek"
+      },
+      {
+        "nr": 14,
+        "name": "Sjoerd van Herwijnen",
+        "in": true
+      },
+      {
+        "nr": 33,
+        "name": "Sjef Reijnaars"
+      }
+    ],
+    "trainer": null
+  }
+}

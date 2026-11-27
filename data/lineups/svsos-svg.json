@@ -1,0 +1,186 @@
+{
+  "matchId": "svsos-svg",
+  "date": "2026-11-01",
+  "score": [
+    1,
+    2
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "svsos",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Lars Jonkers"
+      },
+      {
+        "nr": 2,
+        "name": "Matthijs van Oort",
+        "yellow": 1
+      },
+      {
+        "nr": 3,
+        "name": "Dirk Vingerhoets",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Guus Abrahams"
+      },
+      {
+        "nr": 7,
+        "name": "Dorus Boers",
+        "yellow": 1,
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Jeroen Brekelmans"
+      },
+      {
+        "nr": 9,
+        "name": "Gijs van Oort",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Jesper Priems"
+      },
+      {
+        "nr": 12,
+        "name": "Giel Jansma",
+        "out": true
+      },
+      {
+        "nr": 13,
+        "name": "Jasper van Waes"
+      },
+      {
+        "nr": 14,
+        "name": "Lars Priems"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 4,
+        "name": "Tygo Krieckaart"
+      },
+      {
+        "nr": 5,
+        "name": "Daan Vingerhoets",
+        "pos": "Verdediger",
+        "in": true
+      },
+      {
+        "nr": 10,
+        "name": "Ruud van Dijck",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  },
+  "away": {
+    "team": "svg",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Xander van Spaendonk"
+      },
+      {
+        "nr": 3,
+        "name": "Brian Verhoeven"
+      },
+      {
+        "nr": 7,
+        "name": "Mike Verhagen"
+      },
+      {
+        "nr": 8,
+        "name": "Nick Verduijn"
+      },
+      {
+        "nr": 9,
+        "name": "Shuburney Rosaria"
+      },
+      {
+        "nr": 10,
+        "name": "Nassreddine el Haddadi",
+        "yellow": 1
+      },
+      {
+        "nr": 14,
+        "name": "Joep Melis",
+        "captain": true
+      },
+      {
+        "nr": 17,
+        "name": "Pieter Koot"
+      },
+      {
+        "nr": 18,
+        "name": "Abdellah Aknin",
+        "out": true
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1
+      },
+      {
+        "nr": 34,
+        "name": "Bilal Chahid"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Faouzi Chahid"
+      },
+      {
+        "nr": 4,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 11,
+        "name": "Tyren van Embricqs",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 12,
+        "name": "Younes Aknin",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 21,
+        "name": "Bas Melis"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  }
+}

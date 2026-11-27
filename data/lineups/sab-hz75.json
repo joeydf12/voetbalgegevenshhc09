@@ -1,0 +1,198 @@
+{
+  "matchId": "sab-hz75",
+  "date": "2026-10-04",
+  "score": [
+    2,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Wessel Braat",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen"
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Diego Jansen",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek"
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers"
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere",
+        "yellow": 1
+      },
+      {
+        "nr": 20,
+        "name": "Ward Tahir"
+      },
+      {
+        "nr": 41,
+        "name": "Sep Luiijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Tony Koevoets"
+      },
+      {
+        "nr": 3,
+        "name": "Mohamed Dramé",
+        "in": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 19,
+        "name": "Jasper Jonkers",
+        "in": true
+      },
+      {
+        "nr": 22,
+        "name": "Tonie Snoeren"
+      },
+      {
+        "nr": 29,
+        "name": "Swen Voesenek"
+      },
+      {
+        "nr": 38,
+        "name": "Dilano Adriaanse",
+        "red": 1,
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "hz75",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Luuk Vissers",
+        "pos": "Keeper"
+      },
+      {
+        "nr": 3,
+        "name": "Maikel van Ham",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": "Stan Stevens",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 5,
+        "name": "Wouter Zevenbergen"
+      },
+      {
+        "nr": 7,
+        "name": "Sven Pals",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Kursat Bucakli"
+      },
+      {
+        "nr": 10,
+        "name": "Bram Gosens",
+        "pos": "Middenvelder",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Noah Brejaart"
+      },
+      {
+        "nr": 15,
+        "name": "Stijn Groen",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Oskar Siwik",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 17,
+        "name": null,
+        "hidden": true,
+        "pos": "Verdediger"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 6,
+        "name": "Teun Stevens",
+        "pos": "Verdediger",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Finn Hoevenaar",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Ard Buijs",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Quinten Robijn",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 20,
+        "name": "Kevin van der Schans"
+      }
+    ],
+    "trainer": null
+  }
+}

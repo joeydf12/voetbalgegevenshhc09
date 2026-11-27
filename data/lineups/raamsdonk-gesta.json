@@ -1,0 +1,194 @@
+{
+  "matchId": "raamsdonk-gesta",
+  "date": "2026-10-04",
+  "score": [
+    5,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "raamsdonk",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Tijs Rutters"
+      },
+      {
+        "nr": 2,
+        "name": "Daan Schipperen",
+        "yellow": 1
+      },
+      {
+        "nr": 3,
+        "name": "Jordi van de Korput"
+      },
+      {
+        "nr": 4,
+        "name": "Lars van Strien",
+        "captain": true
+      },
+      {
+        "nr": 5,
+        "name": "Coen van Avendonk"
+      },
+      {
+        "nr": 6,
+        "name": "Joep Leijten",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Faas Verschuren",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 11,
+        "name": "Jayden van Seeters",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Bas de Nijs",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 8,
+        "name": "Justin van Strien",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Tygo Geuzendam",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Kevin Meijnhardt",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Thomas Boons"
+      },
+      {
+        "nr": 18,
+        "name": "Teun de Waard",
+        "in": true
+      },
+      {
+        "nr": 21,
+        "name": "Timo Fens"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "gesta",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Gijs van Gurp",
+        "yellow": 1,
+        "captain": true
+      },
+      {
+        "nr": 4,
+        "name": "Timo Voeten"
+      },
+      {
+        "nr": 7,
+        "name": "Boaz den Ouden"
+      },
+      {
+        "nr": 8,
+        "name": "Jens de Jong",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Roy van Alphen",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Tom Verschueren",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Stijn Gooijers"
+      },
+      {
+        "nr": 14,
+        "name": "Brent Verheijen",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 17,
+        "name": "Noah van der Velden"
+      },
+      {
+        "nr": 21,
+        "name": "Jorg Feskens"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Lars Verheijen",
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": "Jari Heestermans",
+        "in": true
+      },
+      {
+        "nr": 9,
+        "name": "Siem Dieleman",
+        "in": true
+      },
+      {
+        "nr": 13,
+        "name": "Wesley Heestermans",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

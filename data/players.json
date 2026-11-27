@@ -154,25 +154,25 @@
       "name": "Kirill van Autreve",
       "nr": 2,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Bram Schellekens",
       "nr": 3,
       "aliases": [],
-      "nrSeen": "2026-10-25"
+      "nrSeen": "2026-11-01"
     },
     {
       "name": "Jochem van der Heijden",
       "nr": 4,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Koen Schellekens",
       "nr": 5,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Joris van de Bruggen",
@@ -180,19 +180,25 @@
       "aliases": [
         "Joris van der Bruggen"
       ],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Lars Bokma",
+      "name": "Maarten Wesdorp",
+      "nr": 7,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Brent de Roos",
       "nr": 8,
       "aliases": [],
-      "nrSeen": "2026-10-25"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jesse van den Corput",
       "nr": 10,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Joshua Janssen",
@@ -200,25 +206,43 @@
       "aliases": [
         "Jozua Janssen"
       ],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Brent de Roos",
+      "name": "Tijmen Denissen",
       "nr": 12,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-10-11"
     },
     {
       "name": "Bram Fonken",
       "nr": 13,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Sjors de Beer",
+      "nr": 13,
+      "aliases": [],
+      "nrSeen": "2026-11-08"
     },
     {
       "name": "Rick van Berkel",
       "nr": 14,
       "aliases": [],
       "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Joris Wesdorp",
+      "nr": 15,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
+    },
+    {
+      "name": "Tom Fonken",
+      "nr": 15,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Tom van Hoof",
@@ -233,6 +257,18 @@
         "Joni Paymans"
       ],
       "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Lars Bokma",
+      "nr": 17,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Bjorn Versteden",
+      "nr": 19,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jelle van der Vloet",
@@ -253,12 +289,6 @@
       "nrSeen": null
     },
     {
-      "name": "Joris Wesdorp",
-      "nr": null,
-      "aliases": [],
-      "nrSeen": null
-    },
-    {
       "name": "Joshua Paijmans",
       "nr": null,
       "aliases": [],
@@ -266,12 +296,6 @@
     },
     {
       "name": "Lucas van de Bruggen",
-      "nr": null,
-      "aliases": [],
-      "nrSeen": null
-    },
-    {
-      "name": "Maarten Wesdorp",
       "nr": null,
       "aliases": [],
       "nrSeen": null
@@ -301,12 +325,6 @@
       "nrSeen": null
     },
     {
-      "name": "Tijmen Denissen",
-      "nr": null,
-      "aliases": [],
-      "nrSeen": null
-    },
-    {
       "name": "Valentijn de Klerck",
       "nr": null,
       "aliases": [],
@@ -324,7 +342,7 @@
       "name": "Tijs Rutters",
       "nr": 1,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Daan Schipperen",
@@ -332,7 +350,7 @@
       "aliases": [
         "Daan van Schipperen"
       ],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jordi van de Korput",
@@ -340,93 +358,105 @@
       "aliases": [
         "Jordi v.d. Korput"
       ],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Lars van Strien",
       "nr": 4,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-08"
+    },
+    {
+      "name": "Thomas Boons",
+      "nr": 4,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Bas de Nijs",
       "nr": 5,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Joep Leijten",
       "nr": 6,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Justin van Strien",
       "nr": 8,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Kevin Meijnhardt",
+      "name": "Faas Verschuren",
       "nr": 9,
-      "aliases": [
-        "Kevin Mijnhardt"
-      ],
-      "nrSeen": "2026-11-01"
+      "aliases": [],
+      "nrSeen": "2026-10-11"
+    },
+    {
+      "name": "Lars Krabbendam",
+      "nr": 9,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jayden van Seeters",
       "nr": 11,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Tygo Geuzendam",
       "nr": 12,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Coen van Avendonk",
       "nr": 14,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Kevin Meijnhardt",
+      "nr": 16,
+      "aliases": [
+        "Kevin Mijnhardt"
+      ],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Owen Kramer",
-      "nr": 15,
+      "nr": 17,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Thomas Boons",
-      "nr": 16,
+      "name": "Jari Meeuwissen",
+      "nr": 18,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Teun de Waard",
+      "nr": 18,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
+    },
+    {
+      "name": "Teun Honcoop",
+      "nr": 21,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Timo Fens",
       "nr": 21,
       "aliases": [],
-      "nrSeen": "2026-10-25"
-    },
-    {
-      "name": "Faas Verschuren",
-      "nr": null,
-      "aliases": [],
-      "nrSeen": null
-    },
-    {
-      "name": "Jari Meeuwissen",
-      "nr": null,
-      "aliases": [],
-      "nrSeen": null
-    },
-    {
-      "name": "Lars Krabbendam",
-      "nr": null,
-      "aliases": [],
-      "nrSeen": null
+      "nrSeen": "2026-11-15"
     },
     {
       "name": "Luuk Nieuwesteeg",
@@ -436,12 +466,6 @@
     },
     {
       "name": "Mischa Anssems",
-      "nr": null,
-      "aliases": [],
-      "nrSeen": null
-    },
-    {
-      "name": "Teun de Waard",
       "nr": null,
       "aliases": [],
       "nrSeen": null
@@ -458,97 +482,121 @@
       "name": "Tijn Damen",
       "nr": 1,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-10-04"
+    },
+    {
+      "name": "Wout Brok",
+      "nr": 1,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Stan de Jong",
       "nr": 2,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Stan Muskens",
       "nr": 3,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Willem Sangers",
       "nr": 4,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Bas van den Besselaar",
       "nr": 5,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-10-29"
+    },
+    {
+      "name": "Remco Dirks",
+      "nr": 5,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Thomas Dankers",
       "nr": 6,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Gijs de Kort",
       "nr": 7,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Sam van Bokhoven",
+      "name": "Remco v.d. Hooven",
       "nr": 8,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Teun Hendriks",
       "nr": 9,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-08"
     },
     {
       "name": "Edgar Brok",
       "nr": 10,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Luc v.d. Aker",
       "nr": 11,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Niels van Iersel",
       "nr": 12,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Thijs Lommers",
       "nr": 13,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Sam van Bokhoven",
+      "nr": 14,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Marc Verschure",
       "nr": 15,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-01"
+    },
+    {
+      "name": "Thijs van den Bijgaart",
+      "nr": 16,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Thieleman van Aerle",
       "nr": 17,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Rens de Kruijf",
       "nr": 18,
       "aliases": [],
-      "nrSeen": "2026-09-20"
+      "nrSeen": "2026-11-22"
     }
   ],
   "chaam": [
@@ -556,177 +604,237 @@
       "name": "Kevin Aarts",
       "nr": 1,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Pieter van Gestel",
+      "nr": 1,
+      "aliases": [],
+      "nrSeen": "2026-11-08"
     },
     {
       "name": "Luc Goos",
       "nr": 2,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Henryc van Dongen",
+      "nr": 3,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Sem Brinkers",
+      "nr": 3,
+      "aliases": [],
+      "nrSeen": "2026-10-25"
     },
     {
       "name": "Gerard Verbiest",
       "nr": 4,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Sem Brinkers",
+      "name": "Jan Michielsen",
       "nr": 5,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-15"
     },
     {
       "name": "Juul van Eil",
       "nr": 6,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Bas Goos",
       "nr": 7,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Teun van Gestel",
       "nr": 8,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-15"
     },
     {
       "name": "Wessel van Engelen",
       "nr": 9,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Luuk Oomen",
+      "nr": 10,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Marc van der Meeren",
+      "nr": 10,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Xander Geerts",
+      "nr": 10,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
     },
     {
       "name": "Sebas van Engelen",
       "nr": 11,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Wout van Wassenhove",
       "nr": 12,
       "aliases": [],
-      "nrSeen": "2026-09-27"
-    },
-    {
-      "name": "Owen Moelands",
-      "nr": 13,
-      "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Ibrahim Rahmanli",
       "nr": 14,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-15"
     },
     {
-      "name": "Brent Goosen",
+      "name": "Owen Moelands",
+      "nr": 14,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Bailey Krijnen",
       "nr": 15,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Lars de Bie",
       "nr": 16,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Brent Goosen",
+      "nr": 17,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Daan Jochems",
+      "nr": 18,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Pieter van den Broek",
-      "nr": 17,
+      "nr": 19,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Xander Geerts",
-      "nr": 18,
+      "name": "Mika van Emmerik",
+      "nr": 21,
       "aliases": [],
-      "nrSeen": "2026-09-27"
+      "nrSeen": "2026-11-01"
     }
   ],
   "svg": [
     {
+      "name": "Xander van Spaendonk",
+      "nr": 1,
+      "aliases": [],
+      "nrSeen": "2026-11-01"
+    },
+    {
+      "name": "Faouzi Chahid",
+      "nr": 2,
+      "aliases": [],
+      "nrSeen": "2026-11-08"
+    },
+    {
       "name": "Brian Verhoeven",
       "nr": 3,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Pieter Koot",
       "nr": 5,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Mike Verhagen",
       "nr": 7,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Nick Verduijn",
       "nr": 8,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Shuburney Rosaria",
       "nr": 9,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Nassreddine el Haddadi",
+      "nr": 10,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Tyren van Embricqs",
+      "nr": 11,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Younes Aknin",
       "nr": 12,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Joep Melis",
+      "nr": 14,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Soufiane Farid",
-      "nr": 14,
+      "nr": 16,
       "aliases": [],
-      "nrSeen": "2026-10-04"
-    },
-    {
-      "name": "Tyren van Embricqs",
-      "nr": 15,
-      "aliases": [],
-      "nrSeen": "2026-10-04"
-    },
-    {
-      "name": "Xander van Spaendonk",
-      "nr": 17,
-      "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Abdellah Aknin",
       "nr": 18,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Bas Melis",
       "nr": 21,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Nassreddine el Haddadi",
-      "nr": 23,
-      "aliases": [],
-      "nrSeen": "2026-10-04"
-    },
-    {
-      "name": "Faouzi Chahid",
+      "name": "Bilal Chahid",
       "nr": 34,
       "aliases": [],
-      "nrSeen": "2026-10-04"
+      "nrSeen": "2026-11-22"
     }
   ],
   "edn56": [
@@ -734,79 +842,109 @@
       "name": "Floris de Bas",
       "nr": 1,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jens van Dorst",
       "nr": 2,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Rutger Wiltvank",
+      "nr": 4,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
     },
     {
       "name": "Stijn van de Wiel",
       "nr": 4,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Finn van Gils",
+      "nr": 5,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Joost van Hest",
       "nr": 5,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-08"
+    },
+    {
+      "name": "Milan Paulissen",
+      "nr": 6,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Kevin Paulissen",
       "nr": 7,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Luuk van Doormaal",
       "nr": 8,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-01"
     },
     {
       "name": "Greg van Gils",
       "nr": 9,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Hein de Bresser",
       "nr": 10,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Rob Hesselmans",
       "nr": 12,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Teun Verhoeven",
       "nr": 13,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Teun Reijrink",
       "nr": 14,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Sven van Gils",
       "nr": 15,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Harm van den Brand",
+      "nr": 16,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Sander van Dijck",
+      "nr": 16,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
     },
     {
       "name": "Robin van den Broek",
       "nr": 17,
       "aliases": [],
-      "nrSeen": "2026-10-11"
+      "nrSeen": "2026-11-22"
     }
   ],
   "hz75": [
@@ -859,10 +997,28 @@
       "nrSeen": "2026-11-15"
     },
     {
+      "name": "Roy van Oorschot",
+      "nr": 6,
+      "aliases": [],
+      "nrSeen": "2026-10-25"
+    },
+    {
       "name": "Finn Hoevenaar",
       "nr": 7,
       "aliases": [],
       "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Sven Pals",
+      "nr": 7,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
+    },
+    {
+      "name": "Maikel van Ham",
+      "nr": 8,
+      "aliases": [],
+      "nrSeen": "2026-10-11"
     },
     {
       "name": "Kevin van der Schans",
@@ -907,6 +1063,12 @@
       "nrSeen": "2026-11-15"
     },
     {
+      "name": "Stijn de Laat",
+      "nr": 18,
+      "aliases": [],
+      "nrSeen": "2026-09-27"
+    },
+    {
       "name": "Teun Stevens",
       "nr": 18,
       "aliases": [],
@@ -921,82 +1083,106 @@
   ],
   "sab": [
     {
+      "name": "Tony Koevoets",
+      "nr": 1,
+      "aliases": [],
+      "nrSeen": "2026-10-25"
+    },
+    {
       "name": "Wessel Braat",
       "nr": 2,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Mohamed Dramé",
+      "nr": 3,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Cas van Gaalen",
       "nr": 4,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Calvin Vertriest",
       "nr": 6,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Laurens Jonkers",
       "nr": 7,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-15"
     },
     {
       "name": "Quinten Hermes",
       "nr": 8,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Diego Jansen",
       "nr": 9,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Djarno van der Lek",
       "nr": 11,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Binck Raymakers",
       "nr": 12,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Matheus do Prado Karl",
       "nr": 13,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Dani Verhoeven",
       "nr": 14,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jimmy Gimbrere",
       "nr": 16,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Vladyslav Tkachenko",
       "nr": 17,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Jasper Jonkers",
+      "nr": 19,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
+    },
+    {
+      "name": "Ward Tahir",
+      "nr": 20,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Tonie Snoeren",
       "nr": 22,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Swen Voesenek",
@@ -1006,9 +1192,21 @@
     },
     {
       "name": "Sep Luiijf",
-      "nr": 41,
+      "nr": 33,
       "aliases": [],
-      "nrSeen": "2026-11-01"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Dilano Adriaanse",
+      "nr": 38,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
+    },
+    {
+      "name": "Max van der Made",
+      "nr": 50,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     }
   ],
   "dussense-boys": [
@@ -1037,10 +1235,22 @@
       "nrSeen": "2026-11-22"
     },
     {
+      "name": "Fedde Sagt",
+      "nr": 5,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
+    },
+    {
       "name": "Luuk de Rooy",
       "nr": 5,
       "aliases": [],
       "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Tom Stembord",
+      "nr": 5,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
     },
     {
       "name": "Kevin Lensvelt",
@@ -1059,6 +1269,12 @@
       "nr": 9,
       "aliases": [],
       "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Samuel van den Broek",
+      "nr": 10,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
     },
     {
       "name": "Sem van Tilborg",
@@ -1097,6 +1313,12 @@
       "nrSeen": "2026-11-22"
     },
     {
+      "name": "Sjef Reijnaars",
+      "nr": 33,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
       "name": "Yannick Lusse",
       "nr": 62,
       "aliases": [],
@@ -1108,85 +1330,213 @@
       "name": "Gijs van Gurp",
       "nr": 2,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Lars Verheijen",
       "nr": 3,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Timo Voeten",
       "nr": 4,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jari Heestermans",
       "nr": 6,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
-      "name": "Boaz den Ouden",
+      "name": "Mike Graumans",
       "nr": 7,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-10-25"
     },
     {
       "name": "Jens de Jong",
       "nr": 8,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jens Gooijers",
       "nr": 9,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Roy van Alphen",
       "nr": 10,
       "aliases": [],
-      "nrSeen": "2026-11-15"
-    },
-    {
-      "name": "Siem Dieleman",
-      "nr": 11,
-      "aliases": [],
-      "nrSeen": "2026-11-08"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Tom Verschueren",
       "nr": 11,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Stijn Gooijers",
       "nr": 12,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Siem Dieleman",
+      "nr": 13,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Wesley Heestermans",
+      "nr": 13,
+      "aliases": [],
+      "nrSeen": "2026-10-25"
     },
     {
       "name": "Brent Verheijen",
       "nr": 14,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Boaz den Ouden",
+      "nr": 15,
+      "aliases": [],
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Noah van der Velden",
       "nr": 17,
       "aliases": [],
-      "nrSeen": "2026-11-15"
+      "nrSeen": "2026-11-22"
     },
     {
       "name": "Jorg Feskens",
       "nr": 21,
       "aliases": [],
+      "nrSeen": "2026-11-22"
+    }
+  ],
+  "svsos": [
+    {
+      "name": "Lars Jonkers",
+      "nr": 1,
+      "aliases": [],
       "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Rob Wilborts",
+      "nr": 1,
+      "aliases": [],
+      "nrSeen": "2026-10-11"
+    },
+    {
+      "name": "Matthijs van Oort",
+      "nr": 2,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Bram Vingerhoets",
+      "nr": 3,
+      "aliases": [],
+      "nrSeen": "2026-11-08"
+    },
+    {
+      "name": "Dirk Vingerhoets",
+      "nr": 3,
+      "aliases": [],
+      "nrSeen": "2026-11-01"
+    },
+    {
+      "name": "Jasper van Waes",
+      "nr": 4,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Sep Hesselmans",
+      "nr": 4,
+      "aliases": [],
+      "nrSeen": "2026-10-11"
+    },
+    {
+      "name": "Tygo Krieckaart",
+      "nr": 4,
+      "aliases": [],
+      "nrSeen": "2026-11-01"
+    },
+    {
+      "name": "Daan Vingerhoets",
+      "nr": 5,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Guus Abrahams",
+      "nr": 6,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Dorus Boers",
+      "nr": 7,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Jeroen Brekelmans",
+      "nr": 8,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Gijs van Oort",
+      "nr": 9,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Ruud van Dijck",
+      "nr": 10,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Jesper Priems",
+      "nr": 11,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Giel Jansma",
+      "nr": 12,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Wout Abrahams",
+      "nr": 13,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Lars Priems",
+      "nr": 14,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
+      "name": "Loek Van der Bruggen",
+      "nr": 16,
+      "aliases": [],
+      "nrSeen": "2026-10-04"
     }
   ]
 }

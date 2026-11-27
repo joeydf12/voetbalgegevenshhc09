@@ -1,0 +1,192 @@
+{
+  "matchId": "edn56-svsos",
+  "date": "2026-10-04",
+  "score": [
+    0,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "edn56",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Floris de Bas"
+      },
+      {
+        "nr": 4,
+        "name": "Rutger Wiltvank",
+        "out": true,
+        "captain": true
+      },
+      {
+        "nr": 7,
+        "name": "Kevin Paulissen"
+      },
+      {
+        "nr": 8,
+        "name": "Luuk van Doormaal"
+      },
+      {
+        "nr": 9,
+        "name": "Greg van Gils",
+        "yellow": 1
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Rob Hesselmans"
+      },
+      {
+        "nr": 13,
+        "name": "Teun Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Teun Reijrink"
+      },
+      {
+        "nr": 15,
+        "name": "Sven van Gils"
+      },
+      {
+        "nr": 17,
+        "name": "Robin van den Broek"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Jens van Dorst",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 5,
+        "name": "Milan Paulissen"
+      },
+      {
+        "nr": 6,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Stijn van de Wiel"
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 18,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "svsos",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Lars Jonkers"
+      },
+      {
+        "nr": 4,
+        "name": "Sep Hesselmans"
+      },
+      {
+        "nr": 5,
+        "name": "Daan Vingerhoets",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Guus Abrahams",
+        "yellow": 1
+      },
+      {
+        "nr": 7,
+        "name": "Dorus Boers",
+        "yellow": 1,
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Jeroen Brekelmans"
+      },
+      {
+        "nr": 9,
+        "name": "Gijs van Oort"
+      },
+      {
+        "nr": 10,
+        "name": "Ruud van Dijck"
+      },
+      {
+        "nr": 11,
+        "name": "Jesper Priems"
+      },
+      {
+        "nr": 13,
+        "name": "Jasper van Waes",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Lars Priems"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Matthijs van Oort"
+      },
+      {
+        "nr": 3,
+        "name": "Dirk Vingerhoets",
+        "pos": "Aanvaller",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Loek Van der Bruggen"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  }
+}

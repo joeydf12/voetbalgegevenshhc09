@@ -1,0 +1,186 @@
+{
+  "matchId": "edn56-elshout",
+  "date": "2026-10-29",
+  "score": [
+    2,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "edn56",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Floris de Bas"
+      },
+      {
+        "nr": 2,
+        "name": "Jens van Dorst"
+      },
+      {
+        "nr": 4,
+        "name": "Stijn van de Wiel"
+      },
+      {
+        "nr": 8,
+        "name": "Luuk van Doormaal"
+      },
+      {
+        "nr": 9,
+        "name": "Greg van Gils"
+      },
+      {
+        "nr": 10,
+        "name": "Hein de Bresser"
+      },
+      {
+        "nr": 12,
+        "name": "Rob Hesselmans",
+        "captain": true
+      },
+      {
+        "nr": 13,
+        "name": "Teun Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Teun Reijrink"
+      },
+      {
+        "nr": 15,
+        "name": "Sven van Gils"
+      },
+      {
+        "nr": 17,
+        "name": "Robin van den Broek"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 5,
+        "name": "Joost van Hest"
+      },
+      {
+        "nr": 6,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 11,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "elshout",
+    "starters": [
+      {
+        "nr": 3,
+        "name": "Stan Muskens",
+        "pos": "Verdediger",
+        "captain": true
+      },
+      {
+        "nr": 5,
+        "name": "Bas van den Besselaar",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Dankers"
+      },
+      {
+        "nr": 7,
+        "name": "Gijs de Kort"
+      },
+      {
+        "nr": 8,
+        "name": "Remco v.d. Hooven",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Teun Hendriks"
+      },
+      {
+        "nr": 10,
+        "name": "Edgar Brok",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Luc v.d. Aker",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Niels van Iersel",
+        "out": true
+      },
+      {
+        "nr": 13,
+        "name": "Thijs Lommers",
+        "yellow": 1
+      },
+      {
+        "nr": 18,
+        "name": "Rens de Kruijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Wout Brok"
+      },
+      {
+        "nr": 2,
+        "name": "Stan de Jong",
+        "in": true
+      },
+      {
+        "nr": 4,
+        "name": "Willem Sangers",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Sam van Bokhoven",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Marc Verschure",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Thijs van den Bijgaart"
+      },
+      {
+        "nr": 17,
+        "name": "Thieleman van Aerle",
+        "in": true
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  }
+}

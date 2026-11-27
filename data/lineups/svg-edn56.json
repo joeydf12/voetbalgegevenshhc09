@@ -1,0 +1,180 @@
+{
+  "matchId": "svg-edn56",
+  "date": "2026-11-08",
+  "score": [
+    2,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "svg",
+    "starters": [
+      {
+        "nr": 4,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1
+      },
+      {
+        "nr": 7,
+        "name": "Mike Verhagen"
+      },
+      {
+        "nr": 8,
+        "name": "Nick Verduijn"
+      },
+      {
+        "nr": 9,
+        "name": "Shuburney Rosaria"
+      },
+      {
+        "nr": 10,
+        "name": "Nassreddine el Haddadi",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Joep Melis",
+        "captain": true
+      },
+      {
+        "nr": 17,
+        "name": "Pieter Koot"
+      },
+      {
+        "nr": 18,
+        "name": "Abdellah Aknin",
+        "out": true
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 21,
+        "name": "Bas Melis"
+      },
+      {
+        "nr": 34,
+        "name": "Bilal Chahid",
+        "yellow": 1
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Faouzi Chahid",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 12,
+        "name": "Younes Aknin",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Soufiane Farid"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "edn56",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Floris de Bas"
+      },
+      {
+        "nr": 2,
+        "name": "Jens van Dorst",
+        "yellow": 1
+      },
+      {
+        "nr": 4,
+        "name": "Stijn van de Wiel"
+      },
+      {
+        "nr": 9,
+        "name": "Greg van Gils"
+      },
+      {
+        "nr": 10,
+        "name": "Hein de Bresser",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Rob Hesselmans",
+        "captain": true
+      },
+      {
+        "nr": 13,
+        "name": "Teun Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Teun Reijrink"
+      },
+      {
+        "nr": 15,
+        "name": "Sven van Gils"
+      },
+      {
+        "nr": 17,
+        "name": "Robin van den Broek"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 5,
+        "name": "Joost van Hest",
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": "Milan Paulissen",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  }
+}

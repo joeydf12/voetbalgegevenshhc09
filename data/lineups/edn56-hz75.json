@@ -1,0 +1,208 @@
+{
+  "matchId": "edn56-hz75",
+  "date": "2026-09-20",
+  "score": [
+    1,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "edn56",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Floris de Bas",
+        "pos": "Keeper"
+      },
+      {
+        "nr": 4,
+        "name": "Rutger Wiltvank",
+        "pos": "Verdediger",
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Luuk van Doormaal",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Greg van Gils",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Stijn van de Wiel",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Rob Hesselmans",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 13,
+        "name": "Teun Verhoeven",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Teun Reijrink",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 15,
+        "name": "Sven van Gils",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 17,
+        "name": "Robin van den Broek",
+        "pos": "Aanvaller"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Jens van Dorst",
+        "in": true
+      },
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 5,
+        "name": "Milan Paulissen",
+        "in": true
+      },
+      {
+        "nr": 7,
+        "name": "Kevin Paulissen",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1,
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "hz75",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Luuk Vissers",
+        "pos": "Keeper"
+      },
+      {
+        "nr": 4,
+        "name": "Stan Stevens",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 5,
+        "name": "Wouter Zevenbergen"
+      },
+      {
+        "nr": 6,
+        "name": "Jowan Gosens",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": "Sven Pals",
+        "pos": "Verdediger",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Kursat Bucakli"
+      },
+      {
+        "nr": 10,
+        "name": "Bram Gosens",
+        "pos": "Middenvelder",
+        "captain": true
+      },
+      {
+        "nr": 12,
+        "name": "Finn Hoevenaar",
+        "out": true
+      },
+      {
+        "nr": 13,
+        "name": "Timo Vervelde",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 17,
+        "name": null,
+        "hidden": true,
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Maikel van Ham",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Oskar Siwik",
+        "pos": "Aanvaller",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Stijn Groen",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Noah Brejaart"
+      },
+      {
+        "nr": 18,
+        "name": "Stijn de Laat",
+        "pos": "Aanvaller",
+        "yellow": 1,
+        "in": true
+      }
+    ],
+    "trainer": "Jurgen van den Broek"
+  }
+}

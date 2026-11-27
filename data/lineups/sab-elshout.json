@@ -1,0 +1,186 @@
+{
+  "matchId": "sab-elshout",
+  "date": "2026-11-08",
+  "score": [
+    3,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Wessel Braat"
+      },
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen"
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Diego Jansen",
+        "out": true,
+        "captain": true
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers"
+      },
+      {
+        "nr": 13,
+        "name": "Matheus do Prado Karl",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Vladyslav Tkachenko"
+      },
+      {
+        "nr": 20,
+        "name": "Ward Tahir"
+      },
+      {
+        "nr": 41,
+        "name": "Sep Luiijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Mohamed Dramé",
+        "in": true
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes",
+        "in": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek",
+        "in": true
+      },
+      {
+        "nr": 50,
+        "name": "Max van der Made",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "elshout",
+    "starters": [
+      {
+        "nr": 3,
+        "name": "Stan Muskens",
+        "pos": "Verdediger",
+        "captain": true
+      },
+      {
+        "nr": 4,
+        "name": "Willem Sangers"
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Dankers"
+      },
+      {
+        "nr": 7,
+        "name": "Gijs de Kort",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Remco v.d. Hooven"
+      },
+      {
+        "nr": 9,
+        "name": "Teun Hendriks",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Edgar Brok",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Luc v.d. Aker"
+      },
+      {
+        "nr": 12,
+        "name": "Niels van Iersel",
+        "out": true
+      },
+      {
+        "nr": 13,
+        "name": "Thijs Lommers"
+      },
+      {
+        "nr": 18,
+        "name": "Rens de Kruijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Wout Brok"
+      },
+      {
+        "nr": 2,
+        "name": "Stan de Jong",
+        "in": true
+      },
+      {
+        "nr": 5,
+        "name": "Remco Dirks"
+      },
+      {
+        "nr": 14,
+        "name": "Sam van Bokhoven",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Thijs van den Bijgaart",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": "Thieleman van Aerle",
+        "in": true
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  }
+}

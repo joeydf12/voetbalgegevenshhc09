@@ -155,7 +155,7 @@ export function validateData(data, { today }) {
         if (!isInt(p.nr)) err(`${tag} (${side}): speler zonder rugnummer`);
         if (nrs.has(p.nr)) err(`${tag} (${side}): rugnummer ${p.nr} komt dubbel voor`);
         nrs.add(p.nr);
-        if (p.name === null && !p.hidden) err(`${tag} (${side}): speler #${p.nr} zonder naam maar niet als afgeschermd gemarkeerd`);
+        if (p.name === null && !p.hidden && !p.unknown) err(`${tag} (${side}): speler #${p.nr} zonder naam maar niet als afgeschermd gemarkeerd`);
         if (p.in && p.out) warn(`${tag} (${side}): #${p.nr} staat zowel als ingevallen als gewisseld`);
       }
     }

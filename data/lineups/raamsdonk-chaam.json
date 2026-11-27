@@ -1,0 +1,189 @@
+{
+  "matchId": "raamsdonk-chaam",
+  "date": "2026-11-08",
+  "score": [
+    1,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "raamsdonk",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Tijs Rutters"
+      },
+      {
+        "nr": 2,
+        "name": "Daan Schipperen",
+        "yellow": 1
+      },
+      {
+        "nr": 3,
+        "name": "Jordi van de Korput"
+      },
+      {
+        "nr": 4,
+        "name": "Lars van Strien",
+        "out": true,
+        "captain": true
+      },
+      {
+        "nr": 5,
+        "name": "Bas de Nijs"
+      },
+      {
+        "nr": 6,
+        "name": "Joep Leijten"
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 9,
+        "name": "Kevin Meijnhardt",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 11,
+        "name": "Jayden van Seeters",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Coen van Avendonk"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 8,
+        "name": "Justin van Strien",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Tygo Geuzendam",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Thomas Boons"
+      },
+      {
+        "nr": 16,
+        "name": "Lars Krabbendam",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 21,
+        "name": "Timo Fens"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  },
+  "away": {
+    "team": "chaam",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Pieter van Gestel"
+      },
+      {
+        "nr": 2,
+        "name": "Luc Goos"
+      },
+      {
+        "nr": 4,
+        "name": "Gerard Verbiest",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Juul van Eil"
+      },
+      {
+        "nr": 7,
+        "name": "Bas Goos",
+        "yellow": 1,
+        "captain": true
+      },
+      {
+        "nr": 8,
+        "name": "Teun van Gestel",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Wessel van Engelen",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Sebas van Engelen",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Lars de Bie"
+      },
+      {
+        "nr": 17,
+        "name": "Brent Goosen"
+      },
+      {
+        "nr": 18,
+        "name": "Daan Jochems",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Henryc van Dongen",
+        "in": true
+      },
+      {
+        "nr": 10,
+        "name": "Luuk Oomen",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Wout van Wassenhove",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Bailey Krijnen",
+        "in": true
+      },
+      {
+        "nr": 19,
+        "name": "Pieter van den Broek",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

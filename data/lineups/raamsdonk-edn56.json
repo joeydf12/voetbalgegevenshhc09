@@ -1,0 +1,175 @@
+{
+  "matchId": "raamsdonk-edn56",
+  "date": "2026-11-22",
+  "score": [
+    1,
+    0
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "raamsdonk",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Tijs Rutters"
+      },
+      {
+        "nr": 2,
+        "name": "Daan Schipperen"
+      },
+      {
+        "nr": 3,
+        "name": "Jordi van de Korput"
+      },
+      {
+        "nr": 5,
+        "name": "Bas de Nijs"
+      },
+      {
+        "nr": 6,
+        "name": "Joep Leijten"
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 9,
+        "name": "Lars Krabbendam"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Jayden van Seeters",
+        "yellow": 1
+      },
+      {
+        "nr": 14,
+        "name": "Coen van Avendonk"
+      },
+      {
+        "nr": 18,
+        "name": "Jari Meeuwissen"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 4,
+        "name": "Thomas Boons"
+      },
+      {
+        "nr": 8,
+        "name": "Justin van Strien"
+      },
+      {
+        "nr": 12,
+        "name": "Tygo Geuzendam"
+      },
+      {
+        "nr": 16,
+        "name": "Kevin Meijnhardt"
+      },
+      {
+        "nr": 17,
+        "name": "Owen Kramer"
+      },
+      {
+        "nr": 21,
+        "name": "Teun Honcoop"
+      }
+    ],
+    "trainer": null,
+    "incomplete": true
+  },
+  "away": {
+    "team": "edn56",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Floris de Bas"
+      },
+      {
+        "nr": 2,
+        "name": "Jens van Dorst"
+      },
+      {
+        "nr": 7,
+        "name": "Kevin Paulissen",
+        "yellow": 1
+      },
+      {
+        "nr": 9,
+        "name": "Greg van Gils"
+      },
+      {
+        "nr": 10,
+        "name": "Hein de Bresser",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Rob Hesselmans",
+        "captain": true
+      },
+      {
+        "nr": 13,
+        "name": "Teun Verhoeven"
+      },
+      {
+        "nr": 14,
+        "name": "Teun Reijrink"
+      },
+      {
+        "nr": 15,
+        "name": "Sven van Gils"
+      },
+      {
+        "nr": 17,
+        "name": "Robin van den Broek"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 5,
+        "name": "Finn van Gils"
+      },
+      {
+        "nr": 6,
+        "name": "Milan Paulissen",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Harm van den Brand"
+      }
+    ],
+    "trainer": "Coen Vos"
+  }
+}

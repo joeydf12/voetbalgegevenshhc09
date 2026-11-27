@@ -102,7 +102,6 @@
   },
   "away": {
     "team": "hz75",
-    "incomplete": true,
     "starters": [
       {
         "nr": 1,
@@ -148,9 +147,49 @@
         "nr": 13,
         "name": "Timo Vervelde",
         "pos": "Aanvaller"
+      },
+      {
+        "nr": 14,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": null,
+        "hidden": true,
+        "pos": "Verdediger",
+        "out": true
       }
     ],
-    "subs": [],
+    "subs": [
+      {
+        "nr": 6,
+        "name": "Roy van Oorschot",
+        "in": true
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Steffen Becht"
+      },
+      {
+        "nr": 18,
+        "name": "Rubin van Loon",
+        "in": true
+      },
+      {
+        "nr": 20,
+        "name": "Kevin van der Schans"
+      }
+    ],
     "trainer": null
   }
 }

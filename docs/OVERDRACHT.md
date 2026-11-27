@@ -23,6 +23,8 @@ Lees eerst `../CLAUDE.md` en `../taken/README.md`. Dit bestand zegt wat er al ge
 
 - 2026-11-27: opstellingen HZ '75 – GESTA, Dussense Boys – HZ '75, HZ '75 – Raamsdonk en Riel – HZ '75 (deels onvolledig, `incomplete: true`). Nieuw script `scripts/sync-players.mjs` vult de selecties van alle ploegen uit de opstellingen.
 
+- 2026-11-27: opstellingen van 29 extra wedstrijden (alle ploegen) uit Voetbal.nl-screenshots; samen 43 van de gespeelde wedstrijden. Nog niet ontvangen: speelronde 1 en 2. Nieuw in opstellingen: `red` (rode kaart), `unknown` (naam niet in beeld), `noEvents` (geen wissels/kaarten zichtbaar). Spellingsverschillen krant/Voetbal.nl staan in VRAGEN.md D3.
+
 ## Open (in deze volgorde)
 1. ~~RLS-test (e-mailopzet, vervangen)~~ **geslaagd op 2026-11-27** (`supabase/oud-rls-test-email.sql`, door de gebruiker in de SQL Editor gedraaid, alles teruggedraaid): A wijzigt eigen keuze, beide leden lezen alles, B kan rijen/feedback van A niet wijzigen, verwijderen of onder A's id schrijven, 2001 tekens en ongeldige status geweigerd, niet-lid ziet en schrijft niets, anoniem geweigerd. Opnieuw geslaagd na de advisor-fix (2026-11-27, 15/15). Draai dit script opnieuw na elke wijziging aan de `ts_`-policies.
 2. ~~Advisor-fix~~ **uitgevoerd 2026-11-27** (`supabase/02-advisor-fix.sql`). Overgebleven bewuste adviezen voor deze site: `ts_members` zonder policies (INFO, ledenlijst niet via API) en `ts_team()` uitvoerbaar voor ingelogden (WARN, nodig voor de site; geeft alleen iets terug aan teamleden). De overige adviezen horen bij andere HHC-apps.

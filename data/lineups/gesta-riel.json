@@ -1,0 +1,179 @@
+{
+  "matchId": "gesta-riel",
+  "date": "2026-11-01",
+  "score": [
+    1,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "gesta",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Gijs van Gurp",
+        "yellow": 1,
+        "captain": true
+      },
+      {
+        "nr": 3,
+        "name": "Lars Verheijen"
+      },
+      {
+        "nr": 4,
+        "name": "Timo Voeten",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Jari Heestermans"
+      },
+      {
+        "nr": 7,
+        "name": "Boaz den Ouden"
+      },
+      {
+        "nr": 8,
+        "name": "Jens de Jong"
+      },
+      {
+        "nr": 10,
+        "name": "Roy van Alphen",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Stijn Gooijers"
+      },
+      {
+        "nr": 14,
+        "name": "Brent Verheijen",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 21,
+        "name": "Jorg Feskens",
+        "yellow": 1
+      }
+    ],
+    "subs": [
+      {
+        "nr": 5,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 9,
+        "name": "Jens Gooijers",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Tom Verschueren"
+      },
+      {
+        "nr": 17,
+        "name": "Noah van der Velden",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "riel",
+    "starters": [
+      {
+        "nr": 1,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1
+      },
+      {
+        "nr": 2,
+        "name": "Kirill van Autreve"
+      },
+      {
+        "nr": 3,
+        "name": "Bram Schellekens"
+      },
+      {
+        "nr": 4,
+        "name": "Jochem van der Heijden"
+      },
+      {
+        "nr": 5,
+        "name": "Koen Schellekens"
+      },
+      {
+        "nr": 6,
+        "name": "Joris van der Bruggen"
+      },
+      {
+        "nr": 8,
+        "name": "Lars Bokma",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Joshua Paymans",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Jesse van den Corput",
+        "yellow": 1,
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Joshua Janssen"
+      },
+      {
+        "nr": 17,
+        "name": "Joni Paymans"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 12,
+        "name": "Lucas van der Bruggen"
+      },
+      {
+        "nr": 13,
+        "name": "Bram Fonken",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Rick van Berkel"
+      },
+      {
+        "nr": 16,
+        "name": "Tom van Hoof",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

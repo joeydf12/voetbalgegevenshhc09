@@ -8,10 +8,7 @@ Losse lijsten: `ONTBREKENDE-DOELPUNTEN.md` (makers en minuten), `SCREENSHOTS-OPN
 
 ## Te doen in Supabase (SQL Editor > plakken > Run)
 
-**S1. Staf op de teamlijst** (C1, akkoord gegeven). Claude mag dit niet zelf uitvoeren. Draai `supabase/06-staf.sql`: rollen assistent, vlagger en leider erbij, plus Gilbert de Fijter (trainer), Frank Hendriks (assistent), Peter van Schijndel (vlagger) en Johan Schalk (leider).
-- [ ] gedraaid
-
-**S2. Scouting per tegenstander.** Draai `supabase/05-scouting.sql` één keer.
+**S1. Scouting per tegenstander.** Draai `supabase/05-scouting.sql` één keer.
 - [ ] gedraaid
 
 ## Te doen in GitHub

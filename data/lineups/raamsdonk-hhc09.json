@@ -107,9 +107,95 @@
   },
   "away": {
     "team": "hhc09",
-    "starters": [],
-    "subs": [],
-    "trainer": null,
-    "missing": true
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Samuel Sebastian Szurman"
+      },
+      {
+        "nr": 5,
+        "name": "Tom van der Linden",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 7,
+        "name": "Tom de Ruiter",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 8,
+        "name": "Mees de Fijter"
+      },
+      {
+        "nr": 9,
+        "name": "Timo Willemsen",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller",
+        "captain": true,
+        "yellow": 1
+      },
+      {
+        "nr": 11,
+        "name": "Tim de Fijter",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 12,
+        "name": "Jeffrey Fitters"
+      },
+      {
+        "nr": 15,
+        "name": "Joey de Fijter",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 19,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 2,
+        "name": "Patryk Gomulski"
+      },
+      {
+        "nr": 4,
+        "name": "Jan Hooijmans"
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Schalk",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": "Koen Blikman",
+        "pos": "Middenvelder",
+        "in": true
+      },
+      {
+        "nr": 20,
+        "name": "Duncan van Drunen",
+        "in": true
+      }
+    ],
+    "trainer": null
   }
 }

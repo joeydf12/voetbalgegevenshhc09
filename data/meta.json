@@ -7,5 +7,31 @@
   "seed": {
     "date": "2026-11-26",
     "note": "Startdata: Hollandse Velden (3 clubpagina's via webtool-samenvatting, laatste uitslag 2026-10-11), BD-verslag HHC-Riel en Voetbal.nl-opstelling HHC-Dussense Boys. De wekelijkse download vervangt dit."
+  },
+  "periods": [
+    {
+      "id": 1,
+      "name": "Periode 1",
+      "from": "2026-08-01",
+      "to": "2026-11-15",
+      "note": "t/m speelronde van 15 november (HHC - Riel)"
+    },
+    {
+      "id": 2,
+      "name": "Periode 2",
+      "from": "2026-11-16",
+      "to": null,
+      "note": "vanaf 22 november (HHC - Dussense Boys); einddatum nog onbekend"
+    },
+    {
+      "id": 3,
+      "name": "Periode 3",
+      "from": null,
+      "to": null,
+      "note": "startdatum nog onbekend"
+    }
+  ],
+  "periodOverrides": {
+    "elshout-svg": 1
   }
 }

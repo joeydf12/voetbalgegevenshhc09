@@ -1,3 +1,5 @@
+> **Let op (27-11-2026):** dit beschrijft het eerdere lichte ontwerp. De site heeft nu een donker ontwerp met clublogo's (zie `css/style.css` en de screenshots in de chat). Werk dit bestand bij voordat je het aan een ontwerper geeft.
+
 # Huidig design van de HHC '09 teamomgeving (stand 2026-11-27)
 
 Plak alles onder de streep in Claude Design (of geef het aan een ontwerper), samen met `DESIGN-PROMPT.md` als je ook de functionele context wilt meegeven.

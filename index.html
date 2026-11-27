@@ -2,22 +2,30 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>HHC '09 · Teamomgeving</title>
+<link rel="icon" href="assets/logos/hhc09.png">
+<link rel="apple-touch-icon" href="assets/logos/hhc09.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Saira+Condensed:wght@600;700;800&display=swap">
-<meta name="theme-color" content="#1B1D5C">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Saira+Condensed:wght@600;700;800&display=swap">
+<meta name="theme-color" content="#141a4a">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <div class="wrap"><div class="brand">HHC '09 <span>teamomgeving</span></div><p id="sub"></p>
-  <form id="search" class="search" role="search"><input name="q" type="search" placeholder="Zoek ploeg of speler" aria-label="Zoek ploeg of speler"><button type="submit">Zoek</button></form>
-  <nav class="main"><a href="#/">Overzicht</a><a href="#/stand">Stand</a><a href="#/programma">Programma</a><a href="#/uitslagen">Uitslagen</a><a href="#/topscorers">Topscorers</a><a href="#/ploegen">Ploegen</a><a href="#/verslagen">Verslagen</a><a href="#/feedback">Feedback</a><a href="#/about">Over</a><a href="#/account">Inloggen</a></nav></div>
+<header class="top">
+  <div class="wrap topbar">
+    <a class="brand" href="#/"><img src="assets/logos/hhc09.png" width="52" height="52" alt=""><span><b>HHC '09 Oudheusden</b><small id="sub">Teamomgeving</small></span></a>
+    <form id="search" class="search" role="search"><input name="q" type="search" placeholder="Zoek ploeg of speler" aria-label="Zoek ploeg of speler"><button type="submit" aria-label="Zoeken">🔍</button></form>
+  </div>
+  <nav class="main wrap" aria-label="Hoofdmenu"><a href="#/">Overzicht</a><a href="#/stand">Stand</a><a href="#/programma">Programma</a><a href="#/uitslagen">Uitslagen</a><a href="#/ploegen">Ploegdossiers</a><a href="#/topscorers">Topscorers</a><a href="#/verslagen">Verslagen</a><a href="#/feedback">Feedback</a><a href="#/account">Inloggen</a><a href="#/about">Over</a></nav>
 </header>
+<div class="wrap backbar"><button id="back" class="back" type="button" hidden>‹ <span>Terug</span></button></div>
 <main class="wrap" id="app" aria-live="polite"><p>Laden…</p></main>
+<nav class="bottom" aria-label="Snelmenu">
+  <a href="#/"><i>🏠</i>Overzicht</a><a href="#/stand"><i>📊</i>Stand</a><a href="#/uitslagen"><i>⚽</i>Uitslagen</a><a href="#/ploegen"><i>🛡️</i>Clubs</a><a href="#/menu"><i>☰</i>Meer</a>
+</nav>
 <noscript><p class="wrap">Deze site heeft JavaScript nodig.</p></noscript>
 <script type="module" src="js/app.js"></script>
 </body>

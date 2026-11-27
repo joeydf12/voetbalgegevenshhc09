@@ -1,16 +1,40 @@
 import { loadData } from './lib/data.js';
 import { buildIndex, teamMap } from './lib/teams.js';
 import { computeStandings } from './lib/standings.js';
+import { buildPlayerIndex } from './lib/insights.js';
 import { todayNL, toStr, html } from './lib/util.js';
 import * as P from './views/pages.js';
+import { playerPage } from './views/club.js';
 import { importView, bindImport } from './views/import.js';
 import { bindDownloads } from './views/downloads.js';
 import { accountView, feedbackView, bindTeam } from './views/team.js';
 
 const root = document.getElementById('app');
+const back = document.getElementById('back');
 let ctx;
+const visited = []; // eigen geschiedenis binnen de site, voor de terugknop
+
+// Ouderpagina per route, voor de terugknop als er geen geschiedenis is (bijv. via een gedeelde link).
+function parentOf(seg) {
+  switch (seg[0]) {
+    case 'team': return ['#/ploegen', 'Ploegdossiers'];
+    case 'speler': return [`#/team/${seg[1]}?tab=selectie`, 'Selectie'];
+    case 'match': return ['#/uitslagen', 'Wedstrijden'];
+    case 'zoek': case 'selectie': return ['#/', 'Overzicht'];
+    default: return ['#/', 'Overzicht'];
+  }
+}
+
+const NAV_GROUP = { team: '#/ploegen', speler: '#/ploegen', match: '#/uitslagen' };
+
+function track() {
+  const h = location.hash || '#/';
+  if (visited.length > 1 && visited[visited.length - 2] === h) visited.pop(); // terug
+  else if (visited[visited.length - 1] !== h) visited.push(h);
+}
 
 function route() {
+  track();
   const [path, qs] = (location.hash.slice(1) || '/').split('?');
   const params = new URLSearchParams(qs || '');
   const seg = path.split('/').filter(Boolean);
@@ -24,10 +48,12 @@ function route() {
       case 'topscorers': return P.scorers(ctx);
       case 'ploegen': return P.teams(ctx);
       case 'team': return P.team(ctx, seg[1], params);
+      case 'speler': return playerPage(ctx, seg[1], seg.slice(2).join('/'));
       case 'match': return P.match(ctx, seg[1]);
       case 'verslagen': return P.reports(ctx);
       case 'selectie': return importView(ctx);
       case 'about': return P.about(ctx);
+      case 'menu': return P.menu();
       case 'account': return accountView();
       case 'feedback': return feedbackView();
       default: return html`<p class="empty">Pagina niet gevonden.</p>`;
@@ -38,14 +64,36 @@ function route() {
   root.innerHTML = toStr(out);
   if (seg[0] === 'selectie') bindImport(root, ctx);
   bindTeam(root, ctx);
-  document.querySelectorAll('nav.main a').forEach((a) => {
-    const on = a.getAttribute('href') === `#/${seg[0] ?? ''}` || ((seg[0] === 'team' || seg[0] === 'match') && a.getAttribute('href') === '#/ploegen');
+  bindMatchTabs(root);
+
+  // Terugknop: op elke pagina behalve het overzicht.
+  const [href, label] = parentOf(seg);
+  back.hidden = !seg[0];
+  back.dataset.href = href;
+  back.querySelector('span').textContent = visited.length > 1 ? 'Terug' : label;
+
+  const active = NAV_GROUP[seg[0]] ?? `#/${seg[0] ?? ''}`;
+  document.querySelectorAll('nav.main a, nav.bottom a').forEach((a) => {
+    const on = a.getAttribute('href') === active;
     a.classList.toggle('on', on);
-    if (on) { a.setAttribute('aria-current', 'page'); a.scrollIntoView({ inline: 'center', block: 'nearest' }); } else a.removeAttribute('aria-current');
+    if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
+  document.querySelector('nav.main a.on')?.scrollIntoView({ inline: 'center', block: 'nearest' });
   const names = { zoek: 'Zoeken', stand: 'Stand', programma: 'Programma', uitslagen: 'Uitslagen', topscorers: 'Topscorers', ploegen: 'Ploegen', verslagen: 'Verslagen', about: 'Over', account: 'Inloggen', feedback: 'Feedback' };
-  document.title = `${root.querySelector('h1')?.textContent ?? names[seg[0]] ?? 'Overzicht'} · HHC '09`;
+  document.title = `${root.querySelector('h1')?.textContent.trim() ?? names[seg[0]] ?? 'Overzicht'} · HHC '09`;
   window.scrollTo(0, 0);
+}
+
+/** Wedstrijdpagina op mobiel: tabbladen Verloop / thuis / uit (zoals Voetbal.nl). */
+function bindMatchTabs(el) {
+  const grid = el.querySelector('.mgrid');
+  if (!grid) return;
+  el.querySelectorAll('.mtabs button').forEach((b) => {
+    b.addEventListener('click', () => {
+      grid.dataset.show = b.dataset.mt;
+      el.querySelectorAll('.mtabs button').forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-selected', x === b); });
+    });
+  });
 }
 
 async function init() {
@@ -53,11 +101,12 @@ async function init() {
     const d = await loadData();
     buildIndex(d.teams);
     const today = todayNL();
-    ctx = { ...d, today, tm: teamMap(d.teams), computed: computeStandings(d.matches, d.teams, today) };
+    ctx = { ...d, today, tm: teamMap(d.teams), computed: computeStandings(d.matches, d.teams, today), playerIdx: buildPlayerIndex(d) };
     document.getElementById('sub').textContent = `${d.meta.competition} · ${d.meta.season}`;
     bindDownloads(root, ctx);
     const f = document.getElementById('search');
     f.addEventListener('submit', (e) => { e.preventDefault(); location.hash = `#/zoek?q=${encodeURIComponent(new FormData(f).get('q'))}`; });
+    back.addEventListener('click', () => { if (visited.length > 1) history.back(); else location.hash = back.dataset.href; });
     window.addEventListener('hashchange', route);
     route();
   } catch (e) {

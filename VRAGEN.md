@@ -45,3 +45,13 @@ Akkoord dat Claude dit in Supabase uitvoert?
 
 **D1. Wekelijkse update (taak 07).** De workflow "Wekelijkse update Hollandse Velden" heeft nog nooit gedraaid (alleen de gewone controles, en die zijn groen). Start hem één keer in GitHub onder Actions → Run workflow, of laat Claude dat doen.
 - [ ] zelf gedaan  [ ] Claude mag hem starten
+
+---
+
+## F. Periodes (nieuw, 27 november)
+
+**F1. Wanneer eindigt periode 2 en begint periode 3?** Periode 1 loopt t/m 15 november (HHC – Riel), periode 2 vanaf 22 november (HHC – Dussense Boys). De grens tussen 2 en 3 ken ik niet. Voetbal.nl toont het bij "Periode 3" zodra die begint, of het staat in het programma van de KNVB (speelronde).
+- Periode 2 eindigt na de speelronde van: ……  · periode 3 begint op: ……
+
+**F2. Gele kaarten.** De telling komt uit de opstellingen van Voetbal.nl. Bij spelers die daar "afgeschermd" zijn, zien we hun kaarten niet op naam. Ken je gele kaarten van HHC-spelers die ontbreken? Zet ze hier, dan klopt "op scherp" beter.
+- Antwoord:

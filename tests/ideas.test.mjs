@@ -55,3 +55,21 @@ test('vaste basisspelers, positie, rugnummers, scheidsrechters, assists', () => 
   const as = assistList([{ matchId: 'a', date: '2026-01-01', home: 'x', away: 'y', goals: [{ player: 'A', playerTeam: 'x', assist: 'B', minute: 3 }] }], {});
   assert.deepEqual(as.map((a) => [a.name, a.assists.length]), [['B', 1]]);
 });
+
+import { mergeHv } from '../scripts/lib/hv-merge.mjs';
+test('Hollandse Velden overschrijft handmatig bijgehouden inhaalwedstrijden niet', () => {
+  const teams = [{ id: 'a', name: 'A', aliases: [] }, { id: 'b', name: 'B', aliases: [] }];
+  const matches = [
+    { id: 'a-b', home: 'a', away: 'b', date: '2026-12-03', status: 'scheduled', evidence: [], note: 'Afgelast; inhaal 3 december.' },
+    { id: 'b-a', home: 'b', away: 'a', date: '2027-03-01', time: '14:00', status: 'scheduled', evidence: [] },
+  ];
+  const pages = [{ fixtures: [
+    { home: { name: 'A' }, away: { name: 'B' }, date: '2026-11-22', time: '14:30', status: 'afgelast' },
+    { home: { name: 'B' }, away: { name: 'A' }, date: '2027-03-01', time: '14:30', status: 'scheduled' },
+  ], standings: [] }];
+  const r = mergeHv({ teams, matches, pages, today: '2026-11-27', meta: {} });
+  const ab = r.matches.find((m) => m.id === 'a-b');
+  assert.deepEqual([ab.date, ab.status], ['2026-12-03', 'scheduled']);
+  assert.ok(r.log.warnings.some((w) => w.includes('handmatig')));
+  assert.equal(r.matches.find((m) => m.id === 'b-a').time, '14:30', 'gewone wedstrijd wordt wel bijgewerkt');
+});

@@ -1354,11 +1354,10 @@
     "id": "elshout-svg",
     "home": "elshout",
     "away": "svg",
-    "date": "2026-11-26",
+    "date": "2026-12-03",
     "status": "scheduled",
     "evidence": [],
-    "note": "Gestaakt op 15 november; het restant wordt gespeeld op donderdag 3 december.",
-    "time": "20:15"
+    "note": "Gestaakt op 15 november bij 3-3; restant op donderdag 3 december (Hollandse Velden noemde 26 november 20:15)."
   },
   {
     "id": "edn56-sab",
@@ -1419,7 +1418,7 @@
     "home": "hz75",
     "away": "svsos",
     "date": "2026-12-03",
-    "status": "afgelast",
+    "status": "scheduled",
     "evidence": [],
     "note": "Afgelast op 22 november; wordt ingehaald op donderdag 3 december."
   },

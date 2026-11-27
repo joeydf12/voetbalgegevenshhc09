@@ -11,10 +11,14 @@ Losse lijsten: `ONTBREKENDE-DOELPUNTEN.md` (makers en minuten), `SCREENSHOTS-OPN
 **S1. Scouting per tegenstander.** Draai `supabase/05-scouting.sql` één keer.
 - [ ] gedraaid
 
-## Te doen in GitHub
 
-**T1. Wekelijkse update starten.** Claude mag de knop niet zelf indrukken. Ga naar GitHub → Actions → "Wekelijkse update Hollandse Velden" → **Run workflow** → **Run workflow** (branch main). Groen of rood?
-- Antwoord:
+---
+
+## Wedstrijden
+
+**W1. SC Elshout – VV SVG (restant van de gestaakte wedstrijd, 3-3).** Hollandse Velden zet het restant op **donderdag 26 november 20:15**, eerder kreeg ik door **donderdag 3 december**. Op Hollandse Velden staat (nog) geen uitslag. Wat klopt?
+- [ ] 26 november gespeeld, eindstand: ……
+- [ ] wordt 3 december gespeeld
 
 ---
 
@@ -72,3 +76,4 @@ De app toont dit zodra het is ingevuld. Doorgeven mag ook in de Claude-app ("de 
 - **B3:** Sem van Tilborg blijft Tilborg.
 - **F1 periodes:** periode 2 loopt t/m 7 maart 2027, periode 3 vanaf 14 maart (48 / 42 / 42 wedstrijden).
 - **G4 voorkeursbeen:** niet nodig.
+- **T1 wekelijkse update:** op 27 november gestart en groen. Hollandse Velden bevestigt nu alle uitslagen en vulde de aftraptijden aan. Wedstrijden met een toelichting (inhaal of gestaakt) past het ophaalscript niet meer automatisch aan.

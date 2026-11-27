@@ -30,6 +30,13 @@ export function mergeHv({ teams, matches, pages, today, meta }) {
     if (s.bad) continue;
     const { f, home, away } = s;
     let m = byPair.get(k);
+    // Handmatig bijgehouden wedstrijden (met een toelichting, bijv. gestaakt of inhaal): datum, tijd en status niet automatisch wijzigen.
+    if (m?.note && f.status !== 'played') {
+      if (m.date !== f.date || (f.time && m.time !== f.time) || (f.status === 'afgelast') !== (m.status === 'afgelast')) {
+        warn(`${home} - ${away} wordt handmatig bijgehouden (${m.note}); Hollandse Velden zegt ${f.date} ${f.time ?? ''} ${f.status}; niet aangepast, controleer`);
+      }
+      continue;
+    }
     if (!m) {
       m = { id: `${home}-${away}`, home, away, date: f.date, time: f.time, status: f.status === 'afgelast' ? 'afgelast' : 'scheduled', evidence: [] };
       matches.push(m); byPair.set(k, m); log.added++;

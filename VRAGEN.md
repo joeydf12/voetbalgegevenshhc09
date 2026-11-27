@@ -3,7 +3,7 @@
 Vul je antwoord in achter **Antwoord:**, of zet een `x` in `[ ]`. Weet je iets niet: laat het leeg.
 Daarna in Claude: *"Verwerk de antwoorden in VRAGEN.md"*. Claude zet de antwoorden in de data, test alles en haalt beantwoorde vragen hier weg.
 
-Belangrijkste eerst: **A1, A2, E1 en E2**.
+Belangrijkste eerst: **A1 en A2** (de gestaakte en de ontbrekende wedstrijd).
 
 ---
 
@@ -64,8 +64,7 @@ Er staat maar één verslag per wedstrijd in: een nieuw stuk over een wedstrijd 
 - [ ] niet gebruiken
 
 **B3. Doelpunten die nog ontbreken (eigen ploeg).** Per doelpunt: minuut, naam en stand na het doelpunt, bijvoorbeeld `78. Rik van de Wiel 1-0`. Of plak de BD-regel.
-- **RKVV GESTA – HHC '09 1-4** (8 nov). Rik van de Wiel scoorde drie keer (dat bevestigt ook de topscorerslijst: 8 in totaal). Wie maakte het vierde HHC-doelpunt, wie scoorde voor GESTA, in welke minuten, en wat was de ruststand? Antwoord:
-- **SC Elshout – HHC '09 1-0** (20 sep, rust 0-0). Niels van Iersel scoorde zo'n twintig minuten na rust. Precieze minuut? Antwoord:
+- **SC Elshout – HHC '09 1-0** (20 sep, rust 0-0). Voetbal.nl noemt Niels van Iersel, maar zonder minuut (hij scoorde ongeveer twintig minuten na rust). Precieze minuut? Antwoord:
 
 **B4. Doelpunten die nog ontbreken (andere ploegen).** Alleen als je ze hebt; het gaat om minuten of om namen.
 - VV Riel – VV Raamsdonk 4-2 (11 okt): Raamsdonk: 44. Justin van Strien, 76. Luuk Nieuwesteeg. Wie scoorden er voor Riel (22., 28., 86. en een strafschop rond de 88.)? Antwoord:
@@ -117,8 +116,8 @@ Er staat maar één verslag per wedstrijd in: een nieuw stuk over een wedstrijd 
 
 ## D. Opstellingen en nieuws
 
-**D1. Opstellingen opnieuw sturen.** De Claude-sessie in de app heeft opstellingen gemaakt van jouw screenshots: HHC – Riel, GESTA – HHC, HHC – SAB en Raamsdonk – HHC (alleen Raamsdonk). Ook voegde die sessie vier spelers toe (Dandy Lommers 14, Patryk Gomulski 16, Bram Vermeulen 18, Victor van Emmerik 19). Dat werk is **nooit op GitHub aangekomen** (fout 403) en is hier dus niet. Stuur die screenshots en de doelpunten-screenshots van Voetbal.nl opnieuw, dan zet ik ze erin.
-- [ ] opnieuw gestuurd
+**D1. Opstellingen.** De opstellingen van HHC – Riel, GESTA – HHC, HHC – SAB en Raamsdonk – HHC (alleen Raamsdonk) staan erin. Van Raamsdonk – HHC ontbreekt de HHC-kant nog; stuur die als je hem hebt.
+- [ ] gestuurd
 
 **D2. Nieuws over tegenstanders.** Zie B2.
 
@@ -126,17 +125,7 @@ Er staat maar één verslag per wedstrijd in: een nieuw stuk over een wedstrijd 
 
 ## E. Techniek
 
-**E1. Live zetten.** Alles van 26 en 27 november staat alleen op de pc:
-- het inloggen met de pincode (de live site gebruikt nog het oude inloggen, en dat werkt nu niet meer);
-- het volledige programma, alle uitslagen en de stand;
-- 24 verslagen en de selecties.
-
-Mag Claude dit naar GitHub pushen, op een branch met een pull request die jij merget?
-- [ ] ja
-- [ ] nee, eerst zelf kijken
-
-**E2. De oude Claude-sessie in de app.** Die werkt op een branch (`claude/uitslagen-doelpunten-fix-de9zgw`) die niet meer klopt met deze versie. Stop die sessie en start na E1 een nieuwe sessie op `main`; anders ontstaan er twee versies die elkaar overschrijven. Als je de Claude GitHub App wilt gebruiken: verbind GitHub via https://claude.ai/connect-github.
-- [ ] gedaan
+**E2. Claude-sessies.** Werk voortaan steeds in één sessie tegelijk. Begin elke nieuwe sessie op de nieuwste `main`, zodat er geen twee versies ontstaan.
 
 **E3. Wekelijkse update (taak 07).** Start in GitHub onder Actions → "Wekelijkse update Hollandse Velden" één keer **Run workflow**. Werd hij groen of rood?
 - Antwoord:
@@ -149,6 +138,6 @@ Mag Claude dit naar GitHub pushen, op een branch met een pull request die jij me
 ## Ter info (geen actie nodig)
 
 - **Programma compleet:** 132 van 132 wedstrijden. De 35 wedstrijden die al in het programma stonden, kwamen precies overeen met je nieuwe lijst.
-- **Topscorerslijst (screenshot):** spreekt onze verslagen nergens tegen. Wij tellen alleen doelpunten uit verslagen, dus onze lijst is een ondergrens. Rik van de Wiel staat daar op 8, bij ons op 5: de hattrick bij GESTA heeft nog geen minuten (B3).
+- **Topscorerslijst (screenshot):** spreekt onze verslagen nergens tegen. Wij tellen alleen doelpunten uit verslagen, dus onze lijst is een ondergrens. Na de Voetbal.nl-doelpunten bij GESTA – HHC en HHC – Chaam komen Rik van de Wiel (8), Timo Willemsen (4), Steijn van der Linden (3) en Tom van der Linden (3) precies overeen met de lijst.
 - **Minuten wijken af tussen BD en clubsite:** bij HZ '75 – Raamsdonk en Raamsdonk – GESTA noemen het BD en de clubsite van Raamsdonk iets andere minuten (bijv. 22' of 25'). Ik heb het BD gehouden; de uitslag en de makers zijn gelijk.
 - **Niet gebruikt:** het automatisch samengestelde clubdossier ("Bekende selectiespelers …"). Daar stonden fouten in, zoals "Riel won met 7-0 van Dussense Boys" en "SVG speelde 3-3 tegen SC Elshout" (die wedstrijd is gestaakt).

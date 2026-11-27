@@ -1,0 +1,189 @@
+{
+  "matchId": "dussense-boys-hz75",
+  "date": "2026-11-08",
+  "score": [
+    9,
+    1
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "dussense-boys",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Jacco de Graaf",
+        "out": true
+      },
+      {
+        "nr": 3,
+        "name": "Lars Stevens",
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Luuk de Rooy"
+      },
+      {
+        "nr": 7,
+        "name": "Sem van Tilborg"
+      },
+      {
+        "nr": 8,
+        "name": "Justin van den Oudenrijn"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "captain": true,
+        "yellow": 1
+      },
+      {
+        "nr": 11,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 12,
+        "name": "Wessel de Been",
+        "out": true
+      },
+      {
+        "nr": 13,
+        "name": "Joris de Kok"
+      },
+      {
+        "nr": 18,
+        "name": "Luuk Rosendaal"
+      },
+      {
+        "nr": 62,
+        "name": "Yannick Lusse"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Jurek Eijkhout"
+      },
+      {
+        "nr": 4,
+        "name": "Tigo van Hoorn",
+        "in": true
+      },
+      {
+        "nr": 6,
+        "name": "Kevin Lensvelt",
+        "in": true
+      },
+      {
+        "nr": 9,
+        "name": "Luc Lensvelt",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Gijs van Herwijnen",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "hz75",
+    "incomplete": true,
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Luuk Vissers",
+        "pos": "Keeper"
+      },
+      {
+        "nr": 2,
+        "name": "Stijn Groen"
+      },
+      {
+        "nr": 4,
+        "name": "Stan Stevens",
+        "pos": "Verdediger",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Wouter Zevenbergen"
+      },
+      {
+        "nr": 6,
+        "name": "Finn Hoevenaar"
+      },
+      {
+        "nr": 9,
+        "name": "Kevin van der Schans"
+      },
+      {
+        "nr": 10,
+        "name": "Bram Gosens",
+        "pos": "Middenvelder",
+        "captain": true
+      },
+      {
+        "nr": 11,
+        "name": "Noah Brejaart"
+      },
+      {
+        "nr": 13,
+        "name": "Timo Vervelde",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 14,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 15,
+        "name": "Oskar Siwik",
+        "pos": "Aanvaller",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Rubin van Loon",
+        "in": true
+      },
+      {
+        "nr": 8,
+        "name": "Kursat Bucakli",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 18,
+        "name": "Teun Stevens",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 20,
+        "name": "Tom van Ermingen"
+      }
+    ],
+    "trainer": null
+  }
+}

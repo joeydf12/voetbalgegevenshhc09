@@ -145,10 +145,11 @@ export function validateData(data, { today }) {
         if (s.starters.length || s.subs.length) err(`${tag} (${side}): staat als ontbrekend maar heeft spelers`);
         continue;
       }
-      if (s.starters.length !== 11) warn(`${tag} (${side}): ${s.starters.length} basisspelers in plaats van 11`);
+      if (s.incomplete) { if (!s.starters.length && !s.subs.length) err(`${tag} (${side}): onvolledig maar leeg; gebruik missing`); }
+      else if (s.starters.length !== 11) warn(`${tag} (${side}): ${s.starters.length} basisspelers in plaats van 11`);
       const outs = [...s.starters, ...s.subs].filter((p) => p.out).length;
       const ins = s.subs.filter((p) => p.in).length;
-      if (outs !== ins) warn(`${tag} (${side}): ${outs} gewisseld uit maar ${ins} ingevallen`);
+      if (outs !== ins && !s.incomplete) warn(`${tag} (${side}): ${outs} gewisseld uit maar ${ins} ingevallen`);
       const nrs = new Set();
       for (const p of [...s.starters, ...s.subs]) {
         if (!isInt(p.nr)) err(`${tag} (${side}): speler zonder rugnummer`);

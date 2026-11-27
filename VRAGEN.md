@@ -117,8 +117,12 @@ Er staat maar één verslag per wedstrijd in: een nieuw stuk over een wedstrijd 
 
 ## D. Opstellingen en nieuws
 
-**D1. Opstellingen opnieuw sturen.** De Claude-sessie in de app heeft opstellingen gemaakt van jouw screenshots: HHC – Riel, GESTA – HHC, HHC – SAB en Raamsdonk – HHC (alleen Raamsdonk). Ook voegde die sessie vier spelers toe (Dandy Lommers 14, Patryk Gomulski 16, Bram Vermeulen 18, Victor van Emmerik 19). Dat werk is **nooit op GitHub aangekomen** (fout 403) en is hier dus niet. Stuur die screenshots en de doelpunten-screenshots van Voetbal.nl opnieuw, dan zet ik ze erin.
-- [ ] opnieuw gestuurd
+**D1. Zelfde speler, andere spelling? (Riel)** De selectie van Riel (uit VoetbalScore.nl) en Voetbal.nl schrijven deze namen anders. Ik heb ze nog niet gekoppeld.
+- "Joshua Paijmans" = "Joshua Paymans" (#9 tegen HHC en HZ '75)? [ ] ja [ ] nee
+- "Lucas van de Bruggen" = "Lucas van der Bruggen" (#12 tegen HZ '75)? [ ] ja [ ] nee
+
+**D3. Spelling in krantverslagen.** Voetbal.nl schrijft "Brahim Saoud" (SVG) en "Robin van den Broek" (EDN '56); het BD-verslag "Brahum Saoud" en "Robin van de Broek". Welke klopt?
+- Antwoord:
 
 **D2. Nieuws over tegenstanders.** Zie B2.
 

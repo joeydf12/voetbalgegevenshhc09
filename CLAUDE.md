@@ -24,6 +24,7 @@ De exacte taken staan in `taken/` (begin bij `taken/README.md`). Voer ze letterl
 - **Selectie bijwerken:** `node scripts/import-players.mjs --file lijst.txt [--replace] --apply`.
 - **Uitslag toevoegen:** `node scripts/add-result.mjs --home "<thuis>" --away "<uit>" --score N-N --source voetbalnl|bd|hollandsevelden [--ht N-N]` (zonder `--apply` = controle). Voeg nooit zelf een wedstrijd toe zonder datum uit het programma.
 - **Doelpunten van Voetbal.nl (tijdlijn):** schrijf in een tijdelijk bestand `Thuis - Uit N-N` en daaronder per doelpunt `minuut naam tussenstand` (oudste eerst; `?` = minuut of maker onbekend, bv. 0' op Voetbal.nl). Draai `node scripts/add-goals.mjs --file <bestand>` (controle), dan `--apply`. Rust wordt niet ingevuld. Een krantverslag (BD) gaat altijd voor: `add-report` vervangt dit verslag, `add-goals` weigert als er al een BD-verslag is.
+- **Opstellingen (Voetbal.nl-screenshots):** één bestand per wedstrijd in `data/lineups/<wedstrijd-id>.json` (zie bestaande). Afgeschermd = `name: null, hidden: true`. Ontbreekt een kant helemaal: `missing: true`; deels in beeld: `incomplete: true`. Daarna `node scripts/sync-players.mjs` (controle) en `--apply`: zet namen en laatst geziene rugnummers in de selecties; namen die op een bestaande lijken worden niet toegevoegd maar komen in `VRAGEN.md`.
 - **Officiële stand:** `node scripts/set-standings.mjs --file stand.csv --as-of JJJJ-MM-DD --last-result JJJJ-MM-DD --source voetbalnl` (zonder `--apply` = controle).
 - **Wekelijkse update:** `node scripts/fetch-hv.mjs` (doet de GitHub Action ook).
 

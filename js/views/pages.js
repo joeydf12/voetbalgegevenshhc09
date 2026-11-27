@@ -205,7 +205,7 @@ function playersTab(ctx, id) {
 function lineupSide(s, ctx) {
   const row = (p) => html`<li>${p.nr}. ${p.name ?? html`<i>afgeschermd</i>`}${p.pos ? html` <small>${p.pos}</small>` : ''}${p.yellow ? ' 🟨' : ''}${p.out ? ' ⬇' : ''}${p.in ? ' ⬆' : ''}${p.captain ? ' (aanvoerder)' : ''}</li>`;
   if (s.missing) return html`<div><h4>${ctx.tm.get(s.team).name}</h4>${empty('Opstelling nog niet aangeleverd.')}</div>`;
-  return html`<div><h4>${ctx.tm.get(s.team).name}</h4><b>Basis</b><ul>${s.starters.map(row)}</ul><b>Wissels</b><ul>${s.subs.map(row)}</ul>${s.trainer ? html`<small>Trainer: ${s.trainer}</small>` : ''}</div>`;
+  return html`<div><h4>${ctx.tm.get(s.team).name}</h4><b>Basis</b><ul>${s.starters.map(row)}</ul><b>Wissels</b><ul>${s.subs.map(row)}</ul>${s.incomplete ? html`<p class="note">Onvolledig aangeleverd: niet alle spelers zijn bekend.</p>` : ''}${s.trainer ? html`<small>Trainer: ${s.trainer}</small>` : ''}</div>`;
 }
 function lineupView(ctx, l) {
   return html`<div class="two">${lineupSide(l.home, ctx)}${lineupSide(l.away, ctx)}</div><p class="note">⬇ gewisseld uit, ⬆ ingevallen, 🟨 gele kaart, (aanvoerder) = C-icoontje op Voetbal.nl. Bron: ${l.source.name}${l.source.matchNr ? `, wedstrijd ${l.source.matchNr}` : ''}.</p>`;

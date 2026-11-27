@@ -1,0 +1,183 @@
+{
+  "matchId": "hz75-gesta",
+  "date": "2026-11-15",
+  "score": [
+    0,
+    3
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "hz75",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Luuk Vissers",
+        "pos": "Keeper"
+      },
+      {
+        "nr": 2,
+        "name": "Stijn Groen"
+      },
+      {
+        "nr": 4,
+        "name": "Stan Stevens",
+        "pos": "Verdediger",
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Wouter Zevenbergen"
+      },
+      {
+        "nr": 6,
+        "name": "Jowan Gosens",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 7,
+        "name": "Finn Hoevenaar"
+      },
+      {
+        "nr": 10,
+        "name": "Bram Gosens",
+        "pos": "Middenvelder",
+        "captain": true
+      },
+      {
+        "nr": 12,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 13,
+        "name": "Timo Vervelde",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 17,
+        "name": "Quinten Robijn",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 20,
+        "name": "Tom van Ermingen",
+        "out": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 3,
+        "name": "Steffen Becht"
+      },
+      {
+        "nr": 9,
+        "name": "Kursat Bucakli",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Noah Brejaart",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Oskar Siwik",
+        "pos": "Aanvaller"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "gesta",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Gijs van Gurp",
+        "captain": true
+      },
+      {
+        "nr": 3,
+        "name": "Lars Verheijen"
+      },
+      {
+        "nr": 4,
+        "name": "Timo Voeten"
+      },
+      {
+        "nr": 6,
+        "name": "Jari Heestermans"
+      },
+      {
+        "nr": 7,
+        "name": "Boaz den Ouden",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Jens de Jong"
+      },
+      {
+        "nr": 12,
+        "name": "Stijn Gooijers",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Brent Verheijen"
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 17,
+        "name": "Noah van der Velden",
+        "out": true
+      },
+      {
+        "nr": 21,
+        "name": "Jorg Feskens"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 5,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 9,
+        "name": "Jens Gooijers"
+      },
+      {
+        "nr": 10,
+        "name": "Roy van Alphen",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Tom Verschueren",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

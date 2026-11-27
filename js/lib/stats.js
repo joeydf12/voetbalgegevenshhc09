@@ -6,7 +6,7 @@ export function topScorers(reports) {
   const map = new Map();
   for (const r of reports) {
     for (const g of r.goals || []) {
-      if (g.og) continue;
+      if (g.og || !g.player) continue;
       const key = `${g.playerTeam}|${norm(g.player)}`;
       const e = map.get(key) || { player: g.player, team: g.playerTeam, goals: 0, matches: new Set() };
       e.goals++;

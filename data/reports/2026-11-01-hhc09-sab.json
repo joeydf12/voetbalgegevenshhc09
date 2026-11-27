@@ -1,0 +1,113 @@
+{
+  "matchId": "hhc09-sab",
+  "date": "2026-11-01",
+  "home": "hhc09",
+  "away": "sab",
+  "result": {
+    "home": 7,
+    "away": 0
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 45,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 57,
+      "extra": 0,
+      "player": "Timo Willemsen",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 68,
+      "extra": 0,
+      "player": "Timo Willemsen",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        3,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 77,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        4,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 84,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        5,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 89,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        6,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Duncan van Drunen",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        7,
+        0
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

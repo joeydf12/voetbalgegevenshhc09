@@ -19,6 +19,8 @@ Lees eerst `../CLAUDE.md` en `../taken/README.md`. Dit bestand zegt wat er al ge
 - Windows-fixes: tests en `npm start` werkten niet door `URL.pathname`-paden.
 - Tests: `npm test` 34/34, `npm run validate` 0 fouten. Browsertest (headless Chrome + echte Chrome): 83 pagina's, 100 willekeurige navigaties, backend-uitval, mobiel 390px: alles groen.
 
+- 2026-11-27: doelpuntenmakers van Voetbal.nl (tijdlijn-screenshots) toegevoegd voor alle 9 gespeelde HHC-wedstrijden behalve Riel (daar blijft het BD-verslag staan; Voetbal.nl-uitslag 4-0 als tweede bron). Nieuwe uitslagen: Raamsdonk-HHC 7-3, HHC-SAB 7-0, GESTA-HHC 1-4 (1 bron: Voetbal.nl). Minuut 0' op Voetbal.nl = onbekend (`minute: null`), rust bij Voetbal.nl-verslagen = `null`. Nieuw script `scripts/add-goals.mjs`. Selectie: Steijn van der Linden en Sjoerd Bruinsma toegevoegd (rugnummer onbekend), alias "Timo Willemse" → Timo Willemsen.
+
 ## Open (in deze volgorde)
 1. ~~RLS-test~~ **geslaagd op 2026-11-27** (`supabase/rls-test.sql`, door de gebruiker in de SQL Editor gedraaid, alles teruggedraaid): A wijzigt eigen keuze, beide leden lezen alles, B kan rijen/feedback van A niet wijzigen, verwijderen of onder A's id schrijven, 2001 tekens en ongeldige status geweigerd, niet-lid ziet en schrijft niets, anoniem geweigerd. Opnieuw geslaagd na de advisor-fix (2026-11-27, 15/15). Draai dit script opnieuw na elke wijziging aan de `ts_`-policies.
 2. ~~Advisor-fix~~ **uitgevoerd 2026-11-27** (`supabase/02-advisor-fix.sql`). Overgebleven bewuste adviezen voor deze site: `ts_members` zonder policies (INFO, ledenlijst niet via API) en `ts_team()` uitvoerbaar voor ingelogden (WARN, nodig voor de site; geeft alleen iets terug aan teamleden). De overige adviezen horen bij andere HHC-apps.

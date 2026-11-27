@@ -11,12 +11,12 @@ const data = loadAll(fileURLToPath(new URL('../data', import.meta.url)));
 
 test('teamProfile HHC klopt met handtelling', () => {
   const p = teamProfile(data.matches, 'hhc09');
-  assert.deepEqual([p.all.pl, p.all.w, p.all.d, p.all.l, p.all.gf, p.all.ga, p.all.pts], [6, 4, 0, 2, 10, 6, 12]);
-  // thuis: 2-1 Chaam, 0-2 EDN, 4-0 Riel, 1-0 Dussense ; uit: 0-1 Elshout, 3-2 SVG
-  assert.deepEqual([p.home.pl, p.home.pts, p.home.gf, p.home.ga, p.home.cs], [4, 9, 7, 3, 2]);
-  assert.deepEqual([p.away.pl, p.away.pts, p.away.gf, p.away.ga], [2, 3, 3, 3]);
-  assert.equal(p.gfPer, 1.67); assert.equal(p.ppg, 2);
-  assert.equal(p.best.gf - p.best.ga, 4);
+  assert.deepEqual([p.all.pl, p.all.w, p.all.d, p.all.l, p.all.gf, p.all.ga, p.all.pts], [9, 6, 0, 3, 24, 14, 18]);
+  // thuis: 2-1 Chaam, 0-2 EDN, 7-0 SAB, 4-0 Riel, 1-0 Dussense ; uit: 0-1 Elshout, 3-2 SVG, 3-7 Raamsdonk, 4-1 GESTA
+  assert.deepEqual([p.home.pl, p.home.pts, p.home.gf, p.home.ga, p.home.cs], [5, 12, 14, 3, 3]);
+  assert.deepEqual([p.away.pl, p.away.pts, p.away.gf, p.away.ga], [4, 6, 10, 11]);
+  assert.equal(p.gfPer, 2.67); assert.equal(p.ppg, 2);
+  assert.equal(p.best.gf - p.best.ga, 7);
 });
 
 test('thuis- en uitstand tellen elke wedstrijd precies één keer', () => {

@@ -1,0 +1,35 @@
+{
+  "matchId": "hhc09-dussense-boys",
+  "date": "2026-11-22",
+  "home": "hhc09",
+  "away": "dussense-boys",
+  "result": {
+    "home": 1,
+    "away": 0
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

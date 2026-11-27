@@ -1,0 +1,61 @@
+{
+  "matchId": "hhc09-chaam",
+  "date": "2026-09-27",
+  "home": "hhc09",
+  "away": "chaam",
+  "result": {
+    "home": 2,
+    "away": 1
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 18,
+      "extra": 0,
+      "player": "Steijn van der Linden",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 32,
+      "extra": 0,
+      "player": "Tom van der Linden",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 67,
+      "extra": 0,
+      "player": null,
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

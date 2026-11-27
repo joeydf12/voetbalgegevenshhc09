@@ -28,6 +28,12 @@
         "home": 1,
         "away": 0,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -60,6 +66,12 @@
         "home": 2,
         "away": 1,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -140,6 +152,12 @@
         "home": 2,
         "away": 3,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -156,6 +174,12 @@
         "home": 0,
         "away": 2,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -207,7 +231,14 @@
     "date": "2026-10-25",
     "time": "14:30",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 7,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "riel-hz75",
@@ -234,7 +265,14 @@
     "date": "2026-11-01",
     "time": "14:00",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 7,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "hz75-raamsdonk",
@@ -261,7 +299,14 @@
     "date": "2026-11-08",
     "time": "14:00",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 4,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "edn56-dussense-boys",
@@ -287,6 +332,12 @@
         "htHome": 2,
         "htAway": 0,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 4,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -311,7 +362,7 @@
         "source": "voetbalnl",
         "home": 1,
         "away": 0,
-        "retrievedAt": "2026-11-26"
+        "retrievedAt": "2026-11-27"
       }
     ]
   },

@@ -125,7 +125,7 @@ function scorersTable(ctx, limit) {
 
 export function scorers(ctx) {
   const og = ownGoalsList(ctx.reports);
-  return html`${section('Topscorers (uit verslagen)', scorersTable(ctx, 50))}${og.length ? section('Eigen doelpunten', html`<ul>${og.map((g) => html`<li>${g.player} (${tlink(ctx, g.playerTeam)}) – ${g.minute}'</li>`)}</ul>`) : ''}`;
+  return html`${section('Topscorers (uit verslagen)', scorersTable(ctx, 50))}${og.length ? section('Eigen doelpunten', html`<ul>${og.map((g) => html`<li>${g.player ?? 'onbekend'} (${tlink(ctx, g.playerTeam)}) – ${g.minute ?? '?'}'</li>`)}</ul>`) : ''}`;
 }
 
 export function teams(ctx) {
@@ -185,10 +185,11 @@ function topScorersFor(ctx, id) {
 
 function reportCard(ctx, r) {
   const m = ctx.matches.find((x) => x.id === r.matchId);
-  return html`<article class="report"><h3><a href="#/match/${r.matchId}">${ctx.tm.get(r.home).name} ${r.result.home} – ${r.result.away} ${ctx.tm.get(r.away).name}</a> <small>(rust ${r.ht.home}-${r.ht.away}) · ${fmtDate(r.date)}</small></h3>
-    <p>${r.goals.map((g) => `${g.minute}${g.extra ? '+' + g.extra : ''}' ${g.player}${g.og ? ' (e.d.)' : ''}`).join(' · ') || 'Geen doelpunten.'}</p>
+  return html`<article class="report"><h3><a href="#/match/${r.matchId}">${ctx.tm.get(r.home).name} ${r.result.home} – ${r.result.away} ${ctx.tm.get(r.away).name}</a> <small>${r.ht ? `(rust ${r.ht.home}-${r.ht.away}) · ` : ''}${fmtDate(r.date)}</small></h3>
+    <p>${r.goals.map((g) => `${g.minute === null ? '?' : g.minute + (g.extra ? '+' + g.extra : '')}' ${g.player ?? `onbekend (${ctx.tm.get(g.team).name})`}${g.og ? ' (e.d.)' : ''}`).join(' · ') || 'Geen doelpunten.'}</p>
     ${r.summary ? html`<p>${r.summary}</p>` : ''}
-    <p class="note">Bron: ${r.source.url ? html`<a href="${r.source.url}" target="_blank" rel="noopener noreferrer">${r.source.name}</a>` : r.source.name}${r.source.publishedAt ? `, ${fmtDate(r.source.publishedAt)}` : ''}. ${m ? sourceNote(m) : ''}</p></article>`;
+    ${r.goals.some((g) => g.minute === null) ? html`<p class="note">? = minuut onbekend.</p>` : ''}
+    <p class="note">Verslag: ${r.source.url ? html`<a href="${r.source.url}" target="_blank" rel="noopener noreferrer">${r.source.name}</a>` : r.source.name}${r.source.publishedAt ? `, ${fmtDate(r.source.publishedAt)}` : ''}. ${m ? sourceNote(m) : ''}</p></article>`;
 }
 
 function playersTab(ctx, id) {
@@ -254,7 +255,7 @@ export function reports(ctx) {
 export function about(ctx) {
   const { meta } = ctx;
   return html`${section('Over deze omgeving', html`<p>${meta.competition}, seizoen ${meta.season}. Elke uitslag heeft per bron een bewijsstuk; staan er twee bronnen met dezelfde uitslag, dan is hij <b>bevestigd</b>, bij verschil tonen we hem als <b>tegenstrijdig</b> in plaats van een gok.</p>
-    <ul><li>Programma en uitslagen: Hollandse Velden (wekelijks).</li><li>Doelpuntenmakers: geplakte BD/Regio Brabant-verslagen, streng gecontroleerd tegen programma en selectie.</li><li>Opstellingen: Voetbal.nl-screenshots (alleen basis, wissels en kaarten).</li></ul>`)}
+    <ul><li>Programma en uitslagen: Hollandse Velden (wekelijks).</li><li>Doelpuntenmakers: BD/Regio Brabant-verslagen; zolang er geen krantverslag is de tijdlijn van Voetbal.nl. Het krantverslag gaat altijd voor.</li><li>Opstellingen: Voetbal.nl-screenshots (alleen basis, wissels en kaarten).</li></ul>`)}
     ${section('Status van de gegevens', html`<p>${meta.seed ? meta.seed.note : ''}</p>${meta.lastFetch ? html`<p>Laatste download: ${fmtDate(meta.lastFetch.date)} (${meta.lastFetch.pages} pagina's, ${meta.lastFetch.warnings} waarschuwingen).</p>` : html`<p>Er is nog geen automatische download gedraaid.</p>`}`)}
     ${section('Feedback van de aanvoerder', html`<p>Na elke wedstrijd geeft de aanvoerder korte feedback; teamleden lezen mee. Alleen voor ingelogde teamleden.</p><p><a class="btn" href="#/feedback">Naar het feedbackformulier</a> <a class="btn alt" href="#/account">Inloggen</a></p>`)}`;
 }

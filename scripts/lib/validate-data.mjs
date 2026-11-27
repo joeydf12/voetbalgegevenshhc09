@@ -97,7 +97,7 @@ export function validateData(data, { today }) {
     repIds.add(r.matchId);
     if (r.home !== m.home || r.away !== m.away || r.date !== m.date) err(`${tag}: ploegen of datum wijken af van de wedstrijd`);
     if (r.file !== `${m.date}-${m.home}-${m.away}.json`) err(`${tag}: bestandsnaam hoort ${m.date}-${m.home}-${m.away}.json te zijn`);
-    const probe = { score: [r.result.home, r.result.away], ht: [r.ht.home, r.ht.away], goals: r.goals.map((g) => ({ ...g })), errors: [], warnings: [] };
+    const probe = { score: [r.result.home, r.result.away], ht: r.ht ? [r.ht.home, r.ht.away] : null, goals: r.goals.map((g) => ({ ...g })), errors: [], warnings: [] };
     checkInternal(probe);
     probe.errors.forEach((e) => err(`${tag}: ${e}`));
     probe.goals.forEach((g, i) => {
@@ -105,7 +105,7 @@ export function validateData(data, { today }) {
       if (expectTeam && r.goals[i].team !== expectTeam) err(`${tag}: doelpunt ${i + 1} (${g.player}) hoort bij ${expectTeam}, staat bij ${r.goals[i].team}`);
       const pt = g.og ? (g.side === 'home' ? r.away : r.home) : expectTeam;
       if (pt && r.goals[i].playerTeam !== pt) err(`${tag}: doelpunt ${i + 1} (${g.player}) heeft verkeerde playerTeam`);
-      if (r.goals[i].playerTeam === meta.ownTeam) {
+      if (r.goals[i].playerTeam === meta.ownTeam && g.player !== null) {
         const roster = (players || {})[meta.ownTeam] || [];
         const nm = (s) => s.toLowerCase();
         if (!roster.some((p) => nm(p.name) === nm(g.player) || (p.aliases || []).some((a) => nm(a) === nm(g.player)))) err(`${tag}: ${g.player} staat niet in de selectie`);
@@ -114,8 +114,8 @@ export function validateData(data, { today }) {
     const ev = (m.evidence || []).find((e) => e.source === r.source.key);
     if (!ev) err(`${tag}: de wedstrijd mist de uitslag van bron "${r.source.key}"`);
     else if (ev.home !== r.result.home || ev.away !== r.result.away) err(`${tag}: uitslag in verslag (${r.result.home}-${r.result.away}) wijkt af van bewijs (${ev.home}-${ev.away})`);
-    if (!r.source.url) warn(`${tag}: nog geen link naar de bron`);
-    if (!r.summary) warn(`${tag}: nog geen samenvatting`);
+    if (r.source.key === 'bd' && !r.source.url) warn(`${tag}: nog geen link naar de bron`);
+    if (r.source.key === 'bd' && !r.summary) warn(`${tag}: nog geen samenvatting`);
   }
   const listed = new Set(data.reportIndex?.files || []);
   for (const r of reports) if (!listed.has(r.file)) err(`reports/index.json mist ${r.file} (draai node scripts/add-report.mjs of rebuild)`);

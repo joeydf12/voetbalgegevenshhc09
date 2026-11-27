@@ -4,7 +4,7 @@
 
 **Invoer van de gebruiker:** per wedstrijd: thuisploeg, uitploeg, uitslag, optioneel rust, en de bron (`voetbalnl`, `bd` of `hollandsevelden`).
 
-**Bekende ontbrekende uitslagen van HHC '09 (vraag de gebruiker erom):** 25 okt VV Raamsdonk - HHC '09, 1 nov HHC '09 - SAB, 8 nov RKVV GESTA - HHC '09. Andere ontbrekende uitslagen staan op de site onder Uitslagen, filter "alleen ontbrekende".
+**Bekende ontbrekende uitslagen van HHC '09 (vraag de gebruiker erom):** 25 okt VV Raamsdonk - HHC '09, 1 nov HHC '09 - SAB, 8 nov RKVV GESTA - HHC '09 (alle drie op 2026-11-27 toegevoegd van Voetbal.nl). Andere ontbrekende uitslagen staan op de site onder Uitslagen, filter "alleen ontbrekende".
 
 **Stappen (per wedstrijd)**
 1. Controle: `node scripts/add-result.mjs --home "<thuis>" --away "<uit>" --score <N-N> [--ht <N-N>] --source <bron>`
@@ -14,3 +14,5 @@
 **Klaar als:** elke opgegeven uitslag staat in `data/matches.json` bij de juiste wedstrijd, `validate` geeft 0 fouten.
 
 **Stop en vraag als:** het script "Tegenstrijdig" meldt (vraag welke bron klopt, gebruik `--allow-conflict` alleen op uitdrukkelijk verzoek), de wedstrijd niet gevonden wordt (controleer thuis/uit-volgorde; voeg nooit zelf een wedstrijd toe zonder datum uit het programma), of de datum na vandaag ligt.
+
+**Doelpuntenmakers erbij (Voetbal.nl-tijdlijn):** gebruik `scripts/add-goals.mjs` (zie `CLAUDE.md`); dat zet ook de uitslag van Voetbal.nl als bewijs. Bestaat er al een BD-verslag, dan gaat dat voor en wordt er niets gewijzigd.

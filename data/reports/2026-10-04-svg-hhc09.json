@@ -1,0 +1,87 @@
+{
+  "matchId": "svg-hhc09",
+  "date": "2026-10-04",
+  "home": "svg",
+  "away": "hhc09",
+  "result": {
+    "home": 2,
+    "away": 3
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 9,
+      "extra": 0,
+      "player": "Shuburney Rosaria",
+      "team": "svg",
+      "playerTeam": "svg",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 23,
+      "extra": 0,
+      "player": "Brahim Saoud",
+      "team": "svg",
+      "playerTeam": "svg",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 38,
+      "extra": 0,
+      "player": "Sjoerd Bruinsma",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 42,
+      "extra": 0,
+      "player": "Steijn van der Linden",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        2,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 86,
+      "extra": 0,
+      "player": "Steijn van der Linden",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        2,
+        3
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

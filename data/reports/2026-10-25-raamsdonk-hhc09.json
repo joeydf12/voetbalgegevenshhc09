@@ -1,0 +1,152 @@
+{
+  "matchId": "raamsdonk-hhc09",
+  "date": "2026-10-25",
+  "home": "raamsdonk",
+  "away": "hhc09",
+  "result": {
+    "home": 7,
+    "away": 3
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 17,
+      "extra": 0,
+      "player": "Tom van der Linden",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 19,
+      "extra": 0,
+      "player": "Jayden van Seeters",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 38,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 45,
+      "extra": 0,
+      "player": "Lars van Strien",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        3,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 45,
+      "extra": 0,
+      "player": "Jordi v.d. Korput",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        4,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 76,
+      "extra": 0,
+      "player": "Tim de Fijter",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        4,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 86,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        5,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 86,
+      "extra": 0,
+      "player": "Justin Van Strien",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        6,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 86,
+      "extra": 0,
+      "player": "Tim de Fijter",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        6,
+        3
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Owen Kramer",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        7,
+        3
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

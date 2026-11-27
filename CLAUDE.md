@@ -22,6 +22,7 @@ De exacte taken staan in `taken/` (begin bij `taken/README.md`). Voer ze letterl
 - **BD-verslag verwerken:** zet de wedstrijdregel in een tijdelijk tekstbestand en draai `node scripts/add-report.mjs --file <bestand> --url <link> --published JJJJ-MM-DD --summary "eigen woorden"` (zonder `--apply` = controle). Alleen bij een schone controle `--apply`. Verwijder het tijdelijke bestand daarna. Bij fouten: niets opslaan en mij vragen.
 - **Selectie bijwerken:** `node scripts/import-players.mjs --file lijst.txt [--replace] --apply`.
 - **Uitslag toevoegen:** `node scripts/add-result.mjs --home "<thuis>" --away "<uit>" --score N-N --source voetbalnl|bd|hollandsevelden [--ht N-N]` (zonder `--apply` = controle). Voeg nooit zelf een wedstrijd toe zonder datum uit het programma.
+- **Doelpunten van Voetbal.nl (tijdlijn):** schrijf in een tijdelijk bestand `Thuis - Uit N-N` en daaronder per doelpunt `minuut naam tussenstand` (oudste eerst; `?` = minuut of maker onbekend, bv. 0' op Voetbal.nl). Draai `node scripts/add-goals.mjs --file <bestand>` (controle), dan `--apply`. Rust wordt niet ingevuld. Een krantverslag (BD) gaat altijd voor: `add-report` vervangt dit verslag, `add-goals` weigert als er al een BD-verslag is.
 - **Officiële stand:** `node scripts/set-standings.mjs --file stand.csv --as-of JJJJ-MM-DD --last-result JJJJ-MM-DD --source voetbalnl` (zonder `--apply` = controle).
 - **Wekelijkse update:** `node scripts/fetch-hv.mjs` (doet de GitHub Action ook).
 

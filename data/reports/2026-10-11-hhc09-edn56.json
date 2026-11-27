@@ -1,0 +1,48 @@
+{
+  "matchId": "hhc09-edn56",
+  "date": "2026-10-11",
+  "home": "hhc09",
+  "away": "edn56",
+  "result": {
+    "home": 0,
+    "away": 2
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 43,
+      "extra": 0,
+      "player": "Teun Reijrink",
+      "team": "edn56",
+      "playerTeam": "edn56",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 57,
+      "extra": 0,
+      "player": "Robin van den Broek",
+      "team": "edn56",
+      "playerTeam": "edn56",
+      "score": [
+        0,
+        2
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

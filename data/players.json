@@ -39,7 +39,9 @@
     {
       "name": "Timo Willemsen",
       "nr": 9,
-      "aliases": [],
+      "aliases": [
+        "Timo Willemse"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -80,6 +82,18 @@
     },
     {
       "name": "Rik van de Wiel",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Steijn van der Linden",
+      "nr": null,
+      "aliases": [],
+      "nrSeen": null
+    },
+    {
+      "name": "Sjoerd Bruinsma",
       "nr": null,
       "aliases": [],
       "nrSeen": null

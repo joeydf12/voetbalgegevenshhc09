@@ -51,6 +51,39 @@ test('add-report: dry-run slaat niets op; --apply voegt verslag + bewijs toe; tw
   assert.equal(bad.status, 1);
 });
 
+test('add-goals: Voetbal.nl-tijdlijn met onbekende minuut/maker; BD-verslag gaat daarna voor', () => {
+  const d = tmp();
+  const txt = path.join(d, 't.txt');
+  const sab = () => rj(d, 'matches.json').find((m) => m.id === 'hhc09-sab');
+  assert.ok(sab());
+  const pl = rj(d, 'players.json');
+  fs.writeFileSync(txt, "HHC'09 - SAB 2-0\n? Timo Willemse 1-0\n70 ? 2-0\n");
+  assert.equal(run('scripts/add-goals.mjs', ['--file', txt], d).status, 1); // geen alias -> geweigerd
+  pl.hhc09.find((p) => p.name === 'Timo Willemsen').aliases.push('Timo Willemse');
+  fs.writeFileSync(path.join(d, 'players.json'), JSON.stringify(pl));
+  fs.writeFileSync(txt, "HHC'09 - SAB 2-0\n? Timo Willemse 1-0\n70 ? 2-0\n");
+  const ap = run('scripts/add-goals.mjs', ['--file', txt, '--apply'], d);
+  assert.equal(ap.status, 0, ap.stdout + ap.stderr);
+  const rep = rj(d, 'reports/2026-11-01-hhc09-sab.json');
+  assert.equal(rep.source.key, 'voetbalnl');
+  assert.equal(rep.ht, null);
+  assert.equal(rep.goals[0].minute, null);
+  assert.equal(rep.goals[0].player, 'Timo Willemsen'); // alias -> naam uit de selectie
+  assert.equal(rep.goals[1].player, null);
+  assert.equal(run('scripts/validate.mjs', [], d).status, 0);
+  // Krantverslag vervangt het Voetbal.nl-verslag
+  const bd = path.join(d, 'v.txt');
+  fs.writeFileSync(bd, 'HHC’09 - SAB 2-0 (1-0). 20. Timo Willemsen 1-0 70. Jeffrey Fitters 2-0.');
+  const b = run('scripts/add-report.mjs', ['--file', bd, '--url', 'https://example.org/a', '--published', '2026-11-02', '--summary', 'Test', '--apply'], d);
+  assert.equal(b.status, 0, b.stdout + b.stderr);
+  assert.equal(rj(d, 'reports/2026-11-01-hhc09-sab.json').source.key, 'bd');
+  // En daarna weigert add-goals om het krantverslag te overschrijven
+  const again = run('scripts/add-goals.mjs', ['--file', txt, '--apply'], d);
+  assert.equal(again.status, 1);
+  assert.match(again.stdout, /krantverslag/);
+  assert.equal(rj(d, 'reports/2026-11-01-hhc09-sab.json').source.key, 'bd');
+});
+
 test('fetch-hv met synthetische pagina\'s: nieuwe uitslag, wijziging wordt gemeld, afwijkende pagina\'s niet overgenomen', () => {
   const d = tmp();
   const pages = fs.mkdtempSync(path.join(os.tmpdir(), 'hvp-'));

@@ -1,0 +1,64 @@
+{
+  "matchId": "svsos-raamsdonk",
+  "date": "2026-11-15",
+  "home": "svsos",
+  "away": "raamsdonk",
+  "result": {
+    "home": 0,
+    "away": 3
+  },
+  "ht": {
+    "home": 0,
+    "away": 2
+  },
+  "goals": [
+    {
+      "minute": 12,
+      "extra": 0,
+      "player": "Daan Schipperen",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 37,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 69,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        3
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Website v.v. Raamsdonk",
+    "key": "pers",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": "Raamsdonk won net als eerder in de beker met 0-3 in Biest-Houtakker. Daan Schipperen opende de score, Luuk Nieuwesteeg maakte er twee; doelman Tijs Rutters hield de nul.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

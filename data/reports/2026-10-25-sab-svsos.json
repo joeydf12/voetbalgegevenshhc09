@@ -1,0 +1,90 @@
+{
+  "matchId": "sab-svsos",
+  "date": "2026-10-25",
+  "home": "sab",
+  "away": "svsos",
+  "result": {
+    "home": 2,
+    "away": 3
+  },
+  "ht": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 26,
+      "extra": 0,
+      "player": "Jules van de Pol",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 59,
+      "extra": 0,
+      "player": "Quinten Hermes",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 63,
+      "extra": 0,
+      "player": "Jesper Priems",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 71,
+      "extra": 0,
+      "player": "Jesper Priems",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": [
+        2,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 74,
+      "extra": 0,
+      "player": "Ruud van Dijk",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": [
+        2,
+        3
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-25"
+  },
+  "summary": "SVSOS boog een 2-0 achterstand om in winst en bezorgde SAB de eerste nederlaag.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

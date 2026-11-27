@@ -1,0 +1,116 @@
+{
+  "matchId": "hhc09-sab",
+  "date": "2026-11-01",
+  "home": "hhc09",
+  "away": "sab",
+  "result": {
+    "home": 7,
+    "away": 0
+  },
+  "ht": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 44,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 52,
+      "extra": 0,
+      "player": "Timo Willemsen",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 64,
+      "extra": 0,
+      "player": "Timo Willemsen",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        3,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 72,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        4,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 80,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        5,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 85,
+      "extra": 0,
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        6,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 86,
+      "extra": 0,
+      "player": "Duncan van Drunen",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        7,
+        0
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-11-01"
+  },
+  "summary": "Met een nieuwe, aanvallende speelwijze (hoog druk zetten) won HHC ruim. Rik van de Wiel scoorde vier keer; Koen Blikman werd uitgeroepen tot man van de wedstrijd.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

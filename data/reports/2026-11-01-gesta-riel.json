@@ -1,0 +1,51 @@
+{
+  "matchId": "gesta-riel",
+  "date": "2026-11-01",
+  "home": "gesta",
+  "away": "riel",
+  "result": {
+    "home": 1,
+    "away": 1
+  },
+  "ht": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 10,
+      "extra": 0,
+      "player": "Jens de Jong",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Tom van Hoof",
+      "team": "riel",
+      "playerTeam": "riel",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-11-01"
+  },
+  "summary": "Riel maakte in de laatste minuut gelijk, nadat GESTA kansen op een tweede doelpunt had laten liggen.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

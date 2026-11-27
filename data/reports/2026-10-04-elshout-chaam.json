@@ -1,0 +1,51 @@
+{
+  "matchId": "elshout-chaam",
+  "date": "2026-10-04",
+  "home": "elshout",
+  "away": "chaam",
+  "result": {
+    "home": 2,
+    "away": 0
+  },
+  "ht": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 60,
+      "extra": 0,
+      "player": "Edgar Brok",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 80,
+      "extra": 0,
+      "player": "Remco van den Hooven",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-04"
+  },
+  "summary": "Derde zege op rij zonder tegendoelpunt voor SC Elshout, dat bij 1-0 ook nog een strafschop miste. Chaam stond nog zonder punten.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

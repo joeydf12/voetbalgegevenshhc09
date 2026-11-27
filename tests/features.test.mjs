@@ -7,7 +7,7 @@ import { toCsv } from '../js/lib/csv.js';
 import { teamMap } from '../js/lib/teams.js';
 import { loadAll } from '../scripts/lib/io.mjs';
 
-const data = loadAll(fileURLToPath(new URL('../data', import.meta.url)));
+const data = loadAll(fileURLToPath(new URL('./fixtures/data-2026-11-26', import.meta.url))) // vaste momentopname: de handtellingen hieronder horen hierbij;
 
 test('teamProfile HHC klopt met handtelling', () => {
   const p = teamProfile(data.matches, 'hhc09');

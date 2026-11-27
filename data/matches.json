@@ -1,5 +1,50 @@
 [
   {
+    "id": "chaam-svsos",
+    "home": "chaam",
+    "away": "svsos",
+    "date": "2026-09-20",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 4,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "sab-riel",
+    "home": "sab",
+    "away": "riel",
+    "date": "2026-09-20",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 3,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "svg-gesta",
+    "home": "svg",
+    "away": "gesta",
+    "date": "2026-09-20",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
     "id": "edn56-hz75",
     "home": "edn56",
     "away": "hz75",
@@ -12,6 +57,12 @@
         "home": 1,
         "away": 1,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -28,6 +79,12 @@
         "home": 1,
         "away": 0,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -44,6 +101,57 @@
         "home": 2,
         "away": 5,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 5,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "gesta-edn56",
+    "home": "gesta",
+    "away": "edn56",
+    "date": "2026-09-27",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 4,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "raamsdonk-sab",
+    "home": "raamsdonk",
+    "away": "sab",
+    "date": "2026-09-27",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "riel-svg",
+    "home": "riel",
+    "away": "svg",
+    "date": "2026-09-27",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -60,6 +168,12 @@
         "home": 2,
         "away": 1,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -76,6 +190,12 @@
         "home": 1,
         "away": 4,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 4,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -92,6 +212,73 @@
         "home": 0,
         "away": 4,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 4,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "edn56-svsos",
+    "home": "edn56",
+    "away": "svsos",
+    "date": "2026-10-04",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "elshout-chaam",
+    "home": "elshout",
+    "away": "chaam",
+    "date": "2026-10-04",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 2,
+        "away": 0,
+        "htHome": 0,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "raamsdonk-gesta",
+    "home": "raamsdonk",
+    "away": "gesta",
+    "date": "2026-10-04",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 5,
+        "away": 1,
+        "htHome": 4,
+        "htAway": 1,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 5,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -104,10 +291,24 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "bd",
+        "home": 7,
+        "away": 0,
+        "htHome": 3,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
         "source": "hollandsevelden",
         "home": 7,
         "away": 0,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 7,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -120,10 +321,24 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "bd",
+        "home": 2,
+        "away": 1,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
         "source": "hollandsevelden",
         "home": 2,
         "away": 1,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -136,10 +351,85 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "bd",
+        "home": 2,
+        "away": 3,
+        "htHome": 2,
+        "htAway": 2,
+        "retrievedAt": "2026-11-27"
+      },
+      {
         "source": "hollandsevelden",
         "home": 2,
         "away": 3,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "gesta-sab",
+    "home": "gesta",
+    "away": "sab",
+    "date": "2026-10-11",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 1,
+        "away": 6,
+        "htHome": 0,
+        "htAway": 3,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 6,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "riel-raamsdonk",
+    "home": "riel",
+    "away": "raamsdonk",
+    "date": "2026-10-11",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 4,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "svsos-elshout",
+    "home": "svsos",
+    "away": "elshout",
+    "date": "2026-10-11",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 0,
+        "away": 2,
+        "htHome": 0,
+        "htAway": 1,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -152,10 +442,24 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "bd",
+        "home": 0,
+        "away": 2,
+        "htHome": 0,
+        "htAway": 1,
+        "retrievedAt": "2026-11-27"
+      },
+      {
         "source": "hollandsevelden",
         "home": 0,
         "away": 2,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -172,6 +476,12 @@
         "home": 3,
         "away": 2,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 3,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -184,10 +494,70 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "bd",
+        "home": 0,
+        "away": 1,
+        "htHome": 0,
+        "htAway": 1,
+        "retrievedAt": "2026-11-27"
+      },
+      {
         "source": "hollandsevelden",
         "home": 0,
         "away": 1,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "sab-svsos",
+    "home": "sab",
+    "away": "svsos",
+    "date": "2026-10-25",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 2,
+        "away": 3,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "svg-chaam",
+    "home": "svg",
+    "away": "chaam",
+    "date": "2026-10-25",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 2,
+        "away": 0,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -198,7 +568,22 @@
     "date": "2026-10-25",
     "time": "14:00",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 2,
+        "away": 2,
+        "htHome": 1,
+        "htAway": 1,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "raamsdonk-hhc09",
@@ -207,7 +592,22 @@
     "date": "2026-10-25",
     "time": "14:30",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 7,
+        "away": 3,
+        "htHome": 4,
+        "htAway": 1,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 7,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "riel-hz75",
@@ -216,7 +616,106 @@
     "date": "2026-10-25",
     "time": "14:30",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 4,
+        "away": 0,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 4,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "edn56-elshout",
+    "home": "edn56",
+    "away": "elshout",
+    "date": "2026-10-29",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 2,
+        "away": 1,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "chaam-edn56",
+    "home": "chaam",
+    "away": "edn56",
+    "date": "2026-11-01",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 1,
+        "away": 1,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "gesta-riel",
+    "home": "gesta",
+    "away": "riel",
+    "date": "2026-11-01",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 1,
+        "away": 1,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "svsos-svg",
+    "home": "svsos",
+    "away": "svg",
+    "date": "2026-11-01",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "elshout-dussense-boys",
@@ -225,7 +724,22 @@
     "date": "2026-11-01",
     "time": "14:00",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 3,
+        "away": 0,
+        "htHome": 2,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 3,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "hhc09-sab",
@@ -234,7 +748,22 @@
     "date": "2026-11-01",
     "time": "14:00",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 7,
+        "away": 0,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 7,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "hz75-raamsdonk",
@@ -243,7 +772,82 @@
     "date": "2026-11-01",
     "time": "14:30",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 1,
+        "away": 7,
+        "htHome": 0,
+        "htAway": 2,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 7,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "raamsdonk-chaam",
+    "home": "raamsdonk",
+    "away": "chaam",
+    "date": "2026-11-08",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "riel-svsos",
+    "home": "riel",
+    "away": "svsos",
+    "date": "2026-11-08",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "sab-elshout",
+    "home": "sab",
+    "away": "elshout",
+    "date": "2026-11-08",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 3,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "svg-edn56",
+    "home": "svg",
+    "away": "edn56",
+    "date": "2026-11-08",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "dussense-boys-hz75",
@@ -252,7 +856,14 @@
     "date": "2026-11-08",
     "time": "14:00",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 9,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "gesta-hhc09",
@@ -261,7 +872,52 @@
     "date": "2026-11-08",
     "time": "14:00",
     "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 4,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "chaam-sab",
+    "home": "chaam",
+    "away": "sab",
+    "date": "2026-11-15",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "elshout-svg",
+    "home": "elshout",
+    "away": "svg",
+    "date": "2026-11-15",
+    "status": "scheduled",
     "evidence": []
+  },
+  {
+    "id": "svsos-raamsdonk",
+    "home": "svsos",
+    "away": "raamsdonk",
+    "date": "2026-11-15",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "edn56-dussense-boys",
@@ -270,7 +926,14 @@
     "date": "2026-11-15",
     "time": "14:00",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 3,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "hhc09-riel",
@@ -287,6 +950,12 @@
         "htHome": 2,
         "htAway": 0,
         "retrievedAt": "2026-11-26"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 4,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
       }
     ]
   },
@@ -297,7 +966,74 @@
     "date": "2026-11-15",
     "time": "14:30",
     "status": "scheduled",
-    "evidence": []
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "gesta-chaam",
+    "home": "gesta",
+    "away": "chaam",
+    "date": "2026-11-22",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 3,
+        "away": 4,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "raamsdonk-edn56",
+    "home": "raamsdonk",
+    "away": "edn56",
+    "date": "2026-11-22",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "riel-elshout",
+    "home": "riel",
+    "away": "elshout",
+    "date": "2026-11-22",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
+  },
+  {
+    "id": "sab-svg",
+    "home": "sab",
+    "away": "svg",
+    "date": "2026-11-22",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ]
   },
   {
     "id": "hhc09-dussense-boys",
@@ -325,6 +1061,24 @@
     "evidence": []
   },
   {
+    "id": "edn56-sab",
+    "home": "edn56",
+    "away": "sab",
+    "date": "2026-11-29",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "elshout-raamsdonk",
+    "home": "elshout",
+    "away": "raamsdonk",
+    "date": "2026-11-29",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "hhc09-hz75",
     "home": "hhc09",
     "away": "hz75",
@@ -339,6 +1093,24 @@
     "away": "dussense-boys",
     "date": "2026-11-29",
     "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "chaam-riel",
+    "home": "chaam",
+    "away": "riel",
+    "date": "2026-11-29",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svsos-gesta",
+    "home": "svsos",
+    "away": "gesta",
+    "date": "2026-11-29",
+    "time": "14:30",
     "status": "scheduled",
     "evidence": []
   },
@@ -361,10 +1133,46 @@
     "evidence": []
   },
   {
+    "id": "edn56-riel",
+    "home": "edn56",
+    "away": "riel",
+    "date": "2026-12-06",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "elshout-gesta",
+    "home": "elshout",
+    "away": "gesta",
+    "date": "2026-12-06",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svg-raamsdonk",
+    "home": "svg",
+    "away": "raamsdonk",
+    "date": "2026-12-06",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "svsos-hhc09",
     "home": "svsos",
     "away": "hhc09",
     "date": "2026-12-06",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "gesta-svg",
+    "home": "gesta",
+    "away": "svg",
+    "date": "2027-01-31",
     "time": "14:00",
     "status": "scheduled",
     "evidence": []
@@ -382,6 +1190,24 @@
     "id": "raamsdonk-dussense-boys",
     "home": "raamsdonk",
     "away": "dussense-boys",
+    "date": "2027-01-31",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "riel-sab",
+    "home": "riel",
+    "away": "sab",
+    "date": "2027-01-31",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svsos-chaam",
+    "home": "svsos",
+    "away": "chaam",
     "date": "2027-01-31",
     "time": "14:00",
     "status": "scheduled",
@@ -406,9 +1232,36 @@
     "evidence": []
   },
   {
+    "id": "edn56-gesta",
+    "home": "edn56",
+    "away": "gesta",
+    "date": "2027-02-21",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "elshout-hz75",
     "home": "elshout",
     "away": "hz75",
+    "date": "2027-02-21",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "sab-raamsdonk",
+    "home": "sab",
+    "away": "raamsdonk",
+    "date": "2027-02-21",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svg-riel",
+    "home": "svg",
+    "away": "riel",
     "date": "2027-02-21",
     "time": "14:00",
     "status": "scheduled",
@@ -442,10 +1295,46 @@
     "evidence": []
   },
   {
+    "id": "elshout-svsos",
+    "home": "elshout",
+    "away": "svsos",
+    "date": "2027-02-28",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "sab-gesta",
+    "home": "sab",
+    "away": "gesta",
+    "date": "2027-02-28",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "svg-hz75",
     "home": "svg",
     "away": "hz75",
     "date": "2027-02-28",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "raamsdonk-riel",
+    "home": "raamsdonk",
+    "away": "riel",
+    "date": "2027-02-28",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "gesta-raamsdonk",
+    "home": "gesta",
+    "away": "raamsdonk",
+    "date": "2027-03-07",
     "time": "14:00",
     "status": "scheduled",
     "evidence": []
@@ -456,6 +1345,15 @@
     "away": "svg",
     "date": "2027-03-07",
     "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "chaam-elshout",
+    "home": "chaam",
+    "away": "elshout",
+    "date": "2027-03-07",
+    "time": "14:30",
     "status": "scheduled",
     "evidence": []
   },
@@ -478,9 +1376,27 @@
     "evidence": []
   },
   {
+    "id": "svsos-edn56",
+    "home": "svsos",
+    "away": "edn56",
+    "date": "2027-03-07",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "dussense-boys-elshout",
     "home": "dussense-boys",
     "away": "elshout",
+    "date": "2027-03-14",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "edn56-chaam",
+    "home": "edn56",
+    "away": "chaam",
     "date": "2027-03-14",
     "time": "14:00",
     "status": "scheduled",
@@ -496,11 +1412,38 @@
     "evidence": []
   },
   {
+    "id": "svg-svsos",
+    "home": "svg",
+    "away": "svsos",
+    "date": "2027-03-14",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "raamsdonk-hz75",
     "home": "raamsdonk",
     "away": "hz75",
     "date": "2027-03-14",
     "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "riel-gesta",
+    "home": "riel",
+    "away": "gesta",
+    "date": "2027-03-14",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "elshout-edn56",
+    "home": "elshout",
+    "away": "edn56",
+    "date": "2027-03-21",
+    "time": "14:00",
     "status": "scheduled",
     "evidence": []
   },
@@ -523,9 +1466,27 @@
     "evidence": []
   },
   {
+    "id": "chaam-svg",
+    "home": "chaam",
+    "away": "svg",
+    "date": "2027-03-21",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "hz75-riel",
     "home": "hz75",
     "away": "riel",
+    "date": "2027-03-21",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svsos-sab",
+    "home": "svsos",
+    "away": "sab",
     "date": "2027-03-21",
     "time": "14:30",
     "status": "scheduled",
@@ -550,11 +1511,56 @@
     "evidence": []
   },
   {
+    "id": "sab-chaam",
+    "home": "sab",
+    "away": "chaam",
+    "date": "2027-04-04",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svg-elshout",
+    "home": "svg",
+    "away": "elshout",
+    "date": "2027-04-04",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "raamsdonk-svsos",
+    "home": "raamsdonk",
+    "away": "svsos",
+    "date": "2027-04-04",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "riel-hhc09",
     "home": "riel",
     "away": "hhc09",
     "date": "2027-04-04",
     "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "edn56-svg",
+    "home": "edn56",
+    "away": "svg",
+    "date": "2027-04-06",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "elshout-sab",
+    "home": "elshout",
+    "away": "sab",
+    "date": "2027-04-11",
+    "time": "14:00",
     "status": "scheduled",
     "evidence": []
   },
@@ -568,9 +1574,27 @@
     "evidence": []
   },
   {
+    "id": "chaam-raamsdonk",
+    "home": "chaam",
+    "away": "raamsdonk",
+    "date": "2027-04-11",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "hz75-dussense-boys",
     "home": "hz75",
     "away": "dussense-boys",
+    "date": "2027-04-11",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svsos-riel",
+    "home": "svsos",
+    "away": "riel",
     "date": "2027-04-11",
     "time": "14:30",
     "status": "scheduled",
@@ -586,11 +1610,56 @@
     "evidence": []
   },
   {
+    "id": "gesta-svsos",
+    "home": "gesta",
+    "away": "svsos",
+    "date": "2027-04-18",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "sab-edn56",
+    "home": "sab",
+    "away": "edn56",
+    "date": "2027-04-18",
+    "time": "14:00",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "hz75-hhc09",
     "home": "hz75",
     "away": "hhc09",
     "date": "2027-04-18",
     "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "raamsdonk-elshout",
+    "home": "raamsdonk",
+    "away": "elshout",
+    "date": "2027-04-18",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "riel-chaam",
+    "home": "riel",
+    "away": "chaam",
+    "date": "2027-04-18",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "gesta-elshout",
+    "home": "gesta",
+    "away": "elshout",
+    "date": "2027-05-09",
+    "time": "14:00",
     "status": "scheduled",
     "evidence": []
   },
@@ -622,9 +1691,63 @@
     "evidence": []
   },
   {
+    "id": "raamsdonk-svg",
+    "home": "raamsdonk",
+    "away": "svg",
+    "date": "2027-05-09",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "riel-edn56",
+    "home": "riel",
+    "away": "edn56",
+    "date": "2027-05-09",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "chaam-gesta",
+    "home": "chaam",
+    "away": "gesta",
+    "date": "2027-05-17",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
     "id": "dussense-boys-hhc09",
     "home": "dussense-boys",
     "away": "hhc09",
+    "date": "2027-05-17",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "edn56-raamsdonk",
+    "home": "edn56",
+    "away": "raamsdonk",
+    "date": "2027-05-17",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "elshout-riel",
+    "home": "elshout",
+    "away": "riel",
+    "date": "2027-05-17",
+    "time": "14:30",
+    "status": "scheduled",
+    "evidence": []
+  },
+  {
+    "id": "svg-sab",
+    "home": "svg",
+    "away": "sab",
     "date": "2027-05-17",
     "time": "14:30",
     "status": "scheduled",

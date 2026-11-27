@@ -1,0 +1,64 @@
+{
+  "matchId": "elshout-dussense-boys",
+  "date": "2026-11-01",
+  "home": "elshout",
+  "away": "dussense-boys",
+  "result": {
+    "home": 3,
+    "away": 0
+  },
+  "ht": {
+    "home": 2,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 25,
+      "extra": 0,
+      "player": "Thomas Dankers",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 30,
+      "extra": 0,
+      "player": "Tieleman van Aerle",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 75,
+      "extra": 0,
+      "player": "Stan van Bokhoven",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": [
+        3,
+        0
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-11-01"
+  },
+  "summary": "SC Elshout herstelde zich van de nederlaag bij EDN'56 met een zakelijke overwinning.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

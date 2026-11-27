@@ -1,4 +1,4 @@
-// Teamfuncties met inloggen: account, beschikbaarheid (taak 10) en feedback (taak 11).
+// Teamfuncties met inloggen via teampincode: account, beschikbaarheid (taak 10) en feedback (taak 11).
 // Deze delen worden ná het tonen van de pagina asynchroon gevuld; een backendfout
 // raakt de rest van de pagina nooit.
 import { html, toStr, fmtDate } from '../lib/util.js';
@@ -10,20 +10,15 @@ const LABEL = { ja: 'Ja', nee: 'Nee', misschien: 'Misschien' };
 const slot = (id, title, data = {}) => html`<section class="card" id="${id}" ${Object.entries(data).map(([k, v]) => html`data-${k}="${v}" `)}><h2>${title}</h2><p class="note">Laden…</p></section>`;
 const fill = (el, inner) => { el.innerHTML = toStr(inner); };
 const errBox = (e) => html`<p class="banner warn">Teamgegevens niet beschikbaar: ${e.message}. De rest van de site werkt gewoon.</p>`;
-const loginHint = html`<p class="note">Alleen voor teamleden. <a href="#/account">Inloggen</a></p>`;
+const loginHint = html`<p class="note">Alleen voor teamleden. <a href="#/account">Inloggen met de teampincode</a></p>`;
 
 export const accountView = () => slot('ts-account', 'Inloggen voor teamleden');
 export const feedbackView = () => slot('ts-feedback', 'Feedback van de aanvoerder');
 export const availabilitySlot = (ctx, m) =>
   upcomingFor([m], ctx.meta.ownTeam, ctx.today).length ? slot('ts-av', 'Beschikbaarheid', { match: m.id }) : '';
 
-/** Zoekt de huidige gebruiker + of die teamlid is. */
-async function session() {
-  const { sb, user } = await B.currentUser();
-  if (!sb) throw new Error('backend niet bereikbaar');
-  if (!user) return { sb, user: null, member: false };
-  return { sb, user, member: await B.isMember(sb, user.id) };
-}
+/** Teamleden in de vorm die teamtools verwacht ({user_id, name, role}). */
+const asMembers = (list) => list.map((m) => ({ user_id: m.id, name: m.name, role: m.role, nr: m.nr }));
 
 export async function bindTeam(root, ctx) {
   const jobs = [];
@@ -38,30 +33,42 @@ const guard = (el, title, fn) => fn().catch((e) => { console.warn(e); fill(el, h
 function bindAccount(el) {
   const T = 'Inloggen voor teamleden';
   return guard(el, T, async () => {
-    const s = await session();
-    if (s.user) {
-      fill(el, html`<h2>${T}</h2><p>Ingelogd als <b>${s.user.email}</b>.</p>
-        ${s.member ? html`<p class="banner ok">Je staat op de teamlijst. <a href="#/feedback">Feedback</a> · <a href="#/programma">Programma</a></p>` : html`<p class="banner warn">Dit adres staat (nog) niet op de teamlijst. Vraag de beheerder om je toe te voegen.</p>`}
+    const me = await B.currentMember();
+    if (me) {
+      fill(el, html`<h2>${T}</h2><p class="banner ok">Ingelogd als <b>${me.name}</b>${me.role === 'aanvoerder' ? ' (aanvoerder)' : ''}.</p>
+        <p><a class="btn" href="#/">Naar het overzicht</a> <a class="btn alt" href="#/feedback">Feedback</a></p>
+        <p class="note">Niet jij? Log uit en kies je eigen naam.</p>
         <button class="btn alt" type="button" data-act="out">Uitloggen</button>`);
-      el.querySelector('[data-act=out]').onclick = async () => { await B.signOut(); bindAccount(el); };
+      el.querySelector('[data-act=out]').onclick = async () => { await B.logout(); bindAccount(el); };
       return;
     }
-    fill(el, html`<h2>${T}</h2><p class="note">Alleen uitgenodigde adressen. Je krijgt een e-mail met een inloglink of code.</p>
-      <form class="tsform" data-step="mail"><label>E-mailadres<input name="email" type="email" required autocomplete="email"></label><button class="btn">Stuur inlogmail</button></form>
-      <form class="tsform" data-step="code" hidden><label>Code uit de e-mail<input name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" required></label><button class="btn">Inloggen</button></form>
+    fill(el, html`<h2>${T}</h2><p class="note">Vul de teampincode in en kies daarna je naam. Je blijft 60 dagen ingelogd op dit apparaat.</p>
+      <form class="tsform" data-step="pin"><label>Teampincode<input name="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="12" required></label><button class="btn">Verder</button></form>
+      <form class="tsform" data-step="name" hidden><label>Wie ben jij?<select name="member" required></select></label><button class="btn go">Inloggen</button></form>
       <p class="msg" role="status"></p>`);
-    const [fm, fc] = el.querySelectorAll('form'); const msg = el.querySelector('.msg');
-    let email = '';
-    fm.onsubmit = async (e) => {
-      e.preventDefault(); email = new FormData(fm).get('email').trim().toLowerCase();
-      msg.textContent = 'Versturen…';
-      try { await B.sendLogin(email); msg.textContent = `Mail verstuurd naar ${email}. Klik op de link of vul de code in.`; fc.hidden = false; }
-      catch (err) { msg.textContent = err.message; }
+    const [fp, fn] = el.querySelectorAll('form'); const msg = el.querySelector('.msg');
+    let pin = '';
+    fp.onsubmit = async (e) => {
+      e.preventDefault(); pin = new FormData(fp).get('pin').trim();
+      msg.textContent = 'Controleren…';
+      try {
+        const r = await B.checkPin(pin);
+        if (!r.ok) { msg.textContent = r.error; return; }
+        if (!r.members.length) { msg.textContent = 'De teamlijst is nog leeg. Vraag de beheerder om spelers toe te voegen.'; return; }
+        fn.querySelector('select').innerHTML = toStr(html`<option value="">Kies je naam</option>${r.members.map((m) => html`<option value="${m.id}">${m.name}${m.nr ? ` (${m.nr})` : ''}</option>`)}`);
+        fp.hidden = true; fn.hidden = false; msg.textContent = '';
+        fn.querySelector('select').focus();
+      } catch (err) { msg.textContent = err.message; }
     };
-    fc.onsubmit = async (e) => {
+    fn.onsubmit = async (e) => {
       e.preventDefault();
-      try { await B.verifyCode(email, new FormData(fc).get('code').trim()); bindAccount(el); }
-      catch (err) { msg.textContent = err.message; }
+      const id = new FormData(fn).get('member');
+      if (!id) { msg.textContent = 'Kies je naam.'; return; }
+      try {
+        const r = await B.login(pin, id);
+        if (!r.ok) { msg.textContent = r.error; return; }
+        bindAccount(el);
+      } catch (err) { msg.textContent = err.message; }
     };
   });
 }
@@ -70,13 +77,13 @@ function bindAvailability(el, ctx) {
   const T = 'Beschikbaarheid';
   const matchId = el.dataset.match;
   return guard(el, T, async () => {
-    const s = await session();
-    if (!s.user || !s.member) return fill(el, html`<h2>${T}</h2>${s.user ? html`<p class="note">Je staat niet op de teamlijst.</p>` : loginHint}`);
-    const [rows, members] = await Promise.all([B.availabilityFor(s.sb, matchId), B.team(s.sb)]);
-    const t = tallyAvailability(rows, members);
-    const mine = rows.find((r) => r.user_id === s.user.id)?.status;
+    const me = await B.currentMember();
+    if (!me) return fill(el, html`<h2>${T}</h2>${loginHint}`);
+    const [rows, team] = await Promise.all([B.availabilityFor(matchId), B.team()]);
+    const t = tallyAvailability(rows.map((r) => ({ user_id: r.member_id, status: r.status })), asMembers(team));
+    const mine = rows.find((r) => r.member_id === me.id)?.status;
     fill(el, html`<h2>${T}</h2>
-      <p>Kun je spelen?</p>
+      <p>Kun je spelen, ${me.name.split(' ')[0]}?</p>
       <div class="avbtns" role="group" aria-label="Mijn beschikbaarheid">${STATUSES.map((k) => html`<button type="button" class="avb ${k} ${mine === k ? 'on' : ''}" aria-pressed="${mine === k}" data-s="${k}">${LABEL[k]}</button>`)}</div>
       <p class="msg" role="status"></p>
       <div class="avsum">${STATUSES.map((k) => html`<div><b>${LABEL[k]}: ${t.counts[k]}</b><small>${t.names[k].join(', ') || '–'}</small></div>`)}
@@ -84,7 +91,7 @@ function bindAvailability(el, ctx) {
     el.querySelectorAll('.avb').forEach((b) => {
       b.onclick = async () => {
         el.querySelectorAll('.avb').forEach((x) => { x.disabled = true; });
-        try { await B.setAvailability(s.sb, matchId, s.user.id, b.dataset.s); await bindAvailability(el, ctx); }
+        try { await B.setAvailability(matchId, b.dataset.s); await bindAvailability(el, ctx); }
         catch (e) { el.querySelector('.msg').textContent = `Opslaan mislukt: ${e.message}`; el.querySelectorAll('.avb').forEach((x) => { x.disabled = false; }); }
       };
     });
@@ -94,10 +101,10 @@ function bindAvailability(el, ctx) {
 function bindFeedback(el, ctx) {
   const T = 'Feedback van de aanvoerder';
   return guard(el, T, async () => {
-    const s = await session();
-    if (!s.user || !s.member) return fill(el, html`<h2>${T}</h2>${s.user ? html`<p class="note">Je staat niet op de teamlijst.</p>` : loginHint}`);
-    const [items, members] = await Promise.all([B.feedbackList(s.sb), B.team(s.sb)]);
-    const who = new Map(members.filter((m) => m.user_id).map((m) => [m.user_id, m]));
+    const me = await B.currentMember();
+    if (!me) return fill(el, html`<h2>${T}</h2>${loginHint}`);
+    const [items, team] = await Promise.all([B.feedbackList(), B.team()]);
+    const who = new Map(team.map((m) => [m.id, m]));
     const own = ctx.meta.ownTeam;
     const mine = ctx.matches.filter((m) => (m.home === own || m.away === own) && m.date <= ctx.today && m.status !== 'afgelast')
       .sort((a, b) => b.date.localeCompare(a.date));
@@ -111,8 +118,8 @@ function bindFeedback(el, ctx) {
         <button class="btn">Plaatsen</button><p class="msg" role="status"></p>
       </form>
       ${groups.size ? [...groups].map(([mid, list]) => html`<h3>${mid ? mname(mid) : 'Algemeen'}</h3>${list.map((f) => html`<article class="fb">
-          <p class="note">${who.get(f.author)?.name ?? 'Onbekend'}${who.get(f.author)?.role === 'aanvoerder' ? ' (aanvoerder)' : ''} · ${fmtDate(f.created_at.slice(0, 10))}${f.rating ? ` · ${'★'.repeat(f.rating)}${'☆'.repeat(5 - f.rating)}` : ''}</p>
-          <p class="fbbody">${f.body}</p>${f.author === s.user.id ? html`<button type="button" class="btn alt small" data-del="${f.id}">Verwijderen</button>` : ''}</article>`)}`) : empty('Nog geen feedback.')}`);
+          <p class="note">${who.get(f.member_id)?.name ?? 'Onbekend'}${who.get(f.member_id)?.role === 'aanvoerder' ? ' (aanvoerder)' : ''} · ${fmtDate(f.created_at.slice(0, 10))}${f.rating ? ` · ${'★'.repeat(f.rating)}${'☆'.repeat(5 - f.rating)}` : ''}</p>
+          <p class="fbbody">${f.body}</p>${f.member_id === me.id ? html`<button type="button" class="btn alt small" data-del="${f.id}">Verwijderen</button>` : ''}</article>`)}`) : empty('Nog geen feedback.')}`);
     const form = el.querySelector('#fbform'); const msg = form.querySelector('.msg'); const ta = form.querySelector('textarea');
     ta.oninput = () => { form.querySelector('.cnt').textContent = `${[...ta.value.trim()].length} / ${FEEDBACK_MAX}`; };
     form.onsubmit = async (e) => {
@@ -120,11 +127,11 @@ function bindFeedback(el, ctx) {
       const fd = new FormData(form);
       const v = validateFeedback({ body: fd.get('body'), rating: fd.get('rating'), matchId: fd.get('match') });
       if (!v.ok) { msg.textContent = v.error; return; }
-      try { await B.addFeedback(s.sb, v.row); await bindFeedback(el, ctx); } catch (err) { msg.textContent = `Plaatsen mislukt: ${err.message}`; }
+      try { await B.addFeedback(v.row); await bindFeedback(el, ctx); } catch (err) { msg.textContent = `Plaatsen mislukt: ${err.message}`; }
     };
     el.querySelectorAll('[data-del]').forEach((b) => {
       b.onclick = async () => {
-        try { const d = await B.deleteFeedback(s.sb, b.dataset.del); if (!d.length) throw new Error('niet toegestaan'); await bindFeedback(el, ctx); }
+        try { if (!(await B.deleteFeedback(b.dataset.del))) throw new Error('niet toegestaan'); await bindFeedback(el, ctx); }
         catch (err) { msg.textContent = `Verwijderen mislukt: ${err.message}`; }
       };
     });

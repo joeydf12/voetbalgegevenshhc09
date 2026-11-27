@@ -26,6 +26,6 @@ De krantentekst wordt niet opgeslagen.
 - Supabase: schema toegepast op HHCdatabase (tabellen `ts_*`). RLS-test met twee gebruikers geslaagd (2026-11-27, `supabase/rls-test.sql`).
 
 ## Teamfuncties (Supabase)
-Inloggen op `#/account` (alleen uitgenodigde adressen op de ledenlijst `ts_members`), beschikbaarheid op komende HHC-wedstrijden, feedback op `#/feedback`. Zonder backend werkt de rest van de site gewoon.
+Inloggen op `#/account` met de teampincode en je naam (teamlijst `ts_members`), beschikbaarheid op komende HHC-wedstrijden, feedback op `#/feedback`. Zonder backend werkt de rest van de site gewoon. Opzet: `supabase/03-pincode.sql`, teamlijst: `supabase/04-teamlijst.sql`, test: `supabase/pincode-test.sql`.
 
     npm run browsertest   # headless Chrome-test (eerst npm start)

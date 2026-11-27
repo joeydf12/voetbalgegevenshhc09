@@ -1,108 +1,128 @@
 {
-  "asOf": "2026-11-26",
-  "lastResultDate": "2026-10-11",
-  "source": "hollandsevelden",
-  "complete": false,
+  "asOf": "2026-11-27",
+  "lastResultDate": "2026-11-22",
+  "source": "voetbalnl",
+  "complete": true,
   "rows": [
     {
       "team": "raamsdonk",
-      "pl": 4,
-      "w": 2,
-      "d": 1,
+      "pl": 9,
+      "w": 6,
+      "d": 2,
       "l": 1,
-      "pts": 7,
-      "gf": 13,
-      "ga": 8
-    },
-    {
-      "team": "edn56",
-      "pl": 4,
-      "w": 2,
-      "d": 1,
-      "l": 1,
-      "pts": 7,
-      "gf": 7,
-      "ga": 4
-    },
-    {
-      "team": "dussense-boys",
-      "pl": 4,
-      "w": 2,
-      "d": 0,
-      "l": 2,
-      "pts": 6,
-      "gf": 15,
-      "ga": 8
-    },
-    {
-      "team": "hhc09",
-      "pl": 4,
-      "w": 2,
-      "d": 0,
-      "l": 2,
-      "pts": 6,
-      "gf": 5,
-      "ga": 6
-    },
-    {
-      "team": "svsos",
-      "pl": 4,
-      "w": 2,
-      "d": 0,
-      "l": 2,
-      "pts": 6,
-      "gf": 5,
-      "ga": 8
-    },
-    {
-      "team": "riel",
-      "pl": 4,
-      "w": 2,
-      "d": 0,
-      "l": 2,
-      "pts": 6,
-      "gf": 8,
+      "pts": 20,
+      "gf": 32,
       "ga": 13
     },
     {
-      "team": "svg",
-      "pl": 4,
-      "w": 1,
-      "d": 1,
+      "team": "elshout",
+      "pl": 8,
+      "w": 6,
+      "d": 0,
       "l": 2,
-      "pts": 4,
-      "gf": 5,
+      "pts": 18,
+      "gf": 16,
       "ga": 6
     },
     {
-      "team": "chaam",
-      "pl": 4,
-      "w": 1,
+      "team": "hhc09",
+      "pl": 9,
+      "w": 6,
       "d": 0,
       "l": 3,
-      "pts": 3,
-      "gf": 6,
+      "pts": 18,
+      "gf": 24,
+      "ga": 14
+    },
+    {
+      "team": "sab",
+      "pl": 9,
+      "w": 4,
+      "d": 3,
+      "l": 2,
+      "pts": 15,
+      "gf": 21,
+      "ga": 20
+    },
+    {
+      "team": "svg",
+      "pl": 8,
+      "w": 4,
+      "d": 2,
+      "l": 2,
+      "pts": 14,
+      "gf": 13,
       "ga": 10
     },
     {
-      "team": "hz75",
-      "pl": 4,
-      "w": 0,
-      "d": 1,
+      "team": "edn56",
+      "pl": 9,
+      "w": 4,
+      "d": 2,
       "l": 3,
-      "pts": 1,
-      "gf": 3,
-      "ga": 8
+      "pts": 14,
+      "gf": 14,
+      "ga": 10
+    },
+    {
+      "team": "riel",
+      "pl": 9,
+      "w": 3,
+      "d": 2,
+      "l": 4,
+      "pts": 11,
+      "gf": 13,
+      "ga": 20
+    },
+    {
+      "team": "svsos",
+      "pl": 8,
+      "w": 3,
+      "d": 1,
+      "l": 4,
+      "pts": 10,
+      "gf": 9,
+      "ga": 15
+    },
+    {
+      "team": "dussense-boys",
+      "pl": 9,
+      "w": 3,
+      "d": 1,
+      "l": 5,
+      "pts": 10,
+      "gf": 27,
+      "ga": 18
+    },
+    {
+      "team": "chaam",
+      "pl": 9,
+      "w": 2,
+      "d": 3,
+      "l": 4,
+      "pts": 9,
+      "gf": 14,
+      "ga": 19
     },
     {
       "team": "gesta",
-      "pl": 4,
+      "pl": 9,
+      "w": 1,
+      "d": 3,
+      "l": 5,
+      "pts": 6,
+      "gf": 15,
+      "ga": 27
+    },
+    {
+      "team": "hz75",
+      "pl": 8,
       "w": 0,
       "d": 1,
-      "l": 3,
+      "l": 7,
       "pts": 1,
       "gf": 5,
-      "ga": 16
+      "ga": 31
     }
   ]
 }

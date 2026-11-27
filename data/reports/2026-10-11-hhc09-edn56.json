@@ -1,0 +1,51 @@
+{
+  "matchId": "hhc09-edn56",
+  "date": "2026-10-11",
+  "home": "hhc09",
+  "away": "edn56",
+  "result": {
+    "home": 0,
+    "away": 2
+  },
+  "ht": {
+    "home": 0,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 43,
+      "extra": 0,
+      "player": "Teun Reijrink",
+      "team": "edn56",
+      "playerTeam": "edn56",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 56,
+      "extra": 0,
+      "player": "Robin van de Broek",
+      "team": "edn56",
+      "playerTeam": "edn56",
+      "score": [
+        0,
+        2
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-11"
+  },
+  "summary": "EDN'56 won in Oudheusden met een doelpunt vlak voor rust en een tweede na de pauze. HHC werd na rust iets gevaarlijker, maar scoorde niet.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

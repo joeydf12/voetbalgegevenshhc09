@@ -47,7 +47,7 @@ check(`alle ${routes.length} pagina's tonen inhoud`, !bad.length, bad.join(', ')
 
 // 2. Teamonderdelen (niet ingelogd).
 await go('#/account');
-check('inlogformulier verschijnt (supabase-js geladen)', await waitFor(`document.querySelector('#ts-account input[type=email]')`), await ev(`document.querySelector('#ts-account')?.innerText.slice(0,120)`));
+check('pincodeformulier verschijnt (supabase-js geladen)', await waitFor(`document.querySelector('#ts-account input[name=pin]')`), await ev(`document.querySelector('#ts-account')?.innerText.slice(0,120)`));
 await go('#/feedback');
 check('feedback: niet-ingelogd ziet alleen inlogverwijzing', await waitFor(`document.querySelector('#ts-feedback a[href="#/account"]') && !document.querySelector('#fbform')`));
 if (upcoming[0]) {

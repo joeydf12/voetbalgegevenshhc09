@@ -1,0 +1,155 @@
+{
+  "matchId": "raamsdonk-hhc09",
+  "date": "2026-10-25",
+  "home": "raamsdonk",
+  "away": "hhc09",
+  "result": {
+    "home": 7,
+    "away": 3
+  },
+  "ht": {
+    "home": 4,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 11,
+      "extra": 0,
+      "player": "Tom van der Linden",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 14,
+      "extra": 0,
+      "player": "Jayden van Seeters",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 32,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 40,
+      "extra": 0,
+      "player": "Jordi van de Korput",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        3,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 45,
+      "extra": 0,
+      "player": "Lars van Strien",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        4,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 66,
+      "extra": 0,
+      "player": "Tim de Fijter",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        4,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 73,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        5,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 74,
+      "extra": 0,
+      "player": "Justin van Strien",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        6,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 76,
+      "extra": 0,
+      "player": "Tim de Fijter",
+      "team": "hhc09",
+      "playerTeam": "hhc09",
+      "score": [
+        6,
+        3
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 86,
+      "extra": 0,
+      "player": "Owen Kramer",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        7,
+        3
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-25"
+  },
+  "summary": "Raamsdonk was veel te sterk. HHC kwam vroeg op voorsprong maar stond bij rust al met 4-1 achter; Tim de Fijter scoorde twee keer.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

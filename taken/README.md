@@ -14,7 +14,7 @@ Voer taken uit in de volgorde van de tabel, tenzij de gebruiker een andere taak 
 | 08 | Bot-commit op naam eigenaar | GitHub-gebruikersnaam |
 | 09 | Supabase koppelen (klaar, RLS-test geslaagd 2026-11-27) | – |
 | 10 | Beschikbaarheid bouwen (klaar) | teamleden uitnodigen |
-| 11 | Feedback aanvoerder (klaar, aanvoerder: Jeffrey van der Loo) | e-mailadres aanvoerder |
+| 11 | Feedback aanvoerder (klaar, aanvoerder: Jeffrey van der Loo) | – |
 | 12 | Nieuws tegenstanders | links (en korte samenvatting) |
 
 ## Regels voor elke taak

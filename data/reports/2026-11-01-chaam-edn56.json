@@ -1,0 +1,51 @@
+{
+  "matchId": "chaam-edn56",
+  "date": "2026-11-01",
+  "home": "chaam",
+  "away": "edn56",
+  "result": {
+    "home": 1,
+    "away": 1
+  },
+  "ht": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 16,
+      "extra": 0,
+      "player": "Hendryc van Dongen",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 59,
+      "extra": 0,
+      "player": "Hein de Bresser",
+      "team": "edn56",
+      "playerTeam": "edn56",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-11-01"
+  },
+  "summary": "Beide doelpunten vielen na een fout. EDN'56 had meer balbezit maar kreeg te weinig kansen voor de winst.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

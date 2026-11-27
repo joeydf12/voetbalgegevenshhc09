@@ -1,0 +1,51 @@
+{
+  "matchId": "svg-chaam",
+  "date": "2026-10-25",
+  "home": "svg",
+  "away": "chaam",
+  "result": {
+    "home": 2,
+    "away": 0
+  },
+  "ht": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 7,
+      "extra": 0,
+      "player": "Nassr el Haddadi",
+      "team": "svg",
+      "playerTeam": "svg",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 82,
+      "extra": 0,
+      "player": "Nassr el Haddadi",
+      "team": "svg",
+      "playerTeam": "svg",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-25"
+  },
+  "summary": "Nassr el Haddadi kopte beide doelpunten binnen. Chaam speelde met een sterk aangepast elftal met jeugdspelers.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

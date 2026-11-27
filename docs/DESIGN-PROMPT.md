@@ -28,7 +28,7 @@ Ontwerp voor al deze toestanden een duidelijke, rustige visuele taal.
 6. **Wedstrijd `#/match/<id>`**: uitslag met bronnentabel, voorbeschouwing (alleen bekende uitslagen), verslag (eigen samenvatting + bronlink, doelpuntenmakers per minuut), opstelling (basis, wissels, kaarten). Voor komende HHC-wedstrijden: **Beschikbaarheid**.
 7. **Beschikbaarheid** (blok op de wedstrijdpagina, alleen ingelogde teamleden): drie grote knoppen Ja / Nee / Misschien (eigen keuze actief), en de optelling: aantal per keuze met namen, plus "Niet gereageerd". Moet met één duim op de telefoon werken.
 8. **Feedback `#/feedback`** (alleen teamleden): formulier (wedstrijd kiezen, waardering 1-5 sterren, bericht max. 2000 tekens met teller), lijst per wedstrijd met auteur, rol (aanvoerder), datum, sterren; eigen berichten verwijderen.
-9. **Inloggen `#/account`**: alleen uitgenodigde e-mailadressen. Stap 1 e-mailadres, stap 2 code uit de mail (of link). Toestanden: verstuurd, code fout, niet uitgenodigd, ingelogd maar niet op de teamlijst, ingelogd.
+9. **Inloggen `#/account`**: één teampincode voor iedereen. Stap 1 pincode, stap 2 je naam kiezen uit de teamlijst. Toestanden: onjuiste pincode, te veel pogingen (tijdelijk geblokkeerd), ingelogd (60 dagen onthouden), uitloggen.
 10. **Zoeken** (ploeg of speler), **Over `#/about`** (bronnen, status, link naar feedback), **Selectie importeren** (beheer).
 
 Lege en foutstaten: backend onbereikbaar ("Teamgegevens niet beschikbaar, de rest werkt"), geen uitslagen, geen feedback, niet ingelogd ("Alleen voor teamleden, Inloggen").

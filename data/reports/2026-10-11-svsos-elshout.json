@@ -1,0 +1,51 @@
+{
+  "matchId": "svsos-elshout",
+  "date": "2026-10-11",
+  "home": "svsos",
+  "away": "elshout",
+  "result": {
+    "home": 0,
+    "away": 2
+  },
+  "ht": {
+    "home": 0,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 7,
+      "extra": 0,
+      "player": "Bas van den Besselaar",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 52,
+      "extra": 0,
+      "player": "Marc Verschure",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": [
+        0,
+        2
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-11"
+  },
+  "summary": "SC Elshout won zakelijk en bleef zonder puntverlies. SVSOS raakte bij 0-1 de paal en kreeg in de tegenaanval de 0-2.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

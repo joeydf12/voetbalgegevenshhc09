@@ -1,0 +1,116 @@
+{
+  "matchId": "dussense-boys-riel",
+  "date": "2026-10-04",
+  "home": "dussense-boys",
+  "away": "riel",
+  "result": {
+    "home": 7,
+    "away": 0
+  },
+  "ht": {
+    "home": 3,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 15,
+      "extra": 0,
+      "player": "Sem van Tilborg",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 25,
+      "extra": 0,
+      "player": "Luuk Rosendaal",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 30,
+      "extra": 0,
+      "player": "Sem Heijmans",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        3,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 65,
+      "extra": 0,
+      "player": "Bob Leemans",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        4,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 70,
+      "extra": 0,
+      "player": "Sem Heijmans",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        5,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 78,
+      "extra": 0,
+      "player": "Justin van den Oudenrijn",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        6,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 84,
+      "extra": 0,
+      "player": "Sem van Tilborg",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        7,
+        0
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Brabants Dagblad",
+    "key": "bd",
+    "url": null,
+    "publishedAt": "2026-10-04"
+  },
+  "summary": "Dussense Boys won ruim en hield de nul. Riel miste veel spelers door blessures en afwezigheid.",
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

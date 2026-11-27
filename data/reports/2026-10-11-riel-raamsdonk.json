@@ -1,0 +1,100 @@
+{
+  "matchId": "riel-raamsdonk",
+  "date": "2026-10-11",
+  "home": "riel",
+  "away": "raamsdonk",
+  "result": {
+    "home": 4,
+    "away": 2
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 22,
+      "extra": 0,
+      "player": "Koen Schellekens",
+      "team": "riel",
+      "playerTeam": "riel",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 28,
+      "extra": 0,
+      "player": "Joni Paymans",
+      "team": "riel",
+      "playerTeam": "riel",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 44,
+      "extra": 0,
+      "player": "Justin van Strien",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 76,
+      "extra": 0,
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        2,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 86,
+      "extra": 0,
+      "player": "Joni Paymans",
+      "team": "riel",
+      "playerTeam": "riel",
+      "score": [
+        3,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 88,
+      "extra": 0,
+      "player": "Joshua Paymans",
+      "team": "riel",
+      "playerTeam": "riel",
+      "score": [
+        4,
+        2
+      ],
+      "og": false,
+      "note": "pen"
+    }
+  ],
+  "source": {
+    "name": "Opgave teamlid",
+    "key": "opgave",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

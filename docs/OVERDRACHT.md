@@ -27,6 +27,8 @@ Lees eerst `../CLAUDE.md` en `../taken/README.md`. Dit bestand zegt wat er al ge
 
 - 2026-11-27: opstellingen speelronde 1-2 (8 wedstrijden) toegevoegd; nu 51 van de 52 gespeelde wedstrijden (Chaam – Dussense Boys ontbreekt).
 
+- 2026-11-27: antwoorden uit VRAGEN.md verwerkt: HZ '75 – SVSOS (afgelast) en Elshout – SVG (gestaakt) naar 3 december met `note`; doelpunten Riel – Raamsdonk, Raamsdonk – Chaam, EDN – Dussense Boys, SAB – Elshout, Riel – Elshout, SVSOS – SVG, EDN – SVSOS en Riel – SVSOS (0-0); rust GESTA – HHC 0-2; namen Paymans/Thieleman/Van den Broek gelijkgetrokken; testkeuze in `ts_availability` verwijderd (op verzoek). Nieuw: `--opgave` in add-goals, lijsten ONTBREKENDE-DOELPUNTEN.md, SCREENSHOTS-OPNIEUW.md, VERSLAGEN-CHECK.md.
+
 ## Open (in deze volgorde)
 1. ~~RLS-test (e-mailopzet, vervangen)~~ **geslaagd op 2026-11-27** (`supabase/oud-rls-test-email.sql`, door de gebruiker in de SQL Editor gedraaid, alles teruggedraaid): A wijzigt eigen keuze, beide leden lezen alles, B kan rijen/feedback van A niet wijzigen, verwijderen of onder A's id schrijven, 2001 tekens en ongeldige status geweigerd, niet-lid ziet en schrijft niets, anoniem geweigerd. Opnieuw geslaagd na de advisor-fix (2026-11-27, 15/15). Draai dit script opnieuw na elke wijziging aan de `ts_`-policies.
 2. ~~Advisor-fix~~ **uitgevoerd 2026-11-27** (`supabase/02-advisor-fix.sql`). Overgebleven bewuste adviezen voor deze site: `ts_members` zonder policies (INFO, ledenlijst niet via API) en `ts_team()` uitvoerbaar voor ingelogden (WARN, nodig voor de site; geeft alleen iets terug aan teamleden). De overige adviezen horen bij andere HHC-apps.

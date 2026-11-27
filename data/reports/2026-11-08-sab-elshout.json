@@ -1,0 +1,74 @@
+{
+  "matchId": "sab-elshout",
+  "date": "2026-11-08",
+  "home": "sab",
+  "away": "elshout",
+  "result": {
+    "home": 3,
+    "away": 1
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 40,
+      "extra": 0,
+      "player": "Remco van den Hooven",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 44,
+      "extra": 0,
+      "player": "Cas van Gaalen",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 77,
+      "extra": 0,
+      "player": "Cas van Gaalen",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Quinten Hermes",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        3,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Opgave teamlid",
+    "key": "opgave",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

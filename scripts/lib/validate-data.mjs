@@ -121,9 +121,8 @@ export function validateData(data, { today }) {
       if (res.state !== 'ok') err(`${tag}: verslag uit "${r.source.name}" bij een wedstrijd zonder vaststaande uitslag`);
       else if (res.home !== r.result.home || res.away !== r.result.away) err(`${tag}: uitslag in verslag (${r.result.home}-${r.result.away}) wijkt af van de uitslag (${res.home}-${res.away})`);
     }
-    // Voetbal.nl-tijdlijn (add-goals) heeft geen link of samenvatting; een krantverslag vervangt dit.
-    if (r.source.key !== 'voetbalnl' && !r.source.url) warn(`${tag}: nog geen link naar de bron`);
-    if (r.source.key !== 'voetbalnl' && !r.summary) warn(`${tag}: nog geen samenvatting`);
+    // Links zijn niet nodig (afspraak 27-11). Samenvatting alleen bij krant/pers, niet bij Voetbal.nl of opgave.
+    if (!['voetbalnl', 'opgave'].includes(r.source.key) && !r.summary) warn(`${tag}: nog geen samenvatting`);
   }
   const listed = new Set(data.reportIndex?.files || []);
   for (const r of reports) if (!listed.has(r.file)) err(`reports/index.json mist ${r.file} (draai node scripts/add-report.mjs of rebuild)`);

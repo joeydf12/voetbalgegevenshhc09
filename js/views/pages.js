@@ -230,6 +230,7 @@ export function match(ctx, id) {
   const lu = ctx.lineups.find((x) => x.matchId === id);
   return html`<h1>${ctx.tm.get(m.home).name} – ${ctx.tm.get(m.away).name}</h1>
     ${section(fmtDate(m.date) + (m.time ? ` · ${m.time}` : ''), html`<p class="big">${r.state === 'ok' ? `${r.home} – ${r.away}` : r.state === 'conflict' ? 'Tegenstrijdig' : m.status === 'afgelast' ? 'Afgelast' : m.date >= ctx.today ? 'Nog te spelen' : 'Geen uitslag bekend'}${r.state === 'ok' && r.ht ? html` <small>(rust ${r.ht.home}-${r.ht.away})</small>` : ''}</p>
+      ${m.note ? html`<p class="note"><b>${m.note}</b></p>` : ''}
       <p class="note">${sourceNote(m)}</p>
       ${(m.evidence || []).length ? html`<div class="tw"><table><thead><tr><th>Bron</th><th>Uitslag</th><th>Rust</th><th>Gezien op</th></tr></thead><tbody>${(m.evidence || []).map((e) => html`<tr><td>${sourceLabel(e.source)}</td><td>${e.home}-${e.away}</td><td>${e.htHome != null ? `${e.htHome}-${e.htAway}` : '–'}</td><td>${fmtDate(e.retrievedAt)}</td></tr>`)}</tbody></table></div>` : ''}`)}
     ${availabilitySlot(ctx, m)}

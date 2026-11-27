@@ -80,7 +80,7 @@ test('add-goals: Voetbal.nl-tijdlijn met onbekende minuut/maker; BD-verslag gaat
   // En daarna weigert add-goals om het krantverslag te overschrijven
   const again = run('scripts/add-goals.mjs', ['--file', txt, '--apply'], d);
   assert.equal(again.status, 1);
-  assert.match(again.stdout, /krantverslag/);
+  assert.match(again.stdout, /gaat voor/);
   assert.equal(rj(d, 'reports/2026-11-01-hhc09-sab.json').source.key, 'bd');
 });
 

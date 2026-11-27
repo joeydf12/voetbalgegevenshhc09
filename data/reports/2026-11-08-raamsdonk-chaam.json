@@ -1,0 +1,48 @@
+{
+  "matchId": "raamsdonk-chaam",
+  "date": "2026-11-08",
+  "home": "raamsdonk",
+  "away": "chaam",
+  "result": {
+    "home": 1,
+    "away": 1
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Luuk Oomen",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Coen van Avendonk",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Opgave teamlid",
+    "key": "opgave",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

@@ -195,6 +195,14 @@
       "nrSeen": "2026-11-22"
     },
     {
+      "name": "Joshua Paymans",
+      "nr": 9,
+      "aliases": [
+        "Joshua Paijmans"
+      ],
+      "nrSeen": "2026-11-22"
+    },
+    {
       "name": "Jesse van den Corput",
       "nr": 10,
       "aliases": [],
@@ -251,10 +259,10 @@
       "nrSeen": "2026-11-15"
     },
     {
-      "name": "Joni Paijmans",
+      "name": "Joni Paymans",
       "nr": 17,
       "aliases": [
-        "Joni Paymans"
+        "Joni Paijmans"
       ],
       "nrSeen": "2026-11-15"
     },
@@ -284,12 +292,6 @@
     },
     {
       "name": "Joris Vromans",
-      "nr": null,
-      "aliases": [],
-      "nrSeen": null
-    },
-    {
-      "name": "Joshua Paijmans",
       "nr": null,
       "aliases": [],
       "nrSeen": null
@@ -577,7 +579,9 @@
     {
       "name": "Marc Verschure",
       "nr": 15,
-      "aliases": [],
+      "aliases": [
+        "Marc Verschuren"
+      ],
       "nrSeen": "2026-11-01"
     },
     {
@@ -589,7 +593,9 @@
     {
       "name": "Thieleman van Aerle",
       "nr": 17,
-      "aliases": [],
+      "aliases": [
+        "Tieleman van Aerle"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -961,7 +967,9 @@
     {
       "name": "Robin van den Broek",
       "nr": 17,
-      "aliases": [],
+      "aliases": [
+        "Robin van de Broek"
+      ],
       "nrSeen": "2026-11-22"
     }
   ],
@@ -1297,7 +1305,9 @@
     {
       "name": "Sem van Tilborg",
       "nr": 11,
-      "aliases": [],
+      "aliases": [
+        "Sem van Tilburg"
+      ],
       "nrSeen": "2026-11-22"
     },
     {

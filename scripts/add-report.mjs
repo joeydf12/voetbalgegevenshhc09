@@ -41,8 +41,8 @@ for (const parsed of parsedList) {
 for (const { res } of prepared) {
   const existing = data.reports.find((r) => r.matchId === res.match.id);
   // Uitzondering: een Voetbal.nl-tijdlijn (scripts/add-goals.mjs) wordt altijd door een krantverslag vervangen.
-  if (existing && existing.source?.key === 'voetbalnl') {
-    console.log(`\nℹ Bestaand Voetbal.nl-verslag voor ${res.match.id} wordt vervangen door het krantverslag.`);
+  if (existing && ['voetbalnl', 'opgave'].includes(existing.source?.key)) {
+    console.log(`\nℹ Bestaand verslag (${existing.source.name}) voor ${res.match.id} wordt vervangen door het krantverslag.`);
   } else if (existing && !args.replace) {
     console.error(`\n✗ Er staat al een verslag voor ${res.match.id} (bron: ${existing.source?.name ?? '?'}). Niets opgeslagen. Gebruik --replace alleen als het nieuwe verslag vollediger is.`);
     ok = false;

@@ -1,0 +1,35 @@
+{
+  "matchId": "edn56-svsos",
+  "date": "2026-10-04",
+  "home": "edn56",
+  "away": "svsos",
+  "result": {
+    "home": 0,
+    "away": 1
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Dorus Boers",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-27"
+}

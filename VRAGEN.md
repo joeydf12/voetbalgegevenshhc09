@@ -139,14 +139,10 @@ Er staat maar één verslag per wedstrijd in: een nieuw stuk over een wedstrijd 
 
 **D5. Valentijn de Klerk (Voetbal.nl) = Valentijn de Klerck (selectie Riel)?** [ ] ja [ ] nee
 
-**D6. Ontbrekende stukken van de opstellingen.** Deze staan in de app als "onvolledig". Stuur gerust het ontbrekende scherm:
-- Chaam – SAB: wissels Chaam na #15 · Riel – SVSOS: laatste afgeschermde wissel Riel · Raamsdonk – Chaam: wissels Raamsdonk na #21
-- SVSOS – Raamsdonk: geen wissels/kaarten in beeld, naam van Raamsdonk #11, wissels SVSOS na #13
-- EDN '56 – Dussense Boys: wissels EDN na #11 · SVG – EDN '56: wissels EDN na #16 · SAB – Elshout: bovenkant basis Elshout
-- SVSOS – SVG: wissels beide ploegen · EDN '56 – Elshout: wissels Elshout · EDN '56 – SVSOS: wissels SVSOS na #16
-- Raamsdonk – EDN '56: bij Raamsdonk geen wisselpijlen zichtbaar
-- Riel – SVG: wissels Riel na #18 · Raamsdonk – SAB: wissels Raamsdonk na #21 · SVSOS – Dussense Boys: wissels SVSOS na #15
-- Chaam – SVSOS: nummer en wissel-pijl van Pieter van den Broek (Chaam) niet in beeld · Dussense Boys – Raamsdonk: nummer van Timo Fens (Raamsdonk) niet in beeld
+**D6. Nog niet in beeld bij de opstellingen.** Een wissellijst die ophoudt, is compleet (afgesproken). Alleen dit ontbreekt nog:
+- Chaam – SVSOS: rugnummer van Pieter van den Broek (Chaam) · Dussense Boys – Raamsdonk en HZ '75 – Raamsdonk: rugnummer van Timo Fens (Raamsdonk)
+- Riel – SVSOS: nummer van de onderste afgeschermde wissel bij Riel · Dussense Boys – HZ '75: onderste afgeschermde wissel bij HZ '75
+- SVSOS – Raamsdonk: geen wissels/kaarten in beeld, naam van Raamsdonk #11
 - Chaam – Dussense Boys (11 okt): nog geen opstelling ontvangen
 
 

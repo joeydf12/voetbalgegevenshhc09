@@ -90,8 +90,7 @@
         "in": true
       }
     ],
-    "trainer": null,
-    "incomplete": true
+    "trainer": null
   },
   "away": {
     "team": "svg",
@@ -180,7 +179,6 @@
         "name": "Bas Melis"
       }
     ],
-    "trainer": null,
-    "incomplete": true
+    "trainer": null
   }
 }

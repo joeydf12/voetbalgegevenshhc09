@@ -20,15 +20,15 @@
       "id": 2,
       "name": "Periode 2",
       "from": "2026-11-16",
-      "to": null,
-      "note": "vanaf 22 november (HHC - Dussense Boys); einddatum nog onbekend"
+      "to": "2027-03-07",
+      "note": "van 22 november 2026 (HHC - Dussense Boys) t/m 7 maart 2027"
     },
     {
       "id": 3,
       "name": "Periode 3",
-      "from": null,
-      "to": null,
-      "note": "startdatum nog onbekend"
+      "from": "2027-03-08",
+      "to": "2027-05-31",
+      "note": "vanaf 14 maart 2027 t/m de laatste speelronde (17 mei)"
     }
   ],
   "periodOverrides": {

@@ -19,6 +19,9 @@ export const availabilitySlot = (ctx, m) =>
 
 /** Teamleden in de vorm die teamtools verwacht ({user_id, name, role}). */
 const asMembers = (list) => list.map((m) => ({ user_id: m.id, name: m.name, role: m.role, nr: m.nr }));
+/** Rol achter de naam, behalve voor gewone spelers. */
+const roleLabel = (role) => (role && role !== 'speler' ? ` (${role})` : '');
+const PLAYING = ['speler', 'aanvoerder'];
 
 export async function bindTeam(root, ctx) {
   const jobs = [];
@@ -36,7 +39,7 @@ function bindAccount(el) {
   return guard(el, T, async () => {
     const me = await B.currentMember();
     if (me) {
-      fill(el, html`<h2>${T}</h2><p class="banner ok">Ingelogd als <b>${me.name}</b>${me.role === 'aanvoerder' ? ' (aanvoerder)' : ''}.</p>
+      fill(el, html`<h2>${T}</h2><p class="banner ok">Ingelogd als <b>${me.name}</b>${roleLabel(me.role)}.</p>
         <p><a class="btn" href="#/">Naar het overzicht</a> <a class="btn alt" href="#/feedback">Feedback</a></p>
         <p class="note">Niet jij? Log uit en kies je eigen naam.</p>
         <button class="btn alt" type="button" data-act="out">Uitloggen</button>`);
@@ -81,7 +84,7 @@ function bindAvailability(el, ctx) {
     const me = await B.currentMember();
     if (!me) return fill(el, html`<h2>${T}</h2>${loginHint}`);
     const [rows, team] = await Promise.all([B.availabilityFor(matchId), B.team()]);
-    const t = tallyAvailability(rows.map((r) => ({ user_id: r.member_id, status: r.status })), asMembers(team));
+    const t = tallyAvailability(rows.map((r) => ({ user_id: r.member_id, status: r.status })), asMembers(team.filter((m) => PLAYING.includes(m.role) || rows.some((r) => r.member_id === m.id))));
     const mine = rows.find((r) => r.member_id === me.id)?.status;
     fill(el, html`<h2>${T}</h2>
       <p>Kun je spelen, ${me.name.split(' ')[0]}?</p>
@@ -119,7 +122,7 @@ function bindFeedback(el, ctx) {
         <button class="btn">Plaatsen</button><p class="msg" role="status"></p>
       </form>
       ${groups.size ? [...groups].map(([mid, list]) => html`<h3>${mid ? mname(mid) : 'Algemeen'}</h3>${list.map((f) => html`<article class="fb">
-          <p class="note">${who.get(f.member_id)?.name ?? 'Onbekend'}${who.get(f.member_id)?.role === 'aanvoerder' ? ' (aanvoerder)' : ''} · ${fmtDate(f.created_at.slice(0, 10))}${f.rating ? ` · ${'★'.repeat(f.rating)}${'☆'.repeat(5 - f.rating)}` : ''}</p>
+          <p class="note">${who.get(f.member_id)?.name ?? 'Onbekend'}${roleLabel(who.get(f.member_id)?.role)} · ${fmtDate(f.created_at.slice(0, 10))}${f.rating ? ` · ${'★'.repeat(f.rating)}${'☆'.repeat(5 - f.rating)}` : ''}</p>
           <p class="fbbody">${f.body}</p>${f.member_id === me.id ? html`<button type="button" class="btn alt small" data-del="${f.id}">Verwijderen</button>` : ''}</article>`)}`) : empty('Nog geen feedback.')}`);
     const form = el.querySelector('#fbform'); const msg = form.querySelector('.msg'); const ta = form.querySelector('textarea');
     ta.oninput = () => { form.querySelector('.cnt').textContent = `${[...ta.value.trim()].length} / ${FEEDBACK_MAX}`; };

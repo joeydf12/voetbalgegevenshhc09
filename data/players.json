@@ -297,9 +297,11 @@
       "nrSeen": null
     },
     {
-      "name": "Lucas van de Bruggen",
+      "name": "Lucas van der Bruggen",
       "nr": null,
-      "aliases": [],
+      "aliases": [
+        "Lucas van de Bruggen"
+      ],
       "nrSeen": null
     },
     {
@@ -327,9 +329,11 @@
       "nrSeen": null
     },
     {
-      "name": "Valentijn de Klerck",
+      "name": "Valentijn de Klerk",
       "nr": null,
-      "aliases": [],
+      "aliases": [
+        "Valentijn de Klerck"
+      ],
       "nrSeen": null
     },
     {
@@ -537,7 +541,9 @@
     {
       "name": "Remco v.d. Hooven",
       "nr": 8,
-      "aliases": [],
+      "aliases": [
+        "Remco van den Hooven"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -573,7 +579,9 @@
     {
       "name": "Sam van Bokhoven",
       "nr": 14,
-      "aliases": [],
+      "aliases": [
+        "Stan van Bokhoven"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -627,7 +635,9 @@
     {
       "name": "Henryc van Dongen",
       "nr": 3,
-      "aliases": [],
+      "aliases": [
+        "Hendryc van Dongen"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -815,7 +825,9 @@
     {
       "name": "Nassreddine el Haddadi",
       "nr": 10,
-      "aliases": [],
+      "aliases": [
+        "Nassr el Haddadi"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -859,6 +871,13 @@
       "nr": 34,
       "aliases": [],
       "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Brahum Saoud",
+      "nr": null,
+      "aliases": [
+        "Brahim Saoud"
+      ]
     }
   ],
   "edn56": [
@@ -1411,7 +1430,9 @@
     {
       "name": "Tom Verschueren",
       "nr": 11,
-      "aliases": [],
+      "aliases": [
+        "Tom Verschuren"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -1551,7 +1572,9 @@
     {
       "name": "Ruud van Dijck",
       "nr": 10,
-      "aliases": [],
+      "aliases": [
+        "Ruud van Dijk"
+      ],
       "nrSeen": "2026-11-15"
     },
     {

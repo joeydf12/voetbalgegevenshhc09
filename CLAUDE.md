@@ -28,6 +28,8 @@ De exacte taken staan in `taken/` (begin bij `taken/README.md`). Voer ze letterl
 - **Opstellingen (Voetbal.nl-screenshots):** één bestand per wedstrijd in `data/lineups/<wedstrijd-id>.json` (zie bestaande). Afgeschermd = `name: null, hidden: true`. Ontbreekt een kant helemaal: `missing: true`; `incomplete: true` alleen als er een speler half in beeld is (naam of nummer onleesbaar). Een lijst die ophoudt is compleet: wat er niet staat, was er niet (ook wissels). Daarna `node scripts/sync-players.mjs` (controle) en `--apply`: zet namen en laatst geziene rugnummers in de selecties; namen die op een bestaande lijken worden niet toegevoegd maar komen in `VRAGEN.md`.
 - **Officiële stand:** `node scripts/set-standings.mjs --file stand.csv --as-of JJJJ-MM-DD --last-result JJJJ-MM-DD --source voetbalnl` (zonder `--apply` = controle).
 - **Wekelijkse update:** `node scripts/fetch-hv.mjs` (doet de GitHub Action ook).
+- **Zelf bijgehouden gegevens:** `node scripts/set-info.mjs` met `--match <id> --referee "Naam"`, `--match <id> --minute N --assist "Naam"`, `--team <id> --venue "Sportpark" --place Plaats --surface kunstgras|gras`, of `--team <id> --player "Naam" --foot links|rechts|beide` (zonder `--apply` = controle).
+- **Programma (komende wedstrijden):** `node scripts/import-program.mjs --file programma.txt`; **uitslagenlijst Voetbal.nl:** `node scripts/import-results.mjs --file uitslagen.txt --source voetbalnl [--stand stand.txt]`.
 
 ## Afspraken
 - Werk op een branch en laat mij mergen. Commit alleen wijzigingen in `data/`, `js/`, `css/`, `scripts/`, `tests/` en documentatie.

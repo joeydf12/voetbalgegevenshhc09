@@ -55,3 +55,49 @@ Akkoord dat Claude dit in Supabase uitvoert?
 
 **F2. Gele kaarten.** De telling komt uit de opstellingen van Voetbal.nl. Bij spelers die daar "afgeschermd" zijn, zien we hun kaarten niet op naam. Ken je gele kaarten van HHC-spelers die ontbreken? Zet ze hier, dan klopt "op scherp" beter.
 - Antwoord:
+
+---
+
+## G. Zelf bijhouden (nieuw, 27 november)
+
+Deze gegevens levert geen enkele bron; de app toont ze zodra ze ingevuld zijn. Vul in wat je weet (of zeg het tegen Claude, dan zet die het erin met `scripts/set-info.mjs`).
+
+**G1. Sportpark en veldsoort per club** (kunstgras of natuurgras):
+
+| Club | Sportpark | Plaats | Kunstgras / gras |
+|---|---|---|---|
+| HHC '09 | | Oudheusden | |
+| Dussense Boys | | | |
+| VV HZ '75 | | | |
+| EDN '56 | | | |
+| VV Raamsdonk | | | |
+| SVSOS | | | |
+| VV Riel | | | |
+| RKVV GESTA | | | |
+| SC Elshout | | | |
+| VV Chaam | | | |
+| VV SVG | | | |
+| SAB | | | |
+
+**G2. Scheidsrechters van onze wedstrijden** (dan zie je ook of we hem vaker hadden):
+
+| Wedstrijd | Scheidsrechter |
+|---|---|
+| 20 sep · SC Elshout – HHC '09 | |
+| 27 sep · HHC '09 – VV Chaam | |
+| 4 okt · VV SVG – HHC '09 | |
+| 11 okt · HHC '09 – EDN '56 | |
+| 25 okt · VV Raamsdonk – HHC '09 | |
+| 1 nov · HHC '09 – SAB | |
+| 8 nov · RKVV GESTA – HHC '09 | |
+| 15 nov · HHC '09 – VV Riel | |
+| 22 nov · HHC '09 – Dussense Boys | |
+
+**G3. Assists van HHC-doelpunten.** Per doelpunt: wedstrijd, minuut en wie de assist gaf (bijv. "HHC – Riel, 45', assist Rik van de Wiel").
+- Antwoord:
+
+**G4. Voorkeursbeen van HHC-spelers** (links / rechts / beide):
+- Antwoord:
+
+**G5. Scouting.** Voor de besloten scoutingnotities per tegenstander moet `supabase/05-scouting.sql` één keer in de SQL Editor gedraaid worden.
+- [ ] gedraaid

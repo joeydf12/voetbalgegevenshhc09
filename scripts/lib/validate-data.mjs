@@ -20,6 +20,7 @@ export function validateData(data, { today }) {
     if (!t.id || !t.name) err(`Ploeg zonder id of naam: ${JSON.stringify(t)}`);
     if (ids.has(t.id)) err(`Dubbele ploeg-id: ${t.id}`);
     ids.add(t.id);
+    if (t.venue?.surface && !['kunstgras', 'gras'].includes(t.venue.surface)) err(`Ongeldige veldsoort bij ${t.id}: ${t.venue.surface}`);
     if (t.hvSlug && !/^[a-z0-9]\/[a-z0-9-]+$/.test(t.hvSlug)) err(`Ongeldige hvSlug bij ${t.id}: ${t.hvSlug}`);
   }
   try { buildIndex(teams); } catch (e) { err(e.message); }
@@ -55,6 +56,7 @@ export function validateData(data, { today }) {
       if (m.date > today) err(`${tag}: uitslag van ${e.source} voor een wedstrijd in de toekomst`);
     }
     if (m.status === 'afgelast' && (m.evidence || []).length) err(`${tag}: afgelast maar met uitslag`);
+    if (m.referee !== undefined && (typeof m.referee !== 'string' || !m.referee.trim())) err(`${tag}: lege of ongeldige scheidsrechter`);
     if (resolveResult(m).state === 'conflict') warn(`${tag}: tegenstrijdige uitslagen (${resolveResult(m).conflicts.map((c) => `${sourceLabel(c.source)} ${c.home}-${c.away}`).join(' / ')})`);
   }
   const expected = meta.expectedMatches ?? teams.length * (teams.length - 1);

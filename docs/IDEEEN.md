@@ -1,6 +1,6 @@
 # 100 ideeën voor de teamomgeving
 
-✅ = zit er al in (27-11-2026) · ⭐ = mijn top 10 om als eerste te bouwen.
+✅ = zit er al in · 🔧 = gebouwd, wacht op gegevens · ⭐ = top 10 om als eerste te bouwen. (Bijgewerkt 27-11-2026.)
 Alles moet gebaseerd blijven op echte bronnen: wat we niet weten, tonen we niet als feit.
 
 ## Wedstrijddag
@@ -8,7 +8,7 @@ Alles moet gebaseerd blijven op echte bronnen: wat we niet weten, tonen we niet 
 2. ⭐ Adres en routelink van het sportpark van de tegenstander (Google Maps).
 3. Rijschema: wie rijdt er deze week, met hoeveel plekken.
 4. Wasbeurt van de tenues: wie is er aan de beurt.
-5. Scheidsrechter van de wedstrijd (als Voetbal.nl die toont).
+5. 🔧 Scheidsrechter van de wedstrijd (als Voetbal.nl die toont). *(gebouwd; scheidsrechter invullen, zie VRAGEN.md)*
 6. Weersverwachting voor de aftrap (alleen bij wedstrijden binnen 5 dagen).
 7. Kleur van de tenues van beide ploegen (uit- of thuistenue).
 8. Herinnering op zaterdag: "morgen 14:00 thuis tegen …" (pushmelding of WhatsApp-tekst om te kopiëren).
@@ -30,7 +30,7 @@ Alles moet gebaseerd blijven op echte bronnen: wat we niet weten, tonen we niet 
 ## Uitslagen en verloop
 21. ✅ Uitslag met bewijs per bron (Hollandse Velden, Voetbal.nl, BD).
 22. ✅ Wedstrijdverloop met doelpunten, kaarten en wissels.
-23. Assists bijhouden (als het verslag ze noemt).
+23. 🔧 Assists bijhouden (als het verslag ze noemt). *(gebouwd; assists invullen, zie VRAGEN.md)*
 24. Man van de wedstrijd (stemmen door teamleden na afloop).
 25. ⭐ Teamstemming "speler van de maand".
 26. Ruststand overal waar bekend, ook in de lijsten.
@@ -42,25 +42,25 @@ Alles moet gebaseerd blijven op echte bronnen: wat we niet weten, tonen we niet 
 ## Stand en competitie
 31. ✅ Stand totaal, thuis, uit en per periode.
 32. ⭐ "Wat als": de stand na het eigen resultaat van komend weekend (W/G/V).
-33. Puntenverloop per speelronde als lijngrafiek (positie per week).
-34. Resterend programma-moeilijkheid (gemiddelde plek van de tegenstanders).
-35. Periodekampioen automatisch markeren als een periode af is.
+33. ✅ Puntenverloop per speelronde als lijngrafiek (positie per week).
+34. ✅ Resterend programma-moeilijkheid (gemiddelde plek van de tegenstanders).
+35. ✅ Periodekampioen automatisch markeren als een periode af is.
 36. Nacompetitie-indicator (plek 1 kampioen, periodewinnaars).
 37. Degradatie- en promotiestreep in de stand.
 38. Onderling resultaat bij gelijke punten.
-39. Doelsaldo-verloop per ploeg.
+39. ✅ Doelsaldo-verloop per ploeg.
 40. Vergelijking met vorig seizoen (als de data er is).
 
 ## Ploegdossiers (scouting)
 41. ✅ Logo, plaats, vorm en doelsaldo bovenaan.
 42. ✅ "Spelers om in de gaten te houden".
-43. ⭐ Vaste basisspelers van de tegenstander (meest gespeeld in de laatste 5).
-44. Hoe scoort deze ploeg: 1e of 2e helft, thuis of uit (deels ✅).
-45. Wanneer krijgen ze tegengoals (minuten-verdeling in blokken van 15 minuten).
-46. Eigen scoutingnotities van de staf per tegenstander (besloten).
+43. ✅ Vaste basisspelers van de tegenstander (meest gespeeld in de laatste 5).
+44. ✅ Hoe scoort deze ploeg: 1e of 2e helft, thuis of uit.
+45. ✅ Wanneer krijgen ze tegengoals (minuten-verdeling in blokken van 15 minuten).
+46. 🔧 Eigen scoutingnotities van de staf per tegenstander (besloten). *(gebouwd; supabase/05-scouting.sql draaien, zie VRAGEN.md)*
 47. Uitslag van de heenwedstrijd tegen HHC naast de terugwedstrijd.
 48. Trainer en aanvoerder van de tegenstander.
-49. Sportpark en veldsoort (gras of kunstgras).
+49. 🔧 Sportpark en veldsoort (gras of kunstgras). *(gebouwd; sportpark/veld invullen, zie VRAGEN.md)*
 50. Nieuws over de tegenstander met eigen samenvatting.
 
 ## Spelers
@@ -68,9 +68,9 @@ Alles moet gebaseerd blijven op echte bronnen: wat we niet weten, tonen we niet 
 52. ✅ Gespeelde wedstrijden: basis, ingevallen, goals, kaarten.
 53. ✅ "Op scherp" bij gele kaarten (KNVB: 5e, 7e, 9e, …).
 54. ⭐ Schorsingen automatisch tonen: "geschorst voor de volgende wedstrijd".
-55. Rugnummer-geschiedenis per speler.
+55. ✅ Rugnummer-geschiedenis per speler.
 56. Foto of avatar per speler (alleen eigen ploeg, met toestemming).
-57. Positie en voorkeursbeen.
+57. ✅ Positie en voorkeursbeen.
 58. Verjaardagen van teamgenoten.
 59. Mijlpalen: 50e wedstrijd, 10e goal.
 60. Vergelijk twee spelers naast elkaar.
@@ -79,12 +79,12 @@ Alles moet gebaseerd blijven op echte bronnen: wat we niet weten, tonen we niet 
 61. ✅ Doelpunten voor en tegen, per helft, thuis/uit.
 62. ✅ Huidige reeks (ongeslagen, zonder winst).
 63. ✅ Aantal gebruikte spelers.
-64. Clean sheets per keeper.
-65. Kaarten per ploeg als "fair play"-ranglijst.
+64. ✅ Clean sheets per keeper.
+65. ✅ Kaarten per ploeg als "fair play"-ranglijst.
 66. Gemiddelde leeftijd van de basiself (als bekend).
 67. Doelpunten per speler per 90 minuten (als minuten bekend zijn).
 68. Hoe vaak eerst scoren en dan winnen.
-69. Punten na achterstand bij rust.
+69. ✅ Punten na achterstand bij rust.
 70. Topscorers per ploeg met volledigheid (✅ per ploeg zichtbaar).
 
 ## Team en communicatie

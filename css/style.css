@@ -277,7 +277,7 @@ details.reptile summary::-webkit-details-marker{display:none}
 .hbar-track{display:flex;gap:2px;height:14px;border-radius:7px;overflow:hidden;background:var(--line2)}
 .hbar-track.empty{opacity:.5}
 .seg{display:block;height:100%}
-.seg.s1,.dot.s1{background:#4F55D1}
+.seg.s1,.dot.s1{background:#6E74F2}
 .seg.s2,.dot.s2{background:#D9780F}
 .hbar-l{display:flex;justify-content:space-between;margin-top:6px;font-size:.88rem;color:var(--mut)}
 .hbar-l b{color:#fff}
@@ -363,3 +363,70 @@ nav.bottom{display:none}
 .menugrid a i{font-style:normal;font-size:1.3rem}
 ul.timeline li.cardrow{grid-template-columns:44px 22px 1fr}
 .brand{flex:1 1 auto}.brand span{min-width:0}
+
+/* ---------- Sorteerbare tabellen ---------- */
+th.sorth{cursor:pointer;user-select:none;white-space:nowrap}
+th.sorth:hover{color:#fff}
+th.sorth::after{content:" ↕";opacity:.35;font-size:.85em}
+th[aria-sort="descending"]::after{content:" ▼";opacity:1;color:var(--orange2)}
+th[aria-sort="ascending"]::after{content:" ▲";opacity:1;color:var(--orange2)}
+
+/* ---------- Programma / uitslagen-schakelaar ---------- */
+.seg-switch{display:inline-flex;gap:4px;padding:4px;border:1px solid var(--line);border-radius:12px;background:rgba(0,0,0,.18);margin:0 0 14px}
+.seg-switch a{padding:8px 16px;border-radius:9px;text-decoration:none;color:var(--mut);font:700 1rem var(--display);letter-spacing:.02em}
+.seg-switch a.on{background:var(--orange);color:#141a4a}
+
+/* ---------- Wedstrijdkop extra ---------- */
+.hs-sub{color:#cfd4ff;font-size:.9rem;margin:-4px 0 12px}
+.surf{font-weight:700}
+.surf.kunstgras{color:#9be7b4}
+.surf.gras{color:#c9e79b}
+.chip.surf.kunstgras{border-color:#3c8f6a}
+.chip.dim{opacity:.6}
+small.assist{color:var(--mut)}
+.champ{display:flex;align-items:center;gap:14px;padding:14px 18px;margin:0 0 16px;border:2px solid #a5701d;border-radius:var(--r);background:linear-gradient(90deg,rgba(241,140,33,.18),transparent)}
+.champ .logo{background:#fff;border-radius:50%;padding:3px}
+.champ b{display:block;font:800 1.2rem var(--display)}
+ul.people.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px 16px}
+
+/* ---------- Grafieken ---------- */
+figure.chart{margin:0}
+figure.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.chart .cg{stroke:#2c3780;stroke-width:1}
+.chart .cg.zero{stroke:#56609f;stroke-dasharray:3 3}
+.chart .cl{fill:#9aa2d6;font:500 11px var(--text)}
+.chart .cv{fill:#fff;font:700 13px var(--display)}
+.chart .cv.sm{font-size:12px}
+.chart .ln{fill:none;stroke:#6E74F2;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .dot{fill:#6E74F2;stroke:var(--panel);stroke-width:2}
+.chart .hit{fill:transparent}
+.chart .pt:hover .dot,.chart .pt:focus .dot{r:6;fill:#fff;stroke:#6E74F2}
+.chart .pt:focus{outline:none}
+.chart .bar.s1{fill:#6E74F2}
+.chart .bar.s2{fill:#D9780F}
+.chart .bar:hover{opacity:.85}
+.legend{display:flex;gap:16px;font-size:.88rem;color:var(--mut);margin-bottom:6px}
+@media (max-width:640px){
+  ul.people.cols{grid-template-columns:1fr}
+  .seg-switch{display:flex}
+  .seg-switch a{flex:1;text-align:center;padding:8px 6px}
+  .chart .cl{font-size:13px}
+  .champ{flex-direction:column;text-align:center}
+}
+.split>*,.cols2>*,.ov>*,.mgrid>*,.mcol{min-width:0}
+table.squad td:nth-child(2),table.games td:nth-child(2),table.scorers td:nth-child(2){white-space:normal;min-width:120px}
+@media (max-width:640px){
+  table.squad th,table.squad td,table.games th,table.games td,table.scorers th,table.scorers td{padding:7px 3px;font-size:.86rem}
+  table.squad th,table.games th{font-size:.7rem;letter-spacing:0}
+  table.squad .shirt.sm{min-width:24px;height:24px;font-size:.78rem;margin-right:0}
+  .clubhero,.phero{gap:10px;padding:14px}
+  .clubhero .logo,.phero .logo{width:64px;height:64px}
+  .clubhero h1,.phero h1{font-size:1.6rem}
+  .clubhero .kicker,.phero .kicker{font-size:.85rem}
+  .chips{gap:6px;justify-content:center}
+  .chip{font-size:.8rem;padding:4px 9px}
+  .chip .form i{width:17px;height:17px;line-height:17px;font-size:.65rem}
+  .tabs.under a{padding:9px 10px;font-size:.98rem}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .kpi{padding:10px}
+}

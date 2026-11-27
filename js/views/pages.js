@@ -4,10 +4,10 @@ import { pickStanding, headToHead, teamMatches } from '../lib/standings.js';
 import { ownGoalsList } from '../lib/stats.js';
 import { teamProfile, splitStandings } from '../lib/teamstats.js';
 import { norm } from '../lib/teams.js';
-import { periodOf, periodStandings, keyPlayers, playersOfTeam, cardStatus } from '../lib/insights.js';
+import { periodOf, periodStandings, keyPlayers, playersOfTeam, cardStatus, periodStatus, fairPlay, remainingDifficulty, refereeHistory } from '../lib/insights.js';
 import { logo, tlink, matchRow, formDots, sourceNote, sourceBadges, section, empty } from './ui.js';
-import { availabilitySlot } from './team.js';
-import { plink, statsTab, squadTab, lineupsTab, scorersFull } from './club.js';
+import { availabilitySlot, scoutingView } from './team.js';
+import { plink, statsTab, squadTab, lineupsTab, scorersFull, usualStartersCard, rankChart, surfaceText } from './club.js';
 
 const nl = (n) => (n === null || n === undefined ? '–' : String(n).replace('.', ','));
 const known = (ctx) => ctx.matches.filter((m) => resolveResult(m).state === 'ok');
@@ -39,7 +39,9 @@ export function matchHero(ctx, m, { link = false, compact = false } = {}) {
         : html`<span class="hs-time">${m.time || '–'}</span>`;
   const own = ctx.meta.ownTeam;
   const side = (id, cls) => html`<a class="hs-team ${cls} ${id === own ? 'own' : ''}" href="#/team/${id}">${logo(id, compact ? 48 : 72)}<span>${name(ctx, id)}</span></a>`;
+  const venue = ctx.tm.get(m.home)?.venue;
   const inner = html`<p class="hs-meta">${longDate(m.date)}${m.time && r.state === 'ok' ? ` · ${m.time}` : ''}${r.state === 'ok' && r.ht ? html` · rust ${r.ht.home}-${r.ht.away}` : ''}</p>
+    ${!compact && (venue?.name || venue?.surface || m.referee) ? html`<p class="hs-sub">${venue?.name ? html`📍 ${venue.name}${venue.place ? `, ${venue.place}` : ''}` : ''}${surfaceText(venue) ? html` · <span class="surf ${venue.surface}">${surfaceText(venue)}</span>` : ''}${m.referee ? html` · Scheidsrechter: <b>${m.referee}</b>` : ''}</p>` : ''}
     <div class="hs-row">${side(m.home, 'home')}<div class="hs-mid">${link ? html`<a href="#/match/${m.id}">${center}</a>` : center}</div>${side(m.away, 'away')}</div>
     ${m.note ? html`<p class="hs-note">${m.note}</p>` : ''}`;
   return html`<div class="hero-score ${compact ? 'compact' : ''}">${inner}</div>`;
@@ -102,7 +104,7 @@ export function overview(ctx) {
 
 // ---------- Stand ----------
 function standRows(ctx, rows, { showRank = true } = {}) {
-  return html`<div class="tw"><table class="stand"><thead><tr><th>#</th><th>Club</th><th>G</th><th>W</th><th>G</th><th>V</th><th>Pnt</th><th class="hs">Doelp.</th><th>+/-</th><th class="hs">Vorm</th></tr></thead><tbody>
+  return html`<div class="tw"><table class="stand sortable"><thead><tr><th>#</th><th>Club</th><th>G</th><th>W</th><th>G</th><th>V</th><th>Pnt</th><th class="hs">Doelp.</th><th>+/-</th><th class="hs">Vorm</th></tr></thead><tbody>
     ${rows.map((r, i) => html`<tr class="${r.team === ctx.meta.ownTeam ? 'mine' : ''}"><td class="rk">${showRank ? (i + 1) : '–'}</td><td>${tlink(ctx, r.team)}${r.unknown ? html` <span class="bd warn" title="Gespeelde wedstrijden zonder bekende uitslag">${r.unknown}?</span>` : ''}</td><td>${r.pl}</td><td>${r.w}</td><td>${r.d}</td><td>${r.l}</td><td><b>${r.pts}</b></td><td class="hs">${r.gf}:${r.ga}</td><td>${r.gf - r.ga > 0 ? '+' : ''}${r.gf - r.ga}</td><td class="hs">${r.form ? formDots(r.form) : ''}</td></tr>`)}
   </tbody></table></div>`;
 }
@@ -110,7 +112,7 @@ function standRows(ctx, rows, { showRank = true } = {}) {
 export function standings(ctx, params = new URLSearchParams()) {
   const view = params.get('view') || 'totaal';
   const periods = ctx.meta.periods || [];
-  const tabs = [['totaal', 'Totaal'], ['thuis', 'Thuis'], ['uit', 'Uit'], ...periods.map((p) => [`p${p.id}`, p.name])];
+  const tabs = [['totaal', 'Totaal'], ['thuis', 'Thuis'], ['uit', 'Uit'], ...periods.map((p) => [`p${p.id}`, `${p.name}${periodStatus(ctx.matches, ctx.teams, ctx.today, ctx.meta, p.id).champion ? ' 🏆' : ''}`]), ['fairplay', 'Fair play'], ['rest', 'Restprogramma']];
   const nav = html`<nav class="tabs pills">${tabs.map(([k, l]) => html`<a class="${k === view ? 'on' : ''}" href="#/stand${k === 'totaal' ? '' : `?view=${k}`}">${l}</a>`)}</nav>`;
   const own = ctx.meta.ownTeam;
   const withForm = (rows) => rows.map((r) => ({ ...r, form: r.form ?? ctx.computed.find((c) => c.team === r.team)?.form }));
@@ -118,14 +120,23 @@ export function standings(ctx, params = new URLSearchParams()) {
   if (view === 'thuis' || view === 'uit') {
     const rows = splitStandings(ctx.matches, ctx.teams, view === 'thuis' ? 'home' : 'away');
     main = section(view === 'thuis' ? 'Thuisstand' : 'Uitstand', standRows(ctx, rows.map((r) => ({ ...r, form: null }))), 'Berekend uit alle bekende uitslagen.');
+  } else if (view === 'fairplay') {
+    const fp = fairPlay(ctx.lineups, ctx.teams);
+    main = section('Fair play', html`<div class="tw"><table class="stand sortable"><thead><tr><th data-type="num">#</th><th>Club</th><th data-type="num">Geel</th><th data-type="num">Rood</th><th data-type="num">Punten</th><th data-type="num" class="hs">Opst.</th><th data-type="num" aria-sort="ascending">Per wed.</th></tr></thead><tbody>
+      ${fp.map((r, i) => html`<tr class="${r.team === own ? 'mine' : ''}"><td class="rk" data-v="${i + 1}">${i + 1}</td><td>${tlink(ctx, r.team)}</td><td data-v="${r.yellow}">${r.yellow ? html`<span class="kc y">${r.yellow}</span>` : '0'}</td><td data-v="${r.red}">${r.red ? html`<span class="kc r">${r.red}</span>` : '0'}</td><td data-v="${r.points}"><b>${r.points}</b></td><td class="hs" data-v="${r.lineups}">${r.lineups}</td><td data-v="${r.perMatch ?? 99}">${nl(r.perMatch)}</td></tr>`)}</tbody></table></div>`,
+      'Kaarten uit de opstellingen van Voetbal.nl: geel 1 punt, rood 3 punten; laagste gemiddelde per wedstrijd staat bovenaan. Alleen wedstrijden met een opstelling tellen mee, en kaarten van afgeschermde spelers tellen wel mee voor de ploeg.');
+  } else if (view === 'rest') {
+    const stand = pickStanding(ctx.standings, ctx.matches, ctx.computed).rows;
+    const rest = remainingDifficulty(ctx.matches, stand).map((r) => ({ ...r, pos: stand.findIndex((s) => s.team === r.team) + 1 })).sort((a, b) => (a.avg ?? 99) - (b.avg ?? 99));
+    main = section('Restprogramma', html`<div class="tw"><table class="stand sortable"><thead><tr><th data-type="num">Plek</th><th>Club</th><th data-type="num">Nog te spelen</th><th data-type="num" aria-sort="ascending">Gem. plek tegenst.</th><th data-type="num" class="hs">Top 4</th></tr></thead><tbody>
+      ${rest.map((r) => html`<tr class="${r.team === own ? 'mine' : ''}"><td class="rk" data-v="${r.pos}">${r.pos}</td><td>${tlink(ctx, r.team)}</td><td data-v="${r.left}">${r.left}</td><td data-v="${r.avg ?? 99}"><b>${nl(r.avg)}</b></td><td class="hs" data-v="${r.top4}">${r.top4}</td></tr>`)}</tbody></table></div>`,
+      'Hoe zwaar het resterende programma is: de gemiddelde huidige plek van de nog te spelen tegenstanders. Hoe lager het getal, hoe zwaarder. Klik op een kolom om te sorteren.');
   } else if (/^p\d$/.test(view)) {
     const p = periods.find((x) => `p${x.id}` === view);
     if (!p?.from) main = section(p?.name ?? 'Periode', empty(`${p?.name ?? 'Deze periode'} is nog niet begonnen of de startdatum is nog niet bekend.`));
     else {
-      const rows = periodStandings(ctx.matches, ctx.teams, ctx.today, ctx.meta, p.id);
-      const inPeriod = ctx.matches.filter((m) => periodOf(m, ctx.meta) === p.id);
-      const open = inPeriod.filter((m) => resolveResult(m).state !== 'ok' && m.status !== 'afgelast');
-      main = section(`${p.name}`, standRows(ctx, rows), `${p.note ?? ''}${open.length ? ` · nog ${open.length} wedstrijd(en) te spelen in deze periode${open.some((m) => m.note) ? ' (waaronder inhaalwedstrijden)' : ''}` : ' · alle wedstrijden gespeeld'}.`);
+      const st = periodStatus(ctx.matches, ctx.teams, ctx.today, ctx.meta, p.id);
+      main = html`${st.champion ? html`<div class="champ">${logo(st.champion, 48)}<div><b>🏆 Periodekampioen: ${name(ctx, st.champion)}</b><small>${st.rows[0].pts} punten in ${p.name.toLowerCase()}</small></div></div>` : ''}${section(`${p.name}`, standRows(ctx, st.rows), `${p.note ?? ''}${st.open.length ? ` · nog ${st.open.length} wedstrijd(en) te spelen in deze periode${st.open.some((m) => m.note) ? ' (waaronder inhaalwedstrijden)' : ''}` : st.ended ? ' · afgelopen' : ' · alle wedstrijden tot nu toe gespeeld'}.`)}`;
     }
   } else {
     const pick = pickStanding(ctx.standings, ctx.matches, ctx.computed);
@@ -147,6 +158,7 @@ export function standings(ctx, params = new URLSearchParams()) {
   return html`<h1>Stand</h1>${nav}<div class="split"><div>${main}</div><aside>
     ${section(`${name(ctx, own)} in cijfers`, html`<dl class="facts"><dt>Plaats</dt><dd>${rank}e (${tot[rank - 1]?.pts} pnt)</dd><dt>Thuis</dt><dd>${prof.home.pl} gesp · ${prof.home.w}W ${prof.home.d}G ${prof.home.l}V · ${prof.home.pts} pnt</dd><dt>Uit</dt><dd>${prof.away.pl} gesp · ${prof.away.w}W ${prof.away.d}G ${prof.away.l}V · ${prof.away.pts} pnt</dd><dt>Doelpunten</dt><dd>${prof.all.gf}:${prof.all.ga}</dd></dl>`)}
     ${p1Text ? section('Periode 1', p1Text) : ''}
+    ${section(`Plek ${name(ctx, own)} per speeldag`, rankChart(ctx, own))}
     ${statusBanner(ctx)}
   </aside></div>`;
 }
@@ -190,6 +202,7 @@ export function teams(ctx) {
 
 // ---------- Ploegdossier ----------
 function teamHero(ctx, id) {
+  const t = ctx.tm.get(id);
   const stand = pickStanding(ctx.standings, ctx.matches, ctx.computed).rows;
   const i = stand.findIndex((r) => r.team === id); const r = stand[i];
   const own = ctx.meta.ownTeam;
@@ -198,7 +211,7 @@ function teamHero(ctx, id) {
   const form = ctx.computed.find((c) => c.team === id).form;
   return html`<section class="card accent clubhero">${logo(id, 96)}<div><h1>${name(ctx, id)}</h1>
     ${next ? html`<p class="kicker">Volgende wedstrijd: <a href="#/match/${next.id}">${name(ctx, next.home)} – ${name(ctx, next.away)}</a> · ${longDate(next.date)}${next.time ? ` · ${next.time}` : ''}</p>` : ''}
-    <div class="chips"><span class="chip gold">🏆 ${i + 1}e plaats (${r.pts} pnt)</span><span class="chip">Vorm ${formDots(form)}</span><span class="chip">Doelsaldo ${r.gf}:${r.ga} (${r.gf - r.ga > 0 ? '+' : ''}${r.gf - r.ga})</span>${vsOwn ? html`<a class="chip link" href="#/match/${vsOwn.id}">Tegen ${name(ctx, own)}: ${fmtDate(vsOwn.date)}</a>` : ''}</div></div></section>`;
+    <div class="chips"><span class="chip gold">🏆 ${i + 1}e plaats (${r.pts} pnt)</span>${t.venue?.name ? html`<span class="chip">📍 ${t.venue.name}${t.venue.place ? `, ${t.venue.place}` : ''}</span>` : ''}${surfaceText(t.venue) ? html`<span class="chip surf ${t.venue.surface}">${surfaceText(t.venue)}</span>` : html`<span class="chip dim" title="Nog niet ingevuld">Veld: onbekend</span>`}<span class="chip">Vorm ${formDots(form)}</span><span class="chip">Doelsaldo ${r.gf}:${r.ga} (${r.gf - r.ga > 0 ? '+' : ''}${r.gf - r.ga})</span>${vsOwn ? html`<a class="chip link" href="#/match/${vsOwn.id}">Tegen ${name(ctx, own)}: ${fmtDate(vsOwn.date)}</a>` : ''}</div></div></section>`;
 }
 
 function keyPlayersCard(ctx, id) {
@@ -220,10 +233,15 @@ export function team(ctx, id, params, lineupViewFn = lineupView) {
   const ms = teamMatches(ctx.matches, id);
   const reps = ctx.reports.filter((x) => x.home === id || x.away === id).sort((a, b) => b.date.localeCompare(a.date));
   const nLu = ctx.lineups.filter((l) => l.home.team === id || l.away.team === id).length;
-  const tabs = [['overzicht', 'Overzicht'], ['programma', 'Programma'], ['statistieken', 'Statistieken'], ['selectie', 'Selectie'], ['opstellingen', `Opstellingen (${nLu})`], ['verslagen', `Verslagen (${reps.length})`], ['nieuws', 'Nieuws']];
+  const tabs = [['overzicht', 'Overzicht'], ['programma', 'Programma'], ['uitslagen', 'Uitslagen'], ['statistieken', 'Statistieken'], ['selectie', 'Selectie'], ['opstellingen', `Opstellingen (${nLu})`], ['verslagen', `Verslagen (${reps.length})`], ...(id === ctx.meta.ownTeam ? [] : [['scouting', 'Scouting']]), ['nieuws', 'Nieuws']];
   const nav = html`<nav class="tabs under">${tabs.map(([k, l]) => html`<a class="${k === tab || (tab === 'spelers' && k === 'selectie') ? 'on' : ''}" href="#/team/${id}?tab=${k}">${l}</a>`)}</nav>`;
   let body;
-  if (tab === 'programma') body = section('Programma en uitslagen', html`<p><button class="btn alt small" type="button" data-dl="ics:${id}">Agenda (.ics)</button> <button class="btn alt small" type="button" data-dl="csv:${id}">CSV</button></p>${byDay(ctx, ms, id)}`);
+  const upcomingM = ms.filter((m) => resolveResult(m).state !== 'ok' && m.status !== 'afgelast');
+  const playedM = ms.filter((m) => resolveResult(m).state === 'ok' || m.status === 'afgelast').reverse();
+  const sw = (on) => html`<div class="seg-switch" role="tablist"><a class="${on === 'programma' ? 'on' : ''}" href="#/team/${id}?tab=programma">Programma (${upcomingM.length})</a><a class="${on === 'uitslagen' ? 'on' : ''}" href="#/team/${id}?tab=uitslagen">Uitslagen (${playedM.length})</a></div>`;
+  if (tab === 'programma') body = html`${sw('programma')}${section('Programma', html`<p><button class="btn alt small" type="button" data-dl="ics:${id}">Agenda (.ics)</button></p>${upcomingM.length ? byDay(ctx, upcomingM, id) : empty('Geen wedstrijden meer gepland.')}`)}`;
+  else if (tab === 'uitslagen') body = html`${sw('uitslagen')}${section('Uitslagen', html`<p><button class="btn alt small" type="button" data-dl="csv:${id}">CSV</button></p>${playedM.length ? byDay(ctx, playedM, id) : empty('Nog geen uitslagen.')}`, 'Nieuwste bovenaan.')}`;
+  else if (tab === 'scouting') body = scoutingView(id);
   else if (tab === 'statistieken') body = statsTab(ctx, id);
   else if (tab === 'selectie' || tab === 'spelers') body = squadTab(ctx, id);
   else if (tab === 'opstellingen') body = lineupsTab(ctx, id, lineupViewFn);
@@ -238,6 +256,7 @@ export function team(ctx, id, params, lineupViewFn = lineupView) {
     const p = teamProfile(ctx.matches, id);
     body = html`<div class="cols2">
       ${keyPlayersCard(ctx, id)}
+      ${usualStartersCard(ctx, id)}
       ${section(html`<span class="ic">📈</span> In het kort`, html`<div class="kpis three"><div class="kpi"><b>${p.all.pts}</b><span>punten</span><small>${nl(p.ppg)} per wedstrijd</small></div><div class="kpi"><b>${p.home.pts}</b><span>thuis</span><small>${p.home.pl} gespeeld</small></div><div class="kpi"><b>${p.away.pts}</b><span>uit</span><small>${p.away.pl} gespeeld</small></div></div><a class="more" href="#/team/${id}?tab=statistieken">Alle statistieken</a>`)}
       ${h2h.length ? section(html`<span class="ic">⇄</span> Tegen ${name(ctx, ctx.meta.ownTeam)}`, html`<div class="list">${h2h.map((m) => matchRow(ctx, m, ctx.meta.ownTeam))}</div>`) : ''}
       ${section('Laatste uitslagen', played.length ? html`<div class="list">${played.map((m) => matchRow(ctx, m, id))}</div>` : empty('Geen uitslagen bekend.'))}
@@ -274,7 +293,7 @@ function eventsBlock(ctx, m, rep, lu) {
   const pname = (team, p) => (p.name ? plink(ctx, team, p.name) : html`<i>#${p.nr} afgeschermd</i>`);
   return html`
     <h3 class="blockh">Doelpunten</h3>
-    ${goals.length ? html`<ul class="timeline">${goals.map((g) => html`<li class="${sideOf(g.team)}"><span class="min">${minute(g)}</span><span class="ball">⚽</span><span class="sc">${g.score?.[0] ?? ''}-${g.score?.[1] ?? ''}</span><span class="who">${g.player ? plink(ctx, g.playerTeam, g.player) : html`<i>onbekend</i>`}${g.og ? ' (e.d.)' : ''}${g.note && !g.og ? html` <small>(${g.note})</small>` : ''}</span></li>`)}</ul>`
+    ${goals.length ? html`<ul class="timeline">${goals.map((g) => html`<li class="${sideOf(g.team)}"><span class="min">${minute(g)}</span><span class="ball">⚽</span><span class="sc">${g.score?.[0] ?? ''}-${g.score?.[1] ?? ''}</span><span class="who">${g.player ? plink(ctx, g.playerTeam, g.player) : html`<i>onbekend</i>`}${g.og ? ' (e.d.)' : ''}${g.note && !g.og ? html` <small>(${g.note})</small>` : ''}${g.assist ? html` <small class="assist">assist ${plink(ctx, g.playerTeam, g.assist)}</small>` : ''}</span></li>`)}</ul>`
       : resolveResult(m).state === 'ok' && resolveResult(m).home + resolveResult(m).away === 0 ? empty('Geen doelpunten.') : empty('Doelpuntenmakers nog niet bekend.')}
     ${lu ? html`<h3 class="blockh">Kaarten</h3>${cards.length ? html`<ul class="timeline">${cards.map((c) => html`<li class="${c.side} cardrow"><span class="min">–</span><span>${c.p.red ? html`<i class="kc r"></i>` : html`<i class="kc y"></i>`}</span><span class="who">${pname(c.team, c.p)} <small>${name(ctx, c.team)}</small></span></li>`)}</ul>` : empty('Geen kaarten.')}
       <h3 class="blockh">Wissels</h3><div class="subs">${['home', 'away'].map((k) => html`<div><b>${logo(lu[k].team, 18)} ${name(ctx, lu[k].team)}</b>${subs[k].in.length ? html`<p><span class="sw in">⬆</span> ${subs[k].in.map((p, i) => html`${i ? ', ' : ''}${pname(lu[k].team, p)}`)}</p><p><span class="sw out">⬇</span> ${subs[k].out.map((p, i) => html`${i ? ', ' : ''}${pname(lu[k].team, p)}`)}</p>` : html`<p class="empty">Geen wissels bekend.</p>`}</div>`)}</div>
@@ -292,13 +311,18 @@ export function match(ctx, id) {
   const lu = ctx.lineups.find((x) => x.matchId === id);
   const upcoming = r.state !== 'ok' && m.status !== 'afgelast' && m.date >= ctx.today;
   const hero = html`<section class="card accent">${matchHero(ctx, m)}${sourceBadges(m)}<p class="note center">${sourceNote(m)}</p></section>`;
-  if (upcoming) return html`${hero}${availabilitySlot(ctx, m)}${preview(ctx, m)}`;
+  // Idee 5: eerder deze scheidsrechter gehad?
+  const own = ctx.meta.ownTeam;
+  const refPrev = m.referee && (m.home === own || m.away === own) ? refereeHistory(ctx.matches, own, m.referee).filter((x) => x.id !== m.id) : [];
+  const refBox = m.referee && (m.home === own || m.away === own) ? section(html`<span class="ic">🧑‍⚖️</span> Scheidsrechter ${m.referee}`, refPrev.length ? html`<p>Floot eerder ${refPrev.length}× bij ${name(ctx, own)}:</p><div class="list">${refPrev.map((x) => matchRow(ctx, x, own))}</div>` : html`<p class="empty">Eerste keer dit seizoen bij ${name(ctx, own)} (voor zover ingevuld).</p>`)
+    : '';
+  if (upcoming) return html`${hero}${refBox}${availabilitySlot(ctx, m)}${preview(ctx, m)}`;
   const center = html`<div class="mcol center">${section('Wedstrijdverloop', eventsBlock(ctx, m, rep, lu))}</div>`;
   const left = html`<div class="mcol home">${section(html`Opstelling`, lu ? lineupSide(lu.home, ctx) : empty('Geen opstelling.'))}</div>`;
   const right = html`<div class="mcol away">${section(html`Opstelling`, lu ? lineupSide(lu.away, ctx) : empty('Geen opstelling.'))}</div>`;
   return html`${hero}
     <div class="mtabs" role="tablist"><button type="button" data-mt="center" class="on">Verloop</button><button type="button" data-mt="home">${logo(m.home, 18)} ${name(ctx, m.home)}</button><button type="button" data-mt="away">${logo(m.away, 18)} ${name(ctx, m.away)}</button></div>
-    <div class="mgrid" data-show="center">${left}${center}${right}</div>`;
+    <div class="mgrid" data-show="center">${left}${center}${right}</div>${refBox}`;
 }
 
 function preview(ctx, m) {

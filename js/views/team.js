@@ -25,6 +25,7 @@ export async function bindTeam(root, ctx) {
   const acc = root.querySelector('#ts-account'); if (acc) jobs.push(bindAccount(acc));
   const av = root.querySelector('#ts-av'); if (av) jobs.push(bindAvailability(av, ctx));
   const fb = root.querySelector('#ts-feedback'); if (fb) jobs.push(bindFeedback(fb, ctx));
+  const sc = root.querySelector('#ts-scout'); if (sc) jobs.push(bindScouting(sc, ctx));
   await Promise.all(jobs);
 }
 
@@ -139,3 +140,32 @@ function bindFeedback(el, ctx) {
 }
 
 export { section };
+
+// ---------- Scouting (idee 46): besloten notities per tegenstander ----------
+const TOPICS = { algemeen: 'Algemeen', speelwijze: 'Speelwijze', sterk: 'Sterke punten', zwak: 'Zwakke punten', spelers: 'Spelers', advies: 'Tactisch advies' };
+export const scoutingView = (teamId) => slot('ts-scout', 'Scouting (alleen teamleden)', { team: teamId });
+
+function bindScouting(el, ctx) {
+  const T = 'Scouting (alleen teamleden)';
+  const team = el.dataset.team;
+  return guard(el, T, async () => {
+    const me = await B.currentMember();
+    if (!me) return fill(el, html`<h2>${T}</h2>${loginHint}`);
+    const [items, members] = await Promise.all([B.scoutingList(team), B.team()]);
+    const who = new Map(members.map((m) => [m.id, m]));
+    const groups = Object.keys(TOPICS).map((k) => [k, items.filter((i) => i.topic === k)]).filter(([, l]) => l.length);
+    fill(el, html`<h2>${T}</h2><p class="note">Notities over ${ctx.tm.get(team).name}: wat valt op, waar liggen kansen. Alleen zichtbaar voor ingelogde teamleden.</p>
+      <form class="tsform" id="scform"><label>Onderwerp<select name="topic">${Object.entries(TOPICS).map(([k, l]) => html`<option value="${k}">${l}</option>`)}</select></label>
+        <label>Notitie <small class="cnt">0 / 2000</small><textarea name="body" rows="3" maxlength="2000" required></textarea></label><button class="btn">Toevoegen</button><p class="msg" role="status"></p></form>
+      ${groups.length ? groups.map(([k, list]) => html`<h3 class="blockh">${TOPICS[k]}</h3>${list.map((n) => html`<article class="fb"><p class="fbbody">${n.body}</p><p class="note">${who.get(n.member_id)?.name ?? 'Onbekend'} · ${fmtDate(n.created_at.slice(0, 10))}${n.member_id === me.id ? html` · <button type="button" class="btn alt small" data-del="${n.id}">Verwijderen</button>` : ''}</p></article>`)}`) : empty('Nog geen notities.')}`);
+    const form = el.querySelector('#scform'); const msg = form.querySelector('.msg'); const ta = form.querySelector('textarea');
+    ta.oninput = () => { form.querySelector('.cnt').textContent = `${[...ta.value.trim()].length} / 2000`; };
+    form.onsubmit = async (e) => {
+      e.preventDefault();
+      const fd = new FormData(form); const body = String(fd.get('body') || '').trim();
+      if (!body) { msg.textContent = 'Schrijf eerst een notitie.'; return; }
+      try { await B.scoutingAdd(team, fd.get('topic'), body); await bindScouting(el, ctx); } catch (err) { msg.textContent = `Opslaan mislukt: ${err.message}`; }
+    };
+    el.querySelectorAll('[data-del]').forEach((b) => { b.onclick = async () => { try { await B.scoutingDelete(b.dataset.del); await bindScouting(el, ctx); } catch (err) { msg.textContent = err.message; } }; });
+  });
+}

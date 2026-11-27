@@ -65,6 +65,8 @@ function route() {
   if (seg[0] === 'selectie') bindImport(root, ctx);
   bindTeam(root, ctx);
   bindMatchTabs(root);
+  bindSortable(root);
+  root.querySelectorAll('.tabs a.on, .seg-switch a.on').forEach((a) => { const bar = a.parentElement; bar.scrollLeft += (a.getBoundingClientRect().left - bar.getBoundingClientRect().left) - (bar.clientWidth - a.offsetWidth) / 2; });
 
   // Terugknop: op elke pagina behalve het overzicht.
   const [href, label] = parentOf(seg);
@@ -115,3 +117,39 @@ async function init() {
   }
 }
 init();
+
+/** Sorteerbare tabellen (class "sortable"): klik op een kolomkop; nogmaals klikken draait de volgorde om. */
+function bindSortable(el) {
+  el.querySelectorAll('table.sortable').forEach((t) => {
+    const head = t.tHead?.rows[0]; const body = t.tBodies[0];
+    if (!head || !body) return;
+    const ths = [...head.cells];
+    const val = (r, i) => {
+      const c = r.cells[i]; if (!c) return '';
+      const raw = c.dataset.v ?? c.textContent.trim();
+      const m = /^[+-]?\d+(?:[.,]\d+)?/.exec(String(raw).trim());
+      return m ? Number(m[0].replace(',', '.')) : String(raw).toLowerCase();
+    };
+    ths.forEach((th, i) => {
+      if (th.dataset.nosort !== undefined) return;
+      th.classList.add('sorth'); th.tabIndex = 0; th.setAttribute('role', 'button');
+      th.title = 'Klik om te sorteren';
+      const go = () => {
+        const rows = [...body.rows];
+        const numeric = th.dataset.type === 'num' || rows.every((r) => typeof val(r, i) === 'number');
+        const cur = th.getAttribute('aria-sort');
+        const dir = cur ? (cur === 'descending' ? 'ascending' : 'descending') : (numeric ? 'descending' : 'ascending');
+        ths.forEach((x) => x.removeAttribute('aria-sort'));
+        th.setAttribute('aria-sort', dir);
+        rows.sort((a, b) => {
+          const x = val(a, i); const y = val(b, i);
+          const c = typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y), 'nl');
+          return dir === 'ascending' ? c : -c;
+        });
+        rows.forEach((r) => body.appendChild(r));
+      };
+      th.addEventListener('click', go);
+      th.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+    });
+  });
+}

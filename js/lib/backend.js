@@ -63,3 +63,9 @@ export const setAvailability = (matchId, status) => rpc('ts_availability_set', {
 export const feedbackList = async () => (await rpc('ts_feedback_list', T())) ?? [];
 export const addFeedback = (row) => rpc('ts_feedback_add', { ...T(), p_match: row.match_id ?? '', p_rating: row.rating, p_body: row.body });
 export const deleteFeedback = (id) => rpc('ts_feedback_delete', { ...T(), p_id: id });
+
+// Scoutingnotities (supabase/05-scouting.sql). Bestaat de functie nog niet, dan een duidelijke melding.
+const scoutErr = (e) => { if (/ts_scouting|function|schema cache/i.test(e.message)) throw new Error('Scouting is nog niet ingericht (draai supabase/05-scouting.sql).'); throw e; };
+export const scoutingList = async (team) => ((await rpc('ts_scouting_list', { ...T(), p_team: team }).catch(scoutErr)) ?? []);
+export const scoutingAdd = (team, topic, body) => rpc('ts_scouting_add', { ...T(), p_team: team, p_topic: topic, p_body: body }).catch(scoutErr);
+export const scoutingDelete = (id) => rpc('ts_scouting_delete', { ...T(), p_id: id }).catch(scoutErr);

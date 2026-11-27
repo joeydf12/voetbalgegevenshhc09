@@ -212,3 +212,185 @@ export function keyPlayers(idx, team) {
     onEdge: playersOnEdge(idx, team),
   };
 }
+
+// ---------- Verloop per speeldag (idee 33 en 39) ----------
+/** Plek, punten en doelsaldo van elke ploeg na elke speeldag (datum met minstens één bekende uitslag). */
+export function standingsTimeline(matches, teams, today) {
+  const played = matches.filter((m) => resolveResult(m).state === 'ok');
+  const dates = [...new Set(played.map((m) => m.date))].sort();
+  const rank = Object.fromEntries(teams.map((t) => [t.id, []]));
+  const gd = Object.fromEntries(teams.map((t) => [t.id, []]));
+  const pts = Object.fromEntries(teams.map((t) => [t.id, []]));
+  for (const d of dates) {
+    const rows = computeStandings(played.filter((m) => m.date <= d), teams, today);
+    rows.forEach((r, i) => { rank[r.team].push(i + 1); gd[r.team].push(r.gf - r.ga); pts[r.team].push(r.pts); });
+  }
+  return { dates, rank, gd, pts };
+}
+
+// ---------- Restprogramma (idee 34) ----------
+/** Gemiddelde huidige plek van de nog te spelen tegenstanders (lager = zwaarder). */
+export function remainingDifficulty(matches, standRows) {
+  const pos = new Map(standRows.map((r, i) => [r.team, i + 1]));
+  return standRows.map((r) => {
+    const rest = matches.filter((m) => (m.home === r.team || m.away === r.team) && resolveResult(m).state !== 'ok' && m.status !== 'afgelast');
+    const opp = rest.map((m) => pos.get(m.home === r.team ? m.away : m.home)).filter(Boolean);
+    const avg = opp.length ? Math.round((opp.reduce((a, b) => a + b, 0) / opp.length) * 10) / 10 : null;
+    return { team: r.team, left: rest.length, avg, top4: opp.filter((p) => p <= 4).length };
+  });
+}
+
+// ---------- Periodekampioen (idee 35) ----------
+export function periodStatus(matches, teams, today, meta, periodId) {
+  const p = (meta.periods || []).find((x) => x.id === periodId);
+  if (!p?.from) return { started: false };
+  const inP = matches.filter((m) => periodOf(m, meta) === periodId);
+  const open = inP.filter((m) => resolveResult(m).state !== 'ok' && m.status !== 'afgelast');
+  const rows = periodStandings(matches, teams, today, meta, periodId);
+  const ended = !!p.to && open.length === 0;
+  return { started: true, ended, open, rows, champion: ended ? rows[0].team : null };
+}
+
+// ---------- Doelpunten per kwartier (idee 45) ----------
+export const BLOCKS = ['1-15', '16-30', '31-45', '46-60', '61-75', '76-90'];
+const blockOf = (min) => (min <= 15 ? 0 : min <= 30 ? 1 : min <= 45 ? 2 : min <= 60 ? 3 : min <= 75 ? 4 : 5);
+/** Alleen wedstrijden waarvan alle doelpunten een minuut hebben tellen mee (anders een scheef beeld). */
+export function minuteBlocks(matches, reports, teamId) {
+  const rep = new Map((reports || []).map((r) => [r.matchId, r]));
+  const out = { for: Array(6).fill(0), against: Array(6).fill(0), covered: 0, played: 0 };
+  for (const m of matches) {
+    if (m.home !== teamId && m.away !== teamId) continue;
+    const res = resolveResult(m);
+    if (res.state !== 'ok') continue;
+    out.played++;
+    if (res.home + res.away === 0) { out.covered++; continue; }
+    const r = rep.get(m.id);
+    if (!r || r.goals.length !== res.home + res.away || r.goals.some((g) => g.minute == null)) continue;
+    out.covered++;
+    for (const g of r.goals) out[g.team === teamId ? 'for' : 'against'][blockOf(g.minute)]++;
+  }
+  return out;
+}
+
+// ---------- Ruststand en eindresultaat (idee 69) ----------
+export function halftimeSwings(matches, reports, teamId) {
+  const rep = new Map((reports || []).map((r) => [r.matchId, r]));
+  const blank = () => ({ n: 0, w: 0, d: 0, l: 0, pts: 0 });
+  const out = { behind: blank(), level: blank(), ahead: blank(), covered: 0, played: 0 };
+  for (const m of matches) {
+    if (m.home !== teamId && m.away !== teamId) continue;
+    const res = resolveResult(m);
+    if (res.state !== 'ok') continue;
+    out.played++;
+    const r = rep.get(m.id);
+    const ht = res.ht ?? (r?.ht ? { home: r.ht.home, away: r.ht.away } : null);
+    if (!ht) continue;
+    out.covered++;
+    const isHome = m.home === teamId;
+    const hf = isHome ? ht.home : ht.away; const ha = isHome ? ht.away : ht.home;
+    const ff = isHome ? res.home : res.away; const fa = isHome ? res.away : res.home;
+    const b = out[hf < ha ? 'behind' : hf > ha ? 'ahead' : 'level'];
+    b.n++;
+    if (ff > fa) { b.w++; b.pts += 3; } else if (ff === fa) { b.d++; b.pts++; } else b.l++;
+  }
+  return out;
+}
+
+// ---------- Speler: positie en rugnummers (idee 55 en 57) ----------
+/** Meest voorkomende positie uit de opstellingen ("Teamspeler" telt niet). */
+export function mainPosition(p) {
+  const c = new Map();
+  for (const a of p.apps || []) if (a.pos && a.pos !== 'Teamspeler') c.set(a.pos, (c.get(a.pos) || 0) + 1);
+  return [...c.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
+}
+export function shirtHistory(p) {
+  const c = new Map();
+  for (const a of p.apps || []) if (a.nr != null) c.set(a.nr, (c.get(a.nr) || 0) + 1);
+  return [...c.entries()].sort((a, b) => b[1] - a[1]).map(([nr, n]) => ({ nr, n }));
+}
+
+// ---------- Keepers en de nul (idee 64) ----------
+/** Keeper = basisspeler met positie "Keeper" in die opstelling, anders een speler met vaste positie Keeper. */
+export function keeperStats(matches, lineups, playerIdx, teamId) {
+  const keepers = new Map();
+  const mainKeeper = new Set(playersOfTeam(playerIdx, teamId).filter((p) => mainPosition(p) === 'Keeper').map((p) => norm(p.name)));
+  for (const l of lineups || []) {
+    const side = l.home.team === teamId ? l.home : l.away.team === teamId ? l.away : null;
+    if (!side || side.missing) continue;
+    const m = matches.find((x) => x.id === l.matchId);
+    const res = m && resolveResult(m);
+    if (!res || res.state !== 'ok') continue;
+    const k = (side.starters || []).find((p) => p.pos === 'Keeper') || (side.starters || []).find((p) => p.name && mainKeeper.has(norm(p.name)));
+    if (!k) continue;
+    const ga = m.home === teamId ? res.away : res.home;
+    const key = k.name ?? ('#' + k.nr + ' (afgeschermd)');
+    const e = keepers.get(key) || { name: k.name, label: key, games: 0, cleanSheets: 0, against: 0 };
+    e.games++; e.against += ga; if (ga === 0) e.cleanSheets++;
+    keepers.set(key, e);
+  }
+  return [...keepers.values()].sort((a, b) => b.games - a.games);
+}
+
+// ---------- Fair play (idee 65) ----------
+/** Kaarten per ploeg uit de opstellingen. Punten: geel 1, rood 3 (lager = sportiever). */
+export function fairPlay(lineups, teams) {
+  return teams.map((t) => {
+    let y = 0; let r = 0; let n = 0;
+    for (const l of lineups || []) {
+      const s = l.home.team === t.id ? l.home : l.away.team === t.id ? l.away : null;
+      if (!s || s.missing || l.noEvents) continue;
+      n++;
+      for (const p of [...(s.starters || []), ...(s.subs || [])]) { if (p.yellow === 1) y++; if (p.yellow >= 2 || p.red) r++; }
+    }
+    const points = y + r * 3;
+    return { team: t.id, yellow: y, red: r, lineups: n, points, perMatch: n ? Math.round((points / n) * 100) / 100 : null };
+  }).sort((a, b) => (a.perMatch ?? 99) - (b.perMatch ?? 99) || a.points - b.points);
+}
+
+// ---------- Vaste basisspelers (idee 43) ----------
+export function usualStarters(lineups, teamId, last = 5) {
+  const lus = (lineups || []).filter((l) => (l.home.team === teamId && !l.home.missing) || (l.away.team === teamId && !l.away.missing))
+    .sort((a, b) => b.date.localeCompare(a.date)).slice(0, last);
+  const count = new Map();
+  for (const l of lus) {
+    const s = l.home.team === teamId ? l.home : l.away;
+    for (const p of s.starters || []) {
+      if (!p.name) continue;
+      const e = count.get(p.name) || { name: p.name, starts: 0, nr: p.nr, pos: p.pos && p.pos !== 'Teamspeler' ? p.pos : null };
+      e.starts++; count.set(p.name, e);
+    }
+  }
+  return { lineups: lus.length, players: [...count.values()].sort((a, b) => b.starts - a.starts || (a.nr ?? 99) - (b.nr ?? 99)) };
+}
+
+// ---------- Scheidsrechters (idee 5) ----------
+export function refereeHistory(matches, teamId, referee) {
+  return matches.filter((m) => m.referee && (!referee || norm(m.referee) === norm(referee)) && (m.home === teamId || m.away === teamId) && resolveResult(m).state === 'ok')
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+export function refereeTable(matches, teamId) {
+  const map = new Map();
+  for (const m of refereeHistory(matches, teamId)) {
+    const e = map.get(norm(m.referee)) || { name: m.referee, n: 0, w: 0, d: 0, l: 0, matches: [] };
+    const o = outcomeFor(m, teamId);
+    e.n++; if (o === 'W') e.w++; else if (o === 'D') e.d++; else e.l++;
+    e.matches.push(m.id); map.set(norm(m.referee), e);
+  }
+  return [...map.values()].sort((a, b) => b.n - a.n || a.name.localeCompare(b.name, 'nl'));
+}
+
+// ---------- Assists (idee 23) ----------
+/** Assists per speler: goals[].assist in de verslagen (zelf bijgehouden of uit een verslag). */
+export function assistList(reports, players) {
+  const canon = nameResolver(players);
+  const map = new Map();
+  for (const r of reports || []) for (const g of r.goals || []) {
+    if (!g.assist || g.og) continue;
+    const name = canon(g.playerTeam, g.assist);
+    const k = playerKey(g.playerTeam, name);
+    const e = map.get(k) || { team: g.playerTeam, name, assists: [] };
+    e.assists.push({ matchId: r.matchId, date: r.date, minute: g.minute, scorer: g.player, opp: g.playerTeam === r.home ? r.away : r.home });
+    map.set(k, e);
+  }
+  return [...map.values()].sort((a, b) => b.assists.length - a.assists.length || a.name.localeCompare(b.name, 'nl'));
+}

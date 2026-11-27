@@ -1,0 +1,115 @@
+{
+  "matchId": "raamsdonk-hhc09",
+  "date": "2026-10-25",
+  "score": [
+    7,
+    3
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "raamsdonk",
+    "starters": [
+      {
+        "nr": 1,
+        "name": "Tijs Rutters"
+      },
+      {
+        "nr": 2,
+        "name": "Daan Schipperen"
+      },
+      {
+        "nr": 3,
+        "name": "Jordi van de Korput",
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": "Lars van Strien",
+        "captain": true
+      },
+      {
+        "nr": 5,
+        "name": "Bas de Nijs",
+        "yellow": 1
+      },
+      {
+        "nr": 6,
+        "name": "Joep Leijten",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Kevin Meijnhardt"
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "out": true
+      },
+      {
+        "nr": 11,
+        "name": "Jayden van Seeters",
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Coen van Avendonk"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 8,
+        "name": "Justin van Strien",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Tygo Geuzendam",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Thomas Boons",
+        "in": true
+      },
+      {
+        "nr": 16,
+        "name": "Owen Kramer",
+        "in": true
+      },
+      {
+        "nr": 17,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 21,
+        "name": "Timo Fens"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "hhc09",
+    "starters": [],
+    "subs": [],
+    "trainer": null,
+    "missing": true
+  }
+}

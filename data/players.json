@@ -63,16 +63,34 @@
       "nrSeen": "2026-11-22"
     },
     {
+      "name": "Dandy Lommers",
+      "nr": 14,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
       "name": "Joey de Fijter",
       "nr": 15,
       "aliases": [],
       "nrSeen": "2026-11-22"
     },
     {
+      "name": "Patryk Gomulski",
+      "nr": 16,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
+    },
+    {
       "name": "Koen Blikman",
       "nr": 17,
       "aliases": [],
       "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Bram Vermeulen",
+      "nr": 18,
+      "aliases": [],
+      "nrSeen": "2026-11-15"
     },
     {
       "name": "Rik van de Wiel",
@@ -85,6 +103,12 @@
       "nr": 19,
       "aliases": [],
       "nrSeen": "2026-11-22"
+    },
+    {
+      "name": "Victor van Emmerik",
+      "nr": 19,
+      "aliases": [],
+      "nrSeen": "2026-11-08"
     },
     {
       "name": "Duncan van Drunen",

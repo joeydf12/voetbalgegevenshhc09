@@ -1,0 +1,192 @@
+{
+  "matchId": "hhc09-sab",
+  "date": "2026-11-01",
+  "score": [
+    7,
+    0
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "hhc09",
+    "starters": [
+      {
+        "nr": 5,
+        "name": "Tom van der Linden",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Schalk",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 7,
+        "name": "Tom de Ruiter",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Mees de Fijter"
+      },
+      {
+        "nr": 9,
+        "name": "Timo Willemsen",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 11,
+        "name": "Tim de Fijter",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 12,
+        "name": "Jeffrey Fitters",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Koen Blikman",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 70,
+        "name": "Jeffrey van der Loo",
+        "pos": "Keeper",
+        "captain": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Samuel Sebastian Szurman"
+      },
+      {
+        "nr": 4,
+        "name": "Jan Hooijmans",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Joey de Fijter",
+        "pos": "Verdediger",
+        "in": true
+      },
+      {
+        "nr": 19,
+        "name": "Victor van Emmerik",
+        "in": true
+      },
+      {
+        "nr": 20,
+        "name": "Duncan van Drunen",
+        "in": true
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "sab",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Wessel Braat",
+        "yellow": 1
+      },
+      {
+        "nr": 4,
+        "name": "Cas van Gaalen",
+        "out": true
+      },
+      {
+        "nr": 6,
+        "name": "Calvin Vertriest",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Quinten Hermes",
+        "out": true
+      },
+      {
+        "nr": 9,
+        "name": "Diego Jansen",
+        "captain": true,
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true
+      },
+      {
+        "nr": 12,
+        "name": "Binck Raymakers"
+      },
+      {
+        "nr": 13,
+        "name": "Matheus do Prado Karl",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Jimmy Gimbrere"
+      },
+      {
+        "nr": 17,
+        "name": "Vladyslav Tkachenko"
+      },
+      {
+        "nr": 41,
+        "name": "Sep Luiijf"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 7,
+        "name": "Laurens Jonkers",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Djarno van der Lek",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Dani Verhoeven",
+        "in": true
+      },
+      {
+        "nr": 22,
+        "name": "Tonie Snoeren",
+        "in": true
+      },
+      {
+        "nr": 29,
+        "name": "Swen Voesenek",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

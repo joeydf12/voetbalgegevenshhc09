@@ -1,0 +1,195 @@
+{
+  "matchId": "hhc09-riel",
+  "date": "2026-11-15",
+  "score": [
+    4,
+    0
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": "64135"
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "hhc09",
+    "starters": [
+      {
+        "nr": 4,
+        "name": "Jan Hooijmans",
+        "out": true
+      },
+      {
+        "nr": 5,
+        "name": "Tom van der Linden"
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Schalk"
+      },
+      {
+        "nr": 7,
+        "name": "Tom de Ruiter"
+      },
+      {
+        "nr": 8,
+        "name": "Mees de Fijter",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true
+      },
+      {
+        "nr": 9,
+        "name": "Timo Willemsen"
+      },
+      {
+        "nr": 11,
+        "name": "Tim de Fijter"
+      },
+      {
+        "nr": 12,
+        "name": "Jeffrey Fitters",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Koen Blikman"
+      },
+      {
+        "nr": 70,
+        "name": "Jeffrey van der Loo",
+        "pos": "Keeper",
+        "captain": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Samuel Sebastian Szurman"
+      },
+      {
+        "nr": 14,
+        "name": "Dandy Lommers",
+        "in": true
+      },
+      {
+        "nr": 15,
+        "name": "Joey de Fijter",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 16,
+        "name": "Patryk Gomulski"
+      },
+      {
+        "nr": 18,
+        "name": "Bram Vermeulen",
+        "in": true
+      },
+      {
+        "nr": 20,
+        "name": "Duncan van Drunen",
+        "in": true
+      }
+    ],
+    "trainer": "Gilbert de Fijter"
+  },
+  "away": {
+    "team": "riel",
+    "starters": [
+      {
+        "nr": 1,
+        "name": null,
+        "hidden": true,
+        "pos": "Keeper",
+        "out": true
+      },
+      {
+        "nr": 2,
+        "name": "Kirill van Autreve",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 3,
+        "name": null,
+        "hidden": true,
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 4,
+        "name": "Jochem van der Heijden",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 5,
+        "name": "Koen Schellekens",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 6,
+        "name": "Joris van der Bruggen",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 9,
+        "name": "Joshua Paymans",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": "Jesse van den Corput",
+        "pos": "Middenvelder",
+        "captain": true
+      },
+      {
+        "nr": 13,
+        "name": "Bram Fonken",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 16,
+        "name": "Tom van Hoof",
+        "out": true
+      },
+      {
+        "nr": 17,
+        "name": "Joni Paymans",
+        "pos": "Aanvaller"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 7,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 8,
+        "name": "Lucas van der Bruggen",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Joshua Janssen",
+        "in": true
+      },
+      {
+        "nr": 12,
+        "name": "Brent de Roos",
+        "in": true
+      },
+      {
+        "nr": 14,
+        "name": "Rick van Berkel",
+        "in": true
+      }
+    ],
+    "trainer": null
+  }
+}

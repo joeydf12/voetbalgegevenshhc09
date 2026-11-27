@@ -1,0 +1,184 @@
+{
+  "matchId": "gesta-hhc09",
+  "date": "2026-11-08",
+  "score": [
+    1,
+    4
+  ],
+  "source": {
+    "name": "Voetbal.nl",
+    "key": "voetbalnl",
+    "matchNr": null
+  },
+  "addedOn": "2026-11-27",
+  "home": {
+    "team": "gesta",
+    "starters": [
+      {
+        "nr": 2,
+        "name": "Gijs van Gurp",
+        "captain": true
+      },
+      {
+        "nr": 3,
+        "name": "Lars Verheijen",
+        "out": true
+      },
+      {
+        "nr": 4,
+        "name": "Timo Voeten"
+      },
+      {
+        "nr": 6,
+        "name": "Jari Heestermans"
+      },
+      {
+        "nr": 7,
+        "name": "Boaz den Ouden",
+        "out": true
+      },
+      {
+        "nr": 8,
+        "name": "Jens de Jong"
+      },
+      {
+        "nr": 12,
+        "name": "Stijn Gooijers",
+        "yellow": 1,
+        "out": true
+      },
+      {
+        "nr": 14,
+        "name": "Brent Verheijen"
+      },
+      {
+        "nr": 16,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 17,
+        "name": "Noah van der Velden"
+      },
+      {
+        "nr": 21,
+        "name": "Jorg Feskens"
+      }
+    ],
+    "subs": [
+      {
+        "nr": 5,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "yellow": 1,
+        "in": true
+      },
+      {
+        "nr": 9,
+        "name": "Jens Gooijers",
+        "in": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler",
+        "in": true
+      },
+      {
+        "nr": 11,
+        "name": "Siem Dieleman"
+      }
+    ],
+    "trainer": null
+  },
+  "away": {
+    "team": "hhc09",
+    "starters": [
+      {
+        "nr": 4,
+        "name": "Jan Hooijmans"
+      },
+      {
+        "nr": 5,
+        "name": "Tom van der Linden",
+        "pos": "Verdediger"
+      },
+      {
+        "nr": 6,
+        "name": "Thomas Schalk",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 7,
+        "name": "Tom de Ruiter",
+        "pos": "Middenvelder"
+      },
+      {
+        "nr": 8,
+        "name": "Mees de Fijter"
+      },
+      {
+        "nr": 9,
+        "name": "Timo Willemsen",
+        "pos": "Aanvaller",
+        "out": true
+      },
+      {
+        "nr": 10,
+        "name": null,
+        "hidden": true,
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 11,
+        "name": "Tim de Fijter",
+        "pos": "Aanvaller"
+      },
+      {
+        "nr": 17,
+        "name": "Koen Blikman",
+        "pos": "Middenvelder",
+        "out": true
+      },
+      {
+        "nr": 18,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
+      },
+      {
+        "nr": 70,
+        "name": "Jeffrey van der Loo",
+        "pos": "Keeper",
+        "captain": true
+      }
+    ],
+    "subs": [
+      {
+        "nr": 1,
+        "name": "Samuel Sebastian Szurman"
+      },
+      {
+        "nr": 15,
+        "name": "Joey de Fijter",
+        "pos": "Verdediger",
+        "in": true
+      },
+      {
+        "nr": 19,
+        "name": "Victor van Emmerik",
+        "in": true
+      },
+      {
+        "nr": 20,
+        "name": "Duncan van Drunen",
+        "in": true
+      }
+    ],
+    "trainer": "Gilbert de Fijter"
+  }
+}

@@ -133,6 +133,10 @@ export function validateData(data, { today }) {
     else if (ev.home !== l.score[0] || ev.away !== l.score[1]) err(`${tag}: uitslag ${l.score.join('-')} wijkt af van bewijs ${ev.home}-${ev.away}`);
     for (const side of ['home', 'away']) {
       const s = l[side];
+      if (s.missing) {
+        if (s.starters.length || s.subs.length) err(`${tag} (${side}): staat als ontbrekend maar heeft spelers`);
+        continue;
+      }
       if (s.starters.length !== 11) warn(`${tag} (${side}): ${s.starters.length} basisspelers in plaats van 11`);
       const outs = [...s.starters, ...s.subs].filter((p) => p.out).length;
       const ins = s.subs.filter((p) => p.in).length;

@@ -1,50 +1,5 @@
 [
   {
-    "id": "chaam-svsos",
-    "home": "chaam",
-    "away": "svsos",
-    "date": "2026-09-20",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 2,
-        "away": 4,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "sab-riel",
-    "home": "sab",
-    "away": "riel",
-    "date": "2026-09-20",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 3,
-        "away": 2,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "svg-gesta",
-    "home": "svg",
-    "away": "gesta",
-    "date": "2026-09-20",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 1,
-        "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
     "id": "edn56-hz75",
     "home": "edn56",
     "away": "hz75",
@@ -89,6 +44,75 @@
     ]
   },
   {
+    "id": "sab-riel",
+    "home": "sab",
+    "away": "riel",
+    "date": "2026-09-20",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 3,
+        "away": 2,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139681"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 3,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:00"
+  },
+  {
+    "id": "svg-gesta",
+    "home": "svg",
+    "away": "gesta",
+    "date": "2026-09-20",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139682"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:00"
+  },
+  {
+    "id": "chaam-svsos",
+    "home": "chaam",
+    "away": "svsos",
+    "date": "2026-09-20",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 4,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139686"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 4,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
+  },
+  {
     "id": "dussense-boys-raamsdonk",
     "home": "dussense-boys",
     "away": "raamsdonk",
@@ -118,42 +142,20 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 4,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139687"
+      },
+      {
         "source": "voetbalnl",
         "home": 2,
         "away": 4,
         "retrievedAt": "2026-11-27"
       }
-    ]
-  },
-  {
-    "id": "raamsdonk-sab",
-    "home": "raamsdonk",
-    "away": "sab",
-    "date": "2026-09-27",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 1,
-        "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "riel-svg",
-    "home": "riel",
-    "away": "svg",
-    "date": "2026-09-27",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 2,
-        "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
+    ],
+    "time": "14:00"
   },
   {
     "id": "hhc09-chaam",
@@ -200,6 +202,52 @@
     ]
   },
   {
+    "id": "raamsdonk-sab",
+    "home": "raamsdonk",
+    "away": "sab",
+    "date": "2026-09-27",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139691"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
+  },
+  {
+    "id": "riel-svg",
+    "home": "riel",
+    "away": "svg",
+    "date": "2026-09-27",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139689"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
+  },
+  {
     "id": "svsos-dussense-boys",
     "home": "svsos",
     "away": "dussense-boys",
@@ -217,67 +265,6 @@
         "source": "voetbalnl",
         "home": 0,
         "away": 4,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "edn56-svsos",
-    "home": "edn56",
-    "away": "svsos",
-    "date": "2026-10-04",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 0,
-        "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "elshout-chaam",
-    "home": "elshout",
-    "away": "chaam",
-    "date": "2026-10-04",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "bd",
-        "home": 2,
-        "away": 0,
-        "htHome": 0,
-        "htAway": 0,
-        "retrievedAt": "2026-11-27"
-      },
-      {
-        "source": "voetbalnl",
-        "home": 2,
-        "away": 0,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "raamsdonk-gesta",
-    "home": "raamsdonk",
-    "away": "gesta",
-    "date": "2026-10-04",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "bd",
-        "home": 5,
-        "away": 1,
-        "htHome": 4,
-        "htAway": 1,
-        "retrievedAt": "2026-11-27"
-      },
-      {
-        "source": "voetbalnl",
-        "home": 5,
-        "away": 1,
         "retrievedAt": "2026-11-27"
       }
     ]
@@ -311,6 +298,60 @@
         "retrievedAt": "2026-11-27"
       }
     ]
+  },
+  {
+    "id": "edn56-svsos",
+    "home": "edn56",
+    "away": "svsos",
+    "date": "2026-10-04",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139696"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:00"
+  },
+  {
+    "id": "elshout-chaam",
+    "home": "elshout",
+    "away": "chaam",
+    "date": "2026-10-04",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 2,
+        "away": 0,
+        "htHome": 0,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139697"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:00"
   },
   {
     "id": "sab-hz75",
@@ -373,6 +414,37 @@
     ]
   },
   {
+    "id": "raamsdonk-gesta",
+    "home": "raamsdonk",
+    "away": "gesta",
+    "date": "2026-10-04",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 5,
+        "away": 1,
+        "htHome": 4,
+        "htAway": 1,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "hollandsevelden",
+        "home": 5,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139698"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 5,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
+  },
+  {
     "id": "gesta-sab",
     "home": "gesta",
     "away": "sab",
@@ -388,50 +460,20 @@
         "retrievedAt": "2026-11-27"
       },
       {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 6,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139699"
+      },
+      {
         "source": "voetbalnl",
         "home": 1,
         "away": 6,
         "retrievedAt": "2026-11-27"
       }
-    ]
-  },
-  {
-    "id": "riel-raamsdonk",
-    "home": "riel",
-    "away": "raamsdonk",
-    "date": "2026-10-11",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 4,
-        "away": 2,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "svsos-elshout",
-    "home": "svsos",
-    "away": "elshout",
-    "date": "2026-10-11",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "bd",
-        "home": 0,
-        "away": 2,
-        "htHome": 0,
-        "htAway": 1,
-        "retrievedAt": "2026-11-27"
-      },
-      {
-        "source": "voetbalnl",
-        "home": 0,
-        "away": 2,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
+    ],
+    "time": "14:00"
   },
   {
     "id": "hhc09-edn56",
@@ -516,50 +558,58 @@
     ]
   },
   {
-    "id": "sab-svsos",
-    "home": "sab",
-    "away": "svsos",
-    "date": "2026-10-25",
+    "id": "riel-raamsdonk",
+    "home": "riel",
+    "away": "raamsdonk",
+    "date": "2026-10-11",
     "status": "scheduled",
     "evidence": [
       {
-        "source": "bd",
-        "home": 2,
-        "away": 3,
-        "htHome": 1,
-        "htAway": 0,
-        "retrievedAt": "2026-11-27"
+        "source": "hollandsevelden",
+        "home": 4,
+        "away": 2,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139701"
       },
       {
         "source": "voetbalnl",
-        "home": 2,
-        "away": 3,
+        "home": 4,
+        "away": 2,
         "retrievedAt": "2026-11-27"
       }
-    ]
+    ],
+    "time": "14:30"
   },
   {
-    "id": "svg-chaam",
-    "home": "svg",
-    "away": "chaam",
-    "date": "2026-10-25",
+    "id": "svsos-elshout",
+    "home": "svsos",
+    "away": "elshout",
+    "date": "2026-10-11",
     "status": "scheduled",
     "evidence": [
       {
         "source": "bd",
-        "home": 2,
-        "away": 0,
-        "htHome": 1,
-        "htAway": 0,
+        "home": 0,
+        "away": 2,
+        "htHome": 0,
+        "htAway": 1,
         "retrievedAt": "2026-11-27"
       },
       {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 2,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139704"
+      },
+      {
         "source": "voetbalnl",
-        "home": 2,
-        "away": 0,
+        "home": 0,
+        "away": 2,
         "retrievedAt": "2026-11-27"
       }
-    ]
+    ],
+    "time": "14:30"
   },
   {
     "id": "dussense-boys-gesta",
@@ -578,12 +628,81 @@
         "retrievedAt": "2026-11-27"
       },
       {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 2,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139708"
+      },
+      {
         "source": "voetbalnl",
         "home": 2,
         "away": 2,
         "retrievedAt": "2026-11-27"
       }
     ]
+  },
+  {
+    "id": "sab-svsos",
+    "home": "sab",
+    "away": "svsos",
+    "date": "2026-10-25",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 2,
+        "away": 3,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 3,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139706"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:00"
+  },
+  {
+    "id": "svg-chaam",
+    "home": "svg",
+    "away": "chaam",
+    "date": "2026-10-25",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 2,
+        "away": 0,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139707"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:00"
   },
   {
     "id": "raamsdonk-hhc09",
@@ -600,6 +719,13 @@
         "htHome": 4,
         "htAway": 1,
         "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "hollandsevelden",
+        "home": 7,
+        "away": 3,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139711"
       },
       {
         "source": "voetbalnl",
@@ -626,6 +752,13 @@
         "retrievedAt": "2026-11-27"
       },
       {
+        "source": "hollandsevelden",
+        "home": 4,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139710"
+      },
+      {
         "source": "voetbalnl",
         "home": 4,
         "away": 0,
@@ -649,70 +782,16 @@
         "retrievedAt": "2026-11-27"
       },
       {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139709"
+      },
+      {
         "source": "voetbalnl",
         "home": 2,
         "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "chaam-edn56",
-    "home": "chaam",
-    "away": "edn56",
-    "date": "2026-11-01",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "bd",
-        "home": 1,
-        "away": 1,
-        "htHome": 1,
-        "htAway": 0,
-        "retrievedAt": "2026-11-27"
-      },
-      {
-        "source": "voetbalnl",
-        "home": 1,
-        "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "gesta-riel",
-    "home": "gesta",
-    "away": "riel",
-    "date": "2026-11-01",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "bd",
-        "home": 1,
-        "away": 1,
-        "htHome": 1,
-        "htAway": 0,
-        "retrievedAt": "2026-11-27"
-      },
-      {
-        "source": "voetbalnl",
-        "home": 1,
-        "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "svsos-svg",
-    "home": "svsos",
-    "away": "svg",
-    "date": "2026-11-01",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 1,
-        "away": 2,
         "retrievedAt": "2026-11-27"
       }
     ]
@@ -734,12 +813,50 @@
         "retrievedAt": "2026-11-27"
       },
       {
+        "source": "hollandsevelden",
+        "home": 3,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139714"
+      },
+      {
         "source": "voetbalnl",
         "home": 3,
         "away": 0,
         "retrievedAt": "2026-11-27"
       }
     ]
+  },
+  {
+    "id": "gesta-riel",
+    "home": "gesta",
+    "away": "riel",
+    "date": "2026-11-01",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 1,
+        "away": 1,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139712"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:00"
   },
   {
     "id": "hhc09-sab",
@@ -758,12 +875,50 @@
         "retrievedAt": "2026-11-27"
       },
       {
+        "source": "hollandsevelden",
+        "home": 7,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139713"
+      },
+      {
         "source": "voetbalnl",
         "home": 7,
         "away": 0,
         "retrievedAt": "2026-11-27"
       }
     ]
+  },
+  {
+    "id": "chaam-edn56",
+    "home": "chaam",
+    "away": "edn56",
+    "date": "2026-11-01",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "bd",
+        "home": 1,
+        "away": 1,
+        "htHome": 1,
+        "htAway": 0,
+        "retrievedAt": "2026-11-27"
+      },
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139716"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
   },
   {
     "id": "hz75-raamsdonk",
@@ -782,6 +937,13 @@
         "retrievedAt": "2026-11-27"
       },
       {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 7,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139715"
+      },
+      {
         "source": "voetbalnl",
         "home": 1,
         "away": 7,
@@ -790,64 +952,27 @@
     ]
   },
   {
-    "id": "raamsdonk-chaam",
-    "home": "raamsdonk",
-    "away": "chaam",
-    "date": "2026-11-08",
+    "id": "svsos-svg",
+    "home": "svsos",
+    "away": "svg",
+    "date": "2026-11-01",
     "status": "scheduled",
     "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 2,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139717"
+      },
       {
         "source": "voetbalnl",
         "home": 1,
-        "away": 1,
+        "away": 2,
         "retrievedAt": "2026-11-27"
       }
-    ]
-  },
-  {
-    "id": "riel-svsos",
-    "home": "riel",
-    "away": "svsos",
-    "date": "2026-11-08",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 0,
-        "away": 0,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "sab-elshout",
-    "home": "sab",
-    "away": "elshout",
-    "date": "2026-11-08",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 3,
-        "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "svg-edn56",
-    "home": "svg",
-    "away": "edn56",
-    "date": "2026-11-08",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 2,
-        "away": 1,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
+    ],
+    "time": "14:30"
   },
   {
     "id": "dussense-boys-hz75",
@@ -857,6 +982,13 @@
     "time": "14:00",
     "status": "scheduled",
     "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 9,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139720"
+      },
       {
         "source": "voetbalnl",
         "home": 9,
@@ -874,6 +1006,13 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 4,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139721"
+      },
+      {
         "source": "voetbalnl",
         "home": 1,
         "away": 4,
@@ -882,34 +1021,96 @@
     ]
   },
   {
-    "id": "chaam-sab",
-    "home": "chaam",
-    "away": "sab",
-    "date": "2026-11-15",
+    "id": "sab-elshout",
+    "home": "sab",
+    "away": "elshout",
+    "date": "2026-11-08",
     "status": "scheduled",
     "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 3,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139718"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 3,
+        "away": 1,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:00"
+  },
+  {
+    "id": "svg-edn56",
+    "home": "svg",
+    "away": "edn56",
+    "date": "2026-11-08",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139719"
+      },
       {
         "source": "voetbalnl",
         "home": 2,
-        "away": 2,
+        "away": 1,
         "retrievedAt": "2026-11-27"
       }
-    ]
+    ],
+    "time": "14:00"
   },
   {
-    "id": "svsos-raamsdonk",
-    "home": "svsos",
-    "away": "raamsdonk",
-    "date": "2026-11-15",
+    "id": "raamsdonk-chaam",
+    "home": "raamsdonk",
+    "away": "chaam",
+    "date": "2026-11-08",
     "status": "scheduled",
     "evidence": [
       {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139723"
+      },
+      {
         "source": "voetbalnl",
-        "home": 0,
-        "away": 3,
+        "home": 1,
+        "away": 1,
         "retrievedAt": "2026-11-27"
       }
-    ]
+    ],
+    "time": "14:30"
+  },
+  {
+    "id": "riel-svsos",
+    "home": "riel",
+    "away": "svsos",
+    "date": "2026-11-08",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139722"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 0,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
   },
   {
     "id": "edn56-dussense-boys",
@@ -919,6 +1120,13 @@
     "time": "14:00",
     "status": "scheduled",
     "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 3,
+        "away": 1,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139725"
+      },
       {
         "source": "voetbalnl",
         "home": 3,
@@ -944,12 +1152,42 @@
         "retrievedAt": "2026-11-26"
       },
       {
+        "source": "hollandsevelden",
+        "home": 4,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139724"
+      },
+      {
         "source": "voetbalnl",
         "home": 4,
         "away": 0,
         "retrievedAt": "2026-11-27"
       }
     ]
+  },
+  {
+    "id": "chaam-sab",
+    "home": "chaam",
+    "away": "sab",
+    "date": "2026-11-15",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 2,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139728"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 2,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
   },
   {
     "id": "hz75-gesta",
@@ -960,12 +1198,42 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 3,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139727"
+      },
+      {
         "source": "voetbalnl",
         "home": 0,
         "away": 3,
         "retrievedAt": "2026-11-27"
       }
     ]
+  },
+  {
+    "id": "svsos-raamsdonk",
+    "home": "svsos",
+    "away": "raamsdonk",
+    "date": "2026-11-15",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 3,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139729"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 3,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
   },
   {
     "id": "gesta-chaam",
@@ -975,40 +1243,41 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "hollandsevelden",
+        "home": 3,
+        "away": 4,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139732"
+      },
+      {
         "source": "voetbalnl",
         "home": 3,
         "away": 4,
         "retrievedAt": "2026-11-27"
       }
-    ]
+    ],
+    "time": "14:00"
   },
   {
-    "id": "raamsdonk-edn56",
-    "home": "raamsdonk",
-    "away": "edn56",
+    "id": "hhc09-dussense-boys",
+    "home": "hhc09",
+    "away": "dussense-boys",
     "date": "2026-11-22",
+    "time": "14:00",
     "status": "scheduled",
     "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139731"
+      },
       {
         "source": "voetbalnl",
         "home": 1,
         "away": 0,
-        "retrievedAt": "2026-11-27"
-      }
-    ]
-  },
-  {
-    "id": "riel-elshout",
-    "home": "riel",
-    "away": "elshout",
-    "date": "2026-11-22",
-    "status": "scheduled",
-    "evidence": [
-      {
-        "source": "voetbalnl",
-        "home": 0,
-        "away": 2,
-        "retrievedAt": "2026-11-27"
+        "retrievedAt": "2026-11-26"
       }
     ]
   },
@@ -1020,28 +1289,76 @@
     "status": "scheduled",
     "evidence": [
       {
+        "source": "hollandsevelden",
+        "home": 2,
+        "away": 2,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139730"
+      },
+      {
         "source": "voetbalnl",
         "home": 2,
         "away": 2,
         "retrievedAt": "2026-11-27"
       }
-    ]
+    ],
+    "time": "14:00"
   },
   {
-    "id": "hhc09-dussense-boys",
-    "home": "hhc09",
-    "away": "dussense-boys",
+    "id": "raamsdonk-edn56",
+    "home": "raamsdonk",
+    "away": "edn56",
     "date": "2026-11-22",
-    "time": "14:00",
     "status": "scheduled",
     "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 1,
+        "away": 0,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139735"
+      },
       {
         "source": "voetbalnl",
         "home": 1,
         "away": 0,
-        "retrievedAt": "2026-11-26"
+        "retrievedAt": "2026-11-27"
       }
-    ]
+    ],
+    "time": "14:30"
+  },
+  {
+    "id": "riel-elshout",
+    "home": "riel",
+    "away": "elshout",
+    "date": "2026-11-22",
+    "status": "scheduled",
+    "evidence": [
+      {
+        "source": "hollandsevelden",
+        "home": 0,
+        "away": 2,
+        "retrievedAt": "2026-11-27",
+        "ref": "wedstrijd/149139733"
+      },
+      {
+        "source": "voetbalnl",
+        "home": 0,
+        "away": 2,
+        "retrievedAt": "2026-11-27"
+      }
+    ],
+    "time": "14:30"
+  },
+  {
+    "id": "elshout-svg",
+    "home": "elshout",
+    "away": "svg",
+    "date": "2026-11-26",
+    "status": "scheduled",
+    "evidence": [],
+    "note": "Gestaakt op 15 november; het restant wordt gespeeld op donderdag 3 december.",
+    "time": "20:15"
   },
   {
     "id": "edn56-sab",
@@ -1098,20 +1415,11 @@
     "evidence": []
   },
   {
-    "id": "elshout-svg",
-    "home": "elshout",
-    "away": "svg",
-    "date": "2026-12-03",
-    "status": "scheduled",
-    "evidence": [],
-    "note": "Gestaakt op 15 november; het restant wordt gespeeld op donderdag 3 december."
-  },
-  {
     "id": "hz75-svsos",
     "home": "hz75",
     "away": "svsos",
     "date": "2026-12-03",
-    "status": "scheduled",
+    "status": "afgelast",
     "evidence": [],
     "note": "Afgelast op 22 november; wordt ingehaald op donderdag 3 december."
   },
@@ -1552,7 +1860,7 @@
     "home": "edn56",
     "away": "svg",
     "date": "2027-04-06",
-    "time": "14:00",
+    "time": "20:00",
     "status": "scheduled",
     "evidence": []
   },

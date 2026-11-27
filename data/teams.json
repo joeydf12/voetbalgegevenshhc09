@@ -55,7 +55,8 @@
     "name": "SVSOS",
     "aliases": [
       "SVSOS 1"
-    ]
+    ],
+    "hvSlug": "s/svsos"
   },
   {
     "id": "riel",
@@ -63,7 +64,8 @@
     "aliases": [
       "Riel",
       "Riel 1"
-    ]
+    ],
+    "hvSlug": "r/riel"
   },
   {
     "id": "gesta",
@@ -71,7 +73,8 @@
     "aliases": [
       "GESTA",
       "GESTA 1"
-    ]
+    ],
+    "hvSlug": "g/gesta"
   },
   {
     "id": "elshout",
@@ -80,7 +83,8 @@
       "Elshout",
       "Elshout 1",
       "SC Elshout 1"
-    ]
+    ],
+    "hvSlug": "e/elshout-sc"
   },
   {
     "id": "chaam",
@@ -88,7 +92,8 @@
     "aliases": [
       "Chaam",
       "Chaam 1"
-    ]
+    ],
+    "hvSlug": "c/chaam"
   },
   {
     "id": "svg",
@@ -96,13 +101,15 @@
     "aliases": [
       "SVG",
       "SVG 1"
-    ]
+    ],
+    "hvSlug": "s/svg"
   },
   {
     "id": "sab",
     "name": "SAB",
     "aliases": [
       "SAB 1"
-    ]
+    ],
+    "hvSlug": "s/sab"
   }
 ]

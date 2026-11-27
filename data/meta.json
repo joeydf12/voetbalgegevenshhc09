@@ -33,5 +33,11 @@
   ],
   "periodOverrides": {
     "elshout-svg": 1
+  },
+  "lastFetch": {
+    "date": "2026-11-27",
+    "pages": 12,
+    "failed": 0,
+    "warnings": 1
   }
 }

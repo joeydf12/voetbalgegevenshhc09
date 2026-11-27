@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-27",
   "lastResultDate": "2026-11-22",
-  "source": "voetbalnl",
+  "source": "hollandsevelden",
   "complete": true,
   "rows": [
     {
@@ -52,16 +52,6 @@
       "l": 2,
       "pts": 14,
       "gf": 13,
-      "ga": 10
-    },
-    {
-      "team": "edn56",
-      "pl": 9,
-      "w": 4,
-      "d": 2,
-      "l": 3,
-      "pts": 14,
-      "gf": 14,
       "ga": 10
     },
     {
@@ -123,6 +113,16 @@
       "pts": 1,
       "gf": 5,
       "ga": 31
+    },
+    {
+      "team": "edn56",
+      "pl": 9,
+      "w": 4,
+      "d": 2,
+      "l": 3,
+      "pts": 14,
+      "gf": 14,
+      "ga": 10
     }
   ]
 }

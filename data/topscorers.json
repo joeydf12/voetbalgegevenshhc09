@@ -1,0 +1,158 @@
+{
+  "asOf": "2026-11-28",
+  "source": "voetbalnederland",
+  "note": "VoetbalNederland-app (VNL), Topscorer Zuid 1 5B zondag (screenshots). Laagste aantal op de lijst is 2; niet elke speler met 2 doelpunten staat erop.",
+  "rows": [
+    {
+      "player": "Luuk Nieuwesteeg",
+      "team": "raamsdonk",
+      "goals": 12
+    },
+    {
+      "player": "Rik van de Wiel",
+      "team": "hhc09",
+      "goals": 8
+    },
+    {
+      "player": "Remco van den Hooven",
+      "team": "elshout",
+      "goals": 8
+    },
+    {
+      "player": "Sem van Tilburg",
+      "team": "dussense-boys",
+      "goals": 8
+    },
+    {
+      "player": "Robin van den Broek",
+      "team": "edn56",
+      "goals": 6
+    },
+    {
+      "player": "Nassr el Haddadi",
+      "team": "svg",
+      "goals": 6
+    },
+    {
+      "player": "Jordi v.d. Korput",
+      "team": "raamsdonk",
+      "goals": 6
+    },
+    {
+      "player": "Sem Heijmans",
+      "team": "dussense-boys",
+      "goals": 6
+    },
+    {
+      "player": "Justin van den Oudenrijn",
+      "team": "dussense-boys",
+      "goals": 5
+    },
+    {
+      "player": "Jens de Jong",
+      "team": "gesta",
+      "goals": 5
+    },
+    {
+      "player": "Djarno van der Lek",
+      "team": "sab",
+      "goals": 5
+    },
+    {
+      "player": "Timo Willemse",
+      "team": "hhc09",
+      "goals": 4
+    },
+    {
+      "player": "Joni Paymans",
+      "team": "riel",
+      "goals": 4
+    },
+    {
+      "player": "Teun Reijrink",
+      "team": "edn56",
+      "goals": 4
+    },
+    {
+      "player": "Boaz den Ouden",
+      "team": "gesta",
+      "goals": 4
+    },
+    {
+      "player": "Quinten Hermes",
+      "team": "sab",
+      "goals": 4
+    },
+    {
+      "player": "Dorus Boers",
+      "team": "svsos",
+      "goals": 4
+    },
+    {
+      "player": "Luuk Rosendaal",
+      "team": "dussense-boys",
+      "goals": 4
+    },
+    {
+      "player": "Hendryc van Dongen",
+      "team": "chaam",
+      "goals": 3
+    },
+    {
+      "player": "Noah van der Velden",
+      "team": "gesta",
+      "goals": 3
+    },
+    {
+      "player": "Justin Van Strien",
+      "team": "raamsdonk",
+      "goals": 3
+    },
+    {
+      "player": "Daan Schipperen",
+      "team": "raamsdonk",
+      "goals": 3
+    },
+    {
+      "player": "Steijn van der Linden",
+      "team": "hhc09",
+      "goals": 3
+    },
+    {
+      "player": "Tom van der Linden",
+      "team": "hhc09",
+      "goals": 3
+    },
+    {
+      "player": "Tim de Fijter",
+      "team": "hhc09",
+      "goals": 2
+    },
+    {
+      "player": "Joshua Janssen",
+      "team": "riel",
+      "goals": 2
+    },
+    {
+      "player": "Teun Hendriks",
+      "team": "elshout",
+      "goals": 2
+    },
+    {
+      "player": "Duncan van Drunen",
+      "team": "hhc09",
+      "goals": 2
+    },
+    {
+      "player": "Faas Verschuren",
+      "team": "raamsdonk",
+      "goals": 2
+    },
+    {
+      "player": "Niels van Iersel",
+      "team": "elshout",
+      "goals": 2
+    }
+  ],
+  "sourceName": "VoetbalNederland"
+}

@@ -30,3 +30,14 @@ export function scorerCoverage(matches, reports) {
 export function ownGoalsList(reports) {
   return reports.flatMap((r) => (r.goals || []).filter((g) => g.og).map((g) => ({ ...g, matchId: r.matchId })));
 }
+
+/**
+ * Officiële topscorerslijst (momentopname) gekoppeld aan de selecties.
+ * Geeft per regel { player (naam in de selectie of zoals Voetbal.nl hem schrijft), listed (naam op de lijst), team, goals }.
+ */
+export function officialScorers(topscorers, players) {
+  return (topscorers?.rows || []).map((r) => {
+    const p = (players?.[r.team] || []).find((x) => [x.name, ...(x.aliases || [])].some((a) => norm(a) === norm(r.player)));
+    return { player: p ? p.name : r.player, listed: r.player, team: r.team, goals: r.goals, linked: !!p };
+  });
+}

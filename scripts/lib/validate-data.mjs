@@ -89,6 +89,28 @@ export function validateData(data, { today }) {
     }
   }
 
+  // --- officiële topscorerslijst (momentopname)
+  if (data.topscorers) {
+    const ts = data.topscorers;
+    if (!isDate(ts.asOf)) err('topscorers.json: asOf ontbreekt of is geen datum');
+    if (!ts.source || !ts.sourceName) err('topscorers.json: source en sourceName zijn verplicht');
+    const nm = (x) => String(x).toLowerCase().normalize('NFKD').replace(/[^a-z]/g, '');
+    const counted = new Map();
+    for (const r of reports) for (const g of r.goals || []) {
+      if (!g.player || g.og) continue;
+      const p = (players?.[g.playerTeam] || []).find((x) => [x.name, ...(x.aliases || [])].some((a) => nm(a) === nm(g.player)));
+      const k = `${g.playerTeam}|${nm(p ? p.name : g.player)}`;
+      counted.set(k, (counted.get(k) || 0) + 1);
+    }
+    for (const row of ts.rows || []) {
+      if (!ids.has(row.team)) err(`topscorers.json: onbekende ploeg ${row.team}`);
+      if (!isInt(row.goals) || row.goals < 0) err(`topscorers.json: ongeldig aantal bij ${row.player}`);
+      const p = (players?.[row.team] || []).find((x) => [x.name, ...(x.aliases || [])].some((a) => nm(a) === nm(row.player)));
+      const c = counted.get(`${row.team}|${nm(p ? p.name : row.player)}`) || 0;
+      if (c > row.goals) warn(`Topscorers: ${row.player} (${row.team}) heeft ${c} doelpunten in de verslagen, maar ${row.goals} op ${ts.sourceName} (${ts.asOf})`);
+    }
+  }
+
   // --- verslagen
   const repIds = new Set();
   for (const r of reports) {

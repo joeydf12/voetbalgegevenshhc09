@@ -86,6 +86,12 @@ export function buildPlayerIndex({ players, lineups, reports }) {
   return idx;
 }
 
+/** Gespeelde wedstrijden: in de opstelling (basis of ingevallen) of volgens een verslag gescoord. */
+export const playedCount = (p) => new Set([...(p.apps || []).map((a) => a.matchId), ...(p.goals || []).map((g) => g.matchId)]).size;
+/** Ondergrens? Ja als hij scoorde in een wedstrijd waar hij niet (op naam) in de opstelling staat. */
+export const playedIsMinimum = (p) => (p.goals || []).some((g) => !(p.apps || []).some((a) => a.matchId === g.matchId));
+export const playedText = (p) => `${playedCount(p)}${playedIsMinimum(p) ? '+' : ''}`;
+
 export const playersOfTeam = (idx, team) => [...idx.values()].filter((p) => p.team === team);
 
 // ---------- Topscorers: volledigheid per ploeg ----------

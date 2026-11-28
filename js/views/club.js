@@ -6,7 +6,7 @@ import { teamProfile } from '../lib/teamstats.js';
 import { pickStanding } from '../lib/standings.js';
 import {
   teamInsights, playersOfTeam, playerKey, scorerCoverageByTeam, cardStatus, standingsTimeline, remainingDifficulty,
-  minuteBlocks, BLOCKS, halftimeSwings, keeperStats, usualStarters, mainPosition, shirtHistory, refereeTable, assistList,
+  minuteBlocks, BLOCKS, halftimeSwings, playedCount, playedText, playedIsMinimum, keeperStats, usualStarters, mainPosition, shirtHistory, refereeTable, assistList,
 } from '../lib/insights.js';
 import { logo, tlink, formDots, section, empty } from './ui.js';
 import { lineChart, barPairs } from './charts.js';
@@ -186,8 +186,8 @@ export function scorersFull(ctx, limit = 80) {
   const cov = scorerCoverageByTeam(ctx.matches, ctx.reports, ctx.teams).sort((a, b) => b.pct - a.pct);
   const assists = assistList(ctx.reports, ctx.players);
   let rank = 0; let prev = null;
-  return html`${section('Topscorers', all.length ? html`<div class="tw"><table class="scorers sortable"><thead><tr><th data-type="num">#</th><th>Speler</th><th>Ploeg</th><th data-type="num" aria-sort="descending">Goals</th><th data-type="num" class="hs">Wed.</th><th class="hs">Gescoord tegen</th></tr></thead><tbody>
-      ${all.map((p, i) => { if (p.goals.length !== prev) { rank = i + 1; prev = p.goals.length; } const games = byMatch(p.goals); return html`<tr class="${p.team === ctx.meta.ownTeam ? 'mine' : ''}"><td data-v="${rank}">${rank}</td><td>${plink(ctx, p.team, p.name)}</td><td>${tlink(ctx, p.team)}</td><td data-v="${p.goals.length}"><b>${p.goals.length}</b></td><td class="hs" data-v="${games.length}">${games.length}</td><td class="wrap hs">${games.map((gs, j) => html`${j ? ' · ' : ''}<a href="#/match/${gs[0].matchId}">${ctx.tm.get(gs[0].opp).name}</a> <small>${gs.map(minuteText).join(' ')}</small>`)}</td></tr>`; })}
+  return html`${section('Topscorers', all.length ? html`<div class="tw"><table class="scorers sortable"><thead><tr><th data-type="num">#</th><th>Speler</th><th>Ploeg</th><th data-type="num" aria-sort="descending">Goals</th><th data-type="num" class="hs" title="Gespeelde wedstrijden (opstelling of verslag)">Gespeeld</th><th class="hs">Gescoord tegen</th></tr></thead><tbody>
+      ${all.map((p, i) => { if (p.goals.length !== prev) { rank = i + 1; prev = p.goals.length; } const games = byMatch(p.goals); return html`<tr class="${p.team === ctx.meta.ownTeam ? 'mine' : ''}"><td data-v="${rank}">${rank}</td><td>${plink(ctx, p.team, p.name)}</td><td>${tlink(ctx, p.team)}</td><td data-v="${p.goals.length}"><b>${p.goals.length}</b></td><td class="hs" data-v="${playedCount(p)}" title="${playedIsMinimum(p) ? 'Minstens: in sommige opstellingen staat hij afgeschermd' : 'Gespeelde wedstrijden'}">${playedText(p)}</td><td class="wrap hs">${games.map((gs, j) => html`${j ? ' · ' : ''}<a href="#/match/${gs[0].matchId}">${ctx.tm.get(gs[0].opp).name}</a> <small>${gs.map(minuteText).join(' ')}</small>`)}</td></tr>`; })}
     </tbody></table></div>` : empty('Nog geen doelpuntenmakers bekend.'),
     'Klik op een speler voor alle wedstrijden. Alleen doelpunten waarvan de maker bekend is: van andere ploegen ontbreken nog makers (zie hieronder).')}
     ${section('Assists', assists.length ? html`<div class="tw"><table class="sortable compact"><thead><tr><th>Speler</th><th>Ploeg</th><th data-type="num" aria-sort="descending">Assists</th></tr></thead><tbody>${assists.map((a) => html`<tr><td>${plink(ctx, a.team, a.name)}</td><td>${tlink(ctx, a.team)}</td><td data-v="${a.assists.length}"><b>${a.assists.length}</b></td></tr>`)}</tbody></table></div>` : empty('Nog geen assists ingevuld.'),

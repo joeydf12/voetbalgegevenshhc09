@@ -43,10 +43,10 @@
       },
       {
         "nr": 7,
-        "name": null,
-        "hidden": true,
+        "name": "Mischa Anssems",
         "pos": "Teamspeler",
-        "out": true
+        "out": true,
+        "nameSource": "afgeleid uit opstelling op de clubsite van Raamsdonk"
       },
       {
         "nr": 9,
@@ -56,9 +56,9 @@
       },
       {
         "nr": 10,
-        "name": null,
-        "hidden": true,
-        "pos": "Teamspeler"
+        "name": "Luuk Nieuwesteeg",
+        "pos": "Teamspeler",
+        "nameSource": "afgeleid uit opstelling op de clubsite van Raamsdonk"
       },
       {
         "nr": 11,

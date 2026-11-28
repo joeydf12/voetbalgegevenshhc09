@@ -58,3 +58,51 @@ Deze spelers scoorden vaker dan wij aan een wedstrijd kunnen koppelen. Vind je d
 - [ ] **Faas Verschuren** (VV Raamsdonk): 2 op Voetbal.nl, 0 geplaatst → nog **2** te vinden.
 
 Andersom staan deze spelers wel in onze verslagen maar niet op de lijst van Voetbal.nl: Lars van Strien (Raamsdonk, 3), Cas van Gaalen (SAB, 2), Hein de Bresser (EDN, 2), Jayden van Seeters (Raamsdonk, 2), Jesper Priems (SVSOS, 2), Jules van de Pol (SAB, 2), Shuburney Rosaria (SVG, 2). Dat kan: Voetbal.nl registreert niet elk doelpunt.
+
+## Zoekhulp: per ploeg de wedstrijden waar nog makers ontbreken
+De doelpunten van een topscorer hierboven moeten in een van de wedstrijden van zijn ploeg hieronder zitten. Snelste manier: open op Voetbal.nl de wedstrijd, tabblad **Verslag**, en stuur een screenshot (of typ: minuut, naam, stand).
+
+### EDN '56
+- 20-09 EDN '56 – VV HZ '75 1-1 (1 van EDN '56 onbekend)
+- 27-09 RKVV GESTA – EDN '56 2-4 (4 van EDN '56 onbekend)
+- 08-11 VV SVG – EDN '56 2-1 (1 van EDN '56 onbekend)
+### VV HZ '75
+- 20-09 EDN '56 – VV HZ '75 1-1 (1 van VV HZ '75 onbekend)
+- 27-09 VV HZ '75 – SC Elshout 1-4 (1 van VV HZ '75 onbekend)
+- 08-11 Dussense Boys – VV HZ '75 9-1 (1 van VV HZ '75 onbekend)
+### SAB
+- 20-09 SAB – VV Riel 3-2 (3 van SAB onbekend)
+- 27-09 VV Raamsdonk – SAB 1-1 (1 van SAB onbekend)
+- 15-11 VV Chaam – SAB 2-2 (2 van SAB onbekend)
+- 22-11 SAB – VV SVG 2-2 (2 van SAB onbekend)
+### VV Riel
+- 20-09 SAB – VV Riel 3-2 (2 van VV Riel onbekend)
+- 27-09 VV Riel – VV SVG 2-1 (2 van VV Riel onbekend)
+### VV SVG
+- 20-09 VV SVG – RKVV GESTA 1-1 (1 van VV SVG onbekend)
+- 27-09 VV Riel – VV SVG 2-1 (1 van VV SVG onbekend)
+- 08-11 VV SVG – EDN '56 2-1 (2 van VV SVG onbekend)
+- 22-11 SAB – VV SVG 2-2 (2 van VV SVG onbekend)
+### RKVV GESTA
+- 20-09 VV SVG – RKVV GESTA 1-1 (1 van RKVV GESTA onbekend)
+- 27-09 RKVV GESTA – EDN '56 2-4 (2 van RKVV GESTA onbekend)
+- 15-11 VV HZ '75 – RKVV GESTA 0-3 (3 van RKVV GESTA onbekend)
+- 22-11 RKVV GESTA – VV Chaam 3-4 (3 van RKVV GESTA onbekend)
+### VV Chaam
+- 20-09 VV Chaam – SVSOS 2-4 (2 van VV Chaam onbekend)
+- 27-09 HHC '09 – VV Chaam 2-1 (1 van VV Chaam onbekend)
+- 11-10 VV Chaam – Dussense Boys 3-2 (3 van VV Chaam onbekend)
+- 15-11 VV Chaam – SAB 2-2 (2 van VV Chaam onbekend)
+- 22-11 RKVV GESTA – VV Chaam 3-4 (4 van VV Chaam onbekend)
+### SVSOS
+- 20-09 VV Chaam – SVSOS 2-4 (4 van SVSOS onbekend)
+### Dussense Boys
+- 20-09 Dussense Boys – VV Raamsdonk 2-5 (2 van Dussense Boys onbekend)
+- 27-09 SVSOS – Dussense Boys 0-4 (4 van Dussense Boys onbekend)
+- 11-10 VV Chaam – Dussense Boys 3-2 (2 van Dussense Boys onbekend)
+- 08-11 Dussense Boys – VV HZ '75 9-1 (9 van Dussense Boys onbekend)
+### VV Raamsdonk
+- 20-09 Dussense Boys – VV Raamsdonk 2-5 (5 van VV Raamsdonk onbekend)
+- 27-09 VV Raamsdonk – SAB 1-1 (1 van VV Raamsdonk onbekend)
+### SC Elshout
+- 27-09 VV HZ '75 – SC Elshout 1-4 (4 van SC Elshout onbekend)

@@ -36,10 +36,10 @@
       },
       {
         "nr": 10,
-        "name": null,
-        "hidden": true,
+        "name": "Steijn van der Linden",
         "pos": "Aanvaller",
-        "out": true
+        "out": true,
+        "nameSource": "gebruiker (afgeschermd op Voetbal.nl)"
       },
       {
         "nr": 11,
@@ -60,16 +60,16 @@
       },
       {
         "nr": 18,
-        "name": null,
-        "hidden": true,
+        "name": "Rik van de Wiel",
         "pos": "Teamspeler",
-        "yellow": 1
+        "yellow": 1,
+        "nameSource": "gebruiker (afgeschermd op Voetbal.nl)"
       },
       {
         "nr": 19,
-        "name": null,
-        "hidden": true,
-        "pos": "Aanvaller"
+        "name": "Sjoerd Bruinsma",
+        "pos": "Aanvaller",
+        "nameSource": "gebruiker (afgeschermd op Voetbal.nl)"
       },
       {
         "nr": 70,

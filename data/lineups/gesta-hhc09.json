@@ -129,9 +129,9 @@
       },
       {
         "nr": 10,
-        "name": null,
-        "hidden": true,
-        "pos": "Aanvaller"
+        "name": "Steijn van der Linden",
+        "pos": "Aanvaller",
+        "nameSource": "gebruiker (afgeschermd op Voetbal.nl)"
       },
       {
         "nr": 11,
@@ -146,9 +146,9 @@
       },
       {
         "nr": 18,
-        "name": null,
-        "hidden": true,
-        "pos": "Teamspeler"
+        "name": "Rik van de Wiel",
+        "pos": "Teamspeler",
+        "nameSource": "gebruiker (afgeschermd op Voetbal.nl)"
       },
       {
         "nr": 70,

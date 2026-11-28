@@ -138,10 +138,10 @@
       },
       {
         "nr": 10,
-        "name": null,
-        "hidden": true,
+        "name": "Steijn van der Linden",
         "pos": "Aanvaller",
-        "captain": true
+        "captain": true,
+        "nameSource": "gebruiker (afgeschermd op Voetbal.nl)"
       },
       {
         "nr": 11,
@@ -160,10 +160,10 @@
       },
       {
         "nr": 19,
-        "name": null,
-        "hidden": true,
+        "name": "Sjoerd Bruinsma",
         "pos": "Aanvaller",
-        "yellow": 1
+        "yellow": 1,
+        "nameSource": "gebruiker (afgeschermd op Voetbal.nl)"
       },
       {
         "nr": 70,
@@ -192,10 +192,10 @@
       },
       {
         "nr": 18,
-        "name": null,
-        "hidden": true,
+        "name": "Rik van de Wiel",
         "pos": "Teamspeler",
-        "in": true
+        "in": true,
+        "nameSource": "gebruiker (afgeschermd op Voetbal.nl)"
       }
     ],
     "trainer": "Gilbert de Fijter"

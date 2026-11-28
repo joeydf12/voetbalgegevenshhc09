@@ -1,0 +1,73 @@
+{
+  "matchId": "hz75-elshout",
+  "date": "2026-09-27",
+  "home": "hz75",
+  "away": "elshout",
+  "result": {
+    "home": 1,
+    "away": 4
+  },
+  "ht": null,
+  "orderKnown": false,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Kursat Bucakli",
+      "team": "hz75",
+      "playerTeam": "hz75",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Remco v.d. Hooven",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Remco v.d. Hooven",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Teun Hendriks",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Teun Hendriks",
+      "team": "elshout",
+      "playerTeam": "elshout",
+      "score": null,
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

@@ -1,0 +1,73 @@
+{
+  "matchId": "chaam-dussense-boys",
+  "date": "2026-10-11",
+  "home": "chaam",
+  "away": "dussense-boys",
+  "result": {
+    "home": 3,
+    "away": 2
+  },
+  "ht": null,
+  "orderKnown": false,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Bas Goos",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": null,
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": null,
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sem van Tilborg",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Kevin Lensvelt",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

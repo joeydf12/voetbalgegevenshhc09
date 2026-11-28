@@ -1,0 +1,123 @@
+{
+  "matchId": "dussense-boys-hz75",
+  "date": "2026-11-08",
+  "home": "dussense-boys",
+  "away": "hz75",
+  "result": {
+    "home": 9,
+    "away": 1
+  },
+  "ht": null,
+  "orderKnown": false,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Luuk Rosendaal",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sem van Tilborg",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sem van Tilborg",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sem Heijmans",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sem Heijmans",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Justin van den Oudenrijn",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Justin van den Oudenrijn",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Justin van den Oudenrijn",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Gijs van Herwijnen",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Noah Brejaart",
+      "team": "hz75",
+      "playerTeam": "hz75",
+      "score": null,
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

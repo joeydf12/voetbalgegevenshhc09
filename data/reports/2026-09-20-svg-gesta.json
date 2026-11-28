@@ -1,0 +1,43 @@
+{
+  "matchId": "svg-gesta",
+  "date": "2026-09-20",
+  "home": "svg",
+  "away": "gesta",
+  "result": {
+    "home": 1,
+    "away": 1
+  },
+  "ht": null,
+  "orderKnown": false,
+  "goals": [
+    {
+      "minute": 18,
+      "extra": 0,
+      "player": "Nassreddine el Haddadi",
+      "team": "svg",
+      "playerTeam": "svg",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Tom Verschueren",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": null,
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

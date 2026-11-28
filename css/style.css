@@ -430,3 +430,17 @@ table.squad td:nth-child(2),table.games td:nth-child(2),table.scorers td:nth-chi
   .kpis{grid-template-columns:repeat(2,1fr)}
   .kpi{padding:10px}
 }
+
+/* Sorteerkoppen duidelijker: knopje met pijlen, actieve kolom oranje */
+th.sorth{padding-top:6px;padding-bottom:6px}
+th.sorth{position:relative}
+th.sorth::after{content:"⇅";display:inline-block;margin-left:5px;padding:0 4px;border:1px solid var(--line);border-radius:5px;opacity:.9;font-size:.85em;color:var(--mut)}
+th.sorth:hover{color:#fff;background:rgba(255,255,255,.05)}
+th.sorth:hover::after{border-color:var(--orange);color:#fff}
+th[aria-sort]{color:var(--orange2)}
+th[aria-sort="descending"]::after{content:"▼ meest";border-color:var(--orange);color:var(--orange2);background:rgba(241,140,33,.12)}
+th[aria-sort="ascending"]::after{content:"▲ minst";border-color:var(--orange);color:var(--orange2);background:rgba(241,140,33,.12)}
+@media (max-width:640px){th[aria-sort="descending"]::after{content:"▼"}th[aria-sort="ascending"]::after{content:"▲"}}
+th[data-kind="text"][aria-sort="ascending"]::after{content:"▲ A–Z"}
+th[data-kind="text"][aria-sort="descending"]::after{content:"▼ Z–A"}
+@media (max-width:640px){th[data-kind="text"][aria-sort="ascending"]::after{content:"A–Z"}th[data-kind="text"][aria-sort="descending"]::after{content:"Z–A"}}

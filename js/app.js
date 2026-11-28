@@ -133,6 +133,7 @@ function bindSortable(el) {
     ths.forEach((th, i) => {
       if (th.dataset.nosort !== undefined) return;
       th.classList.add('sorth'); th.tabIndex = 0; th.setAttribute('role', 'button');
+      th.dataset.kind = th.dataset.type === 'num' || [...body.rows].every((r) => typeof val(r, i) === 'number') ? 'num' : 'text';
       th.title = 'Klik om te sorteren';
       const go = () => {
         const rows = [...body.rows];

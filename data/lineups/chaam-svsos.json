@@ -94,10 +94,13 @@
       {
         "nr": 18,
         "name": "Owen Moelands"
+      },
+      {
+        "nr": 19,
+        "name": "Pieter van den Broek"
       }
     ],
-    "trainer": null,
-    "incomplete": true
+    "trainer": null
   },
   "away": {
     "team": "svsos",

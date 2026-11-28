@@ -103,7 +103,6 @@
   },
   "away": {
     "team": "raamsdonk",
-    "incomplete": true,
     "starters": [
       {
         "nr": 1,
@@ -188,6 +187,10 @@
         "hidden": true,
         "pos": "Teamspeler",
         "in": true
+      },
+      {
+        "nr": 21,
+        "name": "Timo Fens"
       }
     ],
     "trainer": null

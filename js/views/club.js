@@ -10,6 +10,8 @@ import {
 } from '../lib/insights.js';
 import { logo, tlink, formDots, section, empty } from './ui.js';
 import { lineChart, barPairs } from './charts.js';
+import { officialScorers } from '../lib/stats.js';
+import { norm } from '../lib/teams.js';
 
 const nl = (n) => (n === null || n === undefined ? '–' : String(n).replace('.', ','));
 const SHORT_M = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
@@ -181,15 +183,22 @@ export function playerPage(ctx, team, rawName) {
 const byMatch = (goals) => { const m = new Map(); for (const g of goals) { if (!m.has(g.matchId)) m.set(g.matchId, []); m.get(g.matchId).push(g); } return [...m.values()]; };
 
 export function scorersFull(ctx, limit = 80) {
-  const all = [...ctx.playerIdx.values()].filter((p) => p.goals.length)
-    .sort((a, b) => b.goals.length - a.goals.length || a.name.localeCompare(b.name, 'nl')).slice(0, limit);
+  // Officiële lijst van Voetbal.nl (momentopname) naast onze telling uit verslagen.
+  const off = new Map(officialScorers(ctx.topscorers, ctx.players).map((o) => [`${o.team}|${norm(o.player)}`, o]));
+  const offOf = (p) => off.get(`${p.team}|${norm(p.name)}`);
+  const ours = [...ctx.playerIdx.values()].filter((p) => p.goals.length);
+  const onlyOff = [...off.values()].filter((o) => !ours.some((p) => `${p.team}|${norm(p.name)}` === `${o.team}|${norm(o.player)}`))
+    .map((o) => ctx.playerIdx.get(playerKey(o.team, o.player)) ?? { name: o.player, team: o.team, goals: [], apps: [], onlyOfficial: true });
+  const total = (p) => Math.max(p.goals.length, offOf(p)?.goals ?? 0);
+  const all = [...ours, ...onlyOff].sort((a, b) => total(b) - total(a) || b.goals.length - a.goals.length || a.name.localeCompare(b.name, 'nl')).slice(0, limit);
+  const asOf = ctx.topscorers?.asOf;
   const cov = scorerCoverageByTeam(ctx.matches, ctx.reports, ctx.teams).sort((a, b) => b.pct - a.pct);
   const assists = assistList(ctx.reports, ctx.players);
   let rank = 0; let prev = null;
-  return html`${section('Topscorers', all.length ? html`<div class="tw"><table class="scorers sortable"><thead><tr><th data-type="num">#</th><th>Speler</th><th>Ploeg</th><th data-type="num" aria-sort="descending">Goals</th><th data-type="num" class="hs" title="Gespeelde wedstrijden (opstelling of verslag)">Gespeeld</th><th class="hs">Gescoord tegen</th></tr></thead><tbody>
-      ${all.map((p, i) => { if (p.goals.length !== prev) { rank = i + 1; prev = p.goals.length; } const games = byMatch(p.goals); return html`<tr class="${p.team === ctx.meta.ownTeam ? 'mine' : ''}"><td data-v="${rank}">${rank}</td><td>${plink(ctx, p.team, p.name)}</td><td>${tlink(ctx, p.team)}</td><td data-v="${p.goals.length}"><b>${p.goals.length}</b></td><td class="hs" data-v="${playedCount(p)}" title="${playedIsMinimum(p) ? 'Minstens: in sommige opstellingen staat hij afgeschermd' : 'Gespeelde wedstrijden'}">${playedText(p)}</td><td class="wrap hs">${games.map((gs, j) => html`${j ? ' · ' : ''}<a href="#/match/${gs[0].matchId}">${ctx.tm.get(gs[0].opp).name}</a> <small>${gs.map(minuteText).join(' ')}</small>`)}</td></tr>`; })}
+  return html`${section('Topscorers', all.length ? html`<div class="tw"><table class="scorers sortable"><thead><tr><th data-type="num">#</th><th>Speler</th><th>Ploeg</th><th data-type="num" aria-sort="descending" title="Volgens de topscorerslijst van Voetbal.nl">Voetbal.nl</th><th data-type="num" title="Doelpunten met bekende maker in onze verslagen">Verslagen</th><th data-type="num" class="hs" title="Gespeelde wedstrijden (opstelling of verslag)">Gespeeld</th><th class="hs">Gescoord tegen</th></tr></thead><tbody>
+      ${all.map((p, i) => { const t = total(p); if (t !== prev) { rank = i + 1; prev = t; } const games = byMatch(p.goals); const o = offOf(p); const diff = o && o.goals !== p.goals.length; return html`<tr class="${p.team === ctx.meta.ownTeam ? 'mine' : ''}"><td data-v="${rank}">${rank}</td><td>${p.onlyOfficial ? p.name : plink(ctx, p.team, p.name)}${o && o.listed !== p.name ? html` <small title="Schrijfwijze op Voetbal.nl">(${o.listed})</small>` : ''}</td><td>${tlink(ctx, p.team)}</td><td data-v="${o?.goals ?? -1}">${o ? html`<b>${o.goals}</b>` : html`<small title="Staat niet op de topscorerslijst van Voetbal.nl">–</small>`}</td><td data-v="${p.goals.length}" class="${diff ? 'warn' : ''}" title="${diff ? `Van ${o.goals - p.goals.length} doelpunt(en) weten we nog niet in welke wedstrijd` : ''}">${p.goals.length}${diff ? html` <small>(${p.goals.length - o.goals})</small>` : ''}</td><td class="hs" data-v="${playedCount(p)}" title="${playedIsMinimum(p) ? 'Minstens: in sommige opstellingen staat hij afgeschermd' : 'Gespeelde wedstrijden'}">${playedText(p)}</td><td class="wrap hs">${games.map((gs, j) => html`${j ? ' · ' : ''}<a href="#/match/${gs[0].matchId}">${ctx.tm.get(gs[0].opp).name}</a> <small>${gs.map(minuteText).join(' ')}</small>`)}</td></tr>`; })}
     </tbody></table></div>` : empty('Nog geen doelpuntenmakers bekend.'),
-    'Klik op een speler voor alle wedstrijden. Alleen doelpunten waarvan de maker bekend is: van andere ploegen ontbreken nog makers (zie hieronder).')}
+    `Voetbal.nl = officiële topscorerslijst${asOf ? ` (stand ${asOf.split('-').reverse().join('-')})` : ''}. Verslagen = doelpunten die we per wedstrijd kunnen plaatsen; een getal tussen haakjes is het verschil. Klik op een speler voor alle wedstrijden.`)}
     ${section('Assists', assists.length ? html`<div class="tw"><table class="sortable compact"><thead><tr><th>Speler</th><th>Ploeg</th><th data-type="num" aria-sort="descending">Assists</th></tr></thead><tbody>${assists.map((a) => html`<tr><td>${plink(ctx, a.team, a.name)}</td><td>${tlink(ctx, a.team)}</td><td data-v="${a.assists.length}"><b>${a.assists.length}</b></td></tr>`)}</tbody></table></div>` : empty('Nog geen assists ingevuld.'),
       'Zelf bijgehouden: node scripts/set-info.mjs --match <id> --minute <min> --assist "Naam".')}
     ${section('Hoe compleet per ploeg', html`<div class="covlist">${cov.map((c) => html`<div class="cov"><span>${tlink(ctx, c.team)}</span><span class="covbar" role="img" aria-label="${c.named} van ${c.goals} doelpunten met bekende maker"><i style="width:${c.pct}%"></i></span><small>${c.named}/${c.goals}</small></div>`)}</div>`,

@@ -35,6 +35,7 @@ export function loadAll(dir = DATA) {
     teams: readJson('teams.json', dir),
     matches: readJson('matches.json', dir),
     standings: opt('standings.json', null),
+    topscorers: opt('topscorers.json', null),
     players: opt('players.json', {}),
     news: opt('news.json', { items: [] }),
     reports: listJson('reports', dir).map((f) => ({ file: f, ...readJson(`reports/${f}`, dir) })),

@@ -33,7 +33,7 @@ Lees eerst `../CLAUDE.md` en `../taken/README.md`. Dit bestand zegt wat er al ge
 
 - 2026-11-28: opstelling Chaam – Dussense Boys toegevoegd (nu alle 52 gespeelde wedstrijden); aangevuld: SVSOS – Raamsdonk (#11 Jayden van Seeters), Dussense Boys – HZ '75 (#21 afgeschermd), HZ '75 – Raamsdonk (#21 Timo Fens), Chaam – SVSOS (#19 Pieter van den Broek).
 
-- 2026-11-28: officiële topscorerslijst van Voetbal.nl als momentopname in `data/topscorers.json`; de topscorerspagina toont die naast onze telling uit verslagen (met het verschil). Validatie waarschuwt als wij voor een speler meer tellen dan Voetbal.nl. ONTBREKENDE-DOELPUNTEN.md heeft een lijst per speler. BD-verslag HHC – Dussense Boys staat in VERSLAGEN-CHECK.md. Main (ideeën-branch) samengevoegd.
+- 2026-11-28: officiële topscorerslijst van VoetbalNederland als momentopname in `data/topscorers.json`; de topscorerspagina toont die naast onze telling uit verslagen (met het verschil). Validatie waarschuwt als wij voor een speler meer tellen dan Voetbal.nl. ONTBREKENDE-DOELPUNTEN.md heeft een lijst per speler. BD-verslag HHC – Dussense Boys staat in VERSLAGEN-CHECK.md. Main (ideeën-branch) samengevoegd.
 
 ## Open (in deze volgorde)
 1. ~~RLS-test (e-mailopzet, vervangen)~~ **geslaagd op 2026-11-27** (`supabase/oud-rls-test-email.sql`, door de gebruiker in de SQL Editor gedraaid, alles teruggedraaid): A wijzigt eigen keuze, beide leden lezen alles, B kan rijen/feedback van A niet wijzigen, verwijderen of onder A's id schrijven, 2001 tekens en ongeldige status geweigerd, niet-lid ziet en schrijft niets, anoniem geweigerd. Opnieuw geslaagd na de advisor-fix (2026-11-27, 15/15). Draai dit script opnieuw na elke wijziging aan de `ts_`-policies.

@@ -93,7 +93,7 @@ export function validateData(data, { today }) {
   if (data.topscorers) {
     const ts = data.topscorers;
     if (!isDate(ts.asOf)) err('topscorers.json: asOf ontbreekt of is geen datum');
-    if (!KNOWN_SOURCES.includes(ts.source)) err(`topscorers.json: onbekende bron "${ts.source}"`);
+    if (!ts.source || !ts.sourceName) err('topscorers.json: source en sourceName zijn verplicht');
     const nm = (x) => String(x).toLowerCase().normalize('NFKD').replace(/[^a-z]/g, '');
     const counted = new Map();
     for (const r of reports) for (const g of r.goals || []) {
@@ -107,7 +107,7 @@ export function validateData(data, { today }) {
       if (!isInt(row.goals) || row.goals < 0) err(`topscorers.json: ongeldig aantal bij ${row.player}`);
       const p = (players?.[row.team] || []).find((x) => [x.name, ...(x.aliases || [])].some((a) => nm(a) === nm(row.player)));
       const c = counted.get(`${row.team}|${nm(p ? p.name : row.player)}`) || 0;
-      if (c > row.goals) warn(`Topscorers: ${row.player} (${row.team}) heeft ${c} doelpunten in de verslagen, maar ${row.goals} op Voetbal.nl (${ts.asOf})`);
+      if (c > row.goals) warn(`Topscorers: ${row.player} (${row.team}) heeft ${c} doelpunten in de verslagen, maar ${row.goals} op ${ts.sourceName} (${ts.asOf})`);
     }
   }
 

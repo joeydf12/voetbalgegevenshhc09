@@ -34,30 +34,30 @@ Dit bestand wordt opnieuw opgebouwd uit de data; het is een overzicht, geen bron
 - SC Elshout – HHC '09: minuut 61 komt van het opstellingsscherm van Voetbal.nl (jij noemde ~65); 61 aangehouden.
 
 
-## Volgens de topscorerslijst van Voetbal.nl (2026-11-28) nog niet geplaatst (20 spelers)
+## Volgens de topscorerslijst van VoetbalNederland (2026-11-28) nog niet geplaatst (20 spelers)
 Deze spelers scoorden vaker dan wij aan een wedstrijd kunnen koppelen. Vind je de wedstrijd en minuut, zet het erachter (bijv. `SVG – EDN 2-1: 34. Nassr el Haddadi 1-0`).
-- [ ] **Remco v.d. Hooven** (SC Elshout): 8 op Voetbal.nl, 2 geplaatst → nog **6** te vinden.
-- [ ] **Sem van Tilborg** (Dussense Boys): 8 op Voetbal.nl, 3 geplaatst → nog **5** te vinden.
-- [ ] **Robin van den Broek** (EDN '56): 6 op Voetbal.nl, 3 geplaatst → nog **3** te vinden.
-- [ ] **Nassreddine el Haddadi** (VV SVG): 6 op Voetbal.nl, 3 geplaatst → nog **3** te vinden.
-- [ ] **Jordi van de Korput** (VV Raamsdonk): 6 op Voetbal.nl, 1 geplaatst → nog **5** te vinden.
-- [ ] **Sem Heijmans** (Dussense Boys): 6 op Voetbal.nl, 3 geplaatst → nog **3** te vinden.
-- [ ] **Justin van den Oudenrijn** (Dussense Boys): 5 op Voetbal.nl, 1 geplaatst → nog **4** te vinden.
-- [ ] **Jens de Jong** (RKVV GESTA): 5 op Voetbal.nl, 3 geplaatst → nog **2** te vinden.
-- [ ] **Djarno van der Lek** (SAB): 5 op Voetbal.nl, 4 geplaatst → nog **1** te vinden.
-- [ ] **Joni Paymans** (VV Riel): 4 op Voetbal.nl, 2 geplaatst → nog **2** te vinden.
-- [ ] **Teun Reijrink** (EDN '56): 4 op Voetbal.nl, 3 geplaatst → nog **1** te vinden.
-- [ ] **Boaz den Ouden** (RKVV GESTA): 4 op Voetbal.nl, 0 geplaatst → nog **4** te vinden.
-- [ ] **Dorus Boers** (SVSOS): 4 op Voetbal.nl, 2 geplaatst → nog **2** te vinden.
-- [ ] **Luuk Rosendaal** (Dussense Boys): 4 op Voetbal.nl, 2 geplaatst → nog **2** te vinden.
-- [ ] **Henryc van Dongen** (VV Chaam): 3 op Voetbal.nl, 1 geplaatst → nog **2** te vinden.
-- [ ] **Noah van der Velden** (RKVV GESTA): 3 op Voetbal.nl, 1 geplaatst → nog **2** te vinden.
-- [ ] **Justin van Strien** (VV Raamsdonk): 3 op Voetbal.nl, 2 geplaatst → nog **1** te vinden.
-- [ ] **Daan Schipperen** (VV Raamsdonk): 3 op Voetbal.nl, 2 geplaatst → nog **1** te vinden.
-- [ ] **Teun Hendriks** (SC Elshout): 2 op Voetbal.nl, 0 geplaatst → nog **2** te vinden.
-- [ ] **Faas Verschuren** (VV Raamsdonk): 2 op Voetbal.nl, 0 geplaatst → nog **2** te vinden.
+- [ ] **Remco v.d. Hooven** (SC Elshout): 8 op VoetbalNederland, 2 geplaatst → nog **6** te vinden.
+- [ ] **Sem van Tilborg** (Dussense Boys): 8 op VoetbalNederland, 3 geplaatst → nog **5** te vinden.
+- [ ] **Robin van den Broek** (EDN '56): 6 op VoetbalNederland, 3 geplaatst → nog **3** te vinden.
+- [ ] **Nassreddine el Haddadi** (VV SVG): 6 op VoetbalNederland, 3 geplaatst → nog **3** te vinden.
+- [ ] **Jordi van de Korput** (VV Raamsdonk): 6 op VoetbalNederland, 1 geplaatst → nog **5** te vinden.
+- [ ] **Sem Heijmans** (Dussense Boys): 6 op VoetbalNederland, 3 geplaatst → nog **3** te vinden.
+- [ ] **Justin van den Oudenrijn** (Dussense Boys): 5 op VoetbalNederland, 1 geplaatst → nog **4** te vinden.
+- [ ] **Jens de Jong** (RKVV GESTA): 5 op VoetbalNederland, 3 geplaatst → nog **2** te vinden.
+- [ ] **Djarno van der Lek** (SAB): 5 op VoetbalNederland, 4 geplaatst → nog **1** te vinden.
+- [ ] **Joni Paymans** (VV Riel): 4 op VoetbalNederland, 2 geplaatst → nog **2** te vinden.
+- [ ] **Teun Reijrink** (EDN '56): 4 op VoetbalNederland, 3 geplaatst → nog **1** te vinden.
+- [ ] **Boaz den Ouden** (RKVV GESTA): 4 op VoetbalNederland, 0 geplaatst → nog **4** te vinden.
+- [ ] **Dorus Boers** (SVSOS): 4 op VoetbalNederland, 2 geplaatst → nog **2** te vinden.
+- [ ] **Luuk Rosendaal** (Dussense Boys): 4 op VoetbalNederland, 2 geplaatst → nog **2** te vinden.
+- [ ] **Henryc van Dongen** (VV Chaam): 3 op VoetbalNederland, 1 geplaatst → nog **2** te vinden.
+- [ ] **Noah van der Velden** (RKVV GESTA): 3 op VoetbalNederland, 1 geplaatst → nog **2** te vinden.
+- [ ] **Justin van Strien** (VV Raamsdonk): 3 op VoetbalNederland, 2 geplaatst → nog **1** te vinden.
+- [ ] **Daan Schipperen** (VV Raamsdonk): 3 op VoetbalNederland, 2 geplaatst → nog **1** te vinden.
+- [ ] **Teun Hendriks** (SC Elshout): 2 op VoetbalNederland, 0 geplaatst → nog **2** te vinden.
+- [ ] **Faas Verschuren** (VV Raamsdonk): 2 op VoetbalNederland, 0 geplaatst → nog **2** te vinden.
 
-Andersom staan deze spelers wel in onze verslagen maar niet op de lijst van Voetbal.nl: Lars van Strien (Raamsdonk, 3), Cas van Gaalen (SAB, 2), Hein de Bresser (EDN, 2), Jayden van Seeters (Raamsdonk, 2), Jesper Priems (SVSOS, 2), Jules van de Pol (SAB, 2), Shuburney Rosaria (SVG, 2). Dat kan: Voetbal.nl registreert niet elk doelpunt.
+Andersom staan deze spelers wel in onze verslagen maar niet op de lijst van VoetbalNederland: Lars van Strien (Raamsdonk, 3), Cas van Gaalen (SAB, 2), Hein de Bresser (EDN, 2), Jayden van Seeters (Raamsdonk, 2), Jesper Priems (SVSOS, 2), Jules van de Pol (SAB, 2), Shuburney Rosaria (SVG, 2). Dat kan: VoetbalNederland registreert niet elk doelpunt.
 
 ## Zoekhulp: per ploeg de wedstrijden waar nog makers ontbreken
 De doelpunten van een topscorer hierboven moeten in een van de wedstrijden van zijn ploeg hieronder zitten. Snelste manier: open op Voetbal.nl de wedstrijd, tabblad **Verslag**, en stuur een screenshot (of typ: minuut, naam, stand).

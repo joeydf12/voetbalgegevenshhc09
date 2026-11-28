@@ -1,7 +1,7 @@
 {
   "asOf": "2026-11-28",
-  "source": "voetbalnl",
-  "note": "Voetbal.nl-app, Topscorer Zuid 1 5B zondag (screenshots). Laagste aantal op de lijst is 2; niet elke speler met 2 doelpunten staat erop.",
+  "source": "voetbalnederland",
+  "note": "VoetbalNederland-app (VNL), Topscorer Zuid 1 5B zondag (screenshots). Laagste aantal op de lijst is 2; niet elke speler met 2 doelpunten staat erop.",
   "rows": [
     {
       "player": "Luuk Nieuwesteeg",
@@ -153,5 +153,6 @@
       "team": "elshout",
       "goals": 2
     }
-  ]
+  ],
+  "sourceName": "VoetbalNederland"
 }

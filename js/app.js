@@ -5,6 +5,7 @@ import { buildPlayerIndex } from './lib/insights.js';
 import { todayNL, toStr, html } from './lib/util.js';
 import * as P from './views/pages.js';
 import { playerPage } from './views/club.js';
+import { leaguePage } from './views/league.js';
 import { importView, bindImport } from './views/import.js';
 import { bindDownloads } from './views/downloads.js';
 import { accountView, feedbackView, bindTeam } from './views/team.js';
@@ -46,6 +47,7 @@ function route() {
       case 'programma': return P.schedule(ctx, params);
       case 'uitslagen': return P.results(ctx, params);
       case 'topscorers': return P.scorers(ctx);
+      case 'statistieken': return leaguePage(ctx);
       case 'ploegen': return P.teams(ctx);
       case 'team': return P.team(ctx, seg[1], params);
       case 'speler': return playerPage(ctx, seg[1], seg.slice(2).join('/'));
@@ -81,7 +83,7 @@ function route() {
     if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
   document.querySelector('nav.main a.on')?.scrollIntoView({ inline: 'center', block: 'nearest' });
-  const names = { zoek: 'Zoeken', stand: 'Stand', programma: 'Programma', uitslagen: 'Uitslagen', topscorers: 'Topscorers', ploegen: 'Ploegen', verslagen: 'Verslagen', about: 'Over', account: 'Inloggen', feedback: 'Feedback' };
+  const names = { zoek: 'Zoeken', stand: 'Stand', programma: 'Programma', uitslagen: 'Uitslagen', topscorers: 'Topscorers', statistieken: 'Statistieken', ploegen: 'Ploegen', verslagen: 'Verslagen', about: 'Over', account: 'Inloggen', feedback: 'Feedback' };
   document.title = `${root.querySelector('h1')?.textContent.trim() ?? names[seg[0]] ?? 'Overzicht'} · HHC '09`;
   window.scrollTo(0, 0);
 }

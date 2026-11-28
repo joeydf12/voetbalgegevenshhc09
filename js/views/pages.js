@@ -376,6 +376,6 @@ export { playersOfTeam, cardStatus };
 
 // ---------- Menu (mobiel) ----------
 export function menu() {
-  const items = [['#/', '🏠', 'Overzicht'], ['#/stand', '📊', 'Stand'], ['#/programma', '📅', 'Programma'], ['#/uitslagen', '⚽', 'Uitslagen'], ['#/ploegen', '🛡️', 'Ploegdossiers'], ['#/topscorers', '🏆', 'Topscorers'], ['#/verslagen', '📰', 'Verslagen'], ['#/feedback', '💬', 'Feedback'], ['#/account', '🔒', 'Inloggen'], ['#/about', 'ℹ️', 'Over']];
+  const items = [['#/', '🏠', 'Overzicht'], ['#/stand', '📊', 'Stand'], ['#/programma', '📅', 'Programma'], ['#/uitslagen', '⚽', 'Uitslagen'], ['#/ploegen', '🛡️', 'Ploegdossiers'], ['#/topscorers', '🏆', 'Topscorers'], ['#/statistieken', '📈', 'Statistieken'], ['#/verslagen', '📰', 'Verslagen'], ['#/feedback', '💬', 'Feedback'], ['#/account', '🔒', 'Inloggen'], ['#/about', 'ℹ️', 'Over']];
   return html`<h1>Menu</h1><div class="menugrid">${items.map(([h, i, l]) => html`<a href="${h}"><i>${i}</i>${l}</a>`)}</div>`;
 }

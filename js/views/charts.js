@@ -44,3 +44,18 @@ export function barPairs({ cats, a, b, aLabel, bLabel, aria }) {
   });
   return html`<figure class="chart"><div class="legend"><span><i class="dot s1"></i>${aLabel}</span><span><i class="dot s2"></i>${bLabel}</span></div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${aria}">${raw(s)}</svg></figure>`;
 }
+
+/** Staven met één reeks (geen legenda; waarde boven elke staaf). */
+export function barSingle({ cats, values, aria, suffix = '' }) {
+  const W = 960; const H = 210; const L = 20; const R = 8; const T = 22; const B = 30;
+  const max = Math.max(1, ...values);
+  const gw = (W - L - R) / cats.length; const bw = Math.min(64, gw - 24);
+  const y = (v) => T + (1 - v / max) * (H - T - B);
+  let s = `<line x1="${L}" x2="${W - R}" y1="${H - B}" y2="${H - B}" class="cg"/>`;
+  cats.forEach((c, i) => {
+    const x = L + gw * i + (gw - bw) / 2; const v = values[i]; const top = y(v);
+    if (v) s += `<path d="M${x},${H - B}V${top + 4}q0,-4 4,-4h${bw - 8}q4,0 4,4V${H - B}Z" class="bar s1"><title>${esc(c)}${suffix}: ${v}</title></path>`;
+    s += `<text x="${x + bw / 2}" y="${(v ? top : H - B) - 5}" class="cv sm" text-anchor="middle">${v}</text><text x="${x + bw / 2}" y="${H - 8}" class="cl" text-anchor="middle">${esc(c)}${suffix}</text>`;
+  });
+  return html`<figure class="chart"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${aria}">${raw(s)}</svg></figure>`;
+}

@@ -96,9 +96,19 @@ export function checkInternal(parsed) {
   const hasHt = Array.isArray(parsed.ht);
   const [hh, ha] = hasHt ? parsed.ht : [null, null];
   if (hasHt && (hh > fh || ha > fa)) errs.push(`Rust (${hh}-${ha}) is hoger dan de eindstand (${fh}-${fa}).`);
+  const label = (g) => g.player ?? 'onbekende speler';
+  // Alleen makers bekend (volgorde/tussenstand onbekend): tel per ploeg.
+  if (parsed.goals.length && parsed.goals.some((g) => g.score == null)) {
+    if (parsed.goals.some((g) => g.score != null)) errs.push('Meng geen doelpunten met en zonder tussenstand in één wedstrijd.');
+    const h = parsed.goals.filter((g) => g.side === 'home').length;
+    const a = parsed.goals.filter((g) => g.side === 'away').length;
+    if (parsed.goals.some((g) => g.side !== 'home' && g.side !== 'away')) errs.push('Elk doelpunt zonder tussenstand moet "thuis" of "uit" hebben.');
+    if (h !== fh || a !== fa) errs.push(`Makers geven ${h}-${a}, maar de eindstand is ${fh}-${fa}.`);
+    if (hasHt) errs.push('Rust opgegeven terwijl de volgorde onbekend is; laat de rust leeg.');
+    return parsed;
+  }
   let prev = [0, 0];
   let prevMin = [0, 0];
-  const label = (g) => g.player ?? 'onbekende speler';
   for (const g of parsed.goals) {
     const [sh, sa] = g.score;
     if (sh === prev[0] + 1 && sa === prev[1]) g.side = 'home';
@@ -208,7 +218,7 @@ export function crossCheck(parsed, ctx) {
   for (const g of parsed.goals) {
     const pt = playerTeam(g);
     if (pt && g.player === null) {
-      add('warn', `Doelpunt ${g.score.join('-')} van ${pt}: maker onbekend.`);
+      add('warn', `Doelpunt ${g.score ? g.score.join('-') : ''} van ${pt}: maker onbekend.`);
     } else if (pt === ctx.ownTeam) {
       const f = findPlayer(ctx.roster, g.player);
       if (!f.player) add('error', `Speler "${g.player}" staat niet in de selectie van de eigen ploeg.${f.suggestions?.length ? ` Bedoelde je: ${f.suggestions.join(', ')}?` : ' Vraag na hoe de naam geschreven moet worden.'}`);
@@ -234,6 +244,7 @@ export function buildReport({ parsed, match, homeId, awayId, playerTeam, source,
     away: awayId,
     result: { home: parsed.score[0], away: parsed.score[1] },
     ht: parsed.ht ? { home: parsed.ht[0], away: parsed.ht[1] } : null,
+    ...(parsed.goals.some((g) => g.score == null) ? { orderKnown: false } : {}),
     goals: parsed.goals.map((g) => ({
       minute: g.minute,
       extra: g.extra,
@@ -264,6 +275,8 @@ export const validReportDate = (s) => !s || isDate(s);
  */
 const TL_HEADER = /^\s*(?<home>\S.*?)\s-\s(?<away>\S.*?)\s(?<h>\d{1,2})-(?<a>\d{1,2})(?:\s+\(rust\s(?<hh>\d{1,2})-(?<ha>\d{1,2})\))?\s*$/;
 const TL_GOAL = /^\s*(?<min>\?|\d{1,3})(?:\+(?<extra>\d{1,2}))?'?\s+(?<name>.+?)\s+(?<sh>\d{1,2})-(?<sa>\d{1,2})\s*$/;
+// Alleen makers bekend: 'thuis ? Naam' of 'uit 12 Naam' (zonder tussenstand; volgorde telt niet).
+const TL_SIDE = /^\s*(?<side>thuis|uit)\s+(?<min>\?|\d{1,3})'?\s+(?<name>.+?)\s*$/i;
 export function parseTimeline(text) {
   const lines = normalizeText(text).split(/\r?\n/).map((l, i) => [i + 1, l.trim()]).filter(([, l]) => l && !l.startsWith('#'));
   const out = { lineNo: lines[0]?.[0] ?? 0, line: lines[0]?.[1] ?? '', errors: [], warnings: [], goals: [], ht: null };
@@ -275,8 +288,17 @@ export function parseTimeline(text) {
   out.score = [Number(h.groups.h), Number(h.groups.a)];
   if (h.groups.hh != null) out.ht = [Number(h.groups.hh), Number(h.groups.ha)];
   for (const [no, l] of lines.slice(1)) {
+    const side = TL_SIDE.exec(l);
+    if (side) {
+      let name = side.groups.name.trim(); let note = null;
+      const inN = /\s*\(([^)]*)\)\s*$/.exec(name);
+      if (inN) { note = inN[1].trim(); name = name.slice(0, inN.index).trim(); }
+      const og = !!note && /eigen|^e\.?d\.?$/i.test(note);
+      out.goals.push({ minute: side.groups.min === '?' ? null : Number(side.groups.min), extra: 0, player: name === '?' ? null : name, score: null, side: side.groups.side.toLowerCase() === 'thuis' ? 'home' : 'away', note, og });
+      continue;
+    }
     const g = TL_GOAL.exec(l);
-    if (!g) { out.errors.push(`Regel ${no} niet herkend: "${l}". Verwacht: minuut naam tussenstand.`); continue; }
+    if (!g) { out.errors.push(`Regel ${no} niet herkend: "${l}". Verwacht: minuut naam tussenstand, of thuis|uit minuut naam.`); continue; }
     let name = g.groups.name.trim();
     let note = null;
     const inName = /\s*\(([^)]*)\)\s*$/.exec(name);

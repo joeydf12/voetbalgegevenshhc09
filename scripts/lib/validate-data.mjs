@@ -121,7 +121,7 @@ export function validateData(data, { today }) {
     repIds.add(r.matchId);
     if (r.home !== m.home || r.away !== m.away || r.date !== m.date) err(`${tag}: ploegen of datum wijken af van de wedstrijd`);
     if (r.file !== `${m.date}-${m.home}-${m.away}.json`) err(`${tag}: bestandsnaam hoort ${m.date}-${m.home}-${m.away}.json te zijn`);
-    const probe = { score: [r.result.home, r.result.away], ht: r.ht ? [r.ht.home, r.ht.away] : null, goals: r.goals.map((g) => ({ ...g })), errors: [], warnings: [] };
+    const probe = { score: [r.result.home, r.result.away], ht: r.ht ? [r.ht.home, r.ht.away] : null, goals: r.goals.map((g) => ({ ...g, ...(g.score == null ? { side: g.team === r.home ? 'home' : 'away' } : {}) })), errors: [], warnings: [] };
     checkInternal(probe);
     probe.errors.forEach((e) => err(`${tag}: ${e}`));
     probe.goals.forEach((g, i) => {
@@ -146,7 +146,7 @@ export function validateData(data, { today }) {
       else if (res.home !== r.result.home || res.away !== r.result.away) err(`${tag}: uitslag in verslag (${r.result.home}-${r.result.away}) wijkt af van de uitslag (${res.home}-${res.away})`);
     }
     // Links zijn niet nodig (afspraak 27-11). Samenvatting alleen bij krant/pers, niet bij Voetbal.nl of opgave.
-    if (!['voetbalnl', 'opgave'].includes(r.source.key) && !r.summary) warn(`${tag}: nog geen samenvatting`);
+    if (!['voetbalnl', 'opgave', 'voetbalnederland'].includes(r.source.key) && !r.summary) warn(`${tag}: nog geen samenvatting`);
   }
   const listed = new Set(data.reportIndex?.files || []);
   for (const r of reports) if (!listed.has(r.file)) err(`reports/index.json mist ${r.file} (draai node scripts/add-report.mjs of rebuild)`);

@@ -1,0 +1,93 @@
+{
+  "matchId": "gesta-chaam",
+  "date": "2026-11-22",
+  "home": "gesta",
+  "away": "chaam",
+  "result": {
+    "home": 3,
+    "away": 4
+  },
+  "ht": null,
+  "orderKnown": false,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Jens de Jong",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Boaz den Ouden",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Boaz den Ouden",
+      "team": "gesta",
+      "playerTeam": "gesta",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Henryc van Dongen",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Henryc van Dongen",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Gerard Verbiest",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sebas van Engelen",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

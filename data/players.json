@@ -393,7 +393,9 @@
     {
       "name": "Justin van Strien",
       "nr": 8,
-      "aliases": [],
+      "aliases": [
+        "Justin Van Strien"
+      ],
       "nrSeen": "2026-11-22"
     },
     {
@@ -542,7 +544,8 @@
       "name": "Remco v.d. Hooven",
       "nr": 8,
       "aliases": [
-        "Remco van den Hooven"
+        "Remco van den Hooven",
+        "Remco van den Hoover"
       ],
       "nrSeen": "2026-11-22"
     },
@@ -908,7 +911,9 @@
     {
       "name": "Rutger Wiltvank",
       "nr": 4,
-      "aliases": [],
+      "aliases": [
+        "Rutger Wiltvang"
+      ],
       "nrSeen": "2026-10-04"
     },
     {

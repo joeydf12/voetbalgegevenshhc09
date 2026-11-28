@@ -1,0 +1,83 @@
+{
+  "matchId": "chaam-svsos",
+  "date": "2026-09-20",
+  "home": "chaam",
+  "away": "svsos",
+  "result": {
+    "home": 2,
+    "away": 4
+  },
+  "ht": null,
+  "orderKnown": false,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Juul van Eil",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Rick van Beckhoven",
+      "team": "chaam",
+      "playerTeam": "chaam",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Giel Jansma",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Dorus Boers",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Dorus Boers",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sep Hesselmans",
+      "team": "svsos",
+      "playerTeam": "svsos",
+      "score": null,
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

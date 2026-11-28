@@ -1,0 +1,48 @@
+{
+  "matchId": "raamsdonk-sab",
+  "date": "2026-09-27",
+  "home": "raamsdonk",
+  "away": "sab",
+  "result": {
+    "home": 1,
+    "away": 1
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 21,
+      "extra": 0,
+      "player": "Jordi van de Korput",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 26,
+      "extra": 0,
+      "player": "Wessel Braat",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        1,
+        1
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

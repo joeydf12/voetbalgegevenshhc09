@@ -2,7 +2,7 @@
 // Doelpuntenmakers uit de tijdlijn van Voetbal.nl (overgetypt) opslaan, zolang er geen krantverslag is.
 // Het krantverslag (BD) gaat altijd voor: bestaat dat al, dan weigert dit script; komt het later,
 // dan vervangt scripts/add-report.mjs dit verslag.
-// Gebruik: node scripts/add-goals.mjs --file tijdlijn.txt [--opgave [--source-name "..."]] [--apply]
+// Gebruik: node scripts/add-goals.mjs --file tijdlijn.txt [--opgave [--source-name "..."] | --bron voetbalnederland] [--apply]
 // Formaat (zie parseTimeline in js/lib/report.js):
 //   Raamsdonk - HHC'09 7-3
 //   17 Tom van der Linden 0-1
@@ -18,7 +18,8 @@ import { validateData } from './lib/validate-data.mjs';
 
 const args = parseArgs(process.argv.slice(2));
 // --opgave: doelpunten opgegeven door een teamlid (geen uitslagbron; uitslag moet al vaststaan).
-const byUser = !!args.opgave;
+const byUser = !!args.opgave || args.bron === 'voetbalnederland';
+const extSource = args.bron === 'voetbalnederland' ? { name: 'VoetbalNederland', key: 'voetbalnederland' } : null;
 if (typeof args.file !== 'string') { console.error('Gebruik: node scripts/add-goals.mjs --file tijdlijn.txt [--apply]'); process.exit(2); }
 const today = todayNL();
 const data = loadAll();
@@ -29,7 +30,7 @@ const parsed = parseTimeline(fs.readFileSync(args.file, 'utf8'));
 if (!parsed.errors.length) checkInternal(parsed);
 const res = crossCheck(parsed, { index, matches: data.matches, today, ownTeam: data.meta.ownTeam, roster });
 const existing = res.match && data.reports.find((r) => r.matchId === res.match.id);
-if (existing && !['voetbalnl', 'opgave'].includes(existing.source.key)) res.findings.push({ level: 'error', message: `Er is al een verslag van ${existing.source.name} voor deze wedstrijd; dat gaat voor. Niets gewijzigd.` });
+if (existing && !['voetbalnl', 'opgave', 'voetbalnederland'].includes(existing.source.key)) res.findings.push({ level: 'error', message: `Er is al een verslag van ${existing.source.name} voor deze wedstrijd; dat gaat voor. Niets gewijzigd.` });
 else if (existing) res.findings.push({ level: 'warn', message: `Bestaand verslag van ${existing.source.name} wordt vervangen.` });
 const icon = { error: '✗', warn: '⚠', ok: '✓', info: 'ℹ' };
 console.log(parsed.line);
@@ -48,7 +49,8 @@ const matches = structuredClone(data.matches);
 const m = matches.find((x) => x.id === res.match.id);
 const report = buildReport({
   parsed, match: m, homeId: res.homeId, awayId: res.awayId, playerTeam: res.playerTeam,
-  source: byUser ? { name: typeof args['source-name'] === 'string' ? args['source-name'] : 'Opgave teamlid', key: 'opgave', url: null, publishedAt: null }
+  source: extSource ? { ...extSource, url: null, publishedAt: null }
+    : byUser ? { name: typeof args['source-name'] === 'string' ? args['source-name'] : 'Opgave teamlid', key: 'opgave', url: null, publishedAt: null }
     : { name: 'Voetbal.nl', key: 'voetbalnl', url: null, publishedAt: null },
   summary: null, addedOn: today,
 });

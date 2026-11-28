@@ -1351,15 +1351,6 @@
     "time": "14:30"
   },
   {
-    "id": "elshout-svg",
-    "home": "elshout",
-    "away": "svg",
-    "date": "2026-12-03",
-    "status": "scheduled",
-    "evidence": [],
-    "note": "Gestaakt op 15 november bij 3-3; restant op donderdag 3 december (Hollandse Velden noemde 26 november 20:15)."
-  },
-  {
     "id": "edn56-sab",
     "home": "edn56",
     "away": "sab",
@@ -1412,6 +1403,15 @@
     "time": "14:30",
     "status": "scheduled",
     "evidence": []
+  },
+  {
+    "id": "elshout-svg",
+    "home": "elshout",
+    "away": "svg",
+    "date": "2026-12-03",
+    "status": "scheduled",
+    "evidence": [],
+    "note": "Gestaakt op 15 november bij 3-3; restant op donderdag 3 december (Hollandse Velden noemde 26 november 20:15)."
   },
   {
     "id": "hz75-svsos",

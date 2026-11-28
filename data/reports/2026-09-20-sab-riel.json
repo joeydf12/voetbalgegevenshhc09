@@ -1,0 +1,87 @@
+{
+  "matchId": "sab-riel",
+  "date": "2026-09-20",
+  "home": "sab",
+  "away": "riel",
+  "result": {
+    "home": 3,
+    "away": 2
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 64,
+      "extra": 0,
+      "player": "Calvin Vertriest",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        1,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 80,
+      "extra": 0,
+      "player": "Tonie Snoeren",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        2,
+        0
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 84,
+      "extra": 0,
+      "player": "Joni Paymans",
+      "team": "riel",
+      "playerTeam": "riel",
+      "score": [
+        2,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Calvin Vertriest",
+      "team": "sab",
+      "playerTeam": "sab",
+      "score": [
+        3,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Joris van de Bruggen",
+      "team": "riel",
+      "playerTeam": "riel",
+      "score": [
+        3,
+        2
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

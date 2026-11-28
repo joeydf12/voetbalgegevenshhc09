@@ -68,6 +68,21 @@ De app toont dit zodra het is ingevuld. Doorgeven mag ook in de Claude-app ("de 
 
 ---
 
+## Doelpunten: krant en VoetbalNederland (28 november)
+
+**D1. Krant en VoetbalNederland spreken elkaar tegen.** Nu staat de krant (BD) in de app. Welke klopt?
+| Wedstrijd | Brabants Dagblad | VoetbalNederland | Antwoord |
+|---|---|---|---|
+| GESTA – SAB 1-6 (11 okt), doelpunt GESTA | Tom Verschueren 80' | Jorg Feskens 88' | |
+| SAB – HZ '75 2-1 (4 okt), doelpunt HZ '75 | Oskar Siwik 57' | Stijn de Laat 57' | |
+| HZ '75 – Raamsdonk 1-7 (1 nov) | Lars van Strien 2× (25', 85'), geen eigen doelpunt | Lars van Strien 36', Kevin Meijnhardt 40', eigen doelpunt HZ 90' | |
+
+**D4. Teun Reijrink (EDN '56): 5 of 4 doelpunten?** Wij hebben 5: tegen HHC (BD), Elshout (BD), Dussense Boys (jouw opgave), SVG en GESTA (VoetbalNederland). De topscorerslijst zegt 4. Antwoord:
+
+**D5. Topscorers die nog doelpunten missen.** Remco v.d. Hooven (Elshout): 8 op de lijst, wij 4. Jordi van de Korput (Raamsdonk): 6 op de lijst, wij 2. Weet je in welke wedstrijden? Antwoord:
+
+**D6. Aannames (controleer).** Twee doelpunten in dezelfde minuut staan in de volgorde van VoetbalNederland: SAB – SVG (89' Dani Verhoeven 2-1, Joep Melis 2-2), Dussense Boys – Raamsdonk (90' Thomas Boons 1-5, Justin van den Oudenrijn 2-5) en SAB – Riel (90' Calvin Vertriest 3-1, Joris van der Bruggen 3-2). Bij SAB – Elshout noemt VoetbalNederland 48' voor Cas van Gaalen, jij zei 44'; 44' gehouden. [ ] akkoord
+
 ## Verwerkt op 27 november (ter info)
 
 - **A1 stand:** jouw screenshot van Voetbal.nl komt precies overeen met de stand in de app; bron is Voetbal.nl.

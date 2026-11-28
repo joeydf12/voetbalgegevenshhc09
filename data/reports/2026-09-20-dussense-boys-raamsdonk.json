@@ -1,0 +1,113 @@
+{
+  "matchId": "dussense-boys-raamsdonk",
+  "date": "2026-09-20",
+  "home": "dussense-boys",
+  "away": "raamsdonk",
+  "result": {
+    "home": 2,
+    "away": 5
+  },
+  "ht": null,
+  "goals": [
+    {
+      "minute": 14,
+      "extra": 0,
+      "player": "Justin van Strien",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        1
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 21,
+      "extra": 0,
+      "player": "Daan Schipperen",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        2
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 37,
+      "extra": 0,
+      "player": "Faas Verschuren",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        3
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 37,
+      "extra": 0,
+      "player": "Faas Verschuren",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        0,
+        4
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 67,
+      "extra": 0,
+      "player": "Luuk de Rooy",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        1,
+        4
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Thomas Boons",
+      "team": "raamsdonk",
+      "playerTeam": "raamsdonk",
+      "score": [
+        1,
+        5
+      ],
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": 90,
+      "extra": 0,
+      "player": "Justin van den Oudenrijn",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": [
+        2,
+        5
+      ],
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

@@ -1,0 +1,43 @@
+{
+  "matchId": "edn56-hz75",
+  "date": "2026-09-20",
+  "home": "edn56",
+  "away": "hz75",
+  "result": {
+    "home": 1,
+    "away": 1
+  },
+  "ht": null,
+  "orderKnown": false,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Rutger Wiltvank",
+      "team": "edn56",
+      "playerTeam": "edn56",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Kursat Bucakli",
+      "team": "hz75",
+      "playerTeam": "hz75",
+      "score": null,
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

@@ -35,6 +35,10 @@ Lees eerst `../CLAUDE.md` en `../taken/README.md`. Dit bestand zegt wat er al ge
 
 - 2026-11-28: officiële topscorerslijst van VoetbalNederland als momentopname in `data/topscorers.json`; de topscorerspagina toont die naast onze telling uit verslagen (met het verschil). Validatie waarschuwt als wij voor een speler meer tellen dan Voetbal.nl. ONTBREKENDE-DOELPUNTEN.md heeft een lijst per speler. BD-verslag HHC – Dussense Boys staat in VERSLAGEN-CHECK.md. Main (ideeën-branch) samengevoegd.
 
+- 2026-11-28: doelpunten van 17 wedstrijden uit VoetbalNederland (bron `voetbalnederland`, telt niet als uitslagbron). Bij 0' alleen makers, zonder volgorde (`orderKnown: false`, invoer `thuis|uit ? Naam`). Krant/opgave/clubsite gaan voor; tegenstrijdigheden in VRAGEN.md B4-B9. Spelling gekoppeld via aliassen. ONTBREKENDE-DOELPUNTEN.md wordt gemaakt door `scripts/dev/ontbrekende-doelpunten.mjs`.
+
+- 2026-11-28: doelpunten van 17 wedstrijden uit VoetbalNederland (bron `voetbalnederland`, geen uitslagbron). Bij 0' alleen makers zonder volgorde (`orderKnown: false`, invoer `thuis|uit ? Naam`). Krant/opgave/clubsite gaan voor; tegenstrijdigheden in VRAGEN.md D1-D6. ONTBREKENDE-DOELPUNTEN.md komt uit `scripts/dev/ontbrekende-doelpunten.mjs`.
+
 ## Open (in deze volgorde)
 1. ~~RLS-test (e-mailopzet, vervangen)~~ **geslaagd op 2026-11-27** (`supabase/oud-rls-test-email.sql`, door de gebruiker in de SQL Editor gedraaid, alles teruggedraaid): A wijzigt eigen keuze, beide leden lezen alles, B kan rijen/feedback van A niet wijzigen, verwijderen of onder A's id schrijven, 2001 tekens en ongeldige status geweigerd, niet-lid ziet en schrijft niets, anoniem geweigerd. Opnieuw geslaagd na de advisor-fix (2026-11-27, 15/15). Draai dit script opnieuw na elke wijziging aan de `ts_`-policies.
 2. ~~Advisor-fix~~ **uitgevoerd 2026-11-27** (`supabase/02-advisor-fix.sql`). Overgebleven bewuste adviezen voor deze site: `ts_members` zonder policies (INFO, ledenlijst niet via API) en `ts_team()` uitvoerbaar voor ingelogden (WARN, nodig voor de site; geeft alleen iets terug aan teamleden). De overige adviezen horen bij andere HHC-apps.

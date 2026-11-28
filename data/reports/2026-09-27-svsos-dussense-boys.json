@@ -1,0 +1,63 @@
+{
+  "matchId": "svsos-dussense-boys",
+  "date": "2026-09-27",
+  "home": "svsos",
+  "away": "dussense-boys",
+  "result": {
+    "home": 0,
+    "away": 4
+  },
+  "ht": null,
+  "orderKnown": false,
+  "goals": [
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sem van Tilborg",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sem van Tilborg",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Luuk Rosendaal",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    },
+    {
+      "minute": null,
+      "extra": 0,
+      "player": "Sem Heijmans",
+      "team": "dussense-boys",
+      "playerTeam": "dussense-boys",
+      "score": null,
+      "og": false,
+      "note": null
+    }
+  ],
+  "source": {
+    "name": "VoetbalNederland",
+    "key": "voetbalnederland",
+    "url": null,
+    "publishedAt": null
+  },
+  "summary": null,
+  "incomplete": false,
+  "addedOn": "2026-11-28"
+}

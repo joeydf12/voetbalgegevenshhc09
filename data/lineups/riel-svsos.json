@@ -99,8 +99,7 @@
         "in": true
       }
     ],
-    "trainer": null,
-    "incomplete": true
+    "trainer": null
   },
   "away": {
     "team": "svsos",

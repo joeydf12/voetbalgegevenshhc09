@@ -99,7 +99,6 @@
   },
   "away": {
     "team": "hz75",
-    "incomplete": true,
     "starters": [
       {
         "nr": 1,
@@ -182,6 +181,12 @@
       {
         "nr": 20,
         "name": "Tom van Ermingen"
+      },
+      {
+        "nr": 21,
+        "name": null,
+        "hidden": true,
+        "pos": "Teamspeler"
       }
     ],
     "trainer": null

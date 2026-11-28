@@ -77,8 +77,6 @@ De app toont dit zodra het is ingevuld. Doorgeven mag ook in de Claude-app ("de 
 | SAB – HZ '75 2-1 (4 okt), doelpunt HZ '75 | Oskar Siwik 57' | Stijn de Laat 57' | |
 | HZ '75 – Raamsdonk 1-7 (1 nov) | Lars van Strien 2× (25', 85'), geen eigen doelpunt | Lars van Strien 36', Kevin Meijnhardt 40', eigen doelpunt HZ 90' | |
 
-**D3. Luuk Oomen bij Chaam – SAB (15 nov).** VoetbalNederland zegt dat hij de 1-0 maakte (19'), maar hij staat niet in de opstelling van Chaam op Voetbal.nl. Klopt het doelpunt? [ ] ja [ ] nee, het was: ……
-
 **D4. Teun Reijrink (EDN '56): 5 of 4 doelpunten?** Wij hebben 5: tegen HHC (BD), Elshout (BD), Dussense Boys (jouw opgave), SVG en GESTA (VoetbalNederland). De topscorerslijst zegt 4. Antwoord:
 
 **D5. Topscorers die nog doelpunten missen.** Remco v.d. Hooven (Elshout): 8 op de lijst, wij 4. Jordi van de Korput (Raamsdonk): 6 op de lijst, wij 2. Weet je in welke wedstrijden? Antwoord:

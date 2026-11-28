@@ -4,7 +4,7 @@ import { pickStanding, headToHead, teamMatches } from '../lib/standings.js';
 import { ownGoalsList } from '../lib/stats.js';
 import { teamProfile, splitStandings } from '../lib/teamstats.js';
 import { norm } from '../lib/teams.js';
-import { periodOf, periodStandings, keyPlayers, playersOfTeam, cardStatus, playedCount, playedText, periodStatus, fairPlay, remainingDifficulty, refereeHistory } from '../lib/insights.js';
+import { periodOf, periodStandings, keyPlayers, playersOfTeam, cardStatus, playedCount, periodStatus, fairPlay, remainingDifficulty, refereeHistory } from '../lib/insights.js';
 import { logo, tlink, matchRow, formDots, sourceNote, sourceBadges, section, empty } from './ui.js';
 import { availabilitySlot, scoutingView } from './team.js';
 import { plink, statsTab, squadTab, lineupsTab, scorersFull, usualStartersCard, rankChart, surfaceText } from './club.js';
@@ -89,7 +89,7 @@ export function overview(ctx) {
     </section>
     <section class="card">
       <h2><span class="ic">⚽</span> Topscorers ${name(ctx, own)}</h2>
-      ${kp.scorers.length ? html`<ol class="rank">${kp.scorers.map((p) => html`<li>${plink(ctx, own, p.name)}<small>${p.goals.length === 1 ? '1 goal' : `${p.goals.length} goals`} in ${playedText(p)} gespeelde wedstrijden</small><b>${p.goals.length}</b></li>`)}</ol>` : empty('Nog geen doelpuntenmakers.')}
+      ${kp.scorers.length ? html`<ol class="rank">${kp.scorers.map((p) => html`<li>${plink(ctx, own, p.name)}<small>${p.goals.length === 1 ? '1 goal' : `${p.goals.length} goals`} in ${playedCount(p)} gespeelde wedstrijden</small><b>${p.goals.length}</b></li>`)}</ol>` : empty('Nog geen doelpuntenmakers.')}
       <a class="more" href="#/topscorers">Alle topscorers</a>
     </section>
     ${kp.onEdge.length ? section(html`<span class="ic">🟨</span> Op scherp`, html`<ul class="people">${kp.onEdge.map((p) => html`<li>${p.nr != null ? html`<span class="shirt sm">${p.nr}</span>` : ''}${plink(ctx, own, p.name)}<small>${p.cs.yellows} gele kaarten · bij de volgende geschorst</small></li>`)}</ul>`, 'KNVB: na de 5e, 7e, 9e en elke volgende gele kaart volgt één wedstrijd schorsing.', 'warnbox') : ''}

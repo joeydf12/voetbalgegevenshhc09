@@ -64,8 +64,10 @@ export function buildPlayerIndex({ players, lineups, reports }) {
         if (!p.name) return;
         if (role === 'wissel' && !p.in) return; // niet ingevallen = niet gespeeld
         const e = get(s.team, p.name);
-        e.apps.push({ matchId: l.matchId, date: l.date, opp, home: side === 'home', role, nr: p.nr ?? null, out: !!p.out, yellow: p.yellow || 0, red: p.red ? 1 : 0, captain: !!p.captain });
-        e.yellow += p.yellow || 0; e.red += p.red ? 1 : 0;
+        e.apps.push({ matchId: l.matchId, date: l.date, opp, home: side === 'home', role, nr: p.nr ?? null, out: !!p.out, yellow: p.yellow || 0, red: p.red || p.yellow >= 2 ? 1 : 0, captain: !!p.captain });
+        // Twee keer geel in één wedstrijd = rood (KNVB); telt als rode kaart, niet als twee gele.
+        const red = p.red || p.yellow >= 2;
+        e.yellow += p.yellow === 1 ? 1 : 0; e.red += red ? 1 : 0;
         if (role === 'basis') e.starts++; else e.subIns++;
         if (p.nr != null && (!e.lastNrDate || l.date >= e.lastNrDate)) { e.nr = p.nr; e.lastNrDate = l.date; }
       };
@@ -165,7 +167,7 @@ export function teamInsights({ matches, reports, lineups, playerIdx }, teamId) {
     const s = l.home.team === teamId ? l.home : l.away;
     for (const p of [...(s.starters || []), ...(s.subs || []).filter((x) => x.in)]) {
       if (!p.name) hidden++;
-      yellow += p.yellow || 0; red += p.red ? 1 : 0;
+      yellow += p.yellow === 1 ? 1 : 0; red += p.red || p.yellow >= 2 ? 1 : 0;
     }
   }
   const squad = playersOfTeam(playerIdx, teamId).filter((p) => p.apps.length);

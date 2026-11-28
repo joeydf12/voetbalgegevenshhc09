@@ -9,7 +9,7 @@ import { loadAll } from '../lib/io.mjs';
 const d = loadAll();
 const T = Object.fromEntries(d.teams.map((t) => [t.id, t.name]));
 const fmt = (s) => s.split('-').reverse().slice(0, 2).join('-');
-const rows = { none: [], maker: [], minute: [], order: [] };
+const rows = { none: [], maker: [], minute: [], order: [], accepted: [] };
 const openByTeam = {};
 for (const m of d.matches) {
   const r = resolveResult(m);
@@ -18,11 +18,12 @@ for (const m of d.matches) {
   const name = `${fmt(m.date)} · ${T[m.home]} – ${T[m.away]} ${r.home}-${r.away}`;
   for (const [t, gf] of [[m.home, r.home], [m.away, r.away]]) {
     const named = rep ? rep.goals.filter((g) => g.team === t && g.player).length : 0;
-    if (gf - named > 0) (openByTeam[t] ||= []).push(`${name} (${gf - named} van ${T[t]})`);
+    if (gf - named > 0 && !rep?.unknownAccepted) (openByTeam[t] ||= []).push(`${name} (${gf - named} van ${T[t]})`);
   }
   if (!rep) { rows.none.push(`- [ ] **${name}**: nog geen doelpunten.`); continue; }
   const noMaker = rep.goals.filter((g) => !g.player);
-  if (noMaker.length) rows.maker.push(`- [ ] **${name}**: ${noMaker.map((g) => `${g.score ? g.score.join('-') + ' ' : ''}(${T[g.team]})`).join(', ')}.`);
+  if (noMaker.length && rep.unknownAccepted) rows.accepted.push(`- **${name}**: ${noMaker.length} onbekend (${rep.unknownAccepted}).`);
+  else if (noMaker.length) rows.maker.push(`- [ ] **${name}**: ${noMaker.map((g) => `${g.score ? g.score.join('-') + ' ' : ''}(${T[g.team]})`).join(', ')}.`);
   if (rep.orderKnown === false) rows.order.push(`- **${name}**: alleen makers bekend (${rep.source.name}), geen volgorde/minuten.`);
   else {
     const noMin = rep.goals.filter((g) => g.minute === null && g.player);
@@ -53,6 +54,7 @@ Overzicht uit de data (geen bron; opnieuw op te bouwen met \`node scripts/dev/on
 
 ${sec('Wedstrijden zonder doelpunten', rows.none)}
 ${sec('Maker onbekend', rows.maker)}
+${sec('Blijft onbekend (geaccepteerd)', rows.accepted)}
 ${sec('Maker bekend, minuut onbekend', rows.minute)}
 ${sec('Alleen makers bekend, volgorde en minuten niet', rows.order)}
 ${sec(`Topscorerslijst ${ts?.sourceName ?? ''} (${ts?.asOf ?? ''}): nog niet geplaatst`, less)}

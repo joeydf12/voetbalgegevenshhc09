@@ -5,10 +5,12 @@ Overzicht uit de data (geen bron; opnieuw op te bouwen met `node scripts/dev/ont
 ## Wedstrijden zonder doelpunten (0)
 *Niets.*
 
-## Maker onbekend (3)
-- [ ] **27-09 · HHC '09 – VV Chaam 2-1**: 2-1 (VV Chaam).
-- [ ] **11-10 · VV Chaam – Dussense Boys 3-2**: (VV Chaam), (VV Chaam).
+## Maker onbekend (1)
 - [ ] **22-11 · SAB – VV SVG 2-2**: 1-1 (VV SVG), 2-2 (VV SVG).
+
+## Blijft onbekend (geaccepteerd) (2)
+- **27-09 · HHC '09 – VV Chaam 2-1**: 1 onbekend (Chaam geeft doelpuntenmakers niet door).
+- **11-10 · VV Chaam – Dussense Boys 3-2**: 2 onbekend (Chaam geeft doelpuntenmakers niet door).
 
 ## Maker bekend, minuut onbekend (3)
 - [ ] **04-10 · EDN '56 – SVSOS 0-1**: Dorus Boers (0-1).
@@ -39,9 +41,6 @@ Overzicht uit de data (geen bron; opnieuw op te bouwen met `node scripts/dev/ont
 Wel in onze verslagen, niet op de topscorerslijst (2 of meer): Kursat Bucakli (VV HZ '75, 2), Calvin Vertriest (SAB, 2), Joris van de Bruggen (VV Riel, 2), Tom Verschueren (RKVV GESTA, 2), Joshua Paymans (VV Riel, 2), Shuburney Rosaria (VV SVG, 2), Bas Goos (VV Chaam, 2), Dani Verhoeven (SAB, 2), Jules van de Pol (SAB, 2), Jayden van Seeters (VV Raamsdonk, 2), Lars van Strien (VV Raamsdonk, 3), Owen Kramer (VV Raamsdonk, 2), Jesper Priems (SVSOS, 2), Hein de Bresser (EDN '56, 2), Thomas Dankers (SC Elshout, 2), Luuk Oomen (VV Chaam, 2), Cas van Gaalen (SAB, 2).
 
 ## Zoekhulp: per ploeg de wedstrijden met ontbrekende makers
-### VV Chaam
-- 27-09 · HHC '09 – VV Chaam 2-1 (1 van VV Chaam)
-- 11-10 · VV Chaam – Dussense Boys 3-2 (2 van VV Chaam)
 ### VV SVG
 - 22-11 · SAB – VV SVG 2-2 (2 van VV SVG)
 
